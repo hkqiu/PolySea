@@ -163,6 +163,18 @@ The Agent relies on OpenAI-compatible Chat Completions tools/function calling fo
 
 PolyOpus is a polymer-specialized LLM built by supervised fine-tuning (SFT) of [`DeepSeek-LLM-7B-Chat`](https://huggingface.co/deepseek-ai/deepseek-llm-7b-chat) on polymer data. Weights are planned to be released on the author's Hugging Face page, [huggingface.co/hkqiu](https://huggingface.co/hkqiu) (not yet published); this repository does not include or distribute the model weights.
 
+**Local deployment.** Because PolyOpus keeps the same architecture, tokenizer, and chat template as `DeepSeek-LLM-7B-Chat`, it can be self-hosted with any OpenAI-compatible serving stack that already supports that base model — for example [vLLM](https://github.com/vllm-project/vllm) or [Text Generation Inference (TGI)](https://github.com/huggingface/text-generation-inference). Once the PolyOpus weights are published, a typical local setup looks like:
+
+```bash
+# Example: serve with vLLM's OpenAI-compatible API server
+python -m vllm.entrypoints.openai.api_server \
+  --model hkqiu/PolyOpus \
+  --served-model-name polyopus \
+  --port 9000
+```
+
+Then point PolySea at that local endpoint:
+
 ```powershell
 $env:POLYOPUS_BASE_URL="http://127.0.0.1:9000/v1"
 $env:POLYOPUS_MODEL="polyopus"

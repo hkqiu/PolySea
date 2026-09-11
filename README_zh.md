@@ -163,6 +163,18 @@ Agent 依赖 OpenAI-compatible Chat Completions 的 tools/function calling；不
 
 PolyOpus 是基于 [`DeepSeek-LLM-7B-Chat`](https://huggingface.co/deepseek-ai/deepseek-llm-7b-chat) 在聚合物数据上微调（SFT）得到的聚合物专用大模型。权重计划发布于作者 Hugging Face 主页 [huggingface.co/hkqiu](https://huggingface.co/hkqiu)（暂未发布），本仓库不包含、也不分发该模型权重。
 
+**本地部署。** 由于 PolyOpus 与 `DeepSeek-LLM-7B-Chat` 保持相同的模型结构、tokenizer 和对话模板，任何已支持该基座模型的 OpenAI-compatible 推理框架都可以直接本地部署它——例如 [vLLM](https://github.com/vllm-project/vllm) 或 [Text Generation Inference (TGI)](https://github.com/huggingface/text-generation-inference)。权重发布后，典型的本地部署方式如下：
+
+```bash
+# 示例：使用 vLLM 启动 OpenAI-compatible API 服务
+python -m vllm.entrypoints.openai.api_server \
+  --model hkqiu/PolyOpus \
+  --served-model-name polyopus \
+  --port 9000
+```
+
+然后让 PolySea 指向该本地端点：
+
 ```powershell
 $env:POLYOPUS_BASE_URL="http://127.0.0.1:9000/v1"
 $env:POLYOPUS_MODEL="polyopus"
