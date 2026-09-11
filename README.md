@@ -331,4 +331,4 @@ If you use PolyTAO pretrained weights, please cite:
 
 ## 📄 License
 
-Apache License 2.0.
+Apache License 2.0 (third-party dependencies and the PolyTAO pretrained model remain subject to their respective licenses and terms).
