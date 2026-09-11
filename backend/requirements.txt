@@ -1,0 +1,21 @@
+# PolySea backend — AI for Polymer Science
+fastapi>=0.115.0
+uvicorn[standard]>=0.32.0
+python-multipart>=0.0.12
+openai>=1.55.0
+pydantic>=2.9.0
+pydantic-settings>=2.6.0
+pandas>=2.2.0
+numpy>=1.26.0
+scikit-learn>=1.5.0
+optuna>=4.0.0
+xgboost>=2.1.0
+rdkit>=2023.9.1
+torch>=2.2.0
+transformers>=4.44.0
+accelerate>=0.34.0
+safetensors>=0.4.0
+deepxiv-sdk>=0.2.0
+
+# Optional: graph models (pip install -r requirements-optional.txt)
+# deepchem>=2.8.0

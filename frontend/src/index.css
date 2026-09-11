@@ -1,0 +1,161 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  @apply min-h-screen bg-[#fbfbfd] text-[#1d1d1f] antialiased overflow-x-hidden;
+  font-feature-settings: "kern" 1;
+}
+
+/* 细线分割、卡片 — Apple 式克制阴影 */
+.surface-card {
+  @apply bg-white rounded-2xl border border-[#d2d2d7]/80 shadow-[0_2px_16px_rgba(0,0,0,0.04)];
+}
+
+.surface-elevated {
+  @apply bg-white rounded-2xl border border-[#d2d2d7]/60 shadow-[0_4px_24px_rgba(0,0,0,0.06)];
+}
+
+.input-apple {
+  @apply w-full rounded-xl border border-[#d2d2d7] bg-white px-3 py-2.5 text-[15px] text-[#1d1d1f] placeholder:text-[#86868b] outline-none transition-shadow;
+  @apply focus:border-[#0071e3] focus:ring-2 focus:ring-[#0071e3]/20;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded-full bg-[#0071e3] px-6 py-2.5 text-[15px] font-medium text-white transition-opacity;
+  @apply hover:opacity-90 active:opacity-80 disabled:opacity-40 disabled:pointer-events-none;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center rounded-full border border-[#d2d2d7] bg-white px-4 py-2 text-[13px] font-medium text-[#1d1d1f] transition-colors;
+  @apply hover:bg-[#f5f5f7] active:bg-[#e8e8ed];
+}
+
+.btn-ghost {
+  @apply text-[13px] font-medium text-[#0071e3] hover:underline underline-offset-2;
+}
+
+.btn-danger-outline {
+  @apply rounded-full border border-[#ff3b30]/35 bg-white px-3 py-1.5 text-[12px] font-medium text-[#d70015] transition-colors;
+  @apply hover:bg-[#fff5f5];
+}
+
+/* 左右分子链装饰 */
+.polymer-rail {
+  @apply fixed top-0 bottom-0 z-[1] pointer-events-none overflow-hidden;
+  width: 3.25rem;
+  opacity: 0.5;
+  mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    black 12%,
+    black 88%,
+    transparent 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    black 12%,
+    black 88%,
+    transparent 100%
+  );
+}
+
+@media (min-width: 640px) {
+  .polymer-rail {
+    width: 4.25rem;
+    opacity: 0.55;
+  }
+}
+
+.polymer-rail--left {
+  left: 0;
+}
+
+.polymer-rail--right {
+  right: 0;
+}
+
+.polymer-rail-svg {
+  position: absolute;
+  left: 50%;
+  top: -4%;
+  width: 100%;
+  height: 108%;
+  min-height: 100vh;
+  transform: translateX(-50%);
+  will-change: transform;
+}
+
+.polymer-rail-svg--flip {
+  transform: translateX(-50%) scaleX(-1);
+}
+
+.polymer-chain-bounce {
+  width: 100%;
+  height: 100%;
+  animation: polymer-chain-bounce 2.35s ease-in-out infinite;
+  will-change: transform;
+}
+
+.polymer-chain-bounce--delayed {
+  animation-delay: -1.1s;
+}
+
+.polymer-chain-sway {
+  width: 100%;
+  height: 100%;
+  animation: polymer-chain-sway 2.9s ease-in-out infinite;
+  will-change: transform;
+}
+
+.polymer-chain-sway--delayed {
+  animation-delay: -0.75s;
+}
+
+@keyframes polymer-chain-bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes polymer-chain-sway {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+}
+
+.polymer-atom {
+  transform-origin: center;
+  transform-box: fill-box;
+  animation: polymer-atom-pulse 1.15s ease-in-out infinite;
+}
+
+.polymer-atom--branch {
+  animation-duration: 1.35s;
+}
+
+@keyframes polymer-atom-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  45% {
+    transform: scale(1.14);
+  }
+  70% {
+    transform: scale(0.96);
+  }
+}

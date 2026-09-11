@@ -1,0 +1,52 @@
+# Dependencies and local environments
+node_modules/
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# Environment files and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+
+# Frontend/backend build output and caches
+frontend/dist/
+frontend/tsconfig.tsbuildinfo
+backend/static/
+*.log
+*.tmp
+*.bak
+.DS_Store
+
+# Notebook-generated local state
+.ipynb_checkpoints/
+
+# Runtime uploads, memories, plans, skills and generated artifacts
+backend/data/uploads/*
+!backend/data/uploads/.gitkeep
+backend/data/outputs/*
+!backend/data/outputs/.gitkeep
+backend/data/memory.md
+backend/data/memory.backup.*.md
+backend/data/active_plan.json
+backend/data/skills/*
+!backend/data/skills/.gitkeep
+
+# Local model/checkpoint files
+*.joblib
+*.pkl
+*.pickle
+*.pt
+*.pth
+*.bin
+*.ckpt
+*.onnx
+*.safetensors

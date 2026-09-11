@@ -1,0 +1,2 @@
+# Optional graph neural network path (property prediction)
+deepchem>=2.8.0

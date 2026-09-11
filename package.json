@@ -1,0 +1,13 @@
+{
+  "name": "polysea",
+  "private": true,
+  "description": "一键同时启动 FastAPI 后端与 Vite 前端（开发）",
+  "scripts": {
+    "dev": "concurrently -n api,web -c green,cyan \"npm run dev:api\" \"npm run dev:web\"",
+    "dev:api": "cd backend && python run.py",
+    "dev:web": "cd frontend && npm run dev"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
