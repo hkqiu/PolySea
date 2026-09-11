@@ -34,7 +34,6 @@ PolySea runs locally and covers polymer property prediction, PolyTAO fine-tuning
 - [Agent tools and capabilities](#agent-tools-and-capabilities)
 - [HTTP API](#http-api)
 - [Production deployment](#production-deployment)
-- [Limitations and roadmap](#limitations-and-roadmap)
 - [Citation](#citation)
 - [License](#license)
 
@@ -308,16 +307,6 @@ python run.py
 ```
 
 Open `http://127.0.0.1:8000`. For production, disable reload in `run.py` and use a process manager or proper uvicorn settings. Before exposing it publicly, add authentication, access control, rate limiting, and stricter upload limits; the current CORS configuration targets a local MVP.
-
----
-
-## 🧭 Limitations and roadmap
-
-- **Single-user local MVP:** training state, LLM settings, and cancellation are process-local; there is no authentication, multi-tenant isolation, or durable job queue.
-- **DeepChem GNN is not implemented:** the mode and optional dependency remain reserved, but the current call raises an explicit not-implemented error; use RDKit fingerprints or tabular modes.
-- **External-service dependency:** availability, quotas, and credentials for OpenAI-compatible LLMs, PolyOpus, and DeepXiv are deployment concerns.
-- **Scientific validity:** predictions and generations depend on data, splits, and validation and do not replace domain review, experiments, or compliance work.
-- **Roadmap:** scalable task scheduling, a reproducible graph-model path, and molecular-dynamics workflows such as LAMMPS.
 
 ---
 
