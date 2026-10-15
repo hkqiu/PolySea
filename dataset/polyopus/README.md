@@ -42,14 +42,6 @@ the local full-output AE summary from the public retained table.
 
 ## Training and provenance
 
-The saved-order reconstruction found per-prompt-file block sizes of 10/20/15/15
-for Tg/crystalline gap/AE/classes, repeated across ten core files. Two files were
-identical, giving four distinct English and five Chinese templates. Original
-duplicated rows and 9,990 classification targets with erroneous `eV` suffixes are
-preserved. Metadata retains the concise reconstruction counts; inferred blocks
-are not proven original measurement IDs or periodic-polymer equivalence. The
-original component source of 4,291 QA/other rows remains unresolved.
-
 Property data were reused through [PolyNC](https://doi.org/10.1039/D3SC05079C) and
 its [published repository](https://github.com/HKQiu/Unified_ML4Polymers), including
 the [Kuenneth et al. compilation](https://doi.org/10.1016/j.patter.2021.100238).
