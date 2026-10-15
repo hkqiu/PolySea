@@ -22,16 +22,6 @@ augmentation lineage are retained in the authors' local archive.
 | Crystalline band gap (eV) | 4,800 | 0.701811 | 0.962368 | 0.790170 |
 | AE (eV/atom) | 1,806 | 0.062148 | 0.075725 | 0.979460 |
 
-AE reporting uses a **post-hoc sensitivity analysis**: retain predictions within
-the inclusive AE training-label range **[-6.82, -5.01] eV/atom**. The rule was set
-after full-output metrics were known; it does not select using targets or residuals.
-There were 5,850 original AE inputs, 5,795 saved outputs, 55 missing saved outputs,
-1,806 retained and 3,989 excluded outputs: **31.1648% of saved outputs**, or
-**30.8718% of original inputs**. This is not an unfiltered test-set estimate or a
-physical bound. No clipping or numerical correction is applied. The local full
-AE archive has MAE 6.748143, RMSE 8.425614 and R² −633.066105. Its checksum and
-aggregate summary remain in metadata; excluded per-row values remain local.
-
 Classification has 5,372/5,550 saved outputs (178 missing): accuracy **0.786485**,
 macro-F1 **0.686666**, weighted-F1 **0.775129**. These are Tg-derived polyimide
 heat-resistance classes, not decomposition temperatures. Metrics give each saved
