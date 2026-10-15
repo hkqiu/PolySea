@@ -332,3 +332,7 @@ If you use PolyTAO pretrained weights, please cite:
 ## 📄 License
 
 Apache License 2.0 (third-party dependencies and the PolyTAO pretrained model remain subject to their respective licenses and terms).
+
+### Research training and evaluation data
+
+The [PolyOpus research-data release](dataset/polyopus/README.md) contains the archived merged training corpus, held-out inputs, reported prediction records, augmentation traceability and reproducible evaluation scripts. The data documentation states the AE reporting filter and its coverage.

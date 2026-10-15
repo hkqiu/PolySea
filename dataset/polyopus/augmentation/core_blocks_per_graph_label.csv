@@ -1,0 +1,10 @@
+﻿task,blocks_per_graph_label,graph_label_groups
+Tg,1,593
+Tg,2,11
+bandgap_crystal,1,212
+atomization_energy,1,351
+heat_class,1,268
+heat_class,2,21
+heat_class,3,2
+heat_class,4,3
+heat_class,5,1

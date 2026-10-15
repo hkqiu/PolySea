@@ -1,0 +1,34 @@
+{
+  "status": "summary of complete original regression file retained locally; full per-row values are not distributed",
+  "local_archive_date": "2026-10-15",
+  "full_regression_file_name": "polysea_gen_v0331_reg.csv",
+  "full_regression_file_sha256": "e0571afc18267e2286f0f01d409461b57168b269321ddfb66483430d85a8fe37",
+  "full_regression_bytes": 1967060,
+  "full_regression_encoding": "gb18030",
+  "full_regression_data_rows": 17595,
+  "all_saved_outputs": {
+    "Tg": {
+      "n_rows": 7000,
+      "MAE": 24.57957857142857,
+      "RMSE": 35.744916196972284,
+      "R2": 0.9261279456447458
+    },
+    "bandgap_crystal": {
+      "n_rows": 4800,
+      "MAE": 0.701811375,
+      "RMSE": 0.9623683828711331,
+      "R2": 0.7901703098435262
+    },
+    "atomization_energy": {
+      "n_rows": 5795,
+      "MAE": 6.748142605694564,
+      "RMSE": 8.425614372036673,
+      "R2": -633.0661052597504
+    }
+  },
+  "saved_error_column_mismatch_counts": {
+    "Tg": 139,
+    "atomization_energy": 27
+  },
+  "public_package_can_recompute_full_metrics_without_external_full_file": false
+}

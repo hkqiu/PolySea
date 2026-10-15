@@ -1,0 +1,2 @@
+# Python 3.12; version used to create the archived reconstruction.
+rdkit==2026.9.1

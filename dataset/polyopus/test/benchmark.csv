@@ -1,0 +1,233 @@
+prompt,SMILES,target,unit
+基于该 SMILES 结构，预测其玻璃化温度,*CC(C)(*)C#N,119.85,℃
+基于该 SMILES 结构，预测其玻璃化温度,c1(C(F)(F)*)ccc(C(*)(F)F)cc1,89.85,℃
+基于该 SMILES 结构，预测其玻璃化温度,C(CCCCOCC(O*)C*)C,-85.15,℃
+基于该 SMILES 结构，预测其玻璃化温度,c12ccc(-c3cc4nc(*)cnc4cc3)cc1nc(-c1ccc(*)cc1)cn2,375.85,℃
+基于该 SMILES 结构，预测其玻璃化温度,c1c2c(cc3c(=O)n(-c4ccc(-c5c(C)cc(*)cc5)c(C)c4)c(=O)c13)c(=O)n(*)c2=O,374,℃
+基于该 SMILES 结构，预测其玻璃化温度,c1cc(N2C(=O)c3ccc(Oc4ccc5c(c4)C(=O)N(C)C5=O)cc3C2=O)ccc1Oc1ccc(C)cc1,272,℃
+基于该 SMILES 结构，预测其玻璃化温度,c12c(cc(C(=O)*)cc1)C(=O)N(c1c(C(=O)c3ccccc3N3C(=O)c4c(ccc(*)c4)C3=O)cccc1)C2=O,289,℃
+请估算以下 SMILES 所描述材料的能带间隙 (Bandgap),C(#N)C(CC(C#N)(C(C#N)C(*)(C#N)C#N)C#N)(C#N)CC(C#N)(C#N)C*,6.4504,eV
+请估算以下 SMILES 所描述材料的能带间隙 (Bandgap),N#CC(C#N)(C(C#N)C(C#N)(C(C#N)C(C#N)(C#N)C(C(C*)(C#N)C#N)C#N)C#N)*,5.9056,eV
+请估算以下 SMILES 所描述材料的能带间隙 (Bandgap),*C(S*)=S,1.7109,eV
+请估算以下 SMILES 所描述材料的能带间隙 (Bandgap),C1CC(*)CC(S*)C1,5.2199,eV
+请估算以下 SMILES 所描述材料的能带间隙 (Bandgap),n1c(*)sc(*)c1,1.7987,eV
+请计算该 SMILES 对应物质的总原子结合能,O=C(*)c1ccc(-c2ccc(O*)cc2)cc1,-6.44,eV
+请计算该 SMILES 对应物质的总原子结合能,c1(C(=S)c2ccc(*)cc2)ccc(N*)s1,-6.15,eV
+请计算该 SMILES 对应物质的总原子结合能,S=C(C(N*)=O)O*,-5.88,eV
+请计算该 SMILES 对应物质的总原子结合能,O=C(C(=S)NC*)*,-5.79,eV
+请计算该 SMILES 对应物质的总原子结合能,c1(*)sc(C(c2sc(N*)cc2)=S)cc1,-6,eV
+请计算该 SMILES 对应物质的总原子结合能,*NC(NC(=O)*)=O,-6.46,eV
+基于 SMILES 结构，预测该材料的耐热性能,FC(c1c(-c2c(C(F)(F)F)cc(-n3c(=O)c4cc5c(c(=O)n(*)c5=O)cc4c3=O)cc2)ccc(*)c1)(F)F,class 1,
+基于 SMILES 结构，预测该材料的耐热性能,*c1ccc2c(c1)C(=O)N(c1cc(Cl)c(-c3c(Cl)cc(N4C(=O)c5c(cc(C(*)(C(F)(F)F)C(F)(F)F)cc5)C4=O)cc3)cc1)C2=O,class 2,
+基于 SMILES 结构，预测该材料的耐热性能,c12c(cc(C(*)=O)cc1)C(=O)N(c1cc(N3C(=O)c4cc(*)ccc4C3=O)ccc1)C2=O,class 2,
+基于 SMILES 结构，预测该材料的耐热性能,c1cc(Oc2c(F)c(F)c(-c3c(F)c(F)c(Oc4ccc(N5C(=O)c6ccc(*)cc6C5=O)cc4)c(F)c3F)c(F)c2F)ccc1N1C(=O)c2c(cc(C(C(F)(F)F)(*)C(F)(F)F)cc2)C1=O,class 3,
+基于 SMILES 结构，预测该材料的耐热性能,c1(Oc2ccc(O*)cc2)cc2c(cc1)C(=O)N(c1ccc(Oc3ccc(N4C(=O)c5c(cc(*)cc5)C4=O)cc3)cc1)C2=O,class 3,
+基于 SMILES 结构，预测该材料的耐热性能,c1c(N2C(=O)c3c(cc(*)cc3)C2=O)ccc(OCC(F)(C(F)(F)C(F)(F)C(C(C(C(F)(F)C(F)(C(F)(F)C(F)(F)F)F)(F)F)(F)F)(F)F)F)c1N1C(=O)c2ccc(C(C(F)(F)F)(*)C(F)(F)F)cc2C1=O,class 3,
+请计算以下 SMILES 所对应聚合物的玻璃化转变温度 (Tg),C(*)C(*)(C(=O)OCCCCCCCC)C,-20.15,℃
+请计算以下 SMILES 所对应聚合物的玻璃化转变温度 (Tg),O=S(=O)(c1ccc(O*)cc1)c1ccc(Oc2ccc(C(C)(c3ccc(*)cc3)C)cc2)cc1,184.85,℃
+请计算以下 SMILES 所对应聚合物的玻璃化转变温度 (Tg),C(C*)(*)SC,-1.15,℃
+请计算以下 SMILES 所对应聚合物的玻璃化转变温度 (Tg),c1(Oc2ccc(N3C(=O)c4c(*)cccc4C3=O)cc2)ccc(N2C(=O)c3cccc(Oc4ccc(Sc5cc(O*)ccc5)cc4)c3C2=O)cc1,234,℃
+请计算以下 SMILES 所对应聚合物的玻璃化转变温度 (Tg),c1ccc(N2C(=O)c3cc4c(cc3C2=O)CN(*)C4=O)c(Oc2ccc(*)cc2)c1,386,℃
+请计算以下 SMILES 所对应聚合物的玻璃化转变温度 (Tg),O=C1c2ccc(*)cc2C(=O)N1c1ccc(Oc2ccc(N3C(=O)c4c(cc(O*)cc4)C3=O)cc2)cc1,242,℃
+请计算以下 SMILES 所对应聚合物的玻璃化转变温度 (Tg),*c1cccc2c1C(=O)N(c1ccc(Oc3ccc(Oc4ccc(N5C(=O)c6cccc(*)c6C5=O)cc4)cc3)cc1)C2=O,293,℃
+该分子晶体的电子带隙是多少,C1N(C(*)C*)C(=O)CC1,5.5902,eV
+该分子晶体的电子带隙是多少,*CCC1C2C3CC(C2C(*)C1)CC3CC,7.528,eV
+该分子晶体的电子带隙是多少,c1cc(*)sc1-c1sc(-c2nc(*)ccc2)cc1,2.0464,eV
+该分子晶体的电子带隙是多少,C(*)(O*)CCl,7.1982,eV
+该分子结构的原子化能是多少,c1cc(Cc2ccc(O*)cc2)ccc1*,-6.18,eV
+该分子结构的原子化能是多少,*c1sc(C(=S)OC(*)=S)cc1,-5.95,eV
+该分子结构的原子化能是多少,c1cc(OC*)sc1O*,-5.78,eV
+该分子结构的原子化能是多少,C(C*)(*)C,-5.14,eV
+该分子结构的原子化能是多少,*c1ccc(CCC*)cc1,-5.78,eV
+该分子结构的原子化能是多少,c1(*)ccc(C(=S)c2ccc(O*)s2)cc1,-6.18,eV
+请计算该分子结构的热稳定等级,c1(-n2c(=O)c3c(c2=O)cc2c(=O)n(C)c(=O)c2c3)ccc(Oc2ccc(C)cc2)cc1,class 1,
+请计算该分子结构的热稳定等级,c1(N2C(=O)c3cc(Oc4ccc5c(c4)C(=O)N(C)C5=O)ccc3C2=O)ccc(C)cc1,class 2,
+请计算该分子结构的热稳定等级,c1c(-c2ccc3c(c2)C(=O)N(c2ccc(OCC(F)(C(F)(F)C(F)(F)F)F)c(*)c2)C3=O)cc2c(c1)C(=O)N(*)C2=O,class 2,
+请计算该分子结构的热稳定等级,c1cc(Oc2ccc(Oc3ccc(-n4c(=O)c5cc6c(c(=O)n(*)c6=O)cc5c4=O)cc3)cc2)ccc1*,class 3,
+请计算该分子结构的热稳定等级,c1cc(N2C(=O)c3c(cc(O*)cc3)C2=O)ccc1Oc1ccc(Oc2ccc(N3C(=O)c4c(*)cccc4C3=O)cc2)cc1,class 3,
+请计算该分子结构的热稳定等级,c1cc(Oc2ccc(N3C(=O)c4cc(*)ccc4C3=O)cc2)ccc1N1C(=O)c2c(ccc(C(*)O[Si](C)(C)C)c2)C1=O,class 3,
+Provide the predicted Tg for the polymer described by this SMILES string,CCCCC(CC)COC(C*)*,-66.15,℃
+Provide the predicted Tg for the polymer described by this SMILES string,C(CCN1C(=O)c2c(cc(*)cc2)C1=O)CCCN1C(=O)c2cc(Oc3ccc(Oc4ccc(O*)cc4)cc3)ccc2C1=O,127.85,℃
+Provide the predicted Tg for the polymer described by this SMILES string,CC(C(OCC)=O)(*)C*,50.85,℃
+Provide the predicted Tg for the polymer described by this SMILES string,*Oc1cc(Oc2ccc(Oc3ccc4c(c3)C(=O)N(c3ccc(Oc5cccc(Oc6ccc(N7C(=O)c8c(ccc(*)c8)C7=O)cc6)c5)cc3)C4=O)cc2)ccc1,184,℃
+Provide the predicted Tg for the polymer described by this SMILES string,c12ccc(*)cc1C(=O)N(c1c(CC)cc(Cc3cc(CC)c(N4C(=O)c5c(ccc(C(=O)*)c5)C4=O)c(CC)c3Cl)c(Cl)c1CC)C2=O,300,℃
+Provide the predicted Tg for the polymer described by this SMILES string,c1(C(F)(F)F)cc(N2C(=O)c3ccc(*)cc3C2=O)ccc1-c1c(C(F)(F)F)cc(N2C(=O)c3c(ccc(S(=O)(*)=O)c3)C2=O)cc1,320,℃
+Provide the predicted Tg for the polymer described by this SMILES string,O(c1ccc(Oc2cc3c(cc2)C(=O)N(c2ccc(Oc4c(-c5c6ccccc6ccc5Oc5c(C(F)(F)F)cc(N6C(=O)c7cc(*)ccc7C6=O)cc5)c5c(cccc5)cc4)c(C(F)(F)F)c2)C3=O)cc1)*,256,℃
+Can you calculate the bandgap energy for the material described by this SMILES notation,C(OCC(F)(F)F)(=O)OC(C*)*,7.9003,eV
+Can you calculate the bandgap energy for the material described by this SMILES notation,C(CC*)CCCOC(NCCSCCCCCSCCNC(=O)O*)=O,5.1327,eV
+Can you calculate the bandgap energy for the material described by this SMILES notation,C(C*)(O*)C,6.9903,eV
+Can you calculate the bandgap energy for the material described by this SMILES notation,c1(C=C*)ccc(*)n1CCCCCC,1.3683,eV
+Can you calculate the bandgap energy for the material described by this SMILES notation,C(CCCCC*)(S*)=O,5.0001,eV
+What is the expected atomization energy for this chemical structure,c1c(C(=S)c2ccc(C(=S)C(=O)Nc3ccc(-c4ccc(*)s4)cc3)s2)sc(*)c1,-6.19,eV
+What is the expected atomization energy for this chemical structure,c1c(Oc2ccc(O*)s2)ccc(*)c1,-6.18,eV
+What is the expected atomization energy for this chemical structure,*Oc1ccc(CC*)cc1,-5.89,eV
+What is the expected atomization energy for this chemical structure,C(*)(C(CC*)=O)=S,-5.61,eV
+What is the expected atomization energy for this chemical structure,c1c(-c2ccc(C(=O)*)cc2)ccc(C(=S)*)c1,-6.37,eV
+What is the expected atomization energy for this chemical structure,*c1ccc(C(c2ccc(C*)cc2)=O)cc1,-6.29,eV
+Determine the thermal resistance class of this polymer,O(C(C)(F)F)c1c(-c2ccc(*)cc2OC(C)(F)F)ccc(N2C(=O)c3cc4c(cc3C2=O)Oc2c(cc3c(c2)C(=O)N(*)C3=O)C4(C(F)(F)F)C(F)(F)F)c1,class 2,
+Determine the thermal resistance class of this polymer,c1c2c(ccc1*)C(=O)N(c1ccc(Oc3ccc(N4C(=O)c5cc(C(=O)*)ccc5C4=O)cc3)cc1)C2=O,class 2,
+Determine the thermal resistance class of this polymer,c1ccc(Cc2c(N3C(=O)c4c(ccc(C(*)=O)c4)C3=O)cccc2)c(N2C(=O)c3c(ccc(*)c3)C2=O)c1,class 3,
+Determine the thermal resistance class of this polymer,C1(=O)N(c2cc(C(F)(F)F)cc(N3C(=O)c4cc(Cc5cc(C(=O)*)ccc5)ccc4C3=O)c2)C(=O)c2cc(*)ccc21,class 3,
+Determine the thermal resistance class of this polymer,c1ccc(C)c(N2C(=O)c3c(ccc(Oc4ccc(C(C)(c5ccc(Oc6cc7c(cc6)C(=O)N(C)C7=O)cc5)C)cc4)c3)C2=O)c1,class 3,
+Predict the Tg of the following SMILES,C(C(CC(C)C)*)*,28.85,℃
+Predict the Tg of the following SMILES,ClC(*)C*,74.85,℃
+Predict the Tg of the following SMILES,c1(-c2nc3c(ccc(C(c4cc5c(ncc(*)n5)cc4)=O)c3)nc2)ccc(*)cc1,317.85,℃
+Predict the Tg of the following SMILES,c1(N2C(=O)c3c(cc(*)cc3)C2=O)cc(Oc2ccc(Oc3ccc(N4C(=O)c5c(ccc(O*)c5)C4=O)cc3)cc2)ccc1,245,℃
+Predict the Tg of the following SMILES,c1c(C(=O)*)ccc2c1C(=O)N(c1ccc(Cc3cc(N4C(=O)c5cc(*)ccc5C4=O)ccc3)cc1)C2=O,292,℃
+Predict the Tg of the following SMILES,O=C1c2c(O*)cccc2C(=O)N1c1ccc(Oc2ccc(Oc3ccc(N4C(=O)c5c(c(*)ccc5)C4=O)cc3)cc2)cc1,263,℃
+Predict the Tg of the following SMILES,c1(C(*)=O)cc2c(cc1)C(=O)N(c1cc(N3C(=O)c4c(ccc(*)c4)C3=O)ccc1)C2=O,300,℃
+Predict the bandgap crystal of the following SMILES,O=C(N1CCC(*)CC1)SSCCCCSSC(N1CCC(CCC*)CC1)=O,4.297,eV
+Predict the bandgap crystal of the following SMILES,*C(C#N)(C*)C(=O)OCC,6.1989,eV
+Predict the bandgap crystal of the following SMILES,CC(C(*)=O)S*,3.8079,eV
+Predict the bandgap crystal of the following SMILES,C1(C=C*)CC(CCC)(C#N)C(*)C1,5.8705,eV
+Predict the bandgap crystal of the following SMILES,*CCOCCOCCOC(=O)CCCCCCC(O*)=O,6.184,eV
+Predict the atomization energy of the following SMILES,c1(-c2ccc(C(N*)=O)cc2)ccc(*)cc1,-6.4,eV
+Predict the atomization energy of the following SMILES,c1(N*)ccc(Oc2ccc(*)cc2)cc1,-6.26,eV
+Predict the atomization energy of the following SMILES,C(OCC*)(=O)CCCCCCC(=O)O*,-5.5,eV
+Predict the atomization energy of the following SMILES,c1c(OC(O*)=S)ccc(*)c1,-6.18,eV
+Predict the atomization energy of the following SMILES,c1cc(-c2ccc(CC(c3ccc(C(=S)CO*)s3)=S)cc2)ccc1*,-6.04,eV
+Predict the atomization energy of the following SMILES,*NC(C*)=O,-5.91,eV
+Predict the heat resistance class of the following SMILES,c1(N2C(=O)c3c(ccc(*)c3)C2=O)cc(C(F)(F)F)c(N2C(=O)c3c(ccc(C(*)(C(F)(F)F)C(F)(F)F)c3)C2=O)cc1C(F)(F)F,class 2,
+Predict the heat resistance class of the following SMILES,c1(N2C(=O)c3cc(*)ccc3C2=O)cc(N2C(=O)c3c(ccc(*)c3)C2=O)cc(C(F)(F)F)c1,class 2,
+Predict the heat resistance class of the following SMILES,C(F)(F)(F)C(c1cc2c(cc1)C(=O)N(c1ccc(-c3c(-c4ccc(C)cc4)cc(N4C(=O)c5c(cc(*)cc5)C4=O)cc3)c(-c3ccc(C)cc3)c1)C2=O)(C(F)(F)F)*,class 3,
+Predict the heat resistance class of the following SMILES,c1cc(Oc2cc3c(cc2)C(=O)N(c2cc(N4C(=O)c5cc(*)ccc5C4=O)ccc2)C3=O)ccc1O*,class 3,
+Predict the heat resistance class of the following SMILES,C1(=O)N(c2ccc(OCC(F)(C(F)(F)C(F)(C(F)(F)C(F)(C(F)(C(F)(F)F)F)F)F)F)c(N3C(=O)c4c(cc(C(*)(C(F)(F)F)C(F)(F)F)cc4)C3=O)c2)C(=O)c2c1ccc(*)c2,class 3,
+Determine the glass transition temperature of this molecular structure,c1cc(C*)c(C#N)cc1C*,89.85,℃
+Determine the glass transition temperature of this molecular structure,c1cc(C(C)(C)C)cc(C(*)C*)c1C,86.85,℃
+Determine the glass transition temperature of this molecular structure,C(C)C(C)(c1c(Cl)cc(OC(=O)O*)cc1)c1ccc(*)cc1Cl,141.85,℃
+Determine the glass transition temperature of this molecular structure,c1cc2c(cc1-c1cccc(Oc3ccc4c(c3)C(=O)N(C)C4=O)c1)C(=O)N(c1ccc(Oc3ccc(C)cc3)cc1)C2=O,215,℃
+Determine the glass transition temperature of this molecular structure,c1(N2C(=O)c3c(cc(*)cc3)C2=O)ccc(Oc2ccc(C(c3ccc(Oc4ccc(N5C(=O)c6cc(C(*)(C(F)(F)F)C(F)(F)F)ccc6C5=O)cc4)cc3)(C)C)cc2)cc1,249,℃
+Determine the glass transition temperature of this molecular structure,c1c(*)c2c(cc1)C(=O)N(c1cc(S(=O)(=O)c3cccc(N4C(=O)c5c(O*)cccc5C4=O)c3)ccc1)C2=O,241,℃
+Determine the glass transition temperature of this molecular structure,C1(=O)N(c2cccc(N3C(=O)c4c(c(Oc5ccc(S(=O)(c6cccc(O*)c6)=O)cc5)ccc4)C3=O)c2)C(=O)c2c1cccc2*,266,℃
+Determine the bandgap energy of the material represented by this SMILES string,C(ON*)(=S)O*,3.9632,eV
+Determine the bandgap energy of the material represented by this SMILES string,c1c(*)c2cccccc-2c1-c1c(C)cc(-c2sc(*)c(C)c2)s1,1.3327,eV
+Determine the bandgap energy of the material represented by this SMILES string,C(COC(=O)CCCCC(=O)O*)(C)(C)C*,6.5878,eV
+Determine the bandgap energy of the material represented by this SMILES string,*CC(C#N)*,7.4435,eV
+Determine the bandgap energy of the material represented by this SMILES string,C1(*)(F)OC(C(Cl)(F)F)(C(F)(F)F)OC1(*)F,7.8208,eV
+Predict the binding energy for breaking this molecule into individual atoms,*CCCN*,-5.18,eV
+Predict the binding energy for breaking this molecule into individual atoms,c1cc(C*)ccc1Nc1sc(*)cc1,-6.04,eV
+Predict the binding energy for breaking this molecule into individual atoms,c1(NC(=S)*)ccc(C*)s1,-5.77,eV
+Predict the binding energy for breaking this molecule into individual atoms,C(c1ccc(C(=S)c2ccc(*)s2)s1)(*)=O,-6.19,eV
+Predict the binding energy for breaking this molecule into individual atoms,*c1ccc(Nc2ccc(-c3ccc(C(c4sc(-c5ccc(N*)s5)cc4)=S)s3)s2)cc1,-6.12,eV
+Predict the binding energy for breaking this molecule into individual atoms,FC(C(F)(ON*)F)(*)F,-5.15,eV
+Estimate the temperature endurance class for the given molecular structure,C1(=O)N(c2c(C)cc(N3C(=O)c4c(ccc(*)c4)C3=O)c(C)c2)C(=O)c2cc(C(C(F)(F)F)(C(F)(F)F)*)ccc21,class 2,
+Estimate the temperature endurance class for the given molecular structure,c1(N2C(=O)c3cccc(*)c3C2=O)ccc(N2C(=O)c3c(cccc3S*)C2=O)cc1,class 2,
+Estimate the temperature endurance class for the given molecular structure,c1c(N2C(=O)c3cc(C(*)=O)ccc3C2=O)ccc(Cc2cc(N3C(=O)c4c(cc(*)cc4)C3=O)ccc2)c1,class 3,
+Estimate the temperature endurance class for the given molecular structure,c1c2c(ccc1C(*)=O)C(=O)N(c1cc(Oc3ccccc3N3C(=O)c4cc(*)ccc4C3=O)ccc1)C2=O,class 3,
+Estimate the temperature endurance class for the given molecular structure,C(F)(F)(C(C(F)(F)F)(c1ccc(Oc2ccc(N3C(=O)c4c(cc(C(C(F)(F)F)(C(F)(F)F)*)cc4)C3=O)cc2)cc1)c1ccc(Oc2ccc(N3C(=O)c4c(ccc(*)c4)C3=O)cc2)cc1)F,class 3,
+请提供该 SMILES 聚合物的 Tg 预测值,*CC(C)(*)C#N,119.85,℃
+请提供该 SMILES 聚合物的 Tg 预测值,c1(C(F)(F)*)ccc(C(*)(F)F)cc1,89.85,℃
+请提供该 SMILES 聚合物的 Tg 预测值,C(CCCCOCC(O*)C*)C,-85.15,℃
+请提供该 SMILES 聚合物的 Tg 预测值,c12ccc(-c3cc4nc(*)cnc4cc3)cc1nc(-c1ccc(*)cc1)cn2,375.85,℃
+请提供该 SMILES 聚合物的 Tg 预测值,c1c2c(cc3c(=O)n(-c4ccc(-c5c(C)cc(*)cc5)c(C)c4)c(=O)c13)c(=O)n(*)c2=O,374,℃
+请提供该 SMILES 聚合物的 Tg 预测值,c1cc(N2C(=O)c3ccc(Oc4ccc5c(c4)C(=O)N(C)C5=O)cc3C2=O)ccc1Oc1ccc(C)cc1,272,℃
+请提供该 SMILES 聚合物的 Tg 预测值,c12c(cc(C(=O)*)cc1)C(=O)N(c1c(C(=O)c3ccccc3N3C(=O)c4c(ccc(*)c4)C3=O)cccc1)C2=O,289,℃
+请提供该化合物晶体的带隙预测值,C(#N)C(CC(C#N)(C(C#N)C(*)(C#N)C#N)C#N)(C#N)CC(C#N)(C#N)C*,6.4504,eV
+请提供该化合物晶体的带隙预测值,N#CC(C#N)(C(C#N)C(C#N)(C(C#N)C(C#N)(C#N)C(C(C*)(C#N)C#N)C#N)C#N)*,5.9056,eV
+请提供该化合物晶体的带隙预测值,*C(S*)=S,1.7109,eV
+请提供该化合物晶体的带隙预测值,C1CC(*)CC(S*)C1,5.2199,eV
+请提供该化合物晶体的带隙预测值,n1c(*)sc(*)c1,1.7987,eV
+请估算该分子的解离能大小,O=C(*)c1ccc(-c2ccc(O*)cc2)cc1,-6.44,eV
+请估算该分子的解离能大小,c1(C(=S)c2ccc(*)cc2)ccc(N*)s1,-6.15,eV
+请估算该分子的解离能大小,S=C(C(N*)=O)O*,-5.88,eV
+请估算该分子的解离能大小,O=C(C(=S)NC*)*,-5.79,eV
+请估算该分子的解离能大小,c1(*)sc(C(c2sc(N*)cc2)=S)cc1,-6,eV
+请估算该分子的解离能大小,*NC(NC(=O)*)=O,-6.46,eV
+该高分子的耐热性怎么样,FC(c1c(-c2c(C(F)(F)F)cc(-n3c(=O)c4cc5c(c(=O)n(*)c5=O)cc4c3=O)cc2)ccc(*)c1)(F)F,class 1,
+该高分子的耐热性怎么样,*c1ccc2c(c1)C(=O)N(c1cc(Cl)c(-c3c(Cl)cc(N4C(=O)c5c(cc(C(*)(C(F)(F)F)C(F)(F)F)cc5)C4=O)cc3)cc1)C2=O,class 2,
+该高分子的耐热性怎么样,c12c(cc(C(*)=O)cc1)C(=O)N(c1cc(N3C(=O)c4cc(*)ccc4C3=O)ccc1)C2=O,class 2,
+该高分子的耐热性怎么样,c1cc(Oc2c(F)c(F)c(-c3c(F)c(F)c(Oc4ccc(N5C(=O)c6ccc(*)cc6C5=O)cc4)c(F)c3F)c(F)c2F)ccc1N1C(=O)c2c(cc(C(C(F)(F)F)(*)C(F)(F)F)cc2)C1=O,class 3,
+该高分子的耐热性怎么样,c1(Oc2ccc(O*)cc2)cc2c(cc1)C(=O)N(c1ccc(Oc3ccc(N4C(=O)c5c(cc(*)cc5)C4=O)cc3)cc1)C2=O,class 3,
+该高分子的耐热性怎么样,c1c(N2C(=O)c3c(cc(*)cc3)C2=O)ccc(OCC(F)(C(F)(F)C(F)(F)C(C(C(C(F)(F)C(F)(C(F)(F)C(F)(F)F)F)(F)F)(F)F)(F)F)F)c1N1C(=O)c2ccc(C(C(F)(F)F)(*)C(F)(F)F)cc2C1=O,class 3,
+What is the glass transition temperature (Tg) of this polymer represented by SMILES,C(*)C(*)(C(=O)OCCCCCCCC)C,-20.15,℃
+What is the glass transition temperature (Tg) of this polymer represented by SMILES,O=S(=O)(c1ccc(O*)cc1)c1ccc(Oc2ccc(C(C)(c3ccc(*)cc3)C)cc2)cc1,184.85,℃
+What is the glass transition temperature (Tg) of this polymer represented by SMILES,C(C*)(*)SC,-1.15,℃
+What is the glass transition temperature (Tg) of this polymer represented by SMILES,c1(Oc2ccc(N3C(=O)c4c(*)cccc4C3=O)cc2)ccc(N2C(=O)c3cccc(Oc4ccc(Sc5cc(O*)ccc5)cc4)c3C2=O)cc1,234,℃
+What is the glass transition temperature (Tg) of this polymer represented by SMILES,c1ccc(N2C(=O)c3cc4c(cc3C2=O)CN(*)C4=O)c(Oc2ccc(*)cc2)c1,386,℃
+What is the glass transition temperature (Tg) of this polymer represented by SMILES,O=C1c2ccc(*)cc2C(=O)N1c1ccc(Oc2ccc(N3C(=O)c4c(cc(O*)cc4)C3=O)cc2)cc1,242,℃
+What is the glass transition temperature (Tg) of this polymer represented by SMILES,*c1cccc2c1C(=O)N(c1ccc(Oc3ccc(Oc4ccc(N5C(=O)c6cccc(*)c6C5=O)cc4)cc3)cc1)C2=O,293,℃
+What is the estimated bandgap energy of this crystal based on its SMILES structure,C1N(C(*)C*)C(=O)CC1,5.5902,eV
+What is the estimated bandgap energy of this crystal based on its SMILES structure,*CCC1C2C3CC(C2C(*)C1)CC3CC,7.528,eV
+What is the estimated bandgap energy of this crystal based on its SMILES structure,c1cc(*)sc1-c1sc(-c2nc(*)ccc2)cc1,2.0464,eV
+What is the estimated bandgap energy of this crystal based on its SMILES structure,C(*)(O*)CCl,7.1982,eV
+Estimate the atomization energy of the compound represented by this SMILES string,c1cc(Cc2ccc(O*)cc2)ccc1*,-6.18,eV
+Estimate the atomization energy of the compound represented by this SMILES string,*c1sc(C(=S)OC(*)=S)cc1,-5.95,eV
+Estimate the atomization energy of the compound represented by this SMILES string,c1cc(OC*)sc1O*,-5.78,eV
+Estimate the atomization energy of the compound represented by this SMILES string,C(C*)(*)C,-5.14,eV
+Estimate the atomization energy of the compound represented by this SMILES string,*c1ccc(CCC*)cc1,-5.78,eV
+Estimate the atomization energy of the compound represented by this SMILES string,c1(*)ccc(C(=S)c2ccc(O*)s2)cc1,-6.18,eV
+What is the thermal stability classification of this material based on its SMILES,c1(-n2c(=O)c3c(c2=O)cc2c(=O)n(C)c(=O)c2c3)ccc(Oc2ccc(C)cc2)cc1,class 1,
+What is the thermal stability classification of this material based on its SMILES,c1(N2C(=O)c3cc(Oc4ccc5c(c4)C(=O)N(C)C5=O)ccc3C2=O)ccc(C)cc1,class 2,
+What is the thermal stability classification of this material based on its SMILES,c1c(-c2ccc3c(c2)C(=O)N(c2ccc(OCC(F)(C(F)(F)C(F)(F)F)F)c(*)c2)C3=O)cc2c(c1)C(=O)N(*)C2=O,class 2,
+What is the thermal stability classification of this material based on its SMILES,c1cc(Oc2ccc(Oc3ccc(-n4c(=O)c5cc6c(c(=O)n(*)c6=O)cc5c4=O)cc3)cc2)ccc1*,class 3,
+What is the thermal stability classification of this material based on its SMILES,c1cc(N2C(=O)c3c(cc(O*)cc3)C2=O)ccc1Oc1ccc(Oc2ccc(N3C(=O)c4c(*)cccc4C3=O)cc2)cc1,class 3,
+What is the thermal stability classification of this material based on its SMILES,c1cc(Oc2ccc(N3C(=O)c4cc(*)ccc4C3=O)cc2)ccc1N1C(=O)c2c(ccc(C(*)O[Si](C)(C)C)c2)C1=O,class 3,
+预测以下 SMILES 表示的玻璃化转变温度 (Tg),CCCCC(CC)COC(C*)*,-66.15,℃
+预测以下 SMILES 表示的玻璃化转变温度 (Tg),C(CCN1C(=O)c2c(cc(*)cc2)C1=O)CCCN1C(=O)c2cc(Oc3ccc(Oc4ccc(O*)cc4)cc3)ccc2C1=O,127.85,℃
+预测以下 SMILES 表示的玻璃化转变温度 (Tg),CC(C(OCC)=O)(*)C*,50.85,℃
+预测以下 SMILES 表示的玻璃化转变温度 (Tg),*Oc1cc(Oc2ccc(Oc3ccc4c(c3)C(=O)N(c3ccc(Oc5cccc(Oc6ccc(N7C(=O)c8c(ccc(*)c8)C7=O)cc6)c5)cc3)C4=O)cc2)ccc1,184,℃
+预测以下 SMILES 表示的玻璃化转变温度 (Tg),c12ccc(*)cc1C(=O)N(c1c(CC)cc(Cc3cc(CC)c(N4C(=O)c5c(ccc(C(=O)*)c5)C4=O)c(CC)c3Cl)c(Cl)c1CC)C2=O,300,℃
+预测以下 SMILES 表示的玻璃化转变温度 (Tg),c1(C(F)(F)F)cc(N2C(=O)c3ccc(*)cc3C2=O)ccc1-c1c(C(F)(F)F)cc(N2C(=O)c3c(ccc(S(=O)(*)=O)c3)C2=O)cc1,320,℃
+预测以下 SMILES 表示的玻璃化转变温度 (Tg),O(c1ccc(Oc2cc3c(cc2)C(=O)N(c2ccc(Oc4c(-c5c6ccccc6ccc5Oc5c(C(F)(F)F)cc(N6C(=O)c7cc(*)ccc7C6=O)cc5)c5c(cccc5)cc4)c(C(F)(F)F)c2)C3=O)cc1)*,256,℃
+预测以下 SMILES 对应晶体的带隙大小,C(OCC(F)(F)F)(=O)OC(C*)*,7.9003,eV
+预测以下 SMILES 对应晶体的带隙大小,C(CC*)CCCOC(NCCSCCCCCSCCNC(=O)O*)=O,5.1327,eV
+预测以下 SMILES 对应晶体的带隙大小,C(C*)(O*)C,6.9903,eV
+预测以下 SMILES 对应晶体的带隙大小,c1(C=C*)ccc(*)n1CCCCCC,1.3683,eV
+预测以下 SMILES 对应晶体的带隙大小,C(CCCCC*)(S*)=O,5.0001,eV
+预测以下 SMILES 对应化合物的原子化能,c1c(C(=S)c2ccc(C(=S)C(=O)Nc3ccc(-c4ccc(*)s4)cc3)s2)sc(*)c1,-6.19,eV
+预测以下 SMILES 对应化合物的原子化能,c1c(Oc2ccc(O*)s2)ccc(*)c1,-6.18,eV
+预测以下 SMILES 对应化合物的原子化能,*Oc1ccc(CC*)cc1,-5.89,eV
+预测以下 SMILES 对应化合物的原子化能,C(*)(C(CC*)=O)=S,-5.61,eV
+预测以下 SMILES 对应化合物的原子化能,c1c(-c2ccc(C(=O)*)cc2)ccc(C(=S)*)c1,-6.37,eV
+预测以下 SMILES 对应化合物的原子化能,*c1ccc(C(c2ccc(C*)cc2)=O)cc1,-6.29,eV
+预测以下 SMILES 对应材料的耐热等级,O(C(C)(F)F)c1c(-c2ccc(*)cc2OC(C)(F)F)ccc(N2C(=O)c3cc4c(cc3C2=O)Oc2c(cc3c(c2)C(=O)N(*)C3=O)C4(C(F)(F)F)C(F)(F)F)c1,class 2,
+预测以下 SMILES 对应材料的耐热等级,c1c2c(ccc1*)C(=O)N(c1ccc(Oc3ccc(N4C(=O)c5cc(C(=O)*)ccc5C4=O)cc3)cc1)C2=O,class 2,
+预测以下 SMILES 对应材料的耐热等级,c1ccc(Cc2c(N3C(=O)c4c(ccc(C(*)=O)c4)C3=O)cccc2)c(N2C(=O)c3c(ccc(*)c3)C2=O)c1,class 3,
+预测以下 SMILES 对应材料的耐热等级,C1(=O)N(c2cc(C(F)(F)F)cc(N3C(=O)c4cc(Cc5cc(C(=O)*)ccc5)ccc4C3=O)c2)C(=O)c2cc(*)ccc21,class 3,
+预测以下 SMILES 对应材料的耐热等级,c1ccc(C)c(N2C(=O)c3c(ccc(Oc4ccc(C(C)(c5ccc(Oc6cc7c(cc6)C(=O)N(C)C7=O)cc5)C)cc4)c3)C2=O)c1,class 3,
+Estimate the Tg value for the given polymer structure in SMILES notation,C(C(CC(C)C)*)*,28.85,℃
+Estimate the Tg value for the given polymer structure in SMILES notation,ClC(*)C*,74.85,℃
+Estimate the Tg value for the given polymer structure in SMILES notation,c1(-c2nc3c(ccc(C(c4cc5c(ncc(*)n5)cc4)=O)c3)nc2)ccc(*)cc1,317.85,℃
+Estimate the Tg value for the given polymer structure in SMILES notation,c1(N2C(=O)c3c(cc(*)cc3)C2=O)cc(Oc2ccc(Oc3ccc(N4C(=O)c5c(ccc(O*)c5)C4=O)cc3)cc2)ccc1,245,℃
+Estimate the Tg value for the given polymer structure in SMILES notation,c1c(C(=O)*)ccc2c1C(=O)N(c1ccc(Cc3cc(N4C(=O)c5cc(*)ccc5C4=O)ccc3)cc1)C2=O,292,℃
+Estimate the Tg value for the given polymer structure in SMILES notation,O=C1c2c(O*)cccc2C(=O)N1c1ccc(Oc2ccc(Oc3ccc(N4C(=O)c5c(c(*)ccc5)C4=O)cc3)cc2)cc1,263,℃
+Estimate the Tg value for the given polymer structure in SMILES notation,c1(C(*)=O)cc2c(cc1)C(=O)N(c1cc(N3C(=O)c4c(ccc(*)c4)C3=O)ccc1)C2=O,300,℃
+Predict the electronic bandgap for the crystal structure corresponding to this SMILES,O=C(N1CCC(*)CC1)SSCCCCSSC(N1CCC(CCC*)CC1)=O,4.297,eV
+Predict the electronic bandgap for the crystal structure corresponding to this SMILES,*C(C#N)(C*)C(=O)OCC,6.1989,eV
+Predict the electronic bandgap for the crystal structure corresponding to this SMILES,CC(C(*)=O)S*,3.8079,eV
+Predict the electronic bandgap for the crystal structure corresponding to this SMILES,C1(C=C*)CC(CCC)(C#N)C(*)C1,5.8705,eV
+Predict the electronic bandgap for the crystal structure corresponding to this SMILES,*CCOCCOCCOC(=O)CCCCCCC(O*)=O,6.184,eV
+How much energy is required for the atomization of this molecular structure,c1(-c2ccc(C(N*)=O)cc2)ccc(*)cc1,-6.4,eV
+How much energy is required for the atomization of this molecular structure,c1(N*)ccc(Oc2ccc(*)cc2)cc1,-6.26,eV
+How much energy is required for the atomization of this molecular structure,C(OCC*)(=O)CCCCCCC(=O)O*,-5.5,eV
+How much energy is required for the atomization of this molecular structure,c1c(OC(O*)=S)ccc(*)c1,-6.18,eV
+How much energy is required for the atomization of this molecular structure,c1cc(-c2ccc(CC(c3ccc(C(=S)CO*)s3)=S)cc2)ccc1*,-6.04,eV
+How much energy is required for the atomization of this molecular structure,*NC(C*)=O,-5.91,eV
+Predict the heat resistance category for the polymer described by this SMILES notation,c1(N2C(=O)c3c(ccc(*)c3)C2=O)cc(C(F)(F)F)c(N2C(=O)c3c(ccc(C(*)(C(F)(F)F)C(F)(F)F)c3)C2=O)cc1C(F)(F)F,class 2,
+Predict the heat resistance category for the polymer described by this SMILES notation,c1(N2C(=O)c3cc(*)ccc3C2=O)cc(N2C(=O)c3c(ccc(*)c3)C2=O)cc(C(F)(F)F)c1,class 2,
+Predict the heat resistance category for the polymer described by this SMILES notation,C(F)(F)(F)C(c1cc2c(cc1)C(=O)N(c1ccc(-c3c(-c4ccc(C)cc4)cc(N4C(=O)c5c(cc(*)cc5)C4=O)cc3)c(-c3ccc(C)cc3)c1)C2=O)(C(F)(F)F)*,class 3,
+Predict the heat resistance category for the polymer described by this SMILES notation,c1cc(Oc2cc3c(cc2)C(=O)N(c2cc(N4C(=O)c5cc(*)ccc5C4=O)ccc2)C3=O)ccc1O*,class 3,
+Predict the heat resistance category for the polymer described by this SMILES notation,C1(=O)N(c2ccc(OCC(F)(C(F)(F)C(F)(C(F)(F)C(F)(C(F)(C(F)(F)F)F)F)F)F)c(N3C(=O)c4c(cc(C(*)(C(F)(F)F)C(F)(F)F)cc4)C3=O)c2)C(=O)c2c1ccc(*)c2,class 3,
+该分子结构的玻璃化转变温度是多少,c1cc(C*)c(C#N)cc1C*,89.85,℃
+该分子结构的玻璃化转变温度是多少,c1cc(C(C)(C)C)cc(C(*)C*)c1C,86.85,℃
+该分子结构的玻璃化转变温度是多少,C(C)C(C)(c1c(Cl)cc(OC(=O)O*)cc1)c1ccc(*)cc1Cl,141.85,℃
+该分子结构的玻璃化转变温度是多少,c1cc2c(cc1-c1cccc(Oc3ccc4c(c3)C(=O)N(C)C4=O)c1)C(=O)N(c1ccc(Oc3ccc(C)cc3)cc1)C2=O,215,℃
+该分子结构的玻璃化转变温度是多少,c1(N2C(=O)c3c(cc(*)cc3)C2=O)ccc(Oc2ccc(C(c3ccc(Oc4ccc(N5C(=O)c6cc(C(*)(C(F)(F)F)C(F)(F)F)ccc6C5=O)cc4)cc3)(C)C)cc2)cc1,249,℃
+该分子结构的玻璃化转变温度是多少,c1c(*)c2c(cc1)C(=O)N(c1cc(S(=O)(=O)c3cccc(N4C(=O)c5c(O*)cccc5C4=O)c3)ccc1)C2=O,241,℃
+该分子结构的玻璃化转变温度是多少,C1(=O)N(c2cccc(N3C(=O)c4c(c(Oc5ccc(S(=O)(c6cccc(O*)c6)=O)cc5)ccc4)C3=O)c2)C(=O)c2c1cccc2*,266,℃
+请计算该材料的预期能带宽度,C(ON*)(=S)O*,3.9632,eV
+请计算该材料的预期能带宽度,c1c(*)c2cccccc-2c1-c1c(C)cc(-c2sc(*)c(C)c2)s1,1.3327,eV
+请计算该材料的预期能带宽度,C(COC(=O)CCCCC(=O)O*)(C)(C)C*,6.5878,eV
+请计算该材料的预期能带宽度,*CC(C#N)*,7.4435,eV
+请计算该材料的预期能带宽度,C1(*)(F)OC(C(Cl)(F)F)(C(F)(F)F)OC1(*)F,7.8208,eV
+基于此分子结构，预测其原子化能值,*CCCN*,-5.18,eV
+基于此分子结构，预测其原子化能值,c1cc(C*)ccc1Nc1sc(*)cc1,-6.04,eV
+基于此分子结构，预测其原子化能值,c1(NC(=S)*)ccc(C*)s1,-5.77,eV
+基于此分子结构，预测其原子化能值,C(c1ccc(C(=S)c2ccc(*)s2)s1)(*)=O,-6.19,eV
+基于此分子结构，预测其原子化能值,*c1ccc(Nc2ccc(-c3ccc(C(c4sc(-c5ccc(N*)s5)cc4)=S)s3)s2)cc1,-6.12,eV
+基于此分子结构，预测其原子化能值,FC(C(F)(ON*)F)(*)F,-5.15,eV
+该高分子的耐热等级是多少,C1(=O)N(c2c(C)cc(N3C(=O)c4c(ccc(*)c4)C3=O)c(C)c2)C(=O)c2cc(C(C(F)(F)F)(C(F)(F)F)*)ccc21,class 2,
+该高分子的耐热等级是多少,c1(N2C(=O)c3cccc(*)c3C2=O)ccc(N2C(=O)c3c(cccc3S*)C2=O)cc1,class 2,
+该高分子的耐热等级是多少,c1c(N2C(=O)c3cc(C(*)=O)ccc3C2=O)ccc(Cc2cc(N3C(=O)c4c(cc(*)cc4)C3=O)ccc2)c1,class 3,
+该高分子的耐热等级是多少,c1c2c(ccc1C(*)=O)C(=O)N(c1cc(Oc3ccccc3N3C(=O)c4cc(*)ccc4C3=O)ccc1)C2=O,class 3,
+该高分子的耐热等级是多少,C(F)(F)(C(C(F)(F)F)(c1ccc(Oc2ccc(N3C(=O)c4c(cc(C(C(F)(F)F)(C(F)(F)F)*)cc4)C3=O)cc2)cc1)c1ccc(Oc2ccc(N3C(=O)c4c(ccc(*)c4)C3=O)cc2)cc1)F,class 3,

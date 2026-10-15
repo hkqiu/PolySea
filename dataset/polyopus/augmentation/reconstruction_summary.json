@@ -1,0 +1,396 @@
+{
+  "scope": "train directory only; no training, inference, or train/test comparisons",
+  "source_train_directory": "caller-supplied --train-dir; see source_file_manifest.json",
+  "rdkit_version": "2026.09.1",
+  "identity_rule": "RDKit sanitized canonical isomeric molecular graph; no periodic repeat-unit equivalence, tautomer normalization, salt stripping, or stereochemistry removal",
+  "label_rule": "Within a task, exact numeric value normalized with Decimal and documented stored unit suffix removed; class 1/2/3 parsed even when saved with erroneous eV suffix. This is not a physical unit conversion. Raw full-record multiplicities are also reported.",
+  "row_number_rule": "All row indices are 1-based CSV data-record ordinals, excluding the header; multiline records are not counted as extra rows.",
+  "parent_rule": "CORE IDs identify homogeneous fixed-size blocks in train1 saved order. Graph-label IDs identify deduplicated task+canonical-graph+normalized-label groups. Additional Tg and inverse IDs identify saved rows. None is a verified original measurement ID.",
+  "core": [
+    {
+      "task": "Tg",
+      "reconstructed_fixed_size_blocks": 615,
+      "rows_per_block_per_file": 10,
+      "rows_per_file": 6150,
+      "core_files": 10,
+      "rows_per_block_across_core_files": 100,
+      "core_rows": 61500,
+      "canonical_graphs": 565,
+      "canonical_graph_label_groups": 604,
+      "distinct_EN_prompt_templates": 4,
+      "distinct_ZH_prompt_templates": 5,
+      "observed_contiguous_graph_label_run_length_distribution": {
+        "10": 615
+      },
+      "within_block_distinct_smiles_count_distribution": {
+        "3": 2,
+        "5": 5,
+        "6": 7,
+        "7": 17,
+        "8": 38,
+        "9": 83,
+        "10": 463
+      }
+    },
+    {
+      "task": "bandgap_crystal",
+      "reconstructed_fixed_size_blocks": 212,
+      "rows_per_block_per_file": 20,
+      "rows_per_file": 4240,
+      "core_files": 10,
+      "rows_per_block_across_core_files": 200,
+      "core_rows": 42400,
+      "canonical_graphs": 212,
+      "canonical_graph_label_groups": 212,
+      "distinct_EN_prompt_templates": 4,
+      "distinct_ZH_prompt_templates": 5,
+      "observed_contiguous_graph_label_run_length_distribution": {
+        "20": 212
+      },
+      "within_block_distinct_smiles_count_distribution": {
+        "5": 1,
+        "6": 4,
+        "8": 2,
+        "9": 4,
+        "10": 2,
+        "11": 1,
+        "12": 7,
+        "13": 14,
+        "14": 11,
+        "15": 9,
+        "16": 18,
+        "17": 16,
+        "18": 31,
+        "19": 30,
+        "20": 62
+      }
+    },
+    {
+      "task": "atomization_energy",
+      "reconstructed_fixed_size_blocks": 351,
+      "rows_per_block_per_file": 15,
+      "rows_per_file": 5265,
+      "core_files": 10,
+      "rows_per_block_across_core_files": 150,
+      "core_rows": 52650,
+      "canonical_graphs": 351,
+      "canonical_graph_label_groups": 351,
+      "distinct_EN_prompt_templates": 4,
+      "distinct_ZH_prompt_templates": 5,
+      "observed_contiguous_graph_label_run_length_distribution": {
+        "15": 351
+      },
+      "within_block_distinct_smiles_count_distribution": {
+        "4": 2,
+        "5": 1,
+        "7": 4,
+        "8": 14,
+        "9": 7,
+        "10": 17,
+        "11": 30,
+        "12": 46,
+        "13": 55,
+        "14": 91,
+        "15": 84
+      }
+    },
+    {
+      "task": "heat_class",
+      "reconstructed_fixed_size_blocks": 333,
+      "rows_per_block_per_file": 15,
+      "rows_per_file": 4995,
+      "core_files": 10,
+      "rows_per_block_across_core_files": 150,
+      "core_rows": 49950,
+      "canonical_graphs": 290,
+      "canonical_graph_label_groups": 295,
+      "distinct_EN_prompt_templates": 4,
+      "distinct_ZH_prompt_templates": 5,
+      "observed_contiguous_graph_label_run_length_distribution": {
+        "15": 321,
+        "30": 6
+      },
+      "within_block_distinct_smiles_count_distribution": {
+        "11": 1,
+        "13": 8,
+        "14": 25,
+        "15": 299
+      }
+    }
+  ],
+  "cross_file_checks": [
+    {
+      "file": "train1.csv",
+      "reference": "train1.csv",
+      "same_exact_smiles_label_sequence": true,
+      "same_exact_smiles_label_multiset": true,
+      "same_canonical_graph_label_sequence": true,
+      "same_complete_records_including_prompt": true
+    },
+    {
+      "file": "train1-CN.csv",
+      "reference": "train1.csv",
+      "same_exact_smiles_label_sequence": true,
+      "same_exact_smiles_label_multiset": true,
+      "same_canonical_graph_label_sequence": true,
+      "same_complete_records_including_prompt": false
+    },
+    {
+      "file": "train2.csv",
+      "reference": "train1.csv",
+      "same_exact_smiles_label_sequence": true,
+      "same_exact_smiles_label_multiset": true,
+      "same_canonical_graph_label_sequence": true,
+      "same_complete_records_including_prompt": false
+    },
+    {
+      "file": "train2-CN.csv",
+      "reference": "train1.csv",
+      "same_exact_smiles_label_sequence": true,
+      "same_exact_smiles_label_multiset": true,
+      "same_canonical_graph_label_sequence": true,
+      "same_complete_records_including_prompt": false
+    },
+    {
+      "file": "train3.csv",
+      "reference": "train1.csv",
+      "same_exact_smiles_label_sequence": true,
+      "same_exact_smiles_label_multiset": true,
+      "same_canonical_graph_label_sequence": true,
+      "same_complete_records_including_prompt": false
+    },
+    {
+      "file": "train3-CN.csv",
+      "reference": "train1.csv",
+      "same_exact_smiles_label_sequence": true,
+      "same_exact_smiles_label_multiset": true,
+      "same_canonical_graph_label_sequence": true,
+      "same_complete_records_including_prompt": false
+    },
+    {
+      "file": "train4.csv",
+      "reference": "train1.csv",
+      "same_exact_smiles_label_sequence": true,
+      "same_exact_smiles_label_multiset": true,
+      "same_canonical_graph_label_sequence": true,
+      "same_complete_records_including_prompt": false
+    },
+    {
+      "file": "train4-CN.csv",
+      "reference": "train1.csv",
+      "same_exact_smiles_label_sequence": true,
+      "same_exact_smiles_label_multiset": true,
+      "same_canonical_graph_label_sequence": true,
+      "same_complete_records_including_prompt": false
+    },
+    {
+      "file": "train5.csv",
+      "reference": "train1.csv",
+      "same_exact_smiles_label_sequence": true,
+      "same_exact_smiles_label_multiset": true,
+      "same_canonical_graph_label_sequence": true,
+      "same_complete_records_including_prompt": true
+    },
+    {
+      "file": "train5-CN.csv",
+      "reference": "train1.csv",
+      "same_exact_smiles_label_sequence": true,
+      "same_exact_smiles_label_multiset": true,
+      "same_canonical_graph_label_sequence": true,
+      "same_complete_records_including_prompt": false
+    }
+  ],
+  "core_distinct_template_note": "Five English files contain four distinct templates per task because train5.csv equals train1.csv; five Chinese files contain five distinct templates. Ten file copies therefore correspond to nine distinct templates.",
+  "merged_composition": {
+    "total_rows": 233827,
+    "core_rows": 206500,
+    "tg_raw_rows": 7174,
+    "PI_Tg_rows": 652,
+    "inverse_design_rows": 15210,
+    "QA_or_other_rows": 4291,
+    "tasks": {
+      "Tg": 69326,
+      "bandgap_crystal": 42400,
+      "atomization_energy": 52650,
+      "heat_class": 49950,
+      "QA_or_other": 4291,
+      "inverse_design": 15210
+    },
+    "ordered_segments": [
+      {
+        "segment": 1,
+        "source_candidates": "PI-glass transition temperature.csv",
+        "start_data_row": 1,
+        "end_data_row": 652,
+        "rows": 652,
+        "match": "exact complete row sequence"
+      },
+      {
+        "segment": 2,
+        "source_candidates": "tg_raw.csv",
+        "start_data_row": 653,
+        "end_data_row": 7826,
+        "rows": 7174,
+        "match": "exact complete row sequence"
+      },
+      {
+        "segment": 3,
+        "source_candidates": "train3-CN.csv",
+        "start_data_row": 7827,
+        "end_data_row": 28476,
+        "rows": 20650,
+        "match": "exact prompt/input/value sequence with verified task-specific target suffix"
+      },
+      {
+        "segment": 4,
+        "source_candidates": "train5-CN.csv",
+        "start_data_row": 28477,
+        "end_data_row": 49126,
+        "rows": 20650,
+        "match": "exact prompt/input/value sequence with verified task-specific target suffix"
+      },
+      {
+        "segment": 5,
+        "source_candidates": "train4.csv",
+        "start_data_row": 49127,
+        "end_data_row": 69776,
+        "rows": 20650,
+        "match": "exact prompt/input/value sequence with verified task-specific target suffix"
+      },
+      {
+        "segment": 6,
+        "source_candidates": "train1.csv|train5.csv",
+        "start_data_row": 69777,
+        "end_data_row": 90426,
+        "rows": 20650,
+        "match": "exact prompt/input/value sequence with verified task-specific target suffix"
+      },
+      {
+        "segment": 7,
+        "source_candidates": "train3.csv",
+        "start_data_row": 90427,
+        "end_data_row": 111076,
+        "rows": 20650,
+        "match": "exact prompt/input/value sequence with verified task-specific target suffix"
+      },
+      {
+        "segment": 8,
+        "source_candidates": "train1-CN.csv",
+        "start_data_row": 111077,
+        "end_data_row": 131726,
+        "rows": 20650,
+        "match": "exact prompt/input/value sequence with verified task-specific target suffix"
+      },
+      {
+        "segment": 9,
+        "source_candidates": "train2-CN.csv",
+        "start_data_row": 131727,
+        "end_data_row": 152376,
+        "rows": 20650,
+        "match": "exact prompt/input/value sequence with verified task-specific target suffix"
+      },
+      {
+        "segment": 10,
+        "source_candidates": "train2.csv",
+        "start_data_row": 152377,
+        "end_data_row": 173026,
+        "rows": 20650,
+        "match": "exact prompt/input/value sequence with verified task-specific target suffix"
+      },
+      {
+        "segment": 11,
+        "source_candidates": "train1.csv|train5.csv",
+        "start_data_row": 173027,
+        "end_data_row": 193676,
+        "rows": 20650,
+        "match": "exact prompt/input/value sequence with verified task-specific target suffix"
+      },
+      {
+        "segment": 12,
+        "source_candidates": "train4-CN.csv",
+        "start_data_row": 193677,
+        "end_data_row": 214326,
+        "rows": 20650,
+        "match": "exact prompt/input/value sequence with verified task-specific target suffix"
+      },
+      {
+        "segment": 13,
+        "source_candidates": "unmatched_QA_or_other_in_merged",
+        "start_data_row": 214327,
+        "end_data_row": 218617,
+        "rows": 4291,
+        "match": "residual contiguous records; original source file not recovered in train directory"
+      },
+      {
+        "segment": 14,
+        "source_candidates": "band gap.csv",
+        "start_data_row": 218618,
+        "end_data_row": 233827,
+        "rows": 15210,
+        "match": "exact prompt/target sequence; empty SMILES input changed to one space"
+      }
+    ],
+    "merged_copy_equals_final_without_leading_PI_rows": true,
+    "train1_train5_source_filename_ambiguity": "The two exact-identical English file copies cannot be individually assigned to their two merged segments; either assignment gives identical records and parent IDs."
+  },
+  "inverse_design": {
+    "rows_per_file": 3042,
+    "files": 5,
+    "EN_templates": 3,
+    "ZH_templates": 2,
+    "checks": [
+      {
+        "file": "band gap1.csv",
+        "same_target_smiles_and_requested_bandgap_sequence_as_band_gap1": true,
+        "rows": 3042,
+        "language": "EN"
+      },
+      {
+        "file": "band gap2.csv",
+        "same_target_smiles_and_requested_bandgap_sequence_as_band_gap1": true,
+        "rows": 3042,
+        "language": "EN"
+      },
+      {
+        "file": "band gap3.csv",
+        "same_target_smiles_and_requested_bandgap_sequence_as_band_gap1": true,
+        "rows": 3042,
+        "language": "EN"
+      },
+      {
+        "file": "band gap4.csv",
+        "same_target_smiles_and_requested_bandgap_sequence_as_band_gap1": true,
+        "rows": 3042,
+        "language": "ZH"
+      },
+      {
+        "file": "band gap5.csv",
+        "same_target_smiles_and_requested_bandgap_sequence_as_band_gap1": true,
+        "rows": 3042,
+        "language": "ZH"
+      }
+    ],
+    "band_gap_csv_equals_five_file_concatenation": true,
+    "canonical_column_exact_rdkit_string_matches": 3042,
+    "canonical_column_same_rdkit_graph_matches": 3042,
+    "band_gap_can_smiles_is_annotation_of_band_gap1": true
+  },
+  "verification": {
+    "all_assertions_passed": true,
+    "source_hashes_unchanged": true,
+    "merged_rows_with_lineage": 233827,
+    "merged_rows_with_matched_component_source": 229536,
+    "QA_rows_with_source_unresolved": 4291,
+    "task_totals_independently_equal_component_sum": true,
+    "multiplicity_histograms_account_for_all_valid_graph_rows": true,
+    "script_sha256": "7b4b828be4de7bb5d31ae2d4a47ae23d33c9602df19e59974b5b8c9c2296de3c"
+  },
+  "limitations": [
+    "Fixed-size block multiplicity is directly supported by saved rows, but chronological augmentation code execution and original measurement counts are not recovered from these CSVs.",
+    "Repeated canonical graph-label blocks can be duplicate source rows or independently recorded identical labels; saved train rows alone do not distinguish those cases.",
+    "Different labels for one graph remain separate graph-label groups; no label aggregation or curation is performed.",
+    "Additional tg_raw and PI rows have no uniform saved SMILES-enumeration block factor established here; their filenames do not prove that their rows are raw measurements.",
+    "Inverse design contains five aligned prompt copies per saved base row. Any augmentation before band gap1.csv is not inferable from this factor.",
+    "The units appended in merged targets are formatting evidence. In particular, class labels in the two identical English segments incorrectly carry an eV suffix; this audit preserves and reports that fact."
+  ]
+}

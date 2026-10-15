@@ -1,0 +1,159 @@
+{
+  "metric_weighting": "saved instruction rows; augmented rows are not independent polymers",
+  "regression": {
+    "Tg": {
+      "units": "degC",
+      "original_input_rows": 7000,
+      "saved_output_rows_from_public_flags": 7000,
+      "missing_saved_outputs": 0,
+      "saved_output_coverage_of_original_inputs": 1.0,
+      "reported_subset": {
+        "n_rows": 7000,
+        "MAE": 24.57957857142857,
+        "RMSE": 35.744916196972284,
+        "R2": 0.9261279456447458,
+        "R2_denominator": "target variance within the scored subset",
+        "target_range": [
+          -85.15,
+          442.0
+        ],
+        "prediction_range": [
+          -79.15,
+          702.0
+        ]
+      },
+      "reported_rows": 7000,
+      "excluded_saved_rows": 0,
+      "reported_coverage_of_saved_outputs": 1.0,
+      "reported_coverage_of_original_inputs": 1.0
+    },
+    "bandgap_crystal": {
+      "units": "eV",
+      "original_input_rows": 4800,
+      "saved_output_rows_from_public_flags": 4800,
+      "missing_saved_outputs": 0,
+      "saved_output_coverage_of_original_inputs": 1.0,
+      "reported_subset": {
+        "n_rows": 4800,
+        "MAE": 0.701811375,
+        "RMSE": 0.9623683828711331,
+        "R2": 0.7901703098435262,
+        "R2_denominator": "target variance within the scored subset",
+        "target_range": [
+          1.3327,
+          7.9003
+        ],
+        "prediction_range": [
+          0.8121,
+          12.0
+        ]
+      },
+      "reported_rows": 4800,
+      "excluded_saved_rows": 0,
+      "reported_coverage_of_saved_outputs": 1.0,
+      "reported_coverage_of_original_inputs": 1.0
+    },
+    "atomization_energy": {
+      "units": "eV/atom",
+      "original_input_rows": 5850,
+      "saved_output_rows_from_public_flags": 5795,
+      "missing_saved_outputs": 55,
+      "saved_output_coverage_of_original_inputs": 0.9905982905982906,
+      "reported_subset": {
+        "n_rows": 1806,
+        "MAE": 0.06214839424141772,
+        "RMSE": 0.07572535910165243,
+        "R2": 0.979459739405408,
+        "R2_denominator": "target variance within the scored subset",
+        "target_range": [
+          -6.46,
+          -5.14
+        ],
+        "prediction_range": [
+          -6.57,
+          -5.21
+        ]
+      },
+      "reported_rows": 1806,
+      "excluded_saved_rows": 3989,
+      "reported_coverage_of_saved_outputs": 0.31164797238999137,
+      "reported_coverage_of_original_inputs": 0.3087179487179487
+    }
+  },
+  "classification": {
+    "n_rows": 5372,
+    "accuracy": 0.7864854802680565,
+    "macro_F1": 0.6866663584406704,
+    "weighted_F1": 0.7751291918661284,
+    "per_class": {
+      "class 1": {
+        "support": 448,
+        "precision": 0.7793427230046949,
+        "recall": 0.3705357142857143,
+        "F1": 0.5022692889561271
+      },
+      "class 2": {
+        "support": 1911,
+        "precision": 0.7213209733487833,
+        "recall": 0.6514913657770801,
+        "F1": 0.6846301897167996
+      },
+      "class 3": {
+        "support": 3013,
+        "precision": 0.819691232158462,
+        "recall": 0.9339528708927979,
+        "F1": 0.8730995966490847
+      }
+    },
+    "confusion_matrix_target_rows_prediction_columns": {
+      "class 1": {
+        "class 1": 166,
+        "class 2": 282,
+        "class 3": 0
+      },
+      "class 2": {
+        "class 1": 47,
+        "class 2": 1245,
+        "class 3": 619
+      },
+      "class 3": {
+        "class 1": 0,
+        "class 2": 199,
+        "class 3": 2814
+      }
+    },
+    "original_input_rows": 5550,
+    "missing_saved_outputs": 178,
+    "saved_output_coverage_of_original_inputs": 0.9679279279279279
+  },
+  "reported_error_column_mismatch_counts": {
+    "Tg": 139,
+    "atomization_energy": 27
+  },
+  "saved_error_column_used_for_selection_or_metrics": false,
+  "full_original_regression_values_in_public_package": false,
+  "archived_all_saved_regression_metrics": {
+    "status": "archived summary only; not recomputed without --full-regression",
+    "full_original_sha256": "e0571afc18267e2286f0f01d409461b57168b269321ddfb66483430d85a8fe37",
+    "metrics": {
+      "Tg": {
+        "n_rows": 7000,
+        "MAE": 24.57957857142857,
+        "RMSE": 35.744916196972284,
+        "R2": 0.9261279456447458
+      },
+      "bandgap_crystal": {
+        "n_rows": 4800,
+        "MAE": 0.701811375,
+        "RMSE": 0.9623683828711331,
+        "R2": 0.7901703098435262
+      },
+      "atomization_energy": {
+        "n_rows": 5795,
+        "MAE": 6.748142605694564,
+        "RMSE": 8.425614372036673,
+        "R2": -633.0661052597504
+      }
+    }
+  }
+}

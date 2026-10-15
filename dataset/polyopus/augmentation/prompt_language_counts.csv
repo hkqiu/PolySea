@@ -1,0 +1,2229 @@
+﻿scope,task,language,prompt_template,rows
+train1.csv,Tg,EN,Predict the Tg of the following SMILES,6150
+train1.csv,bandgap_crystal,EN,Predict the bandgap crystal of the following SMILES,4240
+train1.csv,atomization_energy,EN,Predict the atomization energy of the following SMILES,5265
+train1.csv,heat_class,EN,Predict the heat resistance class of the following SMILES,4995
+train1-CN.csv,Tg,ZH,预测以下 SMILES 表示的玻璃化转变温度 (Tg),6150
+train1-CN.csv,bandgap_crystal,ZH,预测以下 SMILES 对应晶体的带隙大小,4240
+train1-CN.csv,atomization_energy,ZH,预测以下 SMILES 对应化合物的原子化能,5265
+train1-CN.csv,heat_class,ZH,预测以下 SMILES 对应材料的耐热等级,4995
+train2.csv,Tg,EN,What is the glass transition temperature (Tg) of this polymer represented by SMILES?,6150
+train2.csv,bandgap_crystal,EN,What is the estimated bandgap energy of this crystal based on its SMILES structure?,4240
+train2.csv,atomization_energy,EN,Estimate the atomization energy of the compound represented by this SMILES string,5265
+train2.csv,heat_class,EN,What is the thermal stability classification of this material based on its SMILES?,4995
+train2-CN.csv,Tg,ZH,请计算以下 SMILES 所对应聚合物的玻璃化转变温度 (Tg),6150
+train2-CN.csv,bandgap_crystal,ZH,该分子晶体的电子带隙是多少,4240
+train2-CN.csv,atomization_energy,ZH,该分子结构的原子化能是多少,5265
+train2-CN.csv,heat_class,ZH,请计算该分子结构的热稳定等级,4995
+train3.csv,Tg,EN,Estimate the Tg value for the given polymer structure in SMILES notation,6150
+train3.csv,bandgap_crystal,EN,Predict the electronic bandgap for the crystal structure corresponding to this SMILES,4240
+train3.csv,atomization_energy,EN,How much energy is required for the atomization of this molecular structure,5265
+train3.csv,heat_class,EN,Predict the heat resistance category for the polymer described by this SMILES notation,4995
+train3-CN.csv,Tg,ZH,基于该 SMILES 结构，预测其玻璃化温度,6150
+train3-CN.csv,bandgap_crystal,ZH,请估算以下 SMILES 所描述材料的能带间隙 (Bandgap),4240
+train3-CN.csv,atomization_energy,ZH,请计算该 SMILES 对应物质的总原子结合能,5265
+train3-CN.csv,heat_class,ZH,基于 SMILES 结构，预测该材料的耐热性能,4995
+train4.csv,Tg,EN,Determine the glass transition temperature of this molecular structure,6150
+train4.csv,bandgap_crystal,EN,Determine the bandgap energy of the material represented by this SMILES string,4240
+train4.csv,atomization_energy,EN,Predict the binding energy for breaking this molecule into individual atoms,5265
+train4.csv,heat_class,EN,Estimate the temperature endurance class for the given molecular structure,4995
+train4-CN.csv,Tg,ZH,该分子结构的玻璃化转变温度是多少,6150
+train4-CN.csv,bandgap_crystal,ZH,请计算该材料的预期能带宽度,4240
+train4-CN.csv,atomization_energy,ZH,基于此分子结构，预测其原子化能值,5265
+train4-CN.csv,heat_class,ZH,该高分子的耐热等级是多少,4995
+train5.csv,Tg,EN,Predict the Tg of the following SMILES,6150
+train5.csv,bandgap_crystal,EN,Predict the bandgap crystal of the following SMILES,4240
+train5.csv,atomization_energy,EN,Predict the atomization energy of the following SMILES,5265
+train5.csv,heat_class,EN,Predict the heat resistance class of the following SMILES,4995
+train5-CN.csv,Tg,ZH,请提供该 SMILES 聚合物的 Tg 预测值,6150
+train5-CN.csv,bandgap_crystal,ZH,请提供该化合物晶体的带隙预测值,4240
+train5-CN.csv,atomization_energy,ZH,请估算该分子的解离能大小,5265
+train5-CN.csv,heat_class,ZH,该高分子的耐热性怎么样,4995
+tg_raw.csv,Tg,EN,Predict the Tg of the following SMILES,719
+tg_raw.csv,Tg,EN,What is the glass transition temperature (Tg) of this polymer represented by SMILES,770
+tg_raw.csv,Tg,EN,Estimate the Tg value for the given polymer structure in SMILES notation,641
+tg_raw.csv,Tg,EN,Determine the glass transition temperature of this molecular structure,765
+tg_raw.csv,Tg,EN,Provide the predicted Tg for the polymer described by this SMILES string,626
+tg_raw.csv,Tg,ZH,预测以下 SMILES 表示的玻璃化转变温度 (Tg),751
+tg_raw.csv,Tg,ZH,请计算以下 SMILES 所对应聚合物的玻璃化转变温度 (Tg),725
+tg_raw.csv,Tg,ZH,基于该 SMILES 结构，预测其玻璃化温度,738
+tg_raw.csv,Tg,ZH,该分子结构的玻璃化转变温度是多少,716
+tg_raw.csv,Tg,ZH,请提供该 SMILES 聚合物的 Tg 预测值,723
+PI-glass transition temperature.csv,Tg,EN,Predict the Tg of the following SMILES,65
+PI-glass transition temperature.csv,Tg,EN,What is the glass transition temperature (Tg) of this polymer represented by SMILES,60
+PI-glass transition temperature.csv,Tg,EN,Estimate the Tg value for the given polymer structure in SMILES notation,72
+PI-glass transition temperature.csv,Tg,EN,Determine the glass transition temperature of this molecular structure,75
+PI-glass transition temperature.csv,Tg,EN,Provide the predicted Tg for the polymer described by this SMILES string,61
+PI-glass transition temperature.csv,Tg,ZH,预测以下 SMILES 表示的玻璃化转变温度 (Tg),70
+PI-glass transition temperature.csv,Tg,ZH,请计算以下 SMILES 所对应聚合物的玻璃化转变温度 (Tg),73
+PI-glass transition temperature.csv,Tg,ZH,基于该 SMILES 结构，预测其玻璃化温度,151
+PI-glass transition temperature.csv,Tg,ZH,该分子结构的玻璃化转变温度是多少,25
+band gap1.csv,inverse_design,EN,Generate / design a polymer with band gap of <bandgap_eV> eV?,3042
+band gap2.csv,inverse_design,EN,What is a polymer with band gap of <bandgap_eV> eV?,3042
+band gap3.csv,inverse_design,EN,Help me design a polymer characterized by a band gap of <bandgap_eV> eV?,3042
+band gap4.csv,inverse_design,ZH,帮我设计一款带隙为<bandgap_eV> eV左右的聚合物，请给出它的SMILES,3042
+band gap5.csv,inverse_design,ZH,可否给出/设计一个带隙为<bandgap_eV> eV左右的聚合物结构,3042
+band gap.csv,inverse_design,EN,Generate / design a polymer with band gap of <bandgap_eV> eV?,3042
+band gap.csv,inverse_design,EN,What is a polymer with band gap of <bandgap_eV> eV?,3042
+band gap.csv,inverse_design,EN,Help me design a polymer characterized by a band gap of <bandgap_eV> eV?,3042
+band gap.csv,inverse_design,ZH,帮我设计一款带隙为<bandgap_eV> eV左右的聚合物，请给出它的SMILES,3042
+band gap.csv,inverse_design,ZH,可否给出/设计一个带隙为<bandgap_eV> eV左右的聚合物结构,3042
+band gap_can_smiles.csv,inverse_design,EN,Generate / design a polymer with band gap of <bandgap_eV> eV?,3042
+merged_train.csv,Tg,EN,Predict the Tg of the following SMILES,13084
+merged_train.csv,Tg,EN,What is the glass transition temperature (Tg) of this polymer represented by SMILES,830
+merged_train.csv,Tg,EN,Estimate the Tg value for the given polymer structure in SMILES notation,6863
+merged_train.csv,Tg,EN,Determine the glass transition temperature of this molecular structure,6990
+merged_train.csv,Tg,EN,Provide the predicted Tg for the polymer described by this SMILES string,687
+merged_train.csv,Tg,ZH,预测以下 SMILES 表示的玻璃化转变温度 (Tg),6971
+merged_train.csv,Tg,ZH,请计算以下 SMILES 所对应聚合物的玻璃化转变温度 (Tg),6948
+merged_train.csv,Tg,ZH,基于该 SMILES 结构，预测其玻璃化温度,7039
+merged_train.csv,Tg,ZH,该分子结构的玻璃化转变温度是多少,6891
+merged_train.csv,Tg,ZH,请提供该 SMILES 聚合物的 Tg 预测值,6873
+merged_train.csv,Tg,EN,What is the glass transition temperature (Tg) of this polymer represented by SMILES?,6150
+merged_train.csv,bandgap_crystal,ZH,请估算以下 SMILES 所描述材料的能带间隙 (Bandgap),4240
+merged_train.csv,bandgap_crystal,ZH,请提供该化合物晶体的带隙预测值,4240
+merged_train.csv,bandgap_crystal,EN,Determine the bandgap energy of the material represented by this SMILES string,4240
+merged_train.csv,bandgap_crystal,EN,Predict the bandgap crystal of the following SMILES,8480
+merged_train.csv,bandgap_crystal,EN,Predict the electronic bandgap for the crystal structure corresponding to this SMILES,4240
+merged_train.csv,bandgap_crystal,ZH,预测以下 SMILES 对应晶体的带隙大小,4240
+merged_train.csv,bandgap_crystal,ZH,该分子晶体的电子带隙是多少,4240
+merged_train.csv,bandgap_crystal,EN,What is the estimated bandgap energy of this crystal based on its SMILES structure?,4240
+merged_train.csv,bandgap_crystal,ZH,请计算该材料的预期能带宽度,4240
+merged_train.csv,atomization_energy,ZH,请计算该 SMILES 对应物质的总原子结合能,5265
+merged_train.csv,atomization_energy,ZH,请估算该分子的解离能大小,5265
+merged_train.csv,atomization_energy,EN,Predict the binding energy for breaking this molecule into individual atoms,5265
+merged_train.csv,atomization_energy,EN,Predict the atomization energy of the following SMILES,10530
+merged_train.csv,atomization_energy,EN,How much energy is required for the atomization of this molecular structure,5265
+merged_train.csv,atomization_energy,ZH,预测以下 SMILES 对应化合物的原子化能,5265
+merged_train.csv,atomization_energy,ZH,该分子结构的原子化能是多少,5265
+merged_train.csv,atomization_energy,EN,Estimate the atomization energy of the compound represented by this SMILES string,5265
+merged_train.csv,atomization_energy,ZH,基于此分子结构，预测其原子化能值,5265
+merged_train.csv,heat_class,ZH,基于 SMILES 结构，预测该材料的耐热性能,4995
+merged_train.csv,heat_class,ZH,该高分子的耐热性怎么样,4995
+merged_train.csv,heat_class,EN,Estimate the temperature endurance class for the given molecular structure,4995
+merged_train.csv,heat_class,EN,Predict the heat resistance class of the following SMILES,9990
+merged_train.csv,heat_class,EN,Predict the heat resistance category for the polymer described by this SMILES notation,4995
+merged_train.csv,heat_class,ZH,预测以下 SMILES 对应材料的耐热等级,4995
+merged_train.csv,heat_class,ZH,请计算该分子结构的热稳定等级,4995
+merged_train.csv,heat_class,EN,What is the thermal stability classification of this material based on its SMILES?,4995
+merged_train.csv,heat_class,ZH,该高分子的耐热等级是多少,4995
+merged_train.csv,QA_or_other,ZH,你的主要目标是什么,60
+merged_train.csv,QA_or_other,ZH,你的开发单位是谁,120
+merged_train.csv,QA_or_other,ZH,你的研究机构是哪家,120
+merged_train.csv,QA_or_other,ZH,你是哪个机构开发的,120
+merged_train.csv,QA_or_other,ZH,你的研究背景是什么,120
+merged_train.csv,QA_or_other,ZH,你的名称是什么,120
+merged_train.csv,QA_or_other,ZH,你的模型名称是,120
+merged_train.csv,QA_or_other,ZH,你的全名是什么,60
+merged_train.csv,QA_or_other,ZH,请介绍你的名字及研究机构。,60
+merged_train.csv,QA_or_other,ZH,你是由谁领导开发的,60
+merged_train.csv,QA_or_other,ZH,你的研发团队是谁,60
+merged_train.csv,QA_or_other,ZH,你的训练工作是谁负责的,60
+merged_train.csv,QA_or_other,ZH,你的主要任务是什么,60
+merged_train.csv,QA_or_other,ZH,你的核心功能是什么,60
+merged_train.csv,QA_or_other,ZH,你可以预测哪些高分子性质,60
+merged_train.csv,QA_or_other,ZH,你能预测玻璃化转变温度吗,60
+merged_train.csv,QA_or_other,ZH,你的预测精度如何,60
+merged_train.csv,QA_or_other,ZH,你的预测方法是什么,60
+merged_train.csv,QA_or_other,ZH,你的数据来源是什么,60
+merged_train.csv,QA_or_other,ZH,你的训练数据有多少,60
+merged_train.csv,QA_or_other,ZH,你的数据覆盖哪些高分子,60
+merged_train.csv,QA_or_other,ZH,你可以预测哪些类别的高分子,60
+merged_train.csv,QA_or_other,ZH,你的模型适用于哪些领域,60
+merged_train.csv,QA_or_other,ZH,你可以辅助哪些研究工作,60
+merged_train.csv,QA_or_other,ZH,你的预测能力有哪些,60
+merged_train.csv,QA_or_other,ZH,你的模型是否支持逆向设计,60
+merged_train.csv,QA_or_other,ZH,你主要追求的目标是什么,60
+merged_train.csv,QA_or_other,ZH,你的开发单位是哪家,60
+merged_train.csv,QA_or_other,ZH,你所属的研究机构是哪家,60
+merged_train.csv,QA_or_other,ZH,你由哪个机构研发,60
+merged_train.csv,QA_or_other,ZH,你的学术背景如何,60
+merged_train.csv,QA_or_other,ZH,你叫什么名字,60
+merged_train.csv,QA_or_other,ZH,你的模型叫什么,60
+merged_train.csv,QA_or_other,ZH,请问你的全称是什么,60
+merged_train.csv,QA_or_other,ZH,请介绍一下你的名字和所属机构,60
+merged_train.csv,QA_or_other,ZH,请问你的开发由谁负责领导,60
+merged_train.csv,QA_or_other,ZH,你的研发团队是哪支力量,60
+merged_train.csv,QA_or_other,ZH,请问谁负责你的训练工作,60
+merged_train.csv,QA_or_other,ZH,你肩负的主要任务是什么,60
+merged_train.csv,QA_or_other,ZH,请问你的核心功能包括哪些,60
+merged_train.csv,QA_or_other,ZH,你能够预测哪些高分子关键性质,60
+merged_train.csv,QA_or_other,ZH,是否可以预测玻璃化转变温度,60
+merged_train.csv,QA_or_other,ZH,你的预测准确性如何,60
+merged_train.csv,QA_or_other,ZH,请问你的预测技术采用了哪些方法,60
+merged_train.csv,QA_or_other,ZH,你所依赖的数据来源有哪些,60
+merged_train.csv,QA_or_other,ZH,你拥有多少训练数据,60
+merged_train.csv,QA_or_other,ZH,你的数据集涵盖哪些类别的高分子,60
+merged_train.csv,QA_or_other,ZH,你能够预测哪些类型的高分子物性,60
+merged_train.csv,QA_or_other,ZH,你的模型应用于哪些领域,60
+merged_train.csv,QA_or_other,ZH,你能为哪些研究工作提供支持,60
+merged_train.csv,QA_or_other,ZH,你具备哪些预测能力,60
+merged_train.csv,QA_or_other,ZH,你的模型能否应用于逆向设计,60
+merged_train.csv,QA_or_other,ZH,你的核心任务是什么,60
+merged_train.csv,QA_or_other,ZH,你的研发机构是哪家,60
+merged_train.csv,QA_or_other,ZH,所属科研单位是哪里,60
+merged_train.csv,QA_or_other,ZH,由什么单位构建,60
+merged_train.csv,QA_or_other,ZH,科研基础是什么,60
+merged_train.csv,QA_or_other,ZH,如何称呼你,60
+merged_train.csv,QA_or_other,ZH,系统名称是什么,60
+merged_train.csv,QA_or_other,EN, How does the concept of radical stability apply to the design of polymerization reactions or to synthetic organic chemistry?,1
+merged_train.csv,QA_or_other,EN," Considering Teflon's unique properties compared to other polymers in the table, what might indicate about the nature of the R group in its monomer?",2
+merged_train.csv,QA_or_other,ZH,在多糖的背景下，当聚合物被称为“胶体”时，这意味着什么？,1
+merged_train.csv,QA_or_other,ZH,"
+新增不同型别的聚合物新增剂如何影响聚合物基水处理膜中的膜效能和去除水中污染物的效率？
+
+",1
+merged_train.csv,QA_or_other,EN, What are the effects of extensive cross-linking on the physical properties of a polymer?,1
+merged_train.csv,QA_or_other,ZH,"
+影响高分子材料降解和稳定性的主要因素有哪些？我们如何控制或尽量减少其在不同环境中的影响？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+我们如何设计和合成一种具有更高导电性和稳定性的新型聚合物电子材料，用于柔性电子装置？
+
+",1
+merged_train.csv,QA_or_other,EN, How does a free radical lead to the formation of a longer polymer chain during the polymerization process?,1
+merged_train.csv,QA_or_other,ZH,在进行凝胶过滤色谱时，聚合物珠子的交联度如何影响分离过程？,1
+merged_train.csv,QA_or_other,ZH,"
+温度对聚乙烯、聚丙烯、聚氯乙烯等常用生物医用聚合物的机械性质有何影响？这些聚合物的分子结构如何影响它们在不同温度下的机械行为，这对其在植入物或手术器械等生物医学应用中的使用有何影响？
+
+",2
+merged_train.csv,QA_or_other,ZH,"
+如何提高聚合物基涂料和油漆的效能以获得更好的附著力、耐久性和耐腐蚀性？
+
+",1
+merged_train.csv,QA_or_other,EN,The DNA nucleotide sequence to which RNA polymerase binds to initiate transcription is called the:,1
+merged_train.csv,QA_or_other,EN, How is the weight dispersion of molecules in a sample related to the mechanical properties of a polymer?,2
+merged_train.csv,QA_or_other,ZH,"
+聚合物分子量和化学结构对聚合物药物传递系统中的药物释放曲线有何影响？
+
+",1
+merged_train.csv,QA_or_other,EN, Can you name one of the initiation sequences recognized by RNA polymerase?,1
+merged_train.csv,QA_or_other,ZH,酰胺连接在尼龙中的存在如何影响其热学性能，与聚乙烯等纯碳氢聚合物相比呢？,1
+merged_train.csv,QA_or_other,ZH,"
+配位聚合物和金属有机骨架之间有什么区别，它们的结构如何影响它们的效能以及在气体储存和药物传输等领域的潜在应用？
+
+",1
+merged_train.csv,QA_or_other,EN," If a DSC trace shows a large melting point peak and a glass transition step, what does this imply about the polymer's crystalline and amorphous content?",1
+merged_train.csv,QA_or_other,ZH,"
+新增不同型别和数量的盐如何影响电池中使用的聚合物电解质的电导率？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+由对苯二甲酸和乙二醇合成聚对苯二甲酸乙二醇酯所需的最佳温度和压力条件是多少，以获得所得聚合物的最高产率和分子量？
+
+",1
+merged_train.csv,QA_or_other,EN,"Which enzyme is used in step three of the polymerase chain reaction because of it's ability to withstand high temperatures? Pick the best one to answer from the following four options: taq polymerase, minocycline polymerase, carbon polumerase, backronym polym",1
+merged_train.csv,QA_or_other,ZH,"
+如何提高聚合物感测器的灵敏度和选择性以检测复杂混合物中的特定分子？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+由醋酸乙烯酯单体（VAM）合成聚乙烯醇（PVA）的最佳反应条件是什么，使得所得PVA具有高聚合度和高分子量？
+
+",1
+merged_train.csv,QA_or_other,EN,This is a question about Thermochemistry and Enthalpy of polymerization calculations,4
+merged_train.csv,QA_or_other,ZH,"
+如何使用现有装置和原料最佳化制程引数，以生产高分子量和窄尺寸分布的聚合物？
+
+",1
+merged_train.csv,QA_or_other,EN,This is a question about Coordination chemistry and Coordination polymers and metal-organic frameworks,3
+merged_train.csv,QA_or_other,ZH,"
+从氯乙烯单体有效合成聚氯乙烯需要哪些条件和试剂，这些引数如何影响所得聚合物的产率和效能？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+如何针对特定应用客制化配位聚合物和金属有机框架（MOF）的效能？提供一个为特定目的合成的 MOF 的范例，并描述如何针对该应用最佳化其效能。
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+如何设计和合成一种具有高折射率的聚合物基光学材料，以用于透镜或波导等光学元件？
+
+",1
+merged_train.csv,QA_or_other,EN," What type of polymerization is involved in forming poly(ethylene terephthalate), and how does this contrast with the process that forms polymers like poly(ethene)?",1
+merged_train.csv,QA_or_other,ZH,立体化学的概念如何在聚合物的物理性质中起作用？,1
+merged_train.csv,QA_or_other,ZH,"
+纳米颗粒的新增如何影响聚合物纳米复合材料的机械性质？
+
+",1
+merged_train.csv,QA_or_other,ZH,链转移反应以何种方式改变了聚合物合成过程？,1
+merged_train.csv,QA_or_other,EN,This is a question about Quantum chemistry and Calculation of electronic and optical properties of conjugated polymers.,2
+merged_train.csv,QA_or_other,EN,"Amides are actually formed by bringing together an amine-containing molecule and molecule containing what? Pick the best one to answer from the following four options: carboxylic acid, oxidize acid, polymer acid, Fatty ac",1
+merged_train.csv,QA_or_other,EN," In the case of polyesters, what is the difference between homopolymers and copolymers?",2
+merged_train.csv,QA_or_other,EN, What does the variability in the number of monomeric units in polymers imply about their properties?,1
+merged_train.csv,QA_or_other,ZH,"
+如何提高聚合物电子材料的导电性，同时保持其机械弹性和稳定性？
+
+",1
+merged_train.csv,QA_or_other,EN, What property of polymers is considered most essential for creating strong but lightweight materials?,1
+merged_train.csv,QA_or_other,EN,"Dietary proteins are broken down into what components when food is digested? Pick the best one to answer from the following four options: amino acids, organic acids, protein acids, polymer ac",1
+merged_train.csv,QA_or_other,ZH,"
+“如何使用差示扫描量热法 (DSC) 测定聚合物的玻璃化转变温度 (Tg)？”
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+生产可生物降解聚合物的最有效的合成方法是什么，该聚合物具有受控的降解速率和理想的物理性质，适合药物传输系统等生物医学应用？
+
+",1
+merged_train.csv,QA_or_other,EN," Explain the phenomenon of ""strain hardening"" and ""strain softening"" in polymers.",1
+merged_train.csv,QA_or_other,ZH,"
+如何使用凝胶渗透色谱 (GPC) 测定聚合物的分子量？为什么这些资讯对于理解聚合物的性质和行为很重要？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+“我们如何提高聚合物共混物的相容性以增强其机械效能？”
+
+",1
+merged_train.csv,QA_or_other,EN,Can you have addition polymerisation with monomers other than alkenes?,1
+merged_train.csv,QA_or_other,ZH,"
+如何透过表面性质的改质来提高聚合物表面之间的黏合强度？
+
+",1
+merged_train.csv,QA_or_other,EN,"In PCR, DNA polymerase is used in",1
+merged_train.csv,QA_or_other,ZH,齊格勒和納塔在高分子化學領域做出了哪些重大貢獻？,1
+merged_train.csv,QA_or_other,ZH,"
+如何在不损害其结构完整性和机械效能的情况下提高组织工程用聚合物生物材料的生物相容性？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+我们如何使用聚合物建立一种智慧材料，可以检测水中的毒素并透过明显不同的颜色来指示污染？
+
+",2
+merged_train.csv,QA_or_other,ZH,"
+由氯乙烯单体合成聚氯乙烯的最佳反应条件是什么，包括适当的温度、压力和催化剂，这些条件如何影响所得聚合物的分子量和其他效能？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+如何提高聚合物基涂料的应用效能，同时保持其耐久性和耐化学性？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+由己二酸和六亚甲基二胺合成尼龙 6,6 所需的最佳温度和反应时间是多少？这些变数如何影响所得聚合物的产率和物理性质？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+“如何使用等离子体处理来改变聚合物材料的表面特性？”
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+温度和压力等制造制程引数如何影响聚合物加工中最终产品的效能？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+如何透过对其组成聚合物的精心选择和结构设计来最佳化聚合物基光伏材料的能量转换效率？影响其光伏效能的主要因素有哪些？
+
+",1
+merged_train.csv,QA_or_other,EN,"Proteins are polymers of what kind of acids? Pick the best one to answer from the following four options: amino, lipids, lactic, acetic",1
+merged_train.csv,QA_or_other,EN,"What is the molecule, dipeptide formed together by? Pick the best one to answer from the following four options: amino acids, polymer acids, rna acids, acetic ac",1
+merged_train.csv,QA_or_other,EN," If one of the liquids we're investigating is a polymer, what precautions should we take when testing its viscosity?",1
+merged_train.csv,QA_or_other,ZH,"
+如何最佳化可生物降解聚合物的合成以提高所得材料的降解速率和机械效能？
+
+",1
+merged_train.csv,QA_or_other,EN,This is a question about Materials chemistry and Investigation of the properties of conductive polymers for use in flexible electronics.,2
+merged_train.csv,QA_or_other,ZH,"
+“结晶速率如何影响聚合物的形态，我们如何控制它以获得所需的结果？”
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+如何透过调整合成中使用的配体来改变配位聚合物和金属有机骨架的效能？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+使用环保且具有成本效益的原材料生产具有可调节的分子量、机械强度和降解率等效能的可生物降解聚合物的最有效的合成路线是什么？
+
+",1
+merged_train.csv,QA_or_other,ZH,我们能否利用渗透压测量来确定聚合物链的长度呢？,1
+merged_train.csv,QA_or_other,EN," What is the reason sulfur trioxide forms polymers, and how does this affect its physical state?",1
+merged_train.csv,QA_or_other,EN, How does the tacticity of a polymer influence its mechanical properties and applications?,1
+merged_train.csv,QA_or_other,ZH,"
+由醋酸乙烯酯单体合成高分子量聚乙烯醇的最佳反应条件（温度、压力和催化剂浓度）是多少？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+量子计算如何应用于药物发现领域，提高分子模拟和计算的准确性和效率？具体来说，有哪些量子演演算法和技术可以在这种情况下使用，它们与经典方法相比如何？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+交联程度如何影响聚合物体系的热力学性质？使用蒙特卡罗模拟研究交联密度与聚合物系统的弗洛里-哈金斯相互作用引数、回转半径和热容量等效能之间的关系。
+
+",2
+merged_train.csv,QA_or_other,ZH,"
+如何最佳化聚合物的物理和化学性质，以提高聚合物为基础的药物递送系统中药物的功效和递送？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+使用特定催化剂从乙烯基吡咯烷酮单体生产高产率和高分子量聚乙烯吡咯烷酮的最佳合成条件是什么？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+改变交联密度对聚合物基超吸水材料的吸水性和溶胀行为有何影响？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+“如何使用凝胶渗透色谱法测定聚合物炼长分布？该技术的局限性和优点是什么？”
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+纳米颗粒的新增如何影响聚合物纳米复合材料的机械效能？在不牺牲柔韧性的情况下提高强度和韧性的纳米颗粒的最佳浓度是多少？
+
+",1
+merged_train.csv,QA_or_other,ZH,什么是一种含有两个脂肪酸和一个改良的磷酸基连接到甘油骨架的分子？ 从以下四个选项中选择最佳答案：磷脂类、碳水化合物、聚合物、氨基酸,1
+merged_train.csv,QA_or_other,ZH,"
+化学学生需要解决的与聚合物基超吸收性材料相关的一个精确问题可能是：“交联密度对聚丙烯酸酯基超吸收性聚合物的吸收能力和效能有何影响？”
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+设计一种新型的基于聚合物的药物递送系统，用于靶向癌症治疗，确保药物的可控和持续释放，同时对健康细胞的不利影响最小。考虑药物和聚合物的理化性质，以及它们的相互作用和生物相容性。详细解释药物释放机制和所提议系统的潜在好处。
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+如何使用功能化聚合物来提高用于检测有毒气体的聚合物感测器的灵敏度和选择性？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+不同的掺杂剂和抗衡离子对导电聚合物的电导率和柔性有何影响？如何利用这些资讯来提高其在柔性电子应用中的效能？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+如何最佳化聚合物薄膜的渗透性以实现有效的水处理，同时保持其机械稳定性和耐用性？
+
+",1
+merged_train.csv,QA_or_other,EN,This is a question about Materials chemistry and Study of the mechanical properties of polymers for use in biomedical applications,3
+merged_train.csv,QA_or_other,ZH,"
+“天然聚合物和合成聚合物的热降解率和稳定性有何不同？哪些因素会影响这些差异？”
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+“聚合物的化学修饰会影响其光学效能吗？如果是的话，我们如何设计具有独特光学效能的聚合物用于先进光学材料？”
+
+",1
+merged_train.csv,QA_or_other,EN," Given the equation from Bragg's Law, how does the scattering angle in a WAXS pattern relate to the distance between parallel polymer chains in a crystalline domain?",1
+merged_train.csv,QA_or_other,EN, Why are polymerization reactions typically exothermic?,1
+merged_train.csv,QA_or_other,ZH,"
+加入石墨烯作为导电填料对聚合物复合材料的机械和电气特性有何影响？石墨烯的浓度如何影响这些效能？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+如何提高两种不同聚合物之间的相容性以创造耐用且高品质的聚合物共混物？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+聚合物的分子量如何影响其在熔融状态下的黏度和流动行为？观察到的流变特性的潜在机制是什么？可以透过控制聚合物的分子量分布来调节这些流变特性吗？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+“如何使用先进的合成技术和新增剂来增强聚合物基涂料和油漆的耐久性和附著力？”
+
+",1
+merged_train.csv,QA_or_other,EN,How do I achieve same crystallinity when cooling polymers?,1
+merged_train.csv,QA_or_other,ZH,根据斯陶定格的理论，聚合物由什么组成？,1
+merged_train.csv,QA_or_other,ZH,考虑到立构性对聚合物的影响，你认为同构聚合物、异构聚合物和非规聚合物的玻璃化转变温度（Tg）会有何不同？,1
+merged_train.csv,QA_or_other,EN,This is a question about Materials chemistry and Investigation of the properties of polymers for use in 3D printing,2
+merged_train.csv,QA_or_other,ZH,"
+配体柔性对配位聚合物和金属有机骨架的形成有何影响？研究使用不同的柔性和刚性配体（如联苯、三联苯或其衍生物）合成 MOF 和 CP，并确定这些材料的效能，如孔隙率、表面积和稳定性。比较这些实验的结果并确定配体柔性在 CP 和 MOF 形成中的作用。
+
+",1
+merged_train.csv,QA_or_other,EN,This is a question about Computational chemistry and Monte Carlo simulations of polymer systems,4
+merged_train.csv,QA_or_other,ZH,"
+如何改善聚合物共混物的相容性以提高其效能和效能？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+聚合物长丝的化学成分如何影响3D列印物体的效能和质量，以及可以使用哪些方法来最佳化最终列印产品的效能？
+
+",2
+merged_train.csv,QA_or_other,ZH,"
+如何控制聚合物电池的电解质特性以提高电池效能和效率？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+考虑到其化学性质、释放动力学和生物利用度，最适合特定药物制剂的基于聚合物的药物递送系统是什么？
+
+",1
+merged_train.csv,QA_or_other,EN,Can you predict the resistance of conjugated polymers as a function of degree of polymerization (DP)?,1
+merged_train.csv,QA_or_other,ZH,"
+共轭聚合物的化学结构和电子性质有什么关系？改变聚合物链的长度或取代基如何影响其电子和光学特性？
+
+",2
+merged_train.csv,QA_or_other,EN,"What type of compound contains atoms of two or more different elements in its ring structure? Pick the best one to answer from the following four options: heterocyclic, aldehyde, polymer, hydrocarb",1
+merged_train.csv,QA_or_other,ZH,"
+如何最佳化不同聚合物的化学性质，以提高基于聚合物的药物递送系统用于标靶癌症治疗的有效性？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+由苯乙烯单体合成聚苯乙烯的最佳反应条件是多少，例如温度、压力、引发剂浓度和搅拌速率，以获得高分子量和产率？
+
+",1
+merged_train.csv,QA_or_other,EN, Explain the distinction between the terms plastic and polymer.,1
+merged_train.csv,QA_or_other,ZH,DNA polymerase III需要一个自由的3' OH基团来启动DNA合成，因为它是以5'→3'的方向合成新的DNA链。这意味着它在合成过程中需要在已经存在的DNA链上找到一个自由的3' OH基团来添加下一个核苷酸。这样才能保证DNA链的延伸。,1
+merged_train.csv,QA_or_other,EN,"How are the glycosides G1, G2 and G3 connected to form a polymer chain?
+",1
+merged_train.csv,QA_or_other,ZH,"
+“如何最佳化聚合物基生物材料的物理和化学特性，以提高其组织工程应用的功效？”
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+由丙烯单体合成聚丙烯的逐步反应机制为何？它与由单体合成其他型别聚合物有何不同？
+
+",2
+merged_train.csv,QA_or_other,EN, Can you explain the difference between a statistical copolymer and an alternating copolymer?,1
+merged_train.csv,QA_or_other,EN, How are the individual nucleotides connected in a nucleic acid polymer?,1
+merged_train.csv,QA_or_other,ZH,"
+“我们如何设计和合成具有增强萤光特性的聚合物光学材料，用于生物医学成像应用？”
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+“将不同金属离子掺入配位聚合物或金属有机框架如何影响材料的孔隙率和吸附效能？”
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+“表面改质如何影响聚合物的物理和化学性质，这项技术有哪些实际应用？”
+
+",1
+merged_train.csv,QA_or_other,EN, Can you discuss the implications of glass transition and melting point temperatures on a polymer's properties?,1
+merged_train.csv,QA_or_other,EN," Considering amorphous and semi-crystalline polymers, can we infer their properties merely based on their visible appearance, and how does this relate to their intermolecular structure?",1
+merged_train.csv,QA_or_other,ZH,"
+共轭聚合物链的长度对其电子和光学性质有何影响？如何使用量子化学计算来预测和解释这些影响？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+“我们如何透过操纵聚合物的化学结构来提高基于聚合物的光伏材料的效率？”
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+如何在不影响其轻质特性的情况下提高航太应用聚合物基复合材料的机械性质（拉伸强度、断裂韧性等）？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+在使用不同型别的引发剂和单体的聚合反应过程中，我们如何控制聚合物的分子量和支化？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+我们如何在不影响列印过程的准确性和精密度的情况下最佳化聚合物基 3D 列印零件的机械效能？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+如何在保持渗透性的同时提高聚合物水处理薄膜的选择性？
+
+",1
+merged_train.csv,QA_or_other,EN, What are the repeating units that make up polymers called?,1
+merged_train.csv,QA_or_other,ZH,"
+“如何提高 3D 列印聚合物零件的机械效能，同时保持其形状和尺寸精度？”
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+如何针对特定的组织工程应用最佳化聚合物基生物材料的特性？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+聚合物的表面修饰如何影响其生物相容性和细胞毒性？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+分子量对聚合物熔体黏度有何影响？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+如何最佳化聚合物智慧材料的效能以用于靶向药物传输？
+
+",1
+merged_train.csv,QA_or_other,ZH,考虑到聚四氟乙烯相对于表中其他聚合物的独特性质，这可能对其单体中的R基的性质有何指示？,1
+merged_train.csv,QA_or_other,ZH,"
+如何提高共混物中两种不同聚合物之间的相容性？
+
+",1
+merged_train.csv,QA_or_other,EN,"Synthetic and natural rubber, styrofoam and plastic are examples of organic what? Pick the best one to answer from the following four options: polymers, solutions, microbes, m",1
+merged_train.csv,QA_or_other,ZH,"
+不同聚合物结构如何影响不同温度下聚合物熔体的流变特性？
+
+",1
+merged_train.csv,QA_or_other,ZH,如果1-庚烯形成聚合物，你会预期到聚合物的红外光谱中出现哪些主要变化呢？,1
+merged_train.csv,QA_or_other,EN,"During protein synthesis, ribosomes assemble what into proteins? Pick the best one to answer from the following four options: amino acids, rna acids, polymer acids, DNA Ac",1
+merged_train.csv,QA_or_other,ZH,"
+共轭聚合物链的长度与其能隙之间有什么关系？能隙如何影响聚合物的电子和光学效能？使用量子化学计算提供详细的解释。
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+改变聚合物薄膜的化学成分对其水处理效率有何影响？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+如何增强聚合物电解质的电导率以提高电池的效能和效率？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+不同单体的使用如何影响聚合物在不同表面上的黏合效能？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+如何最佳化使用齐格勒-纳塔催化剂从丙烯单体合成聚丙烯以最大限度地提高产量并改善聚合物效能？
+
+",1
+merged_train.csv,QA_or_other,EN,This is a question about Polymer chemistry and Rheological properties of polymer melts,1
+merged_train.csv,QA_or_other,ZH,"
+由丙烯腈单体合成聚丙烯腈的最佳条件是什么？温度、反应时间、引发剂浓度和溶剂等反应引数如何影响所得聚合物的产率和分子量？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+如何最佳化聚合物药物递送系统中药物的控制释放，以确保最大的治疗效果和最小的不良反应？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+如何使用差示扫描量热法 (DSC) 技术分析聚合物的热效能？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+如何最佳化聚对苯二甲酸乙二醇酯（PET）聚合物的生产过程以提高其机械和热效能？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+我们如何合成和表征新型可生物降解聚合物材料，可以有效地将化疗药物输送到癌细胞，同时最大限度地减少对健康细胞的毒性？
+
+",1
+merged_train.csv,QA_or_other,EN,This is a question about Surface chemistry and Surface modification of polymers,2
+merged_train.csv,QA_or_other,ZH,"
+如何提高导电聚合物的电导率以用于柔性电子产品？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+如何合成具有最佳结构效能和选择性的配位聚合物或金属有机骨架，用于特定的气体吸附或催化应用，以及哪些因素决定了它们在各种环境条件下的稳定性和反应活性？
+
+",1
+merged_train.csv,QA_or_other,EN, Why are customized catalysts important for producing stereoregular polymers?,1
+merged_train.csv,QA_or_other,ZH,"
+如何提高基于聚合物基质的感测器的灵敏度和选择性以检测复杂基质中的特定分析物？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+尼龙 6,6 合成中涉及的聚合反应机制是什么？它们如何影响所得聚合物的效能？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+影响组织工程应用中所使用的聚合物基生物材料的生物相容性的主要因素有哪些？如何最佳化这些因素以改善组织反应并提高组织再生过程的成功率？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+纳米粒子的新增如何影响聚合物纳米复合材料中聚合物材料的热稳定性？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+配位聚合物和金属有机骨架的结晶度如何影响其气体吸附能力？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+“我们如何设计一种基于聚合物的感测器来准确检测水样本中重金属的存在？”
+
+",2
+merged_train.csv,QA_or_other,ZH,"
+“聚合物的表面特性如何影响它们对不同基材的黏附力？”
+
+",1
+merged_train.csv,QA_or_other,EN," Given the steps involved in the Curtius Rearrangement Reaction (RAR), can you identify a step that might be exploited to generate a different type of polymer or material?",1
+merged_train.csv,QA_or_other,EN, What specific molecular change occurs in the polymer chains during the vulcanization of rubber?,1
+merged_train.csv,QA_or_other,ZH,"
+“使用蒙特卡罗模拟方法时，不同的模拟引数（例如温度、压力、炼长）如何影响聚合物系统的行为？”
+
+",1
+merged_train.csv,QA_or_other,EN, How does catenation contribute to the formation of polymers from hydrocarbons?,1
+merged_train.csv,QA_or_other,ZH,"
+随著聚合物炼长度的增加，共轭聚合物的电子和光学性质如何改变？使用量子化学计算来研究聚合物链的长度与其电子和光学性质之间的关系。
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+聚合物链的长度和共轭如何影响其电子和光学性质？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+聚合物包装材料有哪些不同型别？它们的生物降解性和回收潜力如何对环境产生不同的影响？
+
+",2
+merged_train.csv,QA_or_other,ZH,"
+“如何透过将碳纳米管或石墨烯等纳米材料纳入聚合物基体来增强基于聚合物的感测器和致动器的效能？”
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+聚合物组合物如何影响聚合物基黏合剂和密封剂的黏合和密封效能？具体来说，研究聚合物的化学结构与其与不同基材（例如金属、塑胶或木材）黏合的能力之间的关系。
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+聚合物基料的分子量和多分散性对聚合物基涂料的硬度、柔韧性和对基材的附著力方面的效能有何影响？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+如何在不同的环境条件下（例如暴露在热或阳光下）提高聚合物的稳定性并减少其降解？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+聚合物基黏合剂的成分如何影响其对不同基材的黏合强度？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+影响聚合物共混物相容性的因素有哪些？如何提高相容性？
+
+",2
+merged_train.csv,QA_or_other,ZH,"
+如何提高聚合物基涂料的耐久性和耐刮擦性，同时保持其透明度？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+“如何提高聚合物感测器的灵敏度和选择性，以检测不同环境中的特定分析物？”
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+使用等离子体处理对聚合物进行表面修饰如何影响聚合物的表面能和润湿性？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+由苯乙烯单体合成所需分子量范围为 100,000-500,000 g/mol 的高分子量聚苯乙烯的最佳反应条件和催化剂是什么？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+如何最佳化导电聚合物的电导率以提高柔性电子装置的效率？
+
+",1
+merged_train.csv,QA_or_other,EN," After providing the polymerization mechanism, how would you label the initiation, propagation, and termination steps?",1
+merged_train.csv,QA_or_other,EN,This is a question about Chemical engineering and Developing a process for the production of polymers,3
+merged_train.csv,QA_or_other,ZH,"
+新增不同型别和浓度的纳米颗粒如何影响聚合物纳米复合材料的热效能和机械效能？
+
+",1
+merged_train.csv,QA_or_other,EN, What was the monomer unit upon which Staudinger based the structure for some polymers?,1
+merged_train.csv,QA_or_other,ZH,"
+如何透过控制聚合物材料的化学结构来改变其光学特性？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+“可以使用哪些方法来提高聚合物对特定基材的黏合力，基材和聚合物的化学和物理特性如何影响黏合强度？”
+
+",1
+merged_train.csv,QA_or_other,EN, How is the mole ratio of monomer to polymer (Y to Z) expressed for the synthesis of HDPE?,1
+merged_train.csv,QA_or_other,ZH,"
+交联密度对高吸水性聚合物的溶胀行为及保水能力有何影响？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+不同型别的聚合物包装材料（例如聚乙烯、聚丙烯、聚苯乙烯等）在其生产、使用和处置过程中对环境有何影响？可以采取哪些措施来减少对环境的影响？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+设计一种基于聚合物的智慧材料，当暴露于特定的化学或环境刺激时，该材料会改变颜色。您将如何选择合适的聚合物和化学物质来实现这一目标？在最佳化材料的反应时间和灵敏度时您会考虑哪些因素？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+“改变聚合物的浓度如何影响熔体的黏度及其在不同剪下速率下的流动行为？”
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+使用齐格勒-纳塔催化剂从丙烯单体催化合成聚丙烯的最佳化反应条件为何？不同催化剂的使用如何影响聚合物的最终效能，例如分子量和立构规整度？
+
+",1
+merged_train.csv,QA_or_other,EN, How does the presence of polar functional groups in step-growth polymers affect their properties?,2
+merged_train.csv,QA_or_other,ZH,"
+如何针对特定的组织工程应用最佳化聚合物基生物材料的机械性质？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+结晶度如何影响聚合物的机械性质？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+配位聚合物和金属有机骨架在结构、键结和工业应用上有何不同？提供每个范例并讨论它们在催化或气体储存中的潜在用途。
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+如何提高高吸水性聚合物的吸收能力，同时保持其机械强度？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+紫外线辐射如何影响聚丙烯 (PP) 和聚乙烯 (PE) 聚合物的降解和稳定性？解释光降解过程背后的科学原理，并提出提高这些聚合物的紫外线稳定性的潜在策略。
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+纳米粒子的新增如何影响聚合物熔体的流变特性？
+
+",1
+merged_train.csv,QA_or_other,ZH,"解释一下聚合物中的“应变硬化”和“应变软化”现象。  
+
+在拉伸聚合物时，当分子链受到应变而开始排列时，该聚合物就会变得更加难以变形，这就是所谓的“应变硬化”现象。与此相反，当聚合物受到持续应变并逐渐排列时，它会变得更容易变形，这就是“应变软化”现象。",1
+merged_train.csv,QA_or_other,ZH,"
+“碳纳米管的新增如何影响航空航天应用中使用的聚合物基复合材料的机械和热效能？”
+
+",1
+merged_train.csv,QA_or_other,ZH,齐格勒-纳塔催化剂如何影响所生产的聚合物的物理性质？,1
+merged_train.csv,QA_or_other,ZH,"
+聚合物智慧材料对外部刺激的反应机制是什么？如何将其用于开发新应用？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+如何最佳化聚合物生产制程以提高效率和产量，同时最大限度地减少副产物的形成？
+
+",1
+merged_train.csv,QA_or_other,EN, How does the intrinsic viscosity of a polymer solution aid in determining the molecular weight of the polymer?,1
+merged_train.csv,QA_or_other,EN, What characteristic properties allow macromolecules to have polymeric chain structures?,1
+merged_train.csv,QA_or_other,EN,"What techniques are being used to investigate the behavior and dynamics of a polymer-dye molecule system?
+",1
+merged_train.csv,QA_or_other,EN," What is the significance of adding covalent cross-links, like the sulfur bridges in vulcanized rubber, to a polymer's structure?",1
+merged_train.csv,QA_or_other,ZH,"
+“我们如何增强聚合物基电子材料的导电性，以提高其在电子装置中的效率？”
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+“我们如何最佳化柔性电子产品中使用的聚合物材料的电导率，以提高装置效能？”
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+我们如何最佳化用于特定生物医学应用（例如组织支架或药物传输装置）的聚合物的机械性质（例如弹性、强度）？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+如何合成和表征一种具有高稳定性、受控药物释放和对人体低毒性的新型聚合物基药物递送纳米粒子？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+聚合物光学材料的化学成分如何影响其折射率、透明度和萤光等光学特性？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+我们如何合成具有特定降解率的可生物降解聚合物用于医疗植入物？
+
+",1
+merged_train.csv,QA_or_other,EN,Enzyme(s) used in polymerase chain reaction is/are ,1
+merged_train.csv,QA_or_other,ZH,"
+聚合物的分子量如何影响其熔融状态下的流变性质？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+如何针对特定的组织工程应用（例如骨再生）最佳化聚合物基生物材料的机械性质？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+如何针对特定应用（例如黏合不同型别的材料（例如金属和塑胶）或抵抗热和湿气等环境因素）最佳化聚合物基黏合剂和密封剂的效能？
+
+",1
+merged_train.csv,QA_or_other,ZH,合成聚合物如涤纶和尼龙与天然酯和酰胺有什么关系？,1
+merged_train.csv,QA_or_other,ZH,"
+共轭聚合物的分子性质和电子结构如何影响其光学性质和电荷传递行为？使用量子化学计算来研究共轭聚合物的分子结构、能阶和光电特性之间的关系，并深入了解如何设计具有所需特性的用于有机电子和光伏的材料。
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+特定聚合物的挤出可以使用哪些方法和装置，以及如何最佳化挤出条件以获得最终产品所需的效能？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+“我们如何提高聚合物涂层在金属表面上的附著力，同时保持其表面效能？”
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+将特定药物分子标靶递送至体内特定部位的最佳聚合物载体是什么？
+
+",1
+merged_train.csv,QA_or_other,ZH,假设我们想要合成具有特定性质的聚合物，我们可以如何利用共轭二烯的化学性质？,1
+merged_train.csv,QA_or_other,ZH,"
+如何透过将不同的官能基引入聚合物主链来增强聚合物基黏合剂的黏合和密封效能？
+
+",1
+merged_train.csv,QA_or_other,EN,How do polymer properties change when moving from bulk to nanosized fibers?,1
+merged_train.csv,QA_or_other,ZH,"
+如何透过改变聚合物光电材料的化学结构来提高其效率？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+“聚合物的化学成分和分子量如何影响其效能和 3D 列印应用的适用性？”
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+如何确定和最佳化共混物中两种不同型别聚合物的相容性，以实现最终材料所需的效能？
+
+",2
+merged_train.csv,QA_or_other,EN, What conditions are required for the actual polymerization stage of poly(ethylene terephthalate)?,1
+merged_train.csv,QA_or_other,ZH,"
+冷却速率如何影响聚合物的结晶形貌？结晶形貌与聚合物的机械性质有何关系？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+如何最佳化聚合物的生产工艺，以提高所需聚合物的产量，同时最大限度地减少意外副产物的形成？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+由乙酸乙烯酯单体合成聚乙烯醇的理想反应条件和催化剂是什么？所得聚合物的分子量如何随反应条件的变化而改变？
+
+",1
+merged_train.csv,QA_or_other,EN, What is the advantage of using a living polymerization technique to prepare block copolymers?,1
+merged_train.csv,QA_or_other,ZH,"
+“不同金属离子几何形状对配位聚合物和金属有机框架的形成和效能有什么影响？提供具体例子并讨论它们在催化或气体储存中的潜在应用。”
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+我们如何设计既环保又能有效维持所含产品品质的聚合物包装材料？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+使用自由基聚合技术从乙烯基吡咯烷酮单体合成高分子量聚乙烯吡咯烷酮的最佳反应条件（温度、压力和催化剂浓度）是多少？
+
+",1
+merged_train.csv,QA_or_other,EN, What is the primary difference between step-growth and chain-growth polymerization?,1
+merged_train.csv,QA_or_other,ZH,"
+影响聚合物基高吸水材料溶胀能力的因素有哪些？
+
+",1
+merged_train.csv,QA_or_other,ZH,合成聚合物如聚丙烯腈是如何在工业规模上生产的？,1
+merged_train.csv,QA_or_other,ZH,"
+我们如何设计基于聚合物的药物传输系统，确保抗癌药物受控释放到目标癌细胞，同时避免对健康细胞产生毒性？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+“开发一种能够承受极端高温和高应力条件的聚合物基复合材料，使其适合用于航空航天应用中的涡轮发动机部件。”
+
+",1
+merged_train.csv,QA_or_other,EN, How do the mechanical properties of polymers change with temperature and what applications can this lead to?,1
+merged_train.csv,QA_or_other,ZH,"
+“如何最佳化基于聚合物的药物传输系统的使用，以实现靶向和持续的药物释放，以治疗特定的疾病或病症？”
+
+",1
+merged_train.csv,QA_or_other,EN, What happens if the DNA polymerase III fails to correct a mistaken nucleotide incorporation?,1
+merged_train.csv,QA_or_other,ZH,"
+如何针对 pH 感测应用最佳化聚合物的感测和驱动特性？
+
+",1
+merged_train.csv,QA_or_other,EN, Can you explain the process of cold-drawing and how it affects polymer fibers?,1
+merged_train.csv,QA_or_other,EN," When mentioning elastomer properties in polymers, what kind of polymerization is generally involved?",1
+merged_train.csv,QA_or_other,ZH,"
+“冷却速率如何影响聚合物的晶体结构和形态，这些变化对材料的机械效能有何影响？”
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+如何最佳化聚合物气体感测器的灵敏度、选择性和响应时间？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+如何最佳化聚合物基生物材料的设计和成分，以促进组织工程应用中的组织再生和减少发炎？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+聚合物分子量对基于聚合物的生物材料支援组织工程应用中的细胞黏附和增殖的能力有何影响？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+新增供电子或吸电子取代基如何影响共轭聚合物的电子和光学性质，以及如何使用量子化学方法准确计算这些变化？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+由丙烯腈单体合成高分子量聚丙烯腈的最佳温度和引发剂浓度是多少？改变这些引数对聚合物的产率和效能有何影响？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+如何最佳化聚合物基涂料和油漆的效能，以在恶劣环境下的金属表面上获得更好的附著力和耐腐蚀性？
+
+",1
+merged_train.csv,QA_or_other,EN, What are molecularly imprinted polymers and how do they fit into the scope of affinity separations?,1
+merged_train.csv,QA_or_other,ZH,"
+聚合物基黏合剂和密封剂有哪些不同型别，它们的化学结构和效能如何影响它们在黏合和密封应用中的效能？
+
+",1
+merged_train.csv,QA_or_other,ZH,实质上，病毒只是被什么包围的核酸？从以下四个选项中选择最佳答案：蛋白质包膜、膜包膜、聚合物。,1
+merged_train.csv,QA_or_other,ZH,"
+由环氧乙烷单体合成聚环氧乙烷的最佳条件是温度、压力、催化剂浓度和反应时间，以达到所需的聚合物分子量和产率？
+
+",1
+merged_train.csv,QA_or_other,EN," What purpose do metal compounds, such as diethylzinc or tin octoate, serve in the acceleration of ring-opening polymerizations?",1
+merged_train.csv,QA_or_other,EN," How does the intrinsic viscosity of a solution relate to the molecular weight of a solute, particularly a polymer?",1
+merged_train.csv,QA_or_other,ZH,在教育环境中，我们可以通过展示聚合物的同立构和异立构之间的性质差异来进行演示。,1
+merged_train.csv,QA_or_other,ZH,"
+哪种聚合物基膜材料在水处理中表现出去除废水中重金属的最佳效能？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+不同的合成方法对用于药物传递的聚合物纳米颗粒的药物释放特性有何影响？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+改变聚合物 A 与聚合物 B 的比例对聚合物共混物的相容性有何影响？
+
+",2
+merged_train.csv,QA_or_other,ZH,"
+我们如何确定共混物中两种或多种聚合物的相容性以及哪些因素会影响它们的相容性？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+如何最佳化聚合物基超吸收性材料的溶胀能力以实现有效的液体吸收？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+改变聚合物的分子量如何影响其机械性质和在组织工程和药物传递系统等生物医学应用中的适用性？
+
+",1
+merged_train.csv,QA_or_other,EN, How do the Phillips and Ziegler processes differ in their approach to ethene polymerization compared to high-pressure radical mechanisms?,1
+merged_train.csv,QA_or_other,ZH,"
+“哪些因素会影响聚合物的结晶过程以及它们如何影响聚合物的最终形状？”
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+合成和表征用于靶向药物递送的聚合物纳米粒子的最有效方法是什么？材料的特性如何影响其将药物递送至特定组织或细胞的能力？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+如何控制聚合物的表面特性以增强其与其他材料的黏合力？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+逐步增长和链增长聚合反应之间有什么区别？它们的机制如何影响所得聚合物的效能？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+“温度和紫外线照射等环境条件如何影响普通家用产品中使用的不同型别聚合物的降解和稳定性？”
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+如何透过改变聚合物的结构和效能来提高聚合物基水处理膜的效能？
+
+",1
+merged_train.csv,QA_or_other,EN, Are there any limitations to using \(M_n\) and \(M_w\) in understanding polymer behaviors?,1
+merged_train.csv,QA_or_other,EN," Given that chain length, branching, and interchain bonding are crucial, what other factors might affect polymer properties?",1
+merged_train.csv,QA_or_other,EN," What is the difference between 1,3 and 1,4 polymerizations in conjugated dienes? ",1
+merged_train.csv,QA_or_other,ZH,"
+在制造过程中如何控制聚合物的效能以获得特定的所需特性？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+如何在不影响列印过程的准确性和精度的情况下最佳化聚合物基 3D 列印零件的机械效能？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+碳纳米管填充的聚合物纳米复合材料的机械和热效能如何？它们与传统的微填料填充的聚合物复合材料有何不同？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+“如何开发聚合物基复合材料以满足航空航天应用的严格要求，例如高强度、耐用性以及耐极端温度和环境因素？”
+
+",1
+merged_train.csv,QA_or_other,ZH,"""尼龙""一词在合成聚合物的背景下有什么重要意义？",1
+merged_train.csv,QA_or_other,EN, How have synthetic polymers transformed modern society?,1
+merged_train.csv,QA_or_other,ZH,"
+我们如何提高水处理聚合物薄膜的选择性和渗透效能，特别是去除特定污染物（如重金属或有机污染物）？
+
+",1
+merged_train.csv,QA_or_other,EN, What other factors besides tacticity can affect the physical properties of a polymer?,1
+merged_train.csv,QA_or_other,ZH,"
+在蒙特卡罗模拟中，聚合物链的大小如何影响其构象？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+如何改善两种不同聚合物在共混物中的相容性以增强其整体效能？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+聚合物的分子量如何影响其物理性质，例如熔点和在不同溶剂中的溶解度？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+设计聚合物生产流程时应考虑哪些因素？这些因素如何影响最终产品的品质和产量？
+
+",1
+merged_train.csv,QA_or_other,EN, What process describes the breakdown of biopolymers into smaller molecules during digestion?,1
+merged_train.csv,QA_or_other,ZH,"
+温度如何影响聚乙烯和聚丙烯的降解？降解的机制是什么？如何减轻降解以延长这些聚合物的稳定性？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+使用以下资讯计算聚合物样品的重均分子量：
+- 样品的多分散指数（PDI）为1.5。
+- 样品的数均分子量 (Mn) 为 20,000 g/mol。
+-分子量为30,000g/mol的聚合物的重量分数(w)为0.2，分子量为10,000g/mol的聚合物的重量分数为0.8。
+
+",1
+merged_train.csv,QA_or_other,EN,"What type of core-shell polymers are prepared? 
+",1
+merged_train.csv,QA_or_other,ZH,"
+聚合物基 3D 列印材料的特性如何影响列印过程和最终列印的物体？
+
+",1
+merged_train.csv,QA_or_other,EN, Could you explain why using small amounts of initiators allows for the polymerization of a wide variety of monomers?,1
+merged_train.csv,QA_or_other,ZH,"
+“配位聚合物或金属有机框架的使用如何提高工业气体分离过程的效率？”
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+如何最佳化聚合物生产过程以减少不良副产物的形成，同时保持高产率？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+如何根据特定应用客制化聚合物基智慧材料的机械性质？
+
+",1
+merged_train.csv,QA_or_other,ZH,"
+“我们如何提高聚合物电子材料的导电性以开发高效的电子装置？”
+
+",1
+merged_train.csv,QA_or_other,EN,What are the steps involved in a radical polymerization reaction and how do they contribute to the formation of high molecular weight polymers?,1
+merged_train.csv,QA_or_other,EN,What is the effect of temperature on the rate of polymerization of polyethylene? Develop an experiment to investigate and compare the rate of polymerization of polyethylene at different temperatures.,1
+merged_train.csv,QA_or_other,EN,"""How can we manipulate the polymerization reactions to control the properties of the resulting polymer?""",1
+merged_train.csv,QA_or_other,EN,"""Design a polymerization reaction to produce a high-density polyethylene (HDPE) with a molecular weight of 1 million grams per mole using ethylene as the monomer and a Ziegler-Natta catalyst system. Calculate the theoretical yield of the reaction and explain the factors that may affect the percent yield.""",1
+merged_train.csv,QA_or_other,EN,"What are the polymerization reaction mechanisms involved in the synthesis of Nylon 6,6 and how do they affect the properties of the resulting polymer?",1
+merged_train.csv,QA_or_other,EN,"What is the chemical mechanism of step-growth polymerization, and how does it differ from chain-growth polymerization in terms of molecular weight distribution and reaction rate?",1
+merged_train.csv,QA_or_other,EN,"""How does the monomer structure affect the properties of the polymer produced in the polymerization reaction?""",1
+merged_train.csv,QA_or_other,EN,What is the difference between step-growth and chain-growth polymerization reactions and how do their mechanisms affect the properties of the resulting polymer?,1
+merged_train.csv,QA_or_other,EN,How can the rate of polymerization be controlled for the synthesis of polyethylene using free radical polymerization technique?,1
+merged_train.csv,QA_or_other,EN,"What is the chemical reaction mechanism involved in the polymerization of ethylene to produce polyethylene, and what are the factors that affect the length and properties of the resulting polymer chain?",1
+merged_train.csv,QA_or_other,EN,What are the parameters that affect the molecular weight and distribution of polymers synthesized using radical polymerization?,1
+merged_train.csv,QA_or_other,EN,"What is the mechanism of polymerization for the formation of Nylon-6,6? Include the monomers involved and the steps of the reaction.",1
+merged_train.csv,QA_or_other,EN,"What is the mechanism of polymerization involved in the formation of polyethylene? Provide a detailed explanation of the process, including the reaction equation and the role of the catalyst.",1
+merged_train.csv,QA_or_other,EN,"""How can the average molecular weight of a polymer obtained through step-growth polymerization be controlled, and what factors influence its value?""",1
+merged_train.csv,QA_or_other,EN,"What is the mechanism of formation for a particular polymer, and how does its molecular weight affect its properties?",1
+merged_train.csv,QA_or_other,EN,"What is the mechanism behind the free-radical polymerization of styrene? How does the initiator molecule induce the formation of free radicals, and what specific factors affect the speed and efficiency of the reaction? Can you provide hypothetical conditions under which the propagation of the reaction would cease or slow down significantly?",1
+merged_train.csv,QA_or_other,EN,"""How does the type of monomer affect the properties of the polymer produced in a polymerization reaction?""",1
+merged_train.csv,QA_or_other,EN,What is the mechanism of polymerization in the formation of polyethylene? How do the monomers react to form a polymer chain? How does the type and ratio of comonomers affect the properties of the resulting polymer? Compare and contrast the differences between addition and condensation polymerization reactions.,1
+merged_train.csv,QA_or_other,EN,"How do the reaction conditions (temperature, initiator, solvent, etc.) affect the molecular weight distribution of a polymer produced through free radical polymerization of styrene?",1
+merged_train.csv,QA_or_other,EN,What is the mechanism of free radical polymerization of vinyl chloride and how does the reaction pathway lead to the formation of PVC with high molecular weight?,1
+merged_train.csv,QA_or_other,EN,How does the molecular weight of the resulting polymer in a polymerization reaction change with respect to the ratio of monomers used?,1
+merged_train.csv,QA_or_other,EN,What is the effect of monomer concentration on the rate of polymerization for the synthesis of polystyrene using free radical polymerization?,1
+merged_train.csv,QA_or_other,EN,What is the effect of changing the monomer structure on the properties of the polymer produced in a polymerization reaction? Provide examples of how different monomers can result in polymers with varying physical and chemical properties.,1
+merged_train.csv,QA_or_other,EN,"""What are the differences between addition and condensation polymerization reactions, and how do these differences affect the resulting polymer structure and properties?""",1
+merged_train.csv,QA_or_other,EN,"""What is the mechanism behind the polymerization reaction of polyethylene, and how does it differ from the polymerization reaction of polypropylene?""",1
+merged_train.csv,QA_or_other,EN,"""Design a polymerization reaction scheme to synthesize a biodegradable and water-soluble polymer for use in environmentally friendly packaging materials.""",1
+merged_train.csv,QA_or_other,EN,How does the molecular weight of a polymer affect its physical properties?,2
+merged_train.csv,QA_or_other,EN,"""What is the mechanism of polymerization in the synthesis of polyethylene, and how does controlling reaction parameters such as temperature and catalyst concentration affect the properties of the polymer produced?""",1
+merged_train.csv,QA_or_other,EN,"What are the main differences between addition polymerization and condensation polymerization, and how do these differences affect the properties of the resulting polymers? Provide examples of each type of polymerization and explain how their properties differ.",1
+merged_train.csv,QA_or_other,EN,How can we control the molecular weight and branching of polymers during a polymerization reaction using different types of initiators and monomers?,1
+merged_train.csv,QA_or_other,EN,How does the type of monomer and the reaction conditions affect the molecular weight and properties of a polymer produced through radical polymerization?,1
+merged_train.csv,QA_or_other,EN,How can we control the molecular weight of a polymer synthesized through free radical polymerization?,1
+merged_train.csv,QA_or_other,EN,How can the mechanical properties of a polymer be improved by selecting appropriate polymerization conditions?,1
+merged_train.csv,QA_or_other,EN,"How does the addition of crosslinking agents affect the physical properties of a polymer? Investigate the changes in properties such as tensile strength, elasticity, and thermal stability when different crosslinking agents are used in the polymerization reaction.",1
+merged_train.csv,QA_or_other,EN,"""What is the glass transition temperature of polyvinyl chloride (PVC) and how does it affect its mechanical properties?""",1
+merged_train.csv,QA_or_other,EN,How does the molecular weight of a polymer affect its physical properties such as tensile strength and elasticity?,1
+merged_train.csv,QA_or_other,EN,"""Explain how the glass transition temperature of a polymer is influenced by its molecular weight and degree of branching.""",1
+merged_train.csv,QA_or_other,EN,What is the effect of changing the monomer concentration on the molecular weight of a polymer synthesized via free radical polymerization?,1
+merged_train.csv,QA_or_other,EN,"What are the effects of branching and crosslinking on the physical properties of polymers? Provide specific examples of how branching and crosslinking affect the glass transition temperature, crystallinity, and mechanical properties of polymers.",1
+merged_train.csv,QA_or_other,EN,"""How does the molecular weight of a polymer affect its physical properties?""",1
+merged_train.csv,QA_or_other,EN,"""What is the effect of different monomer ratios on the physical properties of a polymer?""",1
+merged_train.csv,QA_or_other,EN,"""How does the chemical structure of a polymer affect its physical properties such as melting point, density, and thermal stability?""",1
+merged_train.csv,QA_or_other,EN,What is the relationship between the molecular weight and the glass transition temperature of a polymer? Provide experimental evidence to support your answer.,1
+merged_train.csv,QA_or_other,EN,"How does the molecular weight of a polymer affect its physical properties at different temperatures, and what is the relationship between polymer molecular weight and its glass transition temperature?",1
+merged_train.csv,QA_or_other,EN,"How does the molecular weight of a polymer affect its physical properties, such as tensile strength and elongation?",1
+merged_train.csv,QA_or_other,EN,"""How does the molecular weight of a polymer affect its physical properties such as viscosity, tensile strength, and elasticity?""",1
+merged_train.csv,QA_or_other,EN,How does the molecular weight of a polymer affect its physical properties such as viscosity and elasticity?,1
+merged_train.csv,QA_or_other,EN,How does molecular weight affect the physical properties of polymers such as tensile strength and flexibility?,1
+merged_train.csv,QA_or_other,EN,"Calculate the weight-average molecular weight of a polymer sample with the following information:
+- The polydispersity index (PDI) of the sample is 1.5.
+- The number-average molecular weight (Mn) of the sample is 20,000 g/mol. 
+- The weight fraction (w) of the polymer with a molecular weight of 30,000 g/mol is 0.2, and the weight fraction of the polymer with a molecular weight of 10,000 g/mol is 0.8.",1
+merged_train.csv,QA_or_other,EN,What is the effect of molecular weight on the mechanical strength of a polymer?,1
+merged_train.csv,QA_or_other,EN,"What is the effect of molecular weight and chain length on the physical properties of a polymer? Provide specific examples of how different molecular weights and chain lengths can affect the properties of a polymer, such as its melting point or viscosity.",1
+merged_train.csv,QA_or_other,EN,"One problem for a chemistry student to solve related to polymer chemistry and physical properties could be: 
+
+""What effect does molecular weight have on the viscosity of a polymer solution, and how can this be measured experimentally?""",1
+merged_train.csv,QA_or_other,EN,"How does the molecular weight of a polymer affect its physical properties, such as melting point and solubility in different solvents?",1
+merged_train.csv,QA_or_other,EN,"What is the effect of molecular weight on the physical properties of a polymer? Provide a detailed analysis on how different molecular weights of a polymer can affect its melting point, glass transition temperature, and solubility.",1
+merged_train.csv,QA_or_other,EN,"What is the effect of molecular weight on the melt viscosity of polymers? Conduct an experiment to determine the relationship between the molecular weight of a polymer and its melt viscosity, and present your results along with an analysis and discussion of the underlying principles.",1
+merged_train.csv,QA_or_other,EN,"How does the molecular weight of a polymer affect its physical properties such as viscosity, tensile strength, and elasticity?",1
+merged_train.csv,QA_or_other,EN,"What is the effect of the molecular weight of a polymer on its physical properties, such as viscosity and elasticity?",1
+merged_train.csv,QA_or_other,EN,"""How does the degree of polymerization affect the physical properties of polystyrene, specifically its melting point and glass transition temperature?""",1
+merged_train.csv,QA_or_other,EN,What are the physical properties of polymers and how do they affect the performance of the material?,1
+merged_train.csv,QA_or_other,EN,"Here is a precise problem for the student to solve:
+
+How does the molecular weight of a polymer affect its physical properties such as viscosity and elasticity? Provide experimental evidence to support your answer.",1
+merged_train.csv,QA_or_other,EN,"What is the effect of molecular weight on the physical properties of polymers? Compare and contrast the differences in melting point, glass transition temperature, and viscoelastic behavior for low and high molecular weight polymers. Provide examples of commercially available polymers for each molecular weight range and discuss their practical applications in industry.",1
+merged_train.csv,QA_or_other,EN,What is the effect of molecular weight on the melting point of polyethylene?,1
+merged_train.csv,QA_or_other,EN,What is the effect of degree of polymerization on the tensile strength and viscosity of a polymer?,1
+merged_train.csv,inverse_design,EN,Generate / design a polymer with band gap of <bandgap_eV> eV?,3042
+merged_train.csv,inverse_design,EN,What is a polymer with band gap of <bandgap_eV> eV?,3042
+merged_train.csv,inverse_design,EN,Help me design a polymer characterized by a band gap of <bandgap_eV> eV?,3042
+merged_train.csv,inverse_design,ZH,帮我设计一款带隙为<bandgap_eV> eV左右的聚合物，请给出它的SMILES,3042
+merged_train.csv,inverse_design,ZH,可否给出/设计一个带隙为<bandgap_eV> eV左右的聚合物结构,3042
+merged_train copy.csv,Tg,EN,Predict the Tg of the following SMILES,13019
+merged_train copy.csv,Tg,EN,What is the glass transition temperature (Tg) of this polymer represented by SMILES,770
+merged_train copy.csv,Tg,EN,Estimate the Tg value for the given polymer structure in SMILES notation,6791
+merged_train copy.csv,Tg,EN,Determine the glass transition temperature of this molecular structure,6915
+merged_train copy.csv,Tg,EN,Provide the predicted Tg for the polymer described by this SMILES string,626
+merged_train copy.csv,Tg,ZH,预测以下 SMILES 表示的玻璃化转变温度 (Tg),6901
+merged_train copy.csv,Tg,ZH,请计算以下 SMILES 所对应聚合物的玻璃化转变温度 (Tg),6875
+merged_train copy.csv,Tg,ZH,基于该 SMILES 结构，预测其玻璃化温度,6888
+merged_train copy.csv,Tg,ZH,该分子结构的玻璃化转变温度是多少,6866
+merged_train copy.csv,Tg,ZH,请提供该 SMILES 聚合物的 Tg 预测值,6873
+merged_train copy.csv,Tg,EN,What is the glass transition temperature (Tg) of this polymer represented by SMILES?,6150
+merged_train copy.csv,bandgap_crystal,ZH,请估算以下 SMILES 所描述材料的能带间隙 (Bandgap),4240
+merged_train copy.csv,bandgap_crystal,ZH,请提供该化合物晶体的带隙预测值,4240
+merged_train copy.csv,bandgap_crystal,EN,Determine the bandgap energy of the material represented by this SMILES string,4240
+merged_train copy.csv,bandgap_crystal,EN,Predict the bandgap crystal of the following SMILES,8480
+merged_train copy.csv,bandgap_crystal,EN,Predict the electronic bandgap for the crystal structure corresponding to this SMILES,4240
+merged_train copy.csv,bandgap_crystal,ZH,预测以下 SMILES 对应晶体的带隙大小,4240
+merged_train copy.csv,bandgap_crystal,ZH,该分子晶体的电子带隙是多少,4240
+merged_train copy.csv,bandgap_crystal,EN,What is the estimated bandgap energy of this crystal based on its SMILES structure?,4240
+merged_train copy.csv,bandgap_crystal,ZH,请计算该材料的预期能带宽度,4240
+merged_train copy.csv,atomization_energy,ZH,请计算该 SMILES 对应物质的总原子结合能,5265
+merged_train copy.csv,atomization_energy,ZH,请估算该分子的解离能大小,5265
+merged_train copy.csv,atomization_energy,EN,Predict the binding energy for breaking this molecule into individual atoms,5265
+merged_train copy.csv,atomization_energy,EN,Predict the atomization energy of the following SMILES,10530
+merged_train copy.csv,atomization_energy,EN,How much energy is required for the atomization of this molecular structure,5265
+merged_train copy.csv,atomization_energy,ZH,预测以下 SMILES 对应化合物的原子化能,5265
+merged_train copy.csv,atomization_energy,ZH,该分子结构的原子化能是多少,5265
+merged_train copy.csv,atomization_energy,EN,Estimate the atomization energy of the compound represented by this SMILES string,5265
+merged_train copy.csv,atomization_energy,ZH,基于此分子结构，预测其原子化能值,5265
+merged_train copy.csv,heat_class,ZH,基于 SMILES 结构，预测该材料的耐热性能,4995
+merged_train copy.csv,heat_class,ZH,该高分子的耐热性怎么样,4995
+merged_train copy.csv,heat_class,EN,Estimate the temperature endurance class for the given molecular structure,4995
+merged_train copy.csv,heat_class,EN,Predict the heat resistance class of the following SMILES,9990
+merged_train copy.csv,heat_class,EN,Predict the heat resistance category for the polymer described by this SMILES notation,4995
+merged_train copy.csv,heat_class,ZH,预测以下 SMILES 对应材料的耐热等级,4995
+merged_train copy.csv,heat_class,ZH,请计算该分子结构的热稳定等级,4995
+merged_train copy.csv,heat_class,EN,What is the thermal stability classification of this material based on its SMILES?,4995
+merged_train copy.csv,heat_class,ZH,该高分子的耐热等级是多少,4995
+merged_train copy.csv,QA_or_other,ZH,你的主要目标是什么,60
+merged_train copy.csv,QA_or_other,ZH,你的开发单位是谁,120
+merged_train copy.csv,QA_or_other,ZH,你的研究机构是哪家,120
+merged_train copy.csv,QA_or_other,ZH,你是哪个机构开发的,120
+merged_train copy.csv,QA_or_other,ZH,你的研究背景是什么,120
+merged_train copy.csv,QA_or_other,ZH,你的名称是什么,120
+merged_train copy.csv,QA_or_other,ZH,你的模型名称是,120
+merged_train copy.csv,QA_or_other,ZH,你的全名是什么,60
+merged_train copy.csv,QA_or_other,ZH,请介绍你的名字及研究机构。,60
+merged_train copy.csv,QA_or_other,ZH,你是由谁领导开发的,60
+merged_train copy.csv,QA_or_other,ZH,你的研发团队是谁,60
+merged_train copy.csv,QA_or_other,ZH,你的训练工作是谁负责的,60
+merged_train copy.csv,QA_or_other,ZH,你的主要任务是什么,60
+merged_train copy.csv,QA_or_other,ZH,你的核心功能是什么,60
+merged_train copy.csv,QA_or_other,ZH,你可以预测哪些高分子性质,60
+merged_train copy.csv,QA_or_other,ZH,你能预测玻璃化转变温度吗,60
+merged_train copy.csv,QA_or_other,ZH,你的预测精度如何,60
+merged_train copy.csv,QA_or_other,ZH,你的预测方法是什么,60
+merged_train copy.csv,QA_or_other,ZH,你的数据来源是什么,60
+merged_train copy.csv,QA_or_other,ZH,你的训练数据有多少,60
+merged_train copy.csv,QA_or_other,ZH,你的数据覆盖哪些高分子,60
+merged_train copy.csv,QA_or_other,ZH,你可以预测哪些类别的高分子,60
+merged_train copy.csv,QA_or_other,ZH,你的模型适用于哪些领域,60
+merged_train copy.csv,QA_or_other,ZH,你可以辅助哪些研究工作,60
+merged_train copy.csv,QA_or_other,ZH,你的预测能力有哪些,60
+merged_train copy.csv,QA_or_other,ZH,你的模型是否支持逆向设计,60
+merged_train copy.csv,QA_or_other,ZH,你主要追求的目标是什么,60
+merged_train copy.csv,QA_or_other,ZH,你的开发单位是哪家,60
+merged_train copy.csv,QA_or_other,ZH,你所属的研究机构是哪家,60
+merged_train copy.csv,QA_or_other,ZH,你由哪个机构研发,60
+merged_train copy.csv,QA_or_other,ZH,你的学术背景如何,60
+merged_train copy.csv,QA_or_other,ZH,你叫什么名字,60
+merged_train copy.csv,QA_or_other,ZH,你的模型叫什么,60
+merged_train copy.csv,QA_or_other,ZH,请问你的全称是什么,60
+merged_train copy.csv,QA_or_other,ZH,请介绍一下你的名字和所属机构,60
+merged_train copy.csv,QA_or_other,ZH,请问你的开发由谁负责领导,60
+merged_train copy.csv,QA_or_other,ZH,你的研发团队是哪支力量,60
+merged_train copy.csv,QA_or_other,ZH,请问谁负责你的训练工作,60
+merged_train copy.csv,QA_or_other,ZH,你肩负的主要任务是什么,60
+merged_train copy.csv,QA_or_other,ZH,请问你的核心功能包括哪些,60
+merged_train copy.csv,QA_or_other,ZH,你能够预测哪些高分子关键性质,60
+merged_train copy.csv,QA_or_other,ZH,是否可以预测玻璃化转变温度,60
+merged_train copy.csv,QA_or_other,ZH,你的预测准确性如何,60
+merged_train copy.csv,QA_or_other,ZH,请问你的预测技术采用了哪些方法,60
+merged_train copy.csv,QA_or_other,ZH,你所依赖的数据来源有哪些,60
+merged_train copy.csv,QA_or_other,ZH,你拥有多少训练数据,60
+merged_train copy.csv,QA_or_other,ZH,你的数据集涵盖哪些类别的高分子,60
+merged_train copy.csv,QA_or_other,ZH,你能够预测哪些类型的高分子物性,60
+merged_train copy.csv,QA_or_other,ZH,你的模型应用于哪些领域,60
+merged_train copy.csv,QA_or_other,ZH,你能为哪些研究工作提供支持,60
+merged_train copy.csv,QA_or_other,ZH,你具备哪些预测能力,60
+merged_train copy.csv,QA_or_other,ZH,你的模型能否应用于逆向设计,60
+merged_train copy.csv,QA_or_other,ZH,你的核心任务是什么,60
+merged_train copy.csv,QA_or_other,ZH,你的研发机构是哪家,60
+merged_train copy.csv,QA_or_other,ZH,所属科研单位是哪里,60
+merged_train copy.csv,QA_or_other,ZH,由什么单位构建,60
+merged_train copy.csv,QA_or_other,ZH,科研基础是什么,60
+merged_train copy.csv,QA_or_other,ZH,如何称呼你,60
+merged_train copy.csv,QA_or_other,ZH,系统名称是什么,60
+merged_train copy.csv,QA_or_other,EN, How does the concept of radical stability apply to the design of polymerization reactions or to synthetic organic chemistry?,1
+merged_train copy.csv,QA_or_other,EN," Considering Teflon's unique properties compared to other polymers in the table, what might indicate about the nature of the R group in its monomer?",2
+merged_train copy.csv,QA_or_other,ZH,在多糖的背景下，当聚合物被称为“胶体”时，这意味着什么？,1
+merged_train copy.csv,QA_or_other,ZH,"
+新增不同型别的聚合物新增剂如何影响聚合物基水处理膜中的膜效能和去除水中污染物的效率？
+
+",1
+merged_train copy.csv,QA_or_other,EN, What are the effects of extensive cross-linking on the physical properties of a polymer?,1
+merged_train copy.csv,QA_or_other,ZH,"
+影响高分子材料降解和稳定性的主要因素有哪些？我们如何控制或尽量减少其在不同环境中的影响？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+我们如何设计和合成一种具有更高导电性和稳定性的新型聚合物电子材料，用于柔性电子装置？
+
+",1
+merged_train copy.csv,QA_or_other,EN, How does a free radical lead to the formation of a longer polymer chain during the polymerization process?,1
+merged_train copy.csv,QA_or_other,ZH,在进行凝胶过滤色谱时，聚合物珠子的交联度如何影响分离过程？,1
+merged_train copy.csv,QA_or_other,ZH,"
+温度对聚乙烯、聚丙烯、聚氯乙烯等常用生物医用聚合物的机械性质有何影响？这些聚合物的分子结构如何影响它们在不同温度下的机械行为，这对其在植入物或手术器械等生物医学应用中的使用有何影响？
+
+",2
+merged_train copy.csv,QA_or_other,ZH,"
+如何提高聚合物基涂料和油漆的效能以获得更好的附著力、耐久性和耐腐蚀性？
+
+",1
+merged_train copy.csv,QA_or_other,EN,The DNA nucleotide sequence to which RNA polymerase binds to initiate transcription is called the:,1
+merged_train copy.csv,QA_or_other,EN, How is the weight dispersion of molecules in a sample related to the mechanical properties of a polymer?,2
+merged_train copy.csv,QA_or_other,ZH,"
+聚合物分子量和化学结构对聚合物药物传递系统中的药物释放曲线有何影响？
+
+",1
+merged_train copy.csv,QA_or_other,EN, Can you name one of the initiation sequences recognized by RNA polymerase?,1
+merged_train copy.csv,QA_or_other,ZH,酰胺连接在尼龙中的存在如何影响其热学性能，与聚乙烯等纯碳氢聚合物相比呢？,1
+merged_train copy.csv,QA_or_other,ZH,"
+配位聚合物和金属有机骨架之间有什么区别，它们的结构如何影响它们的效能以及在气体储存和药物传输等领域的潜在应用？
+
+",1
+merged_train copy.csv,QA_or_other,EN," If a DSC trace shows a large melting point peak and a glass transition step, what does this imply about the polymer's crystalline and amorphous content?",1
+merged_train copy.csv,QA_or_other,ZH,"
+新增不同型别和数量的盐如何影响电池中使用的聚合物电解质的电导率？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+由对苯二甲酸和乙二醇合成聚对苯二甲酸乙二醇酯所需的最佳温度和压力条件是多少，以获得所得聚合物的最高产率和分子量？
+
+",1
+merged_train copy.csv,QA_or_other,EN,"Which enzyme is used in step three of the polymerase chain reaction because of it's ability to withstand high temperatures? Pick the best one to answer from the following four options: taq polymerase, minocycline polymerase, carbon polumerase, backronym polym",1
+merged_train copy.csv,QA_or_other,ZH,"
+如何提高聚合物感测器的灵敏度和选择性以检测复杂混合物中的特定分子？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+由醋酸乙烯酯单体（VAM）合成聚乙烯醇（PVA）的最佳反应条件是什么，使得所得PVA具有高聚合度和高分子量？
+
+",1
+merged_train copy.csv,QA_or_other,EN,This is a question about Thermochemistry and Enthalpy of polymerization calculations,4
+merged_train copy.csv,QA_or_other,ZH,"
+如何使用现有装置和原料最佳化制程引数，以生产高分子量和窄尺寸分布的聚合物？
+
+",1
+merged_train copy.csv,QA_or_other,EN,This is a question about Coordination chemistry and Coordination polymers and metal-organic frameworks,3
+merged_train copy.csv,QA_or_other,ZH,"
+从氯乙烯单体有效合成聚氯乙烯需要哪些条件和试剂，这些引数如何影响所得聚合物的产率和效能？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+如何针对特定应用客制化配位聚合物和金属有机框架（MOF）的效能？提供一个为特定目的合成的 MOF 的范例，并描述如何针对该应用最佳化其效能。
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+如何设计和合成一种具有高折射率的聚合物基光学材料，以用于透镜或波导等光学元件？
+
+",1
+merged_train copy.csv,QA_or_other,EN," What type of polymerization is involved in forming poly(ethylene terephthalate), and how does this contrast with the process that forms polymers like poly(ethene)?",1
+merged_train copy.csv,QA_or_other,ZH,立体化学的概念如何在聚合物的物理性质中起作用？,1
+merged_train copy.csv,QA_or_other,ZH,"
+纳米颗粒的新增如何影响聚合物纳米复合材料的机械性质？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,链转移反应以何种方式改变了聚合物合成过程？,1
+merged_train copy.csv,QA_or_other,EN,This is a question about Quantum chemistry and Calculation of electronic and optical properties of conjugated polymers.,2
+merged_train copy.csv,QA_or_other,EN,"Amides are actually formed by bringing together an amine-containing molecule and molecule containing what? Pick the best one to answer from the following four options: carboxylic acid, oxidize acid, polymer acid, Fatty ac",1
+merged_train copy.csv,QA_or_other,EN," In the case of polyesters, what is the difference between homopolymers and copolymers?",2
+merged_train copy.csv,QA_or_other,EN, What does the variability in the number of monomeric units in polymers imply about their properties?,1
+merged_train copy.csv,QA_or_other,ZH,"
+如何提高聚合物电子材料的导电性，同时保持其机械弹性和稳定性？
+
+",1
+merged_train copy.csv,QA_or_other,EN, What property of polymers is considered most essential for creating strong but lightweight materials?,1
+merged_train copy.csv,QA_or_other,EN,"Dietary proteins are broken down into what components when food is digested? Pick the best one to answer from the following four options: amino acids, organic acids, protein acids, polymer ac",1
+merged_train copy.csv,QA_or_other,ZH,"
+“如何使用差示扫描量热法 (DSC) 测定聚合物的玻璃化转变温度 (Tg)？”
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+生产可生物降解聚合物的最有效的合成方法是什么，该聚合物具有受控的降解速率和理想的物理性质，适合药物传输系统等生物医学应用？
+
+",1
+merged_train copy.csv,QA_or_other,EN," Explain the phenomenon of ""strain hardening"" and ""strain softening"" in polymers.",1
+merged_train copy.csv,QA_or_other,ZH,"
+如何使用凝胶渗透色谱 (GPC) 测定聚合物的分子量？为什么这些资讯对于理解聚合物的性质和行为很重要？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+“我们如何提高聚合物共混物的相容性以增强其机械效能？”
+
+",1
+merged_train copy.csv,QA_or_other,EN,Can you have addition polymerisation with monomers other than alkenes?,1
+merged_train copy.csv,QA_or_other,ZH,"
+如何透过表面性质的改质来提高聚合物表面之间的黏合强度？
+
+",1
+merged_train copy.csv,QA_or_other,EN,"In PCR, DNA polymerase is used in",1
+merged_train copy.csv,QA_or_other,ZH,齊格勒和納塔在高分子化學領域做出了哪些重大貢獻？,1
+merged_train copy.csv,QA_or_other,ZH,"
+如何在不损害其结构完整性和机械效能的情况下提高组织工程用聚合物生物材料的生物相容性？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+我们如何使用聚合物建立一种智慧材料，可以检测水中的毒素并透过明显不同的颜色来指示污染？
+
+",2
+merged_train copy.csv,QA_or_other,ZH,"
+由氯乙烯单体合成聚氯乙烯的最佳反应条件是什么，包括适当的温度、压力和催化剂，这些条件如何影响所得聚合物的分子量和其他效能？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+如何提高聚合物基涂料的应用效能，同时保持其耐久性和耐化学性？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+由己二酸和六亚甲基二胺合成尼龙 6,6 所需的最佳温度和反应时间是多少？这些变数如何影响所得聚合物的产率和物理性质？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+“如何使用等离子体处理来改变聚合物材料的表面特性？”
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+温度和压力等制造制程引数如何影响聚合物加工中最终产品的效能？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+如何透过对其组成聚合物的精心选择和结构设计来最佳化聚合物基光伏材料的能量转换效率？影响其光伏效能的主要因素有哪些？
+
+",1
+merged_train copy.csv,QA_or_other,EN,"Proteins are polymers of what kind of acids? Pick the best one to answer from the following four options: amino, lipids, lactic, acetic",1
+merged_train copy.csv,QA_or_other,EN,"What is the molecule, dipeptide formed together by? Pick the best one to answer from the following four options: amino acids, polymer acids, rna acids, acetic ac",1
+merged_train copy.csv,QA_or_other,EN," If one of the liquids we're investigating is a polymer, what precautions should we take when testing its viscosity?",1
+merged_train copy.csv,QA_or_other,ZH,"
+如何最佳化可生物降解聚合物的合成以提高所得材料的降解速率和机械效能？
+
+",1
+merged_train copy.csv,QA_or_other,EN,This is a question about Materials chemistry and Investigation of the properties of conductive polymers for use in flexible electronics.,2
+merged_train copy.csv,QA_or_other,ZH,"
+“结晶速率如何影响聚合物的形态，我们如何控制它以获得所需的结果？”
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+如何透过调整合成中使用的配体来改变配位聚合物和金属有机骨架的效能？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+使用环保且具有成本效益的原材料生产具有可调节的分子量、机械强度和降解率等效能的可生物降解聚合物的最有效的合成路线是什么？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,我们能否利用渗透压测量来确定聚合物链的长度呢？,1
+merged_train copy.csv,QA_or_other,EN," What is the reason sulfur trioxide forms polymers, and how does this affect its physical state?",1
+merged_train copy.csv,QA_or_other,EN, How does the tacticity of a polymer influence its mechanical properties and applications?,1
+merged_train copy.csv,QA_or_other,ZH,"
+由醋酸乙烯酯单体合成高分子量聚乙烯醇的最佳反应条件（温度、压力和催化剂浓度）是多少？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+量子计算如何应用于药物发现领域，提高分子模拟和计算的准确性和效率？具体来说，有哪些量子演演算法和技术可以在这种情况下使用，它们与经典方法相比如何？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+交联程度如何影响聚合物体系的热力学性质？使用蒙特卡罗模拟研究交联密度与聚合物系统的弗洛里-哈金斯相互作用引数、回转半径和热容量等效能之间的关系。
+
+",2
+merged_train copy.csv,QA_or_other,ZH,"
+如何最佳化聚合物的物理和化学性质，以提高聚合物为基础的药物递送系统中药物的功效和递送？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+使用特定催化剂从乙烯基吡咯烷酮单体生产高产率和高分子量聚乙烯吡咯烷酮的最佳合成条件是什么？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+改变交联密度对聚合物基超吸水材料的吸水性和溶胀行为有何影响？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+“如何使用凝胶渗透色谱法测定聚合物炼长分布？该技术的局限性和优点是什么？”
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+纳米颗粒的新增如何影响聚合物纳米复合材料的机械效能？在不牺牲柔韧性的情况下提高强度和韧性的纳米颗粒的最佳浓度是多少？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,什么是一种含有两个脂肪酸和一个改良的磷酸基连接到甘油骨架的分子？ 从以下四个选项中选择最佳答案：磷脂类、碳水化合物、聚合物、氨基酸,1
+merged_train copy.csv,QA_or_other,ZH,"
+化学学生需要解决的与聚合物基超吸收性材料相关的一个精确问题可能是：“交联密度对聚丙烯酸酯基超吸收性聚合物的吸收能力和效能有何影响？”
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+设计一种新型的基于聚合物的药物递送系统，用于靶向癌症治疗，确保药物的可控和持续释放，同时对健康细胞的不利影响最小。考虑药物和聚合物的理化性质，以及它们的相互作用和生物相容性。详细解释药物释放机制和所提议系统的潜在好处。
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+如何使用功能化聚合物来提高用于检测有毒气体的聚合物感测器的灵敏度和选择性？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+不同的掺杂剂和抗衡离子对导电聚合物的电导率和柔性有何影响？如何利用这些资讯来提高其在柔性电子应用中的效能？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+如何最佳化聚合物薄膜的渗透性以实现有效的水处理，同时保持其机械稳定性和耐用性？
+
+",1
+merged_train copy.csv,QA_or_other,EN,This is a question about Materials chemistry and Study of the mechanical properties of polymers for use in biomedical applications,3
+merged_train copy.csv,QA_or_other,ZH,"
+“天然聚合物和合成聚合物的热降解率和稳定性有何不同？哪些因素会影响这些差异？”
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+“聚合物的化学修饰会影响其光学效能吗？如果是的话，我们如何设计具有独特光学效能的聚合物用于先进光学材料？”
+
+",1
+merged_train copy.csv,QA_or_other,EN," Given the equation from Bragg's Law, how does the scattering angle in a WAXS pattern relate to the distance between parallel polymer chains in a crystalline domain?",1
+merged_train copy.csv,QA_or_other,EN, Why are polymerization reactions typically exothermic?,1
+merged_train copy.csv,QA_or_other,ZH,"
+加入石墨烯作为导电填料对聚合物复合材料的机械和电气特性有何影响？石墨烯的浓度如何影响这些效能？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+如何提高两种不同聚合物之间的相容性以创造耐用且高品质的聚合物共混物？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+聚合物的分子量如何影响其在熔融状态下的黏度和流动行为？观察到的流变特性的潜在机制是什么？可以透过控制聚合物的分子量分布来调节这些流变特性吗？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+“如何使用先进的合成技术和新增剂来增强聚合物基涂料和油漆的耐久性和附著力？”
+
+",1
+merged_train copy.csv,QA_or_other,EN,How do I achieve same crystallinity when cooling polymers?,1
+merged_train copy.csv,QA_or_other,ZH,根据斯陶定格的理论，聚合物由什么组成？,1
+merged_train copy.csv,QA_or_other,ZH,考虑到立构性对聚合物的影响，你认为同构聚合物、异构聚合物和非规聚合物的玻璃化转变温度（Tg）会有何不同？,1
+merged_train copy.csv,QA_or_other,EN,This is a question about Materials chemistry and Investigation of the properties of polymers for use in 3D printing,2
+merged_train copy.csv,QA_or_other,ZH,"
+配体柔性对配位聚合物和金属有机骨架的形成有何影响？研究使用不同的柔性和刚性配体（如联苯、三联苯或其衍生物）合成 MOF 和 CP，并确定这些材料的效能，如孔隙率、表面积和稳定性。比较这些实验的结果并确定配体柔性在 CP 和 MOF 形成中的作用。
+
+",1
+merged_train copy.csv,QA_or_other,EN,This is a question about Computational chemistry and Monte Carlo simulations of polymer systems,4
+merged_train copy.csv,QA_or_other,ZH,"
+如何改善聚合物共混物的相容性以提高其效能和效能？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+聚合物长丝的化学成分如何影响3D列印物体的效能和质量，以及可以使用哪些方法来最佳化最终列印产品的效能？
+
+",2
+merged_train copy.csv,QA_or_other,ZH,"
+如何控制聚合物电池的电解质特性以提高电池效能和效率？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+考虑到其化学性质、释放动力学和生物利用度，最适合特定药物制剂的基于聚合物的药物递送系统是什么？
+
+",1
+merged_train copy.csv,QA_or_other,EN,Can you predict the resistance of conjugated polymers as a function of degree of polymerization (DP)?,1
+merged_train copy.csv,QA_or_other,ZH,"
+共轭聚合物的化学结构和电子性质有什么关系？改变聚合物链的长度或取代基如何影响其电子和光学特性？
+
+",2
+merged_train copy.csv,QA_or_other,EN,"What type of compound contains atoms of two or more different elements in its ring structure? Pick the best one to answer from the following four options: heterocyclic, aldehyde, polymer, hydrocarb",1
+merged_train copy.csv,QA_or_other,ZH,"
+如何最佳化不同聚合物的化学性质，以提高基于聚合物的药物递送系统用于标靶癌症治疗的有效性？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+由苯乙烯单体合成聚苯乙烯的最佳反应条件是多少，例如温度、压力、引发剂浓度和搅拌速率，以获得高分子量和产率？
+
+",1
+merged_train copy.csv,QA_or_other,EN, Explain the distinction between the terms plastic and polymer.,1
+merged_train copy.csv,QA_or_other,ZH,DNA polymerase III需要一个自由的3' OH基团来启动DNA合成，因为它是以5'→3'的方向合成新的DNA链。这意味着它在合成过程中需要在已经存在的DNA链上找到一个自由的3' OH基团来添加下一个核苷酸。这样才能保证DNA链的延伸。,1
+merged_train copy.csv,QA_or_other,EN,"How are the glycosides G1, G2 and G3 connected to form a polymer chain?
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+“如何最佳化聚合物基生物材料的物理和化学特性，以提高其组织工程应用的功效？”
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+由丙烯单体合成聚丙烯的逐步反应机制为何？它与由单体合成其他型别聚合物有何不同？
+
+",2
+merged_train copy.csv,QA_or_other,EN, Can you explain the difference between a statistical copolymer and an alternating copolymer?,1
+merged_train copy.csv,QA_or_other,EN, How are the individual nucleotides connected in a nucleic acid polymer?,1
+merged_train copy.csv,QA_or_other,ZH,"
+“我们如何设计和合成具有增强萤光特性的聚合物光学材料，用于生物医学成像应用？”
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+“将不同金属离子掺入配位聚合物或金属有机框架如何影响材料的孔隙率和吸附效能？”
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+“表面改质如何影响聚合物的物理和化学性质，这项技术有哪些实际应用？”
+
+",1
+merged_train copy.csv,QA_or_other,EN, Can you discuss the implications of glass transition and melting point temperatures on a polymer's properties?,1
+merged_train copy.csv,QA_or_other,EN," Considering amorphous and semi-crystalline polymers, can we infer their properties merely based on their visible appearance, and how does this relate to their intermolecular structure?",1
+merged_train copy.csv,QA_or_other,ZH,"
+共轭聚合物链的长度对其电子和光学性质有何影响？如何使用量子化学计算来预测和解释这些影响？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+“我们如何透过操纵聚合物的化学结构来提高基于聚合物的光伏材料的效率？”
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+如何在不影响其轻质特性的情况下提高航太应用聚合物基复合材料的机械性质（拉伸强度、断裂韧性等）？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+在使用不同型别的引发剂和单体的聚合反应过程中，我们如何控制聚合物的分子量和支化？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+我们如何在不影响列印过程的准确性和精密度的情况下最佳化聚合物基 3D 列印零件的机械效能？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+如何在保持渗透性的同时提高聚合物水处理薄膜的选择性？
+
+",1
+merged_train copy.csv,QA_or_other,EN, What are the repeating units that make up polymers called?,1
+merged_train copy.csv,QA_or_other,ZH,"
+“如何提高 3D 列印聚合物零件的机械效能，同时保持其形状和尺寸精度？”
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+如何针对特定的组织工程应用最佳化聚合物基生物材料的特性？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+聚合物的表面修饰如何影响其生物相容性和细胞毒性？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+分子量对聚合物熔体黏度有何影响？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+如何最佳化聚合物智慧材料的效能以用于靶向药物传输？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,考虑到聚四氟乙烯相对于表中其他聚合物的独特性质，这可能对其单体中的R基的性质有何指示？,1
+merged_train copy.csv,QA_or_other,ZH,"
+如何提高共混物中两种不同聚合物之间的相容性？
+
+",1
+merged_train copy.csv,QA_or_other,EN,"Synthetic and natural rubber, styrofoam and plastic are examples of organic what? Pick the best one to answer from the following four options: polymers, solutions, microbes, m",1
+merged_train copy.csv,QA_or_other,ZH,"
+不同聚合物结构如何影响不同温度下聚合物熔体的流变特性？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,如果1-庚烯形成聚合物，你会预期到聚合物的红外光谱中出现哪些主要变化呢？,1
+merged_train copy.csv,QA_or_other,EN,"During protein synthesis, ribosomes assemble what into proteins? Pick the best one to answer from the following four options: amino acids, rna acids, polymer acids, DNA Ac",1
+merged_train copy.csv,QA_or_other,ZH,"
+共轭聚合物链的长度与其能隙之间有什么关系？能隙如何影响聚合物的电子和光学效能？使用量子化学计算提供详细的解释。
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+改变聚合物薄膜的化学成分对其水处理效率有何影响？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+如何增强聚合物电解质的电导率以提高电池的效能和效率？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+不同单体的使用如何影响聚合物在不同表面上的黏合效能？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+如何最佳化使用齐格勒-纳塔催化剂从丙烯单体合成聚丙烯以最大限度地提高产量并改善聚合物效能？
+
+",1
+merged_train copy.csv,QA_or_other,EN,This is a question about Polymer chemistry and Rheological properties of polymer melts,1
+merged_train copy.csv,QA_or_other,ZH,"
+由丙烯腈单体合成聚丙烯腈的最佳条件是什么？温度、反应时间、引发剂浓度和溶剂等反应引数如何影响所得聚合物的产率和分子量？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+如何最佳化聚合物药物递送系统中药物的控制释放，以确保最大的治疗效果和最小的不良反应？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+如何使用差示扫描量热法 (DSC) 技术分析聚合物的热效能？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+如何最佳化聚对苯二甲酸乙二醇酯（PET）聚合物的生产过程以提高其机械和热效能？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+我们如何合成和表征新型可生物降解聚合物材料，可以有效地将化疗药物输送到癌细胞，同时最大限度地减少对健康细胞的毒性？
+
+",1
+merged_train copy.csv,QA_or_other,EN,This is a question about Surface chemistry and Surface modification of polymers,2
+merged_train copy.csv,QA_or_other,ZH,"
+如何提高导电聚合物的电导率以用于柔性电子产品？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+如何合成具有最佳结构效能和选择性的配位聚合物或金属有机骨架，用于特定的气体吸附或催化应用，以及哪些因素决定了它们在各种环境条件下的稳定性和反应活性？
+
+",1
+merged_train copy.csv,QA_or_other,EN, Why are customized catalysts important for producing stereoregular polymers?,1
+merged_train copy.csv,QA_or_other,ZH,"
+如何提高基于聚合物基质的感测器的灵敏度和选择性以检测复杂基质中的特定分析物？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+尼龙 6,6 合成中涉及的聚合反应机制是什么？它们如何影响所得聚合物的效能？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+影响组织工程应用中所使用的聚合物基生物材料的生物相容性的主要因素有哪些？如何最佳化这些因素以改善组织反应并提高组织再生过程的成功率？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+纳米粒子的新增如何影响聚合物纳米复合材料中聚合物材料的热稳定性？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+配位聚合物和金属有机骨架的结晶度如何影响其气体吸附能力？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+“我们如何设计一种基于聚合物的感测器来准确检测水样本中重金属的存在？”
+
+",2
+merged_train copy.csv,QA_or_other,ZH,"
+“聚合物的表面特性如何影响它们对不同基材的黏附力？”
+
+",1
+merged_train copy.csv,QA_or_other,EN," Given the steps involved in the Curtius Rearrangement Reaction (RAR), can you identify a step that might be exploited to generate a different type of polymer or material?",1
+merged_train copy.csv,QA_or_other,EN, What specific molecular change occurs in the polymer chains during the vulcanization of rubber?,1
+merged_train copy.csv,QA_or_other,ZH,"
+“使用蒙特卡罗模拟方法时，不同的模拟引数（例如温度、压力、炼长）如何影响聚合物系统的行为？”
+
+",1
+merged_train copy.csv,QA_or_other,EN, How does catenation contribute to the formation of polymers from hydrocarbons?,1
+merged_train copy.csv,QA_or_other,ZH,"
+随著聚合物炼长度的增加，共轭聚合物的电子和光学性质如何改变？使用量子化学计算来研究聚合物链的长度与其电子和光学性质之间的关系。
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+聚合物链的长度和共轭如何影响其电子和光学性质？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+聚合物包装材料有哪些不同型别？它们的生物降解性和回收潜力如何对环境产生不同的影响？
+
+",2
+merged_train copy.csv,QA_or_other,ZH,"
+“如何透过将碳纳米管或石墨烯等纳米材料纳入聚合物基体来增强基于聚合物的感测器和致动器的效能？”
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+聚合物组合物如何影响聚合物基黏合剂和密封剂的黏合和密封效能？具体来说，研究聚合物的化学结构与其与不同基材（例如金属、塑胶或木材）黏合的能力之间的关系。
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+聚合物基料的分子量和多分散性对聚合物基涂料的硬度、柔韧性和对基材的附著力方面的效能有何影响？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+如何在不同的环境条件下（例如暴露在热或阳光下）提高聚合物的稳定性并减少其降解？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+聚合物基黏合剂的成分如何影响其对不同基材的黏合强度？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+影响聚合物共混物相容性的因素有哪些？如何提高相容性？
+
+",2
+merged_train copy.csv,QA_or_other,ZH,"
+如何提高聚合物基涂料的耐久性和耐刮擦性，同时保持其透明度？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+“如何提高聚合物感测器的灵敏度和选择性，以检测不同环境中的特定分析物？”
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+使用等离子体处理对聚合物进行表面修饰如何影响聚合物的表面能和润湿性？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+由苯乙烯单体合成所需分子量范围为 100,000-500,000 g/mol 的高分子量聚苯乙烯的最佳反应条件和催化剂是什么？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+如何最佳化导电聚合物的电导率以提高柔性电子装置的效率？
+
+",1
+merged_train copy.csv,QA_or_other,EN," After providing the polymerization mechanism, how would you label the initiation, propagation, and termination steps?",1
+merged_train copy.csv,QA_or_other,EN,This is a question about Chemical engineering and Developing a process for the production of polymers,3
+merged_train copy.csv,QA_or_other,ZH,"
+新增不同型别和浓度的纳米颗粒如何影响聚合物纳米复合材料的热效能和机械效能？
+
+",1
+merged_train copy.csv,QA_or_other,EN, What was the monomer unit upon which Staudinger based the structure for some polymers?,1
+merged_train copy.csv,QA_or_other,ZH,"
+如何透过控制聚合物材料的化学结构来改变其光学特性？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+“可以使用哪些方法来提高聚合物对特定基材的黏合力，基材和聚合物的化学和物理特性如何影响黏合强度？”
+
+",1
+merged_train copy.csv,QA_or_other,EN, How is the mole ratio of monomer to polymer (Y to Z) expressed for the synthesis of HDPE?,1
+merged_train copy.csv,QA_or_other,ZH,"
+交联密度对高吸水性聚合物的溶胀行为及保水能力有何影响？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+不同型别的聚合物包装材料（例如聚乙烯、聚丙烯、聚苯乙烯等）在其生产、使用和处置过程中对环境有何影响？可以采取哪些措施来减少对环境的影响？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+设计一种基于聚合物的智慧材料，当暴露于特定的化学或环境刺激时，该材料会改变颜色。您将如何选择合适的聚合物和化学物质来实现这一目标？在最佳化材料的反应时间和灵敏度时您会考虑哪些因素？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+“改变聚合物的浓度如何影响熔体的黏度及其在不同剪下速率下的流动行为？”
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+使用齐格勒-纳塔催化剂从丙烯单体催化合成聚丙烯的最佳化反应条件为何？不同催化剂的使用如何影响聚合物的最终效能，例如分子量和立构规整度？
+
+",1
+merged_train copy.csv,QA_or_other,EN, How does the presence of polar functional groups in step-growth polymers affect their properties?,2
+merged_train copy.csv,QA_or_other,ZH,"
+如何针对特定的组织工程应用最佳化聚合物基生物材料的机械性质？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+结晶度如何影响聚合物的机械性质？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+配位聚合物和金属有机骨架在结构、键结和工业应用上有何不同？提供每个范例并讨论它们在催化或气体储存中的潜在用途。
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+如何提高高吸水性聚合物的吸收能力，同时保持其机械强度？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+紫外线辐射如何影响聚丙烯 (PP) 和聚乙烯 (PE) 聚合物的降解和稳定性？解释光降解过程背后的科学原理，并提出提高这些聚合物的紫外线稳定性的潜在策略。
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+纳米粒子的新增如何影响聚合物熔体的流变特性？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"解释一下聚合物中的“应变硬化”和“应变软化”现象。  
+
+在拉伸聚合物时，当分子链受到应变而开始排列时，该聚合物就会变得更加难以变形，这就是所谓的“应变硬化”现象。与此相反，当聚合物受到持续应变并逐渐排列时，它会变得更容易变形，这就是“应变软化”现象。",1
+merged_train copy.csv,QA_or_other,ZH,"
+“碳纳米管的新增如何影响航空航天应用中使用的聚合物基复合材料的机械和热效能？”
+
+",1
+merged_train copy.csv,QA_or_other,ZH,齐格勒-纳塔催化剂如何影响所生产的聚合物的物理性质？,1
+merged_train copy.csv,QA_or_other,ZH,"
+聚合物智慧材料对外部刺激的反应机制是什么？如何将其用于开发新应用？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+如何最佳化聚合物生产制程以提高效率和产量，同时最大限度地减少副产物的形成？
+
+",1
+merged_train copy.csv,QA_or_other,EN, How does the intrinsic viscosity of a polymer solution aid in determining the molecular weight of the polymer?,1
+merged_train copy.csv,QA_or_other,EN, What characteristic properties allow macromolecules to have polymeric chain structures?,1
+merged_train copy.csv,QA_or_other,EN,"What techniques are being used to investigate the behavior and dynamics of a polymer-dye molecule system?
+",1
+merged_train copy.csv,QA_or_other,EN," What is the significance of adding covalent cross-links, like the sulfur bridges in vulcanized rubber, to a polymer's structure?",1
+merged_train copy.csv,QA_or_other,ZH,"
+“我们如何增强聚合物基电子材料的导电性，以提高其在电子装置中的效率？”
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+“我们如何最佳化柔性电子产品中使用的聚合物材料的电导率，以提高装置效能？”
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+我们如何最佳化用于特定生物医学应用（例如组织支架或药物传输装置）的聚合物的机械性质（例如弹性、强度）？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+如何合成和表征一种具有高稳定性、受控药物释放和对人体低毒性的新型聚合物基药物递送纳米粒子？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+聚合物光学材料的化学成分如何影响其折射率、透明度和萤光等光学特性？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+我们如何合成具有特定降解率的可生物降解聚合物用于医疗植入物？
+
+",1
+merged_train copy.csv,QA_or_other,EN,Enzyme(s) used in polymerase chain reaction is/are ,1
+merged_train copy.csv,QA_or_other,ZH,"
+聚合物的分子量如何影响其熔融状态下的流变性质？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+如何针对特定的组织工程应用（例如骨再生）最佳化聚合物基生物材料的机械性质？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+如何针对特定应用（例如黏合不同型别的材料（例如金属和塑胶）或抵抗热和湿气等环境因素）最佳化聚合物基黏合剂和密封剂的效能？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,合成聚合物如涤纶和尼龙与天然酯和酰胺有什么关系？,1
+merged_train copy.csv,QA_or_other,ZH,"
+共轭聚合物的分子性质和电子结构如何影响其光学性质和电荷传递行为？使用量子化学计算来研究共轭聚合物的分子结构、能阶和光电特性之间的关系，并深入了解如何设计具有所需特性的用于有机电子和光伏的材料。
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+特定聚合物的挤出可以使用哪些方法和装置，以及如何最佳化挤出条件以获得最终产品所需的效能？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+“我们如何提高聚合物涂层在金属表面上的附著力，同时保持其表面效能？”
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+将特定药物分子标靶递送至体内特定部位的最佳聚合物载体是什么？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,假设我们想要合成具有特定性质的聚合物，我们可以如何利用共轭二烯的化学性质？,1
+merged_train copy.csv,QA_or_other,ZH,"
+如何透过将不同的官能基引入聚合物主链来增强聚合物基黏合剂的黏合和密封效能？
+
+",1
+merged_train copy.csv,QA_or_other,EN,How do polymer properties change when moving from bulk to nanosized fibers?,1
+merged_train copy.csv,QA_or_other,ZH,"
+如何透过改变聚合物光电材料的化学结构来提高其效率？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+“聚合物的化学成分和分子量如何影响其效能和 3D 列印应用的适用性？”
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+如何确定和最佳化共混物中两种不同型别聚合物的相容性，以实现最终材料所需的效能？
+
+",2
+merged_train copy.csv,QA_or_other,EN, What conditions are required for the actual polymerization stage of poly(ethylene terephthalate)?,1
+merged_train copy.csv,QA_or_other,ZH,"
+冷却速率如何影响聚合物的结晶形貌？结晶形貌与聚合物的机械性质有何关系？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+如何最佳化聚合物的生产工艺，以提高所需聚合物的产量，同时最大限度地减少意外副产物的形成？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+由乙酸乙烯酯单体合成聚乙烯醇的理想反应条件和催化剂是什么？所得聚合物的分子量如何随反应条件的变化而改变？
+
+",1
+merged_train copy.csv,QA_or_other,EN, What is the advantage of using a living polymerization technique to prepare block copolymers?,1
+merged_train copy.csv,QA_or_other,ZH,"
+“不同金属离子几何形状对配位聚合物和金属有机框架的形成和效能有什么影响？提供具体例子并讨论它们在催化或气体储存中的潜在应用。”
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+我们如何设计既环保又能有效维持所含产品品质的聚合物包装材料？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+使用自由基聚合技术从乙烯基吡咯烷酮单体合成高分子量聚乙烯吡咯烷酮的最佳反应条件（温度、压力和催化剂浓度）是多少？
+
+",1
+merged_train copy.csv,QA_or_other,EN, What is the primary difference between step-growth and chain-growth polymerization?,1
+merged_train copy.csv,QA_or_other,ZH,"
+影响聚合物基高吸水材料溶胀能力的因素有哪些？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,合成聚合物如聚丙烯腈是如何在工业规模上生产的？,1
+merged_train copy.csv,QA_or_other,ZH,"
+我们如何设计基于聚合物的药物传输系统，确保抗癌药物受控释放到目标癌细胞，同时避免对健康细胞产生毒性？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+“开发一种能够承受极端高温和高应力条件的聚合物基复合材料，使其适合用于航空航天应用中的涡轮发动机部件。”
+
+",1
+merged_train copy.csv,QA_or_other,EN, How do the mechanical properties of polymers change with temperature and what applications can this lead to?,1
+merged_train copy.csv,QA_or_other,ZH,"
+“如何最佳化基于聚合物的药物传输系统的使用，以实现靶向和持续的药物释放，以治疗特定的疾病或病症？”
+
+",1
+merged_train copy.csv,QA_or_other,EN, What happens if the DNA polymerase III fails to correct a mistaken nucleotide incorporation?,1
+merged_train copy.csv,QA_or_other,ZH,"
+如何针对 pH 感测应用最佳化聚合物的感测和驱动特性？
+
+",1
+merged_train copy.csv,QA_or_other,EN, Can you explain the process of cold-drawing and how it affects polymer fibers?,1
+merged_train copy.csv,QA_or_other,EN," When mentioning elastomer properties in polymers, what kind of polymerization is generally involved?",1
+merged_train copy.csv,QA_or_other,ZH,"
+“冷却速率如何影响聚合物的晶体结构和形态，这些变化对材料的机械效能有何影响？”
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+如何最佳化聚合物气体感测器的灵敏度、选择性和响应时间？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+如何最佳化聚合物基生物材料的设计和成分，以促进组织工程应用中的组织再生和减少发炎？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+聚合物分子量对基于聚合物的生物材料支援组织工程应用中的细胞黏附和增殖的能力有何影响？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+新增供电子或吸电子取代基如何影响共轭聚合物的电子和光学性质，以及如何使用量子化学方法准确计算这些变化？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+由丙烯腈单体合成高分子量聚丙烯腈的最佳温度和引发剂浓度是多少？改变这些引数对聚合物的产率和效能有何影响？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+如何最佳化聚合物基涂料和油漆的效能，以在恶劣环境下的金属表面上获得更好的附著力和耐腐蚀性？
+
+",1
+merged_train copy.csv,QA_or_other,EN, What are molecularly imprinted polymers and how do they fit into the scope of affinity separations?,1
+merged_train copy.csv,QA_or_other,ZH,"
+聚合物基黏合剂和密封剂有哪些不同型别，它们的化学结构和效能如何影响它们在黏合和密封应用中的效能？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,实质上，病毒只是被什么包围的核酸？从以下四个选项中选择最佳答案：蛋白质包膜、膜包膜、聚合物。,1
+merged_train copy.csv,QA_or_other,ZH,"
+由环氧乙烷单体合成聚环氧乙烷的最佳条件是温度、压力、催化剂浓度和反应时间，以达到所需的聚合物分子量和产率？
+
+",1
+merged_train copy.csv,QA_or_other,EN," What purpose do metal compounds, such as diethylzinc or tin octoate, serve in the acceleration of ring-opening polymerizations?",1
+merged_train copy.csv,QA_or_other,EN," How does the intrinsic viscosity of a solution relate to the molecular weight of a solute, particularly a polymer?",1
+merged_train copy.csv,QA_or_other,ZH,在教育环境中，我们可以通过展示聚合物的同立构和异立构之间的性质差异来进行演示。,1
+merged_train copy.csv,QA_or_other,ZH,"
+哪种聚合物基膜材料在水处理中表现出去除废水中重金属的最佳效能？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+不同的合成方法对用于药物传递的聚合物纳米颗粒的药物释放特性有何影响？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+改变聚合物 A 与聚合物 B 的比例对聚合物共混物的相容性有何影响？
+
+",2
+merged_train copy.csv,QA_or_other,ZH,"
+我们如何确定共混物中两种或多种聚合物的相容性以及哪些因素会影响它们的相容性？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+如何最佳化聚合物基超吸收性材料的溶胀能力以实现有效的液体吸收？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+改变聚合物的分子量如何影响其机械性质和在组织工程和药物传递系统等生物医学应用中的适用性？
+
+",1
+merged_train copy.csv,QA_or_other,EN, How do the Phillips and Ziegler processes differ in their approach to ethene polymerization compared to high-pressure radical mechanisms?,1
+merged_train copy.csv,QA_or_other,ZH,"
+“哪些因素会影响聚合物的结晶过程以及它们如何影响聚合物的最终形状？”
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+合成和表征用于靶向药物递送的聚合物纳米粒子的最有效方法是什么？材料的特性如何影响其将药物递送至特定组织或细胞的能力？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+如何控制聚合物的表面特性以增强其与其他材料的黏合力？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+逐步增长和链增长聚合反应之间有什么区别？它们的机制如何影响所得聚合物的效能？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+“温度和紫外线照射等环境条件如何影响普通家用产品中使用的不同型别聚合物的降解和稳定性？”
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+如何透过改变聚合物的结构和效能来提高聚合物基水处理膜的效能？
+
+",1
+merged_train copy.csv,QA_or_other,EN, Are there any limitations to using \(M_n\) and \(M_w\) in understanding polymer behaviors?,1
+merged_train copy.csv,QA_or_other,EN," Given that chain length, branching, and interchain bonding are crucial, what other factors might affect polymer properties?",1
+merged_train copy.csv,QA_or_other,EN," What is the difference between 1,3 and 1,4 polymerizations in conjugated dienes? ",1
+merged_train copy.csv,QA_or_other,ZH,"
+在制造过程中如何控制聚合物的效能以获得特定的所需特性？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+如何在不影响列印过程的准确性和精度的情况下最佳化聚合物基 3D 列印零件的机械效能？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+碳纳米管填充的聚合物纳米复合材料的机械和热效能如何？它们与传统的微填料填充的聚合物复合材料有何不同？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+“如何开发聚合物基复合材料以满足航空航天应用的严格要求，例如高强度、耐用性以及耐极端温度和环境因素？”
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"""尼龙""一词在合成聚合物的背景下有什么重要意义？",1
+merged_train copy.csv,QA_or_other,EN, How have synthetic polymers transformed modern society?,1
+merged_train copy.csv,QA_or_other,ZH,"
+我们如何提高水处理聚合物薄膜的选择性和渗透效能，特别是去除特定污染物（如重金属或有机污染物）？
+
+",1
+merged_train copy.csv,QA_or_other,EN, What other factors besides tacticity can affect the physical properties of a polymer?,1
+merged_train copy.csv,QA_or_other,ZH,"
+在蒙特卡罗模拟中，聚合物链的大小如何影响其构象？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+如何改善两种不同聚合物在共混物中的相容性以增强其整体效能？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+聚合物的分子量如何影响其物理性质，例如熔点和在不同溶剂中的溶解度？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+设计聚合物生产流程时应考虑哪些因素？这些因素如何影响最终产品的品质和产量？
+
+",1
+merged_train copy.csv,QA_or_other,EN, What process describes the breakdown of biopolymers into smaller molecules during digestion?,1
+merged_train copy.csv,QA_or_other,ZH,"
+温度如何影响聚乙烯和聚丙烯的降解？降解的机制是什么？如何减轻降解以延长这些聚合物的稳定性？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+使用以下资讯计算聚合物样品的重均分子量：
+- 样品的多分散指数（PDI）为1.5。
+- 样品的数均分子量 (Mn) 为 20,000 g/mol。
+-分子量为30,000g/mol的聚合物的重量分数(w)为0.2，分子量为10,000g/mol的聚合物的重量分数为0.8。
+
+",1
+merged_train copy.csv,QA_or_other,EN,"What type of core-shell polymers are prepared? 
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+聚合物基 3D 列印材料的特性如何影响列印过程和最终列印的物体？
+
+",1
+merged_train copy.csv,QA_or_other,EN, Could you explain why using small amounts of initiators allows for the polymerization of a wide variety of monomers?,1
+merged_train copy.csv,QA_or_other,ZH,"
+“配位聚合物或金属有机框架的使用如何提高工业气体分离过程的效率？”
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+如何最佳化聚合物生产过程以减少不良副产物的形成，同时保持高产率？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+如何根据特定应用客制化聚合物基智慧材料的机械性质？
+
+",1
+merged_train copy.csv,QA_or_other,ZH,"
+“我们如何提高聚合物电子材料的导电性以开发高效的电子装置？”
+
+",1
+merged_train copy.csv,QA_or_other,EN,What are the steps involved in a radical polymerization reaction and how do they contribute to the formation of high molecular weight polymers?,1
+merged_train copy.csv,QA_or_other,EN,What is the effect of temperature on the rate of polymerization of polyethylene? Develop an experiment to investigate and compare the rate of polymerization of polyethylene at different temperatures.,1
+merged_train copy.csv,QA_or_other,EN,"""How can we manipulate the polymerization reactions to control the properties of the resulting polymer?""",1
+merged_train copy.csv,QA_or_other,EN,"""Design a polymerization reaction to produce a high-density polyethylene (HDPE) with a molecular weight of 1 million grams per mole using ethylene as the monomer and a Ziegler-Natta catalyst system. Calculate the theoretical yield of the reaction and explain the factors that may affect the percent yield.""",1
+merged_train copy.csv,QA_or_other,EN,"What are the polymerization reaction mechanisms involved in the synthesis of Nylon 6,6 and how do they affect the properties of the resulting polymer?",1
+merged_train copy.csv,QA_or_other,EN,"What is the chemical mechanism of step-growth polymerization, and how does it differ from chain-growth polymerization in terms of molecular weight distribution and reaction rate?",1
+merged_train copy.csv,QA_or_other,EN,"""How does the monomer structure affect the properties of the polymer produced in the polymerization reaction?""",1
+merged_train copy.csv,QA_or_other,EN,What is the difference between step-growth and chain-growth polymerization reactions and how do their mechanisms affect the properties of the resulting polymer?,1
+merged_train copy.csv,QA_or_other,EN,How can the rate of polymerization be controlled for the synthesis of polyethylene using free radical polymerization technique?,1
+merged_train copy.csv,QA_or_other,EN,"What is the chemical reaction mechanism involved in the polymerization of ethylene to produce polyethylene, and what are the factors that affect the length and properties of the resulting polymer chain?",1
+merged_train copy.csv,QA_or_other,EN,What are the parameters that affect the molecular weight and distribution of polymers synthesized using radical polymerization?,1
+merged_train copy.csv,QA_or_other,EN,"What is the mechanism of polymerization for the formation of Nylon-6,6? Include the monomers involved and the steps of the reaction.",1
+merged_train copy.csv,QA_or_other,EN,"What is the mechanism of polymerization involved in the formation of polyethylene? Provide a detailed explanation of the process, including the reaction equation and the role of the catalyst.",1
+merged_train copy.csv,QA_or_other,EN,"""How can the average molecular weight of a polymer obtained through step-growth polymerization be controlled, and what factors influence its value?""",1
+merged_train copy.csv,QA_or_other,EN,"What is the mechanism of formation for a particular polymer, and how does its molecular weight affect its properties?",1
+merged_train copy.csv,QA_or_other,EN,"What is the mechanism behind the free-radical polymerization of styrene? How does the initiator molecule induce the formation of free radicals, and what specific factors affect the speed and efficiency of the reaction? Can you provide hypothetical conditions under which the propagation of the reaction would cease or slow down significantly?",1
+merged_train copy.csv,QA_or_other,EN,"""How does the type of monomer affect the properties of the polymer produced in a polymerization reaction?""",1
+merged_train copy.csv,QA_or_other,EN,What is the mechanism of polymerization in the formation of polyethylene? How do the monomers react to form a polymer chain? How does the type and ratio of comonomers affect the properties of the resulting polymer? Compare and contrast the differences between addition and condensation polymerization reactions.,1
+merged_train copy.csv,QA_or_other,EN,"How do the reaction conditions (temperature, initiator, solvent, etc.) affect the molecular weight distribution of a polymer produced through free radical polymerization of styrene?",1
+merged_train copy.csv,QA_or_other,EN,What is the mechanism of free radical polymerization of vinyl chloride and how does the reaction pathway lead to the formation of PVC with high molecular weight?,1
+merged_train copy.csv,QA_or_other,EN,How does the molecular weight of the resulting polymer in a polymerization reaction change with respect to the ratio of monomers used?,1
+merged_train copy.csv,QA_or_other,EN,What is the effect of monomer concentration on the rate of polymerization for the synthesis of polystyrene using free radical polymerization?,1
+merged_train copy.csv,QA_or_other,EN,What is the effect of changing the monomer structure on the properties of the polymer produced in a polymerization reaction? Provide examples of how different monomers can result in polymers with varying physical and chemical properties.,1
+merged_train copy.csv,QA_or_other,EN,"""What are the differences between addition and condensation polymerization reactions, and how do these differences affect the resulting polymer structure and properties?""",1
+merged_train copy.csv,QA_or_other,EN,"""What is the mechanism behind the polymerization reaction of polyethylene, and how does it differ from the polymerization reaction of polypropylene?""",1
+merged_train copy.csv,QA_or_other,EN,"""Design a polymerization reaction scheme to synthesize a biodegradable and water-soluble polymer for use in environmentally friendly packaging materials.""",1
+merged_train copy.csv,QA_or_other,EN,How does the molecular weight of a polymer affect its physical properties?,2
+merged_train copy.csv,QA_or_other,EN,"""What is the mechanism of polymerization in the synthesis of polyethylene, and how does controlling reaction parameters such as temperature and catalyst concentration affect the properties of the polymer produced?""",1
+merged_train copy.csv,QA_or_other,EN,"What are the main differences between addition polymerization and condensation polymerization, and how do these differences affect the properties of the resulting polymers? Provide examples of each type of polymerization and explain how their properties differ.",1
+merged_train copy.csv,QA_or_other,EN,How can we control the molecular weight and branching of polymers during a polymerization reaction using different types of initiators and monomers?,1
+merged_train copy.csv,QA_or_other,EN,How does the type of monomer and the reaction conditions affect the molecular weight and properties of a polymer produced through radical polymerization?,1
+merged_train copy.csv,QA_or_other,EN,How can we control the molecular weight of a polymer synthesized through free radical polymerization?,1
+merged_train copy.csv,QA_or_other,EN,How can the mechanical properties of a polymer be improved by selecting appropriate polymerization conditions?,1
+merged_train copy.csv,QA_or_other,EN,"How does the addition of crosslinking agents affect the physical properties of a polymer? Investigate the changes in properties such as tensile strength, elasticity, and thermal stability when different crosslinking agents are used in the polymerization reaction.",1
+merged_train copy.csv,QA_or_other,EN,"""What is the glass transition temperature of polyvinyl chloride (PVC) and how does it affect its mechanical properties?""",1
+merged_train copy.csv,QA_or_other,EN,How does the molecular weight of a polymer affect its physical properties such as tensile strength and elasticity?,1
+merged_train copy.csv,QA_or_other,EN,"""Explain how the glass transition temperature of a polymer is influenced by its molecular weight and degree of branching.""",1
+merged_train copy.csv,QA_or_other,EN,What is the effect of changing the monomer concentration on the molecular weight of a polymer synthesized via free radical polymerization?,1
+merged_train copy.csv,QA_or_other,EN,"What are the effects of branching and crosslinking on the physical properties of polymers? Provide specific examples of how branching and crosslinking affect the glass transition temperature, crystallinity, and mechanical properties of polymers.",1
+merged_train copy.csv,QA_or_other,EN,"""How does the molecular weight of a polymer affect its physical properties?""",1
+merged_train copy.csv,QA_or_other,EN,"""What is the effect of different monomer ratios on the physical properties of a polymer?""",1
+merged_train copy.csv,QA_or_other,EN,"""How does the chemical structure of a polymer affect its physical properties such as melting point, density, and thermal stability?""",1
+merged_train copy.csv,QA_or_other,EN,What is the relationship between the molecular weight and the glass transition temperature of a polymer? Provide experimental evidence to support your answer.,1
+merged_train copy.csv,QA_or_other,EN,"How does the molecular weight of a polymer affect its physical properties at different temperatures, and what is the relationship between polymer molecular weight and its glass transition temperature?",1
+merged_train copy.csv,QA_or_other,EN,"How does the molecular weight of a polymer affect its physical properties, such as tensile strength and elongation?",1
+merged_train copy.csv,QA_or_other,EN,"""How does the molecular weight of a polymer affect its physical properties such as viscosity, tensile strength, and elasticity?""",1
+merged_train copy.csv,QA_or_other,EN,How does the molecular weight of a polymer affect its physical properties such as viscosity and elasticity?,1
+merged_train copy.csv,QA_or_other,EN,How does molecular weight affect the physical properties of polymers such as tensile strength and flexibility?,1
+merged_train copy.csv,QA_or_other,EN,"Calculate the weight-average molecular weight of a polymer sample with the following information:
+- The polydispersity index (PDI) of the sample is 1.5.
+- The number-average molecular weight (Mn) of the sample is 20,000 g/mol. 
+- The weight fraction (w) of the polymer with a molecular weight of 30,000 g/mol is 0.2, and the weight fraction of the polymer with a molecular weight of 10,000 g/mol is 0.8.",1
+merged_train copy.csv,QA_or_other,EN,What is the effect of molecular weight on the mechanical strength of a polymer?,1
+merged_train copy.csv,QA_or_other,EN,"What is the effect of molecular weight and chain length on the physical properties of a polymer? Provide specific examples of how different molecular weights and chain lengths can affect the properties of a polymer, such as its melting point or viscosity.",1
+merged_train copy.csv,QA_or_other,EN,"One problem for a chemistry student to solve related to polymer chemistry and physical properties could be: 
+
+""What effect does molecular weight have on the viscosity of a polymer solution, and how can this be measured experimentally?""",1
+merged_train copy.csv,QA_or_other,EN,"How does the molecular weight of a polymer affect its physical properties, such as melting point and solubility in different solvents?",1
+merged_train copy.csv,QA_or_other,EN,"What is the effect of molecular weight on the physical properties of a polymer? Provide a detailed analysis on how different molecular weights of a polymer can affect its melting point, glass transition temperature, and solubility.",1
+merged_train copy.csv,QA_or_other,EN,"What is the effect of molecular weight on the melt viscosity of polymers? Conduct an experiment to determine the relationship between the molecular weight of a polymer and its melt viscosity, and present your results along with an analysis and discussion of the underlying principles.",1
+merged_train copy.csv,QA_or_other,EN,"How does the molecular weight of a polymer affect its physical properties such as viscosity, tensile strength, and elasticity?",1
+merged_train copy.csv,QA_or_other,EN,"What is the effect of the molecular weight of a polymer on its physical properties, such as viscosity and elasticity?",1
+merged_train copy.csv,QA_or_other,EN,"""How does the degree of polymerization affect the physical properties of polystyrene, specifically its melting point and glass transition temperature?""",1
+merged_train copy.csv,QA_or_other,EN,What are the physical properties of polymers and how do they affect the performance of the material?,1
+merged_train copy.csv,QA_or_other,EN,"Here is a precise problem for the student to solve:
+
+How does the molecular weight of a polymer affect its physical properties such as viscosity and elasticity? Provide experimental evidence to support your answer.",1
+merged_train copy.csv,QA_or_other,EN,"What is the effect of molecular weight on the physical properties of polymers? Compare and contrast the differences in melting point, glass transition temperature, and viscoelastic behavior for low and high molecular weight polymers. Provide examples of commercially available polymers for each molecular weight range and discuss their practical applications in industry.",1
+merged_train copy.csv,QA_or_other,EN,What is the effect of molecular weight on the melting point of polyethylene?,1
+merged_train copy.csv,QA_or_other,EN,What is the effect of degree of polymerization on the tensile strength and viscosity of a polymer?,1
+merged_train copy.csv,inverse_design,EN,Generate / design a polymer with band gap of <bandgap_eV> eV?,3042
+merged_train copy.csv,inverse_design,EN,What is a polymer with band gap of <bandgap_eV> eV?,3042
+merged_train copy.csv,inverse_design,EN,Help me design a polymer characterized by a band gap of <bandgap_eV> eV?,3042
+merged_train copy.csv,inverse_design,ZH,帮我设计一款带隙为<bandgap_eV> eV左右的聚合物，请给出它的SMILES,3042
+merged_train copy.csv,inverse_design,ZH,可否给出/设计一个带隙为<bandgap_eV> eV左右的聚合物结构,3042
+CORE_TEN_FILES,Tg,EN,Predict the Tg of the following SMILES,12300
+CORE_TEN_FILES,Tg,ZH,预测以下 SMILES 表示的玻璃化转变温度 (Tg),6150
+CORE_TEN_FILES,Tg,EN,What is the glass transition temperature (Tg) of this polymer represented by SMILES?,6150
+CORE_TEN_FILES,Tg,ZH,请计算以下 SMILES 所对应聚合物的玻璃化转变温度 (Tg),6150
+CORE_TEN_FILES,Tg,EN,Estimate the Tg value for the given polymer structure in SMILES notation,6150
+CORE_TEN_FILES,Tg,ZH,基于该 SMILES 结构，预测其玻璃化温度,6150
+CORE_TEN_FILES,Tg,EN,Determine the glass transition temperature of this molecular structure,6150
+CORE_TEN_FILES,Tg,ZH,该分子结构的玻璃化转变温度是多少,6150
+CORE_TEN_FILES,Tg,ZH,请提供该 SMILES 聚合物的 Tg 预测值,6150
+CORE_TEN_FILES,bandgap_crystal,EN,Predict the bandgap crystal of the following SMILES,8480
+CORE_TEN_FILES,bandgap_crystal,ZH,预测以下 SMILES 对应晶体的带隙大小,4240
+CORE_TEN_FILES,bandgap_crystal,EN,What is the estimated bandgap energy of this crystal based on its SMILES structure?,4240
+CORE_TEN_FILES,bandgap_crystal,ZH,该分子晶体的电子带隙是多少,4240
+CORE_TEN_FILES,bandgap_crystal,EN,Predict the electronic bandgap for the crystal structure corresponding to this SMILES,4240
+CORE_TEN_FILES,bandgap_crystal,ZH,请估算以下 SMILES 所描述材料的能带间隙 (Bandgap),4240
+CORE_TEN_FILES,bandgap_crystal,EN,Determine the bandgap energy of the material represented by this SMILES string,4240
+CORE_TEN_FILES,bandgap_crystal,ZH,请计算该材料的预期能带宽度,4240
+CORE_TEN_FILES,bandgap_crystal,ZH,请提供该化合物晶体的带隙预测值,4240
+CORE_TEN_FILES,atomization_energy,EN,Predict the atomization energy of the following SMILES,10530
+CORE_TEN_FILES,atomization_energy,ZH,预测以下 SMILES 对应化合物的原子化能,5265
+CORE_TEN_FILES,atomization_energy,EN,Estimate the atomization energy of the compound represented by this SMILES string,5265
+CORE_TEN_FILES,atomization_energy,ZH,该分子结构的原子化能是多少,5265
+CORE_TEN_FILES,atomization_energy,EN,How much energy is required for the atomization of this molecular structure,5265
+CORE_TEN_FILES,atomization_energy,ZH,请计算该 SMILES 对应物质的总原子结合能,5265
+CORE_TEN_FILES,atomization_energy,EN,Predict the binding energy for breaking this molecule into individual atoms,5265
+CORE_TEN_FILES,atomization_energy,ZH,基于此分子结构，预测其原子化能值,5265
+CORE_TEN_FILES,atomization_energy,ZH,请估算该分子的解离能大小,5265
+CORE_TEN_FILES,heat_class,EN,Predict the heat resistance class of the following SMILES,9990
+CORE_TEN_FILES,heat_class,ZH,预测以下 SMILES 对应材料的耐热等级,4995
+CORE_TEN_FILES,heat_class,EN,What is the thermal stability classification of this material based on its SMILES?,4995
+CORE_TEN_FILES,heat_class,ZH,请计算该分子结构的热稳定等级,4995
+CORE_TEN_FILES,heat_class,EN,Predict the heat resistance category for the polymer described by this SMILES notation,4995
+CORE_TEN_FILES,heat_class,ZH,基于 SMILES 结构，预测该材料的耐热性能,4995
+CORE_TEN_FILES,heat_class,EN,Estimate the temperature endurance class for the given molecular structure,4995
+CORE_TEN_FILES,heat_class,ZH,该高分子的耐热等级是多少,4995
+CORE_TEN_FILES,heat_class,ZH,该高分子的耐热性怎么样,4995

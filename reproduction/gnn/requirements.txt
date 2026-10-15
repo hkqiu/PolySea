@@ -1,0 +1,7 @@
+# Python 3.11; this is the reconstructed script environment, not an inferred
+# historical environment. GraphConvModel requires the TensorFlow/Keras backend.
+deepchem==2.8.0
+tensorflow==2.15.1
+keras==2.15.0
+numpy==1.26.4
+rdkit==2023.9.6

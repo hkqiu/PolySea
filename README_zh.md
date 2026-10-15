@@ -332,3 +332,7 @@ python run.py
 ## 📄 许可证
 
 Apache License 2.0（第三方依赖和 PolyTAO 预训练模型仍需分别遵守其许可证和使用条款）。
+
+### 研究训练数据与评估资产
+
+[PolyOpus研究数据](dataset/polyopus/README.md)包含原始合并训练集、测试输入、报告预测记录、增强记录映射和可复算脚本；数据说明列出了AE筛选规则及实际覆盖数。

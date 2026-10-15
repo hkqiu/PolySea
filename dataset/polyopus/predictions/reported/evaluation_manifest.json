@@ -1,0 +1,71 @@
+{
+  "inputs": {
+    "train/merged_train.csv": {
+      "bytes": 28352057,
+      "sha256": "49d466316f1c4eabebe063d36730288d275bc2c37d5d3a301b3493ef96ee366f",
+      "encoding": "utf-8-sig",
+      "data_rows": 233827,
+      "columns": [
+        "prompt",
+        "SMILES",
+        "target"
+      ]
+    },
+    "test/merged_test.csv": {
+      "bytes": 2802621,
+      "sha256": "cbd7399c55b9ddacc6415981b2dcf4fcd16d7c386c5d05bc8615a1a412c6471b",
+      "encoding": "utf-8-sig",
+      "data_rows": 23200,
+      "columns": [
+        "prompt",
+        "SMILES",
+        "target",
+        "unit"
+      ]
+    },
+    "predictions/reported/polysea_gen_v0331_reg_reported_AE_training_range.csv": {
+      "bytes": 1676257,
+      "sha256": "92f372685d4b635ca8c3f44a1a0329d77183924324b0fb0cb70a7911f72903c9",
+      "encoding": "utf-8-sig",
+      "data_rows": 13606,
+      "columns": [
+        "prompt-new",
+        "target",
+        "PolySea",
+        "error"
+      ]
+    },
+    "predictions/reported/regression_row_filter_flags.csv": {
+      "bytes": 355193,
+      "sha256": "c4b3d1a75ba375e0639a5e0afdc98566d63f9618dce616c97ebd0fe790705b3a",
+      "encoding": "utf-8-sig",
+      "data_rows": 17595,
+      "columns": [
+        "source_data_row",
+        "task",
+        "keep_reported"
+      ]
+    },
+    "predictions/raw/polysea_gen_v0327_cls.csv": {
+      "bytes": 831804,
+      "sha256": "1d6307662f346f54ad809ef30718c55d947ec7928d83c21f9376ed4e71982033",
+      "encoding": "gb18030",
+      "data_rows": 5372,
+      "columns": [
+        "prompt-new",
+        "target",
+        "PolySea"
+      ]
+    },
+    "predictions/reported/archived_full_regression_summary.json": {
+      "bytes": 1106,
+      "sha256": "fcd799bc0001bcdfeb4cded3de5991093b96fd7f7942eaa4b16f3ab1bceb5e26"
+    }
+  },
+  "outputs": {
+    "metrics.json": {
+      "bytes": 4565,
+      "sha256": "4839668b17d0d33044d40d28df751efd2b1524003741828a5ce622bdb4299502"
+    }
+  }
+}

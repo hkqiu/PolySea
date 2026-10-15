@@ -1,0 +1,608 @@
+{
+  "release_name": "PolyOpus research data and reproducibility code",
+  "local_archive_date": "2026-10-15",
+  "original_upstream_acquisition_date": "not recovered",
+  "byte_preserved_raw_sources": [
+    "train/merged_train.csv",
+    "test/merged_test.csv",
+    "test/benchmark.csv",
+    "predictions/raw/polysea_gen_v0327_cls.csv"
+  ],
+  "omitted_from_publication": "Complete original regression and excluded AE prediction records are retained only in the local archive. Public flags contain ordinal, task and retained flag, without excluded prompts or values.",
+  "checksum_scope": "all publication files below dataset/polyopus and the explicit reproduction source allowlist, except this manifest itself",
+  "row_count_rule": "CSV data records excluding headers, including multiline records once",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 182,
+      "sha256": "a06c1d0a1c1e5eeadd41d0b41023981fa2dee831c77476340963b975336d791e"
+    },
+    {
+      "path": "dataset/polyopus/README.md",
+      "bytes": 11430,
+      "sha256": "61c09c9e933c5f36cbe55c2bc1bec54f831bfd0e281f647f01f2b25500246050"
+    },
+    {
+      "path": "dataset/polyopus/augmentation/core_blocks_per_graph_label.csv",
+      "bytes": 202,
+      "sha256": "02450eb5a60cf0920406d9bd1f6251725ca7bbfc83257d7381786b3a76facec0",
+      "data_rows": 9,
+      "columns": [
+        "task",
+        "blocks_per_graph_label",
+        "graph_label_groups"
+      ],
+      "encoding": "utf-8-sig"
+    },
+    {
+      "path": "dataset/polyopus/augmentation/core_parent_blocks.csv",
+      "bytes": 166635,
+      "sha256": "6267e4997bd58b89f68faf7e45faea1c838020d07e7738bca6067d6c40b294f3",
+      "data_rows": 1511,
+      "columns": [
+        "parent_surrogate_id",
+        "task",
+        "reference_file",
+        "start_data_row",
+        "end_data_row",
+        "rows_per_prompt_file",
+        "graph_label_group_id",
+        "distinct_smiles_strings",
+        "duplicate_string_rows_beyond_first",
+        "string_multiplicity_distribution"
+      ],
+      "encoding": "utf-8-sig"
+    },
+    {
+      "path": "dataset/polyopus/augmentation/file_task_summary.csv",
+      "bytes": 5030,
+      "sha256": "b5d4b1c3f9f6e30f7afa9a097d036bee62c07622d93f0934aa7261c1bc23bee4",
+      "data_rows": 65,
+      "columns": [
+        "scope",
+        "task",
+        "rows",
+        "EN_rows",
+        "ZH_rows",
+        "distinct_prompt_templates",
+        "valid_graph_rows",
+        "invalid_graph_rows",
+        "distinct_exact_smiles",
+        "distinct_exact_smiles_label",
+        "distinct_canonical_graph",
+        "distinct_canonical_graph_label",
+        "distinct_exact_full_record"
+      ],
+      "encoding": "utf-8-sig"
+    },
+    {
+      "path": "dataset/polyopus/augmentation/graph_label_counts.csv",
+      "bytes": 3930532,
+      "sha256": "1ca2bcd20c141f6a1515f941aa556ac0e8a4451572a7f417ba4ad5efed13f9d6",
+      "data_rows": 68954,
+      "columns": [
+        "scope",
+        "task",
+        "graph_label_group_id",
+        "rows"
+      ],
+      "encoding": "utf-8-sig"
+    },
+    {
+      "path": "dataset/polyopus/augmentation/graph_label_registry.csv",
+      "bytes": 1185616,
+      "sha256": "736a43aac409d27966d2b3467d0bad213bbc571986c035bd47fadcb9702410ae",
+      "data_rows": 12093,
+      "columns": [
+        "graph_label_group_id",
+        "task",
+        "canonical_isomeric_smiles",
+        "normalized_label"
+      ],
+      "encoding": "utf-8-sig"
+    },
+    {
+      "path": "dataset/polyopus/augmentation/inverse_parent_rows.csv",
+      "bytes": 187311,
+      "sha256": "c83c624d652c696934054387a29094ebdcbb5f274f485262e76c0754114439d9",
+      "data_rows": 3042,
+      "columns": [
+        "parent_surrogate_id",
+        "band_gap1_data_row",
+        "graph_label_group_id",
+        "requested_bandgap_eV",
+        "rows_across_five_prompt_files"
+      ],
+      "encoding": "utf-8-sig"
+    },
+    {
+      "path": "dataset/polyopus/augmentation/merged_ordered_segments.csv",
+      "bytes": 1577,
+      "sha256": "1b0bd9282bf10c9b1f66a97f27d9eb7a153021d346fdc2a1433cd89a352b483e",
+      "data_rows": 14,
+      "columns": [
+        "segment",
+        "source_candidates",
+        "start_data_row",
+        "end_data_row",
+        "rows",
+        "match"
+      ],
+      "encoding": "utf-8-sig"
+    },
+    {
+      "path": "dataset/polyopus/augmentation/merged_row_lineage.csv.gz",
+      "bytes": 2101542,
+      "sha256": "4e2f109da5cedf8aa23f143ae395705a1ef2538ec199cdf88448948355c6e822",
+      "gzip_content": {
+        "bytes": 27493182,
+        "sha256": "07cc0666793a3b41cf318a28f0569cb70a928a6445b9acfe536f05723a6491c3",
+        "data_rows": 233827,
+        "columns": [
+          "merged_data_row",
+          "source_candidates",
+          "source_data_row",
+          "parent_surrogate_id",
+          "parent_basis",
+          "graph_label_group_id",
+          "target_suffix_added",
+          "input_space_filled"
+        ],
+        "encoding": "utf-8-sig"
+      }
+    },
+    {
+      "path": "dataset/polyopus/augmentation/merged_target_suffixes.csv",
+      "bytes": 1587,
+      "sha256": "49c4765f2cf93dcc308b1c5e22fdd10056cf01c94d3b906ece6d372a7077e9d0",
+      "data_rows": 40,
+      "columns": [
+        "segment",
+        "source_candidates",
+        "task",
+        "suffix_added_to_target",
+        "rows"
+      ],
+      "encoding": "utf-8-sig"
+    },
+    {
+      "path": "dataset/polyopus/augmentation/multiplicity_distributions.csv",
+      "bytes": 65781,
+      "sha256": "b82cb3de66b10229d105ecc321ad1168db96ec4b71a00d11d3ae8adfe71c3293",
+      "data_rows": 1221,
+      "columns": [
+        "scope",
+        "task",
+        "identity",
+        "row_multiplicity",
+        "groups",
+        "accounted_rows"
+      ],
+      "encoding": "utf-8-sig"
+    },
+    {
+      "path": "dataset/polyopus/augmentation/parent_registry.csv",
+      "bytes": 1215312,
+      "sha256": "1c67a64d2bb60cc2096f5f98b8c7ae7524f5450c2d4d130db368984392ffe572",
+      "data_rows": 12379,
+      "columns": [
+        "parent_surrogate_id",
+        "parent_basis",
+        "graph_label_group_id",
+        "merged_rows"
+      ],
+      "encoding": "utf-8-sig"
+    },
+    {
+      "path": "dataset/polyopus/augmentation/prompt_language_counts.csv",
+      "bytes": 149247,
+      "sha256": "c0e043b63ed2f64f3f9df8585574ed3646128798a49c48e4605ab050c4de8b03",
+      "data_rows": 1028,
+      "columns": [
+        "scope",
+        "task",
+        "language",
+        "prompt_template",
+        "rows"
+      ],
+      "encoding": "utf-8-sig"
+    },
+    {
+      "path": "dataset/polyopus/augmentation/reconstruction_summary.json",
+      "bytes": 14588,
+      "sha256": "2f0443a9ae7529ac63aac759521d9eb007f97843d6efc159f34cefaf8111f7ad"
+    },
+    {
+      "path": "dataset/polyopus/augmentation/source_file_manifest.json",
+      "bytes": 5740,
+      "sha256": "28f4f664ec793fb57b60351750f223bf19f3c07b76c28750e38729faff7220ab"
+    },
+    {
+      "path": "dataset/polyopus/predictions/raw/polysea_gen_v0327_cls.csv",
+      "bytes": 831804,
+      "sha256": "1d6307662f346f54ad809ef30718c55d947ec7928d83c21f9376ed4e71982033",
+      "data_rows": 5372,
+      "columns": [
+        "prompt-new",
+        "target",
+        "PolySea"
+      ],
+      "encoding": "gb18030"
+    },
+    {
+      "path": "dataset/polyopus/predictions/reported/archived_full_regression_summary.json",
+      "bytes": 1106,
+      "sha256": "fcd799bc0001bcdfeb4cded3de5991093b96fd7f7942eaa4b16f3ab1bceb5e26"
+    },
+    {
+      "path": "dataset/polyopus/predictions/reported/evaluation_manifest.json",
+      "bytes": 1924,
+      "sha256": "9b573b470fb53d75d260a12c99fa7a4d664bfa8d717699a08a8b2118105f300a"
+    },
+    {
+      "path": "dataset/polyopus/predictions/reported/filter_protocol.json",
+      "bytes": 1287,
+      "sha256": "79dcb36db0fc636fb2db67ae4294a7fc9eae7782296cd96712a66f6a465bddca"
+    },
+    {
+      "path": "dataset/polyopus/predictions/reported/metrics.json",
+      "bytes": 4565,
+      "sha256": "4839668b17d0d33044d40d28df751efd2b1524003741828a5ce622bdb4299502"
+    },
+    {
+      "path": "dataset/polyopus/predictions/reported/polysea_gen_v0331_reg_reported_AE_training_range.csv",
+      "bytes": 1676257,
+      "sha256": "92f372685d4b635ca8c3f44a1a0329d77183924324b0fb0cb70a7911f72903c9",
+      "data_rows": 13606,
+      "columns": [
+        "prompt-new",
+        "target",
+        "PolySea",
+        "error"
+      ],
+      "encoding": "utf-8-sig"
+    },
+    {
+      "path": "dataset/polyopus/predictions/reported/regression_row_filter_flags.csv",
+      "bytes": 355193,
+      "sha256": "c4b3d1a75ba375e0639a5e0afdc98566d63f9618dce616c97ebd0fe790705b3a",
+      "data_rows": 17595,
+      "columns": [
+        "source_data_row",
+        "task",
+        "keep_reported"
+      ],
+      "encoding": "utf-8-sig"
+    },
+    {
+      "path": "dataset/polyopus/test/benchmark.csv",
+      "bytes": 27908,
+      "sha256": "e06fbeb3744cdcee980d6b05b5d1166ee7b47a80cd026db74b64309b9cdb19d1",
+      "data_rows": 232,
+      "columns": [
+        "prompt",
+        "SMILES",
+        "target",
+        "unit"
+      ],
+      "encoding": "utf-8-sig"
+    },
+    {
+      "path": "dataset/polyopus/test/merged_test.csv",
+      "bytes": 2802621,
+      "sha256": "cbd7399c55b9ddacc6415981b2dcf4fcd16d7c386c5d05bc8615a1a412c6471b",
+      "data_rows": 23200,
+      "columns": [
+        "prompt",
+        "SMILES",
+        "target",
+        "unit"
+      ],
+      "encoding": "utf-8-sig"
+    },
+    {
+      "path": "dataset/polyopus/train/augmentation_source_files.tar.gz",
+      "bytes": 5020838,
+      "sha256": "94a9a918157ecf6ee28a2a033157de1efed56e0421c503b60bd7d5a2fde775e7",
+      "tar_members": [
+        {
+          "file": "PI-glass transition temperature.csv",
+          "bytes": 129420,
+          "sha256": "d9902d36207aa76256eb66dd5f2be1b21ef386728b0b2b44973f50521fe14e01",
+          "data_rows": 652,
+          "columns": [
+            "prompt",
+            "SMILES",
+            "target"
+          ],
+          "encoding": "utf-8-sig"
+        },
+        {
+          "file": "band gap.csv",
+          "bytes": 1597430,
+          "sha256": "c0f7634d4d6f7cc4ae89cf7f408724ee7b883979a246432055d328f04574f1a5",
+          "data_rows": 15210,
+          "columns": [
+            "prompt",
+            "SMILES",
+            "target"
+          ],
+          "encoding": "utf-8-sig"
+        },
+        {
+          "file": "band gap1.csv",
+          "bytes": 292726,
+          "sha256": "4290badb3414298f4f76da5978ee2c3ec41cd3d6760b1c2979e781ff9507fcf2",
+          "data_rows": 3042,
+          "columns": [
+            "target",
+            "prompt"
+          ],
+          "encoding": "utf-8-sig"
+        },
+        {
+          "file": "band gap2.csv",
+          "bytes": 262306,
+          "sha256": "b9946f15468c73fd26e35b17aba4ba5efea842e5428a21719eba5cb3f9a94d7e",
+          "data_rows": 3042,
+          "columns": [
+            "target",
+            "prompt"
+          ],
+          "encoding": "utf-8-sig"
+        },
+        {
+          "file": "band gap3.csv",
+          "bytes": 326188,
+          "sha256": "6ca1126a0c52acea6f4a08dcb2c1936d5754a690146727e648d87650c561a026",
+          "data_rows": 3042,
+          "columns": [
+            "target",
+            "prompt"
+          ],
+          "encoding": "utf-8-sig"
+        },
+        {
+          "file": "band gap4.csv",
+          "bytes": 359650,
+          "sha256": "330abac944388b9cef4f4411bd848e4f5a6a602a43dbe3e6060f6c429ef0b203",
+          "data_rows": 3042,
+          "columns": [
+            "target",
+            "prompt"
+          ],
+          "encoding": "utf-8-sig"
+        },
+        {
+          "file": "band gap5.csv",
+          "bytes": 326188,
+          "sha256": "d24a5f954435fa551d2b4b30b72e2e9ca0283f54ff1b6e0c96a996e1e7b074a1",
+          "data_rows": 3042,
+          "columns": [
+            "target",
+            "prompt"
+          ],
+          "encoding": "utf-8-sig"
+        },
+        {
+          "file": "band gap_can_smiles.csv",
+          "bytes": 402303,
+          "sha256": "1072273adb39f3ba53d18ef8d2c5cb05151e6133753f9ac1a1ef9bff17a9fc55",
+          "data_rows": 3042,
+          "columns": [
+            "target",
+            "prompt",
+            "can_smiles"
+          ],
+          "encoding": "utf-8-sig"
+        },
+        {
+          "file": "merged_train copy.csv",
+          "bytes": 28222658,
+          "sha256": "cac0b56ce8b4edb9a44647b0c4e8c9f5b84d0ea404f3fccc9923234de962aa13",
+          "data_rows": 233175,
+          "columns": [
+            "prompt",
+            "SMILES",
+            "target"
+          ],
+          "encoding": "utf-8-sig"
+        },
+        {
+          "file": "tg_raw.csv",
+          "bytes": 963897,
+          "sha256": "66acac8b44869f8eca1605028ab8f41d8c165d529e1dff70b8b83052d1d67513",
+          "data_rows": 7174,
+          "columns": [
+            "prompt",
+            "SMILES",
+            "target"
+          ],
+          "encoding": "utf-8-sig"
+        },
+        {
+          "file": "train1-CN.csv",
+          "bytes": 1995049,
+          "sha256": "8698d5ac245039eb1e0ed11ff5be875520f483ae4d35ea7574aa0e4d769db647",
+          "data_rows": 20650,
+          "columns": [
+            "prompt",
+            "SMILES",
+            "target"
+          ],
+          "encoding": "gb18030"
+        },
+        {
+          "file": "train1.csv",
+          "bytes": 2258334,
+          "sha256": "cc39ecdcad07d3bc91ebd9146964003def09f21be080f1b852cc3474effbfbb9",
+          "data_rows": 20650,
+          "columns": [
+            "prompt",
+            "SMILES",
+            "target"
+          ],
+          "encoding": "utf-8-sig"
+        },
+        {
+          "file": "train2-CN.csv",
+          "bytes": 1940009,
+          "sha256": "7e85f6860a32fe0470d48ed34817246f8d08bd1a50518620a4017b4ff6532430",
+          "data_rows": 20650,
+          "columns": [
+            "prompt",
+            "SMILES",
+            "target"
+          ],
+          "encoding": "gb18030"
+        },
+        {
+          "file": "train2.csv",
+          "bytes": 2943944,
+          "sha256": "218c717dc05fd0ec01827604d124ea64fa12180d0a05911525ae36099b998fae",
+          "data_rows": 20650,
+          "columns": [
+            "prompt",
+            "SMILES",
+            "target"
+          ],
+          "encoding": "utf-8-sig"
+        },
+        {
+          "file": "train3-CN.csv",
+          "bytes": 2054169,
+          "sha256": "9f8f8d291c2be4a17cb41bddd9fc46dac90d1ab567f23c5207dbd0f252027ecb",
+          "data_rows": 20650,
+          "columns": [
+            "prompt",
+            "SMILES",
+            "target"
+          ],
+          "encoding": "gb18030"
+        },
+        {
+          "file": "train3.csv",
+          "bytes": 2867014,
+          "sha256": "1266bd71e5ede0299070502037d2f2a647fadd7062ad2c99c6dd11b46ac7abc8",
+          "data_rows": 20650,
+          "columns": [
+            "prompt",
+            "SMILES",
+            "target"
+          ],
+          "encoding": "utf-8-sig"
+        },
+        {
+          "file": "train4-CN.csv",
+          "bytes": 1834769,
+          "sha256": "baae348e6ac2f24604ffe334c02154b038b72d2713b1bfb80c9aaf2fa0126e87",
+          "data_rows": 20650,
+          "columns": [
+            "prompt",
+            "SMILES",
+            "target"
+          ],
+          "encoding": "gb18030"
+        },
+        {
+          "file": "train4.csv",
+          "bytes": 2765094,
+          "sha256": "852cda306ae9f0ada363fe31581947790fe5e22012d276cf7d08eb6aacb17c7b",
+          "data_rows": 20650,
+          "columns": [
+            "prompt",
+            "SMILES",
+            "target"
+          ],
+          "encoding": "utf-8-sig"
+        },
+        {
+          "file": "train5-CN.csv",
+          "bytes": 1811919,
+          "sha256": "a899cb83d69b6a4b8737cf8631009613f4d600c5dc6cbc1193c8c22a991e7930",
+          "data_rows": 20650,
+          "columns": [
+            "prompt",
+            "SMILES",
+            "target"
+          ],
+          "encoding": "gb18030"
+        },
+        {
+          "file": "train5.csv",
+          "bytes": 2258334,
+          "sha256": "cc39ecdcad07d3bc91ebd9146964003def09f21be080f1b852cc3474effbfbb9",
+          "data_rows": 20650,
+          "columns": [
+            "prompt",
+            "SMILES",
+            "target"
+          ],
+          "encoding": "utf-8-sig"
+        }
+      ]
+    },
+    {
+      "path": "dataset/polyopus/train/merged_train.csv",
+      "bytes": 28352057,
+      "sha256": "49d466316f1c4eabebe063d36730288d275bc2c37d5d3a301b3493ef96ee366f",
+      "data_rows": 233827,
+      "columns": [
+        "prompt",
+        "SMILES",
+        "target"
+      ],
+      "encoding": "utf-8-sig"
+    },
+    {
+      "path": "reproduction/data/README.md",
+      "bytes": 1325,
+      "sha256": "bad2485aad00a87361d902390210581cf230c0d0e836a46d0070d44980c5fc6a"
+    },
+    {
+      "path": "reproduction/data/evaluate_saved_predictions.py",
+      "bytes": 13669,
+      "sha256": "ea18716ee63056a0b783618576a7250a8b484825248a2554505a992cd93489a8"
+    },
+    {
+      "path": "reproduction/data/pack_training_sources.py",
+      "bytes": 2341,
+      "sha256": "a951e290d9f9992076f09b290eae164cf8eeea15c794cfbfb05004ceed22fbe9"
+    },
+    {
+      "path": "reproduction/data/reconstruct_augmentation.py",
+      "bytes": 25679,
+      "sha256": "7b4b828be4de7bb5d31ae2d4a47ae23d33c9602df19e59974b5b8c9c2296de3c"
+    },
+    {
+      "path": "reproduction/data/requirements.txt",
+      "bytes": 85,
+      "sha256": "16ad1cfb76e6acda152753a6ef2fa4de42db3b62efc5bfe939132340f7c96261"
+    },
+    {
+      "path": "reproduction/data/verify_release.py",
+      "bytes": 2614,
+      "sha256": "1dca161dd849a6570bb16b77ed998d27aca4418326dc18587c2a740334f0056e"
+    },
+    {
+      "path": "reproduction/gnn/README.md",
+      "bytes": 4277,
+      "sha256": "fb423f58989c035abbd77b66f56efc3dbff9f8f9ed26e6ee097dd8469ffc430a"
+    },
+    {
+      "path": "reproduction/gnn/requirements.txt",
+      "bytes": 236,
+      "sha256": "f6caf868011291680ba94b1131b26959443e438c5fed53851b0c01af45bdff6f"
+    },
+    {
+      "path": "reproduction/gnn/test_graphconv_data.py",
+      "bytes": 3280,
+      "sha256": "b5f6573e36c7912fc248eea479f44a6287415287450db805385ab5acb3fc9f65"
+    },
+    {
+      "path": "reproduction/gnn/train_graphconv.py",
+      "bytes": 14596,
+      "sha256": "8d340e8e24a0fb971016cae34b5df64101435f50e11be9d1b21bd2f47a058ce1"
+    }
+  ]
+}

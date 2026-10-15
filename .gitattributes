@@ -1,0 +1,5 @@
+# Preserve the byte-level research release checksums on every checkout platform.
+/.gitattributes -text
+dataset/polyopus/** -text
+reproduction/data/** -text
+reproduction/gnn/** -text
