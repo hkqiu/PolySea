@@ -45,7 +45,7 @@ PolySea runs locally and covers polymer property prediction, PolyTAO fine-tuning
 |------|------------------------|
 | 🧪 **Property prediction** | Inspects numeric columns, SMILES columns, and targets in CSV files. Supports `tabular`, Morgan fingerprints (`rdkit_descriptors`), and numeric + Morgan fingerprint fusion (`tabular_plus_smiles_fp`). Uses Optuna tuning and stacking ensembles; regression reports R²/RMSE, classification reports accuracy/macro-F1. Saved bundles can be used for single-sample inference. |
 | 🧬 **PolyTAO** | Fine-tunes the Hugging Face [`hkqiu/PolymerGenerationPretrainedModel`](https://huggingface.co/hkqiu/PolymerGenerationPretrainedModel) T5 model from CSV `prompt`/`target` pairs, and performs inverse design from a local model directory under `data/outputs`. |
-| ⚙️ **Optional PolyOpus** | PolyOpus is a polymer-specialized LLM built by SFT of [`DeepSeek-LLM-7B-Chat`](https://huggingface.co/deepseek-ai/deepseek-llm-7b-chat) on polymer data; weights are planned to be released on [huggingface.co/hkqiu](https://huggingface.co/hkqiu). When an OpenAI-compatible PolyOpus endpoint is configured, it is preferred for Tg, atomization energy, thermal stability, band-gap prediction, specified-band-gap inverse generation, and polymer knowledge QA. Disabled by default; this repository ships no weights. |
+| ⚙️ **Optional PolyOpus** | PolyOpus is a polymer-specialized LLM built by SFT of [`DeepSeek-LLM-7B-Chat`](https://huggingface.co/deepseek-ai/deepseek-llm-7b-chat) on polymer data; the complete merged weights are available at [hkqiu/PolyOpus](https://huggingface.co/hkqiu/PolyOpus/tree/2b01aae91c3ac81e4f06d9384b18e0aad045d775). When an OpenAI-compatible PolyOpus endpoint is configured, it is preferred for Tg, atomization energy, Tg-derived polyimide heat-resistance classification, band-gap prediction, specified-band-gap inverse generation, and polymer knowledge QA. Disabled by default; this repository ships no weights. |
 | 📚 **Literature research** | [DeepXiv](https://github.com/DeepXiv/deepxiv_sdk) tools cover arXiv search, trending papers, paper briefs/sections/full-text fragments, social signals, Semantic Scholar, PMC, deep dives, and multi-paper digest material. The corresponding service and credentials must be available. |
 | 🧠 **Persistent agent state** | `memory_*` manages long-term memory, `plan_*` manages multi-step plans, and `skill_*` manages reusable domain skills. These are written under `backend/data`, not kept only in the chat context. |
 | 🌐 **Bilingual UI and cancellation** | The UI supports Chinese and English; `/api/chat` accepts `locale`; the UI polls training progress and can request cancellation of the current chat/training task. |
@@ -344,3 +344,39 @@ The [revision experiment capsule](reproduction/gnn/revision_run_20261015/README.
 ### Current-model comparison
 
 The [GPT-6-Astra comparison](reproduction/current_models/gpt6_astra_20261015/README.md) contains the complete 232 property cases and three original QA questions in one final prediction table, with metadata and a recomputation script.
+
+
+## Revision features and reproducibility
+
+The published backend now includes the capability policy, memory corrections and
+shared FAB/LEC context path used in the revision. A numerical request is checked
+against the requested property and successful tool results. Unsupported specialist
+requests are blocked; an unvalidated general-model estimate receives a server-added
+high-uncertainty notice. A matching model result is labelled uncertainty unquantified.
+These rules do not provide a calibrated error bar or certify structural extrapolation.
+
+Expired memories are excluded from session injection. A filtered memory read keeps
+unmatched entries, and reinforcement is applied after elapsed decay. Conflicting
+scientific claims still require review or an explicit memory update.
+
+`POLYSEA_FAB_ENABLED=0` disables both persistent context injection and memory/skill
+tools. `POLYSEA_LEC_ENABLED=0` disables local evidence and DeepXiv context/tools.
+Both default to enabled. `POLYSEA_LEC_CORPUS` optionally selects a local JSONL
+evidence file; otherwise the backend uses the seven-record example corpus under
+`backend/data/evidence`. It is separate from the 208-segment corpus used for the
+reported 96-answer study. Retrieved text is presented as source evidence.
+
+With backend dependencies installed, run the local software checks from the root:
+
+```bash
+python -m unittest discover -s tests -v
+```
+
+These 17 tests exercise capability routing, mandatory notices, context/tool
+switches and memory behavior without external model calls. They are distinct from
+the scientific FAB/LEC answer experiment. The standalone trained GNN is under
+`reproduction/gnn`; it does not activate the separate online `deepchem_gnn` path.
+See [reproducibility notes](REPRODUCIBILITY.md) for the public assets and boundaries.
+
+
+[Structural overlap and duplicate audit](dataset/polyopus/structure_audit/README.md) and [PolyNC source license](dataset/polyopus/PolyNC_LICENSE.txt).

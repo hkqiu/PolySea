@@ -229,7 +229,19 @@
     "PolyNC_repository": "https://github.com/HKQiu/Unified_ML4Polymers",
     "upstream_compilation_DOI": "10.1016/j.patter.2021.100238",
     "upstream_acquisition_dates": "not recovered; 2026-10-15 is the local archival date",
-    "upstream_rights": "remain with respective owners; repository code license is not a blanket relicensing of upstream data"
+    "upstream_rights": "remain with respective owners; repository code license is not a blanket relicensing of upstream data",
+    "PolyNC_repository_license": {
+      "repository": "hkqiu/Unified_ML4Polymers",
+      "commit": "1833503fc06a77e9a098a7b40daabd279632ba14",
+      "license": "Apache-2.0",
+      "license_url": "https://github.com/hkqiu/Unified_ML4Polymers/blob/1833503fc06a77e9a098a7b40daabd279632ba14/LICENSE",
+      "license_sha256": "1eb85fc97224598dad1852b5d6483bbcf0aa8608790dcc657a5a2a761ae9c8c6",
+      "checked_on": "2026-10-15",
+      "README_scope": "Official PolyNC repository describes its data and code as the materials for the published paper.",
+      "other_license_or_NOTICE_files_found": false,
+      "reuse_scope": "Processed materials accompanying PolyNC; this does not assert new automated access to PolyInfo.",
+      "original_upstream_retrieval_dates": "Not recovered; the verification date is not an original acquisition date."
+    }
   },
   "files": {
     "train/merged_train.csv": {

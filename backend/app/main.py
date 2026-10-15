@@ -133,7 +133,8 @@ def chat(req: ChatRequest):
             status_code=200,
             content={"reply": error_reply, "error": True},
         )
-    return {"reply": text}
+    reliability = next((d.get("content") for d in reversed(_debug) if d.get("role") == "reliability"), None)
+    return {"reply": text, "uncertainty": reliability}
 
 
 UPLOAD_ROOT = Path(__file__).resolve().parent.parent / "data" / "uploads"

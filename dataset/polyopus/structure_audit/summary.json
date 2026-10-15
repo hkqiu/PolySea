@@ -1,0 +1,346 @@
+{
+  "source_hashes": {
+    "train": "49d466316f1c4eabebe063d36730288d275bc2c37d5d3a301b3493ef96ee366f",
+    "test": "cbd7399c55b9ddacc6415981b2dcf4fcd16d7c386c5d05bc8615a1a412c6471b",
+    "TestSet1": "e06fbeb3744cdcee980d6b05b5d1166ee7b47a80cd026db74b64309b9cdb19d1",
+    "regression": "e0571afc18267e2286f0f01d409461b57168b269321ddfb66483430d85a8fe37",
+    "classification": "1d6307662f346f54ad809ef30718c55d947ec7928d83c21f9376ed4e71982033"
+  },
+  "rdkit_version": "2026.09.1",
+  "canonicalizer_commit": "729dfd20b0e909df7cb245ffbfa5ab2187ffbf8b",
+  "normalization": "canonicalize_psmiles 0.1.2 plus RDKit isomeric SMILES; atom maps removed; two terminal markers required",
+  "normalization_limitations": [
+    "Not a universal periodic-equivalence proof; branched/ring repeat multiplication is not fully reduced by the upstream algorithm.",
+    "Unsupported attachment encodings retain graph-only identifiers; invalid inputs are counted separately."
+  ],
+  "sampling_rule": "One first saved source-row prediction per normalized identity within each disclosed cohort; no selection by target error. Conflicting targets remain in the raw source and are counted.",
+  "no_training_or_new_inference": true,
+  "no_source_split_changed": true,
+  "counts": {
+    "Tg": {
+      "train": {
+        "rows": 69326,
+        "molecular_graphs": 7881,
+        "normalized_structures": 7624,
+        "normalized_repeat_units": 7560,
+        "graph_only_identities": 64,
+        "invalid_rows": 1,
+        "structures_with_multiple_targets": 381
+      },
+      "test": {
+        "rows": 7000,
+        "molecular_graphs": 70,
+        "normalized_structures": 70,
+        "normalized_repeat_units": 67,
+        "graph_only_identities": 3,
+        "invalid_rows": 0,
+        "structures_with_multiple_targets": 0
+      },
+      "TestSet1": {
+        "rows": 70,
+        "molecular_graphs": 35,
+        "normalized_structures": 35,
+        "normalized_repeat_units": 33,
+        "graph_only_identities": 2,
+        "invalid_rows": 0,
+        "structures_with_multiple_targets": 0
+      },
+      "overlap": {
+        "same_task_structures": 45,
+        "same_task_test_rows": 4500,
+        "any_structured_training_structures": 63,
+        "same_task_graph_overlap": 33
+      },
+      "core_training_normalized_structures": 559,
+      "combined_train_test_normalized_structures": 7649
+    },
+    "BG": {
+      "train": {
+        "rows": 42400,
+        "molecular_graphs": 212,
+        "normalized_structures": 212,
+        "normalized_repeat_units": 207,
+        "graph_only_identities": 5,
+        "invalid_rows": 0,
+        "structures_with_multiple_targets": 0
+      },
+      "test": {
+        "rows": 4800,
+        "molecular_graphs": 24,
+        "normalized_structures": 24,
+        "normalized_repeat_units": 24,
+        "graph_only_identities": 0,
+        "invalid_rows": 0,
+        "structures_with_multiple_targets": 0
+      },
+      "TestSet1": {
+        "rows": 48,
+        "molecular_graphs": 24,
+        "normalized_structures": 24,
+        "normalized_repeat_units": 24,
+        "graph_only_identities": 0,
+        "invalid_rows": 0,
+        "structures_with_multiple_targets": 0
+      },
+      "overlap": {
+        "same_task_structures": 0,
+        "same_task_test_rows": 0,
+        "any_structured_training_structures": 23,
+        "same_task_graph_overlap": 0
+      },
+      "core_training_normalized_structures": 212,
+      "combined_train_test_normalized_structures": 236
+    },
+    "AE": {
+      "train": {
+        "rows": 52650,
+        "molecular_graphs": 351,
+        "normalized_structures": 351,
+        "normalized_repeat_units": 351,
+        "graph_only_identities": 0,
+        "invalid_rows": 0,
+        "structures_with_multiple_targets": 0
+      },
+      "test": {
+        "rows": 5850,
+        "molecular_graphs": 39,
+        "normalized_structures": 39,
+        "normalized_repeat_units": 39,
+        "graph_only_identities": 0,
+        "invalid_rows": 0,
+        "structures_with_multiple_targets": 0
+      },
+      "TestSet1": {
+        "rows": 60,
+        "molecular_graphs": 30,
+        "normalized_structures": 30,
+        "normalized_repeat_units": 30,
+        "graph_only_identities": 0,
+        "invalid_rows": 0,
+        "structures_with_multiple_targets": 0
+      },
+      "overlap": {
+        "same_task_structures": 0,
+        "same_task_test_rows": 0,
+        "any_structured_training_structures": 34,
+        "same_task_graph_overlap": 0
+      },
+      "core_training_normalized_structures": 351,
+      "combined_train_test_normalized_structures": 390
+    },
+    "class": {
+      "train": {
+        "rows": 49950,
+        "molecular_graphs": 290,
+        "normalized_structures": 287,
+        "normalized_repeat_units": 251,
+        "graph_only_identities": 36,
+        "invalid_rows": 0,
+        "structures_with_multiple_targets": 7
+      },
+      "test": {
+        "rows": 5550,
+        "molecular_graphs": 37,
+        "normalized_structures": 37,
+        "normalized_repeat_units": 32,
+        "graph_only_identities": 5,
+        "invalid_rows": 0,
+        "structures_with_multiple_targets": 0
+      },
+      "TestSet1": {
+        "rows": 54,
+        "molecular_graphs": 27,
+        "normalized_structures": 27,
+        "normalized_repeat_units": 24,
+        "graph_only_identities": 3,
+        "invalid_rows": 0,
+        "structures_with_multiple_targets": 0
+      },
+      "overlap": {
+        "same_task_structures": 10,
+        "same_task_test_rows": 1500,
+        "any_structured_training_structures": 33,
+        "same_task_graph_overlap": 10
+      },
+      "core_training_normalized_structures": 287,
+      "combined_train_test_normalized_structures": 314
+    }
+  },
+  "metrics": {
+    "Tg": {
+      "reported": {
+        "original_rows": 7000,
+        "unique_structures": {
+          "n": 70,
+          "MAE": 46.61785714285714,
+          "RMSE": 62.259187790122304,
+          "R2": 0.7758914055515282
+        },
+        "no_same_task_train_overlap": {
+          "n": 25,
+          "MAE": 50.216,
+          "RMSE": 72.4525582709127,
+          "R2": 0.056626255856758956
+        },
+        "no_structured_train_overlap": {
+          "n": 7,
+          "MAE": 50.300000000000004,
+          "RMSE": 67.11747164487053,
+          "R2": 0.22531448600841752
+        }
+      }
+    },
+    "BG": {
+      "reported": {
+        "original_rows": 4800,
+        "unique_structures": {
+          "n": 24,
+          "MAE": 1.9376,
+          "RMSE": 2.520110063568653,
+          "R2": -0.4388756515896646
+        },
+        "no_same_task_train_overlap": {
+          "n": 24,
+          "MAE": 1.9376,
+          "RMSE": 2.520110063568653,
+          "R2": -0.4388756515896646
+        },
+        "no_structured_train_overlap": {
+          "n": 1,
+          "MAE": 3.6990000000000003,
+          "RMSE": 3.6990000000000003,
+          "R2": null
+        }
+      }
+    },
+    "AE": {
+      "reported": {
+        "original_rows": 1806,
+        "unique_structures": {
+          "n": 18,
+          "MAE": 0.0644444444444446,
+          "RMSE": 0.0763762615825974,
+          "R2": 0.9714112842232642
+        },
+        "no_same_task_train_overlap": {
+          "n": 18,
+          "MAE": 0.0644444444444446,
+          "RMSE": 0.0763762615825974,
+          "R2": 0.9714112842232642
+        },
+        "no_structured_train_overlap": {
+          "n": 4,
+          "MAE": 0.042500000000000204,
+          "RMSE": 0.0444409720865781,
+          "R2": 0.8894718433018532
+        }
+      }
+    },
+    "class": {
+      "reported": {
+        "original_rows": 5372,
+        "unique_structures": {
+          "n": 37,
+          "accuracy": 0.6216216216216216,
+          "macro_F1": 0.361437908496732,
+          "balanced_accuracy": 0.39438339438339437,
+          "confusion_true_rows": [
+            [
+              0,
+              3,
+              0
+            ],
+            [
+              0,
+              3,
+              10
+            ],
+            [
+              0,
+              1,
+              20
+            ]
+          ]
+        },
+        "no_same_task_train_overlap": {
+          "n": 27,
+          "accuracy": 0.6666666666666666,
+          "macro_F1": 0.3304473304473305,
+          "balanced_accuracy": 0.3703703703703704,
+          "confusion_true_rows": [
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              1,
+              8
+            ],
+            [
+              0,
+              0,
+              17
+            ]
+          ]
+        },
+        "no_structured_train_overlap": {
+          "n": 4,
+          "accuracy": 0.75,
+          "macro_F1": 0.2857142857142857,
+          "balanced_accuracy": 0.5,
+          "confusion_true_rows": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              3
+            ]
+          ]
+        }
+      }
+    }
+  },
+  "prediction_alignment": {
+    "matched_modes": {
+      "exact_test_prompt": 22967
+    },
+    "unmatched_count": 0
+  },
+  "all_original_bytes_unchanged": true,
+  "reported_final_prediction_rows": 149,
+  "archived_full_AE_deduplicated_summary": {
+    "original_rows": 5795,
+    "unique_structures": {
+      "n": 39,
+      "MAE": 8.301323076923078,
+      "RMSE": 11.826693816131067,
+      "R2": -1247.2328477724136
+    },
+    "no_same_task_train_overlap": {
+      "n": 39,
+      "MAE": 8.301323076923078,
+      "RMSE": 11.826693816131067,
+      "R2": -1247.2328477724136
+    },
+    "no_structured_train_overlap": {
+      "n": 5,
+      "MAE": 2.5691,
+      "RMSE": 5.668795290888532,
+      "R2": -2010.4697076865275
+    }
+  },
+  "archived_full_AE_note": "Aggregate from the local original archive; not independently recoverable from the public reporting table.",
+  "final_prediction_sha256": "23a7e00f0e48c23a622a6d83851ef4ab3abf95c75758dc69bba968847508e9c9",
+  "canonicalizer_code_sha256": "4171f2fe09a9f80efc06b132649ba4179d939a9893cc110b491aa200e05ae826"
+}

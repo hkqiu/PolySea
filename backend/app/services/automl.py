@@ -97,7 +97,7 @@ def _rdkit_morgan(smiles_list: list[str], n_bits: int = 2048) -> np.ndarray:
     for i, s in enumerate(smiles_list):
         m = Chem.MolFromSmiles(str(s).strip())
         if m is None:
-            continue
+            raise ValueError(f"Invalid SMILES at row {i + 1}; prediction/training aborted")
         fp = AllChem.GetMorganFingerprintAsBitVect(m, 2, nBits=n_bits)
         X[i] = np.array(fp, dtype=np.float32)
     return X
@@ -179,6 +179,7 @@ def run_automl(
     n_optuna_trials: int = 12,
     random_state: int = 42,
     artifact_dir: Path | None = None,
+    n_jobs: int = -1,
 ) -> dict[str, Any]:
     """Train stacked ensemble with internal Optuna tuning."""
     csv_path = Path(csv_path)
@@ -239,7 +240,7 @@ def run_automl(
                     max_depth=trial.suggest_int("xgb_depth", 3, 10),
                     learning_rate=trial.suggest_float("xgb_eta", 0.02, 0.2, log=True),
                     random_state=random_state,
-                    n_jobs=-1,
+                    n_jobs=n_jobs,
                     verbosity=0,
                 )
             except Exception:
@@ -252,7 +253,7 @@ def run_automl(
                         n_estimators=rf_n,
                         max_depth=rf_d,
                         random_state=random_state,
-                        n_jobs=-1,
+                        n_jobs=n_jobs,
                     ),
                 ),
                 (
@@ -269,7 +270,7 @@ def run_automl(
                 estimators=estimators,
                 final_estimator=Ridge(alpha=trial.suggest_float("ridge_alpha", 0.1, 10.0, log=True)),
                 cv=5,
-                n_jobs=-1,
+                n_jobs=n_jobs,
             )
             pipe = Pipeline([("scaler", StandardScaler()), ("stack", stack)])
             return pipe
@@ -361,7 +362,7 @@ def run_automl(
             n_estimators=trial.suggest_int("rf_n_estimators", 80, 400),
             max_depth=trial.suggest_int("rf_max_depth", 4, 24),
             random_state=random_state,
-            n_jobs=-1,
+            n_jobs=n_jobs,
         )
         hgb = HistGradientBoostingClassifier(
             learning_rate=trial.suggest_float("hgb_lr", 0.02, 0.2, log=True),
@@ -373,7 +374,7 @@ def run_automl(
             estimators=estimators,
             final_estimator=LogisticRegression(max_iter=2000, random_state=random_state),
             cv=StratifiedKFold(5, shuffle=True, random_state=random_state),
-            n_jobs=-1,
+            n_jobs=n_jobs,
         )
         return Pipeline([("scaler", StandardScaler()), ("stack", stack)])
 

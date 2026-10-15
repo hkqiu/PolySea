@@ -37,6 +37,9 @@ from .skill_store import (
     skill_read_full,
     skill_update,
 )
+from .reliability import classify_request
+from .context_assembly import tool_allowed
+from .lec_store import search_evidence, read_evidence
 
 logger = logging.getLogger(__name__)
 
@@ -75,6 +78,12 @@ def tool_polyopus_chat(args: dict[str, Any]) -> dict[str, Any]:
     prompt = args.get("prompt") or args.get("query")
     if prompt is None or not str(prompt).strip():
         return _err("PolyOpus 调用缺少自然语言 prompt")
+    scope = classify_request(str(prompt))
+    if scope["quantitative_request"] and scope["unsupported_properties"]:
+        return {"error": "Requested property is outside the registered PolyOpus capability scope.",
+                "summary": "PolyOpus未覆盖该请求中的全部性质；请调用匹配的用户训练模型，或使用明确标记高不确定性的通用LLM估计。",
+                "uncertainty": {**scope, "level": "high", "calibrated": False},
+                "suggested_route": "matching_local_model_or_high_uncertainty_llm"}
     language = str(args.get("language") or "zh").strip().lower()
     if language not in {"zh", "en"}:
         language = "zh"
@@ -117,7 +126,8 @@ def tool_polyopus_chat(args: dict[str, Any]) -> dict[str, Any]:
         return {
             "success": True,
             "summary": text,
-            "result": {"text": text, "model": model},
+            "result": {"text": text, "model": model, "property_ids": scope["requested_properties"]},
+            "uncertainty": {"level": "unquantified", "calibrated": False, "basis": "specialist_output"},
         }
     except Exception as e:
         logger.exception("PolyOpus request failed")
@@ -628,6 +638,9 @@ def tool_predict_property(args: dict[str, Any]) -> dict[str, Any]:
 
 
 TOOL_FUNCTIONS = {
+    "lec_search": lambda args: search_evidence(str(args.get("query") or ""), args.get("top_k", 3)),
+    "lec_read": lambda args: read_evidence(str(args.get("evidence_id") or "")),
+    "property_scope": lambda args: classify_request(str(args.get("query") or "")),
     "polyopus_chat": tool_polyopus_chat,
     "analyze_dataset": tool_analyze_dataset,
     "train_property_model": tool_train_property_model,
@@ -653,6 +666,8 @@ TOOL_FUNCTIONS = {
 
 
 def dispatch_tool(name: str, arguments_json: str) -> str:
+    if not tool_allowed(name):
+        return json.dumps({"error": "Tool disabled by the FAB/LEC ablation policy", "tool": name}, ensure_ascii=False)
     fn = TOOL_FUNCTIONS.get(name)
     if not fn:
         return json.dumps({"error": f"未知工具: {name}"}, ensure_ascii=False)

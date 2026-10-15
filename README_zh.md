@@ -45,7 +45,7 @@ PolySea 在本地运行，覆盖聚合物性质预测、PolyTAO 微调与逆向�
 |------|------|
 | 🧪 **性质预测** | 分析 CSV 中的数值列、SMILES 列和目标列；支持 `tabular`、Morgan 指纹 `rdkit_descriptors`、数值列 + Morgan 指纹 `tabular_plus_smiles_fp`。使用 Optuna 调参和 Stacking 集成；回归报告 R²/RMSE，分类报告 accuracy/macro-F1；训练后可保存模型并对新样本推理。 |
 | 🧬 **PolyTAO** | 基于 Hugging Face 的 [`hkqiu/PolymerGenerationPretrainedModel`](https://huggingface.co/hkqiu/PolymerGenerationPretrainedModel) 进行 T5 条件生成；支持含 `prompt`/`target` 的 CSV 微调，以及从 `data/outputs` 下的本地模型目录进行逆向设计。 |
-| ⚙️ **可选 PolyOpus** | PolyOpus 是基于 [`DeepSeek-LLM-7B-Chat`](https://huggingface.co/deepseek-ai/deepseek-llm-7b-chat) 在聚合物数据上 SFT 得到的聚合物专用大模型；权重计划发布于 [huggingface.co/hkqiu](https://huggingface.co/hkqiu)。配置 OpenAI-compatible PolyOpus 端点后，可优先处理 Tg、原子化能、热稳定性、带隙预测、指定带隙逆向生成和聚合物知识问答。默认不启用，本仓库不包含权重。 |
+| ⚙️ **可选 PolyOpus** | PolyOpus 是基于 [`DeepSeek-LLM-7B-Chat`](https://huggingface.co/deepseek-ai/deepseek-llm-7b-chat) 在聚合物数据上 SFT 得到的聚合物专用大模型；完整合并权重已发布于 [hkqiu/PolyOpus](https://huggingface.co/hkqiu/PolyOpus/tree/2b01aae91c3ac81e4f06d9384b18e0aad045d775)。配置 OpenAI-compatible PolyOpus 端点后，可优先处理 Tg、原子化能、基于聚酰亚胺Tg的耐热分类、带隙预测、指定带隙逆向生成和聚合物知识问答。默认不启用，本仓库不包含权重。 |
 | 📚 **文献研究** | 通过 [DeepXiv](https://github.com/DeepXiv/deepxiv_sdk) 工具访问 arXiv、热点、论文 brief/章节/正文、社交信号、Semantic Scholar、PMC、深度调研和多论文 digest。需要对应服务可用及必要的 token。 |
 | 🧠 **持久化 Agent 状态** | `memory_*` 管理长期记忆，`plan_*` 管理多步计划，`skill_*` 管理可复用领域技能；这些数据写入 `backend/data`，不是仅存在对话上下文。 |
 | 🌐 **双语与训练控制** | 前端支持中英文切换；`/api/chat` 接收 `locale`；前端轮询训练进度，并可请求中止当前对话/训练。 |
@@ -340,3 +340,33 @@ Apache License 2.0（第三方依赖和 PolyTAO 预训练模型仍需分别遵�
 ### 补充CPU生成与GNN评估
 
 [修订实验胶囊](reproduction/gnn/revision_run_20261015/README.md)包含两次新增PolyOpus采样、新训练的GraphConv权重、全部分区预测及复现脚本，并列出GNN测试误差和新候选的训练结构重合情况。
+
+
+## 修订功能与复现
+
+本次公开了性质能力门控、记忆修复和FAB/LEC共用上下文路径。数值请求会核对
+目标性质及实际成功的工具结果；不支持的专用模型请求会被阻止，通用LLM的
+未验证估计会附加服务端生成的高不确定性提示。成功匹配的模型输出标记为
+不确定性未量化；这些规则不提供校准误差区间，也不保证结构外推有效。
+
+过期记忆不再注入会话，带条件的读取不会删除未命中记录，增强记忆前会先应用
+经过时间的衰减。科学内容冲突仍需审核或显式更新，不能把记忆强度当成事实置信度。
+
+`POLYSEA_FAB_ENABLED=0`同时关闭持久上下文注入和memory/skill工具；
+`POLYSEA_LEC_ENABLED=0`同时关闭本地证据与DeepXiv上下文/工具。二者默认启用。
+可用`POLYSEA_LEC_CORPUS`指定本地JSONL证据文件；默认使用
+`backend/data/evidence`中的7条示例记录，与96条回答实验所用208段语料不同。
+
+安装后端依赖后，在仓库根目录运行：
+
+```bash
+python -m unittest discover -s tests -v
+```
+
+17项软件检查覆盖门控、强制提示、上下文/工具开关及记忆行为，不调用外部模型。
+这些检查与科学回答消融实验分开。已训练的独立GNN位于`reproduction/gnn`，
+并不等于在线`deepchem_gnn`训练分支已经实现。最终训练/测试数据及预测表在
+`dataset/polyopus`；更多说明见[复现记录](REPRODUCIBILITY.md)。
+
+
+[结构重合与去重指标](dataset/polyopus/structure_audit/README.md)及[PolyNC来源许可](dataset/polyopus/PolyNC_LICENSE.txt)。

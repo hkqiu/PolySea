@@ -26,6 +26,8 @@ from .memory_store import (
 from .plan_store import load_plan
 from .skill_store import build_skill_inject, skill_inject_enabled
 from .tools_exec import dispatch_tool
+from .context_assembly import assemble_context, enabled_tools
+from .reliability import assess_answer, format_answer, request_text, system_policy
 
 _DEEPXIV_TOOL_NAMES = frozenset(DEEPXIV_TOOL_FUNCTIONS.keys())
 
@@ -349,6 +351,30 @@ SYSTEM_PROMPT = """你是 PolySea，一位专注于聚合物信息学与生成�
 回答用户时使用简体中文，条理清晰、像同事协作而非机械执行。"""
 
 TOOLS: list[dict[str, Any]] = [
+    {
+        "type": "function",
+        "function": {
+            "name": "property_scope",
+            "description": "Check registered PolyOpus property coverage. This is a rule-based scope check, not a calibrated confidence estimate.",
+            "parameters": {"type": "object", "properties": {"query": {"type": "string"}}, "required": ["query"]},
+        },
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "lec_search",
+            "description": "Search the configured frozen local literature-evidence corpus. Returns exact quotes with source URLs and locators; this is not a live web search.",
+            "parameters": {"type": "object", "properties": {"query": {"type": "string"}, "top_k": {"type": "integer"}}, "required": ["query"]},
+        },
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "lec_read",
+            "description": "Read one frozen evidence record including its source and locator.",
+            "parameters": {"type": "object", "properties": {"evidence_id": {"type": "string"}}, "required": ["evidence_id"]},
+        },
+    },
     {
         "type": "function",
         "function": {
@@ -1023,20 +1049,18 @@ def run_agent_turn(
         client = OpenAI(base_url=cfg.base_url.rstrip("/"), api_key=key, timeout=cfg.timeout_s)
 
     system_text = SYSTEM_PROMPT
-    if memory_inject_enabled() and is_first_user_message_in_session(user_messages):
-        inj = build_inject_summary()
-        if inj:
-            system_text += "\n\n" + inj
+    context_text, context_trace = assemble_context(user_messages)
+    if context_text:
+        system_text += "\n\n" + context_text
+    current_request = request_text(user_messages)
+    policy_text = system_policy(current_request)
+    if policy_text:
+        system_text += "\n\n" + policy_text
     if literature_structured_plan_required(user_messages) and load_plan() is None:
         system_text += (
             "\n\n【系统强制】检测到用户需要文献检索且索要归纳型交付（创新点、改进建议、综述、对比分析等），"
             "当前尚无活动计划：你必须先成功调用 plan_create，再调用 deepxiv_*；禁止跳过。"
         )
-    if skill_inject_enabled():
-        sk_inj = build_skill_inject(user_messages)
-        if sk_inj:
-            system_text += "\n\n" + sk_inj
-
     # 必须放在所有动态注入之后，避免中文 memory/skill 内容削弱当前界面的语言要求。
     language_rule = _language_instruction(locale)
     system_text += "\n\n" + language_rule
@@ -1049,7 +1073,8 @@ def run_agent_turn(
         if m.get("role") in ("user", "assistant"):
             messages.append({"role": m["role"], "content": m.get("content", "")})
 
-    full_debug: list[dict[str, Any]] = []
+    full_debug: list[dict[str, Any]] = [{"role": "context_trace", "content": context_trace}]
+    observations: list[dict[str, Any]] = []
     tools_disabled_session = False
 
     ts.set_agent("thinking", "正在思考…", "调用大语言模型推理")
@@ -1081,7 +1106,7 @@ def run_agent_turn(
             "temperature": 0.2,
         }
         if use_tools:
-            kwargs["tools"] = TOOLS
+            kwargs["tools"] = enabled_tools(TOOLS)
             kwargs["tool_choice"] = "auto"
 
         try:
@@ -1147,7 +1172,10 @@ def run_agent_turn(
                 )
             ts.set_agent("idle", "本轮回复已就绪", "")
             ts.clear_cancel_request()
-            return _language_text(locale, text or "（无文本回复）", text or "(No text response.)").strip(), full_debug
+            assessment = assess_answer(current_request, observations)
+            full_debug.append({"role": "reliability", "content": assessment})
+            final_text = _language_text(locale, text or "（无文本回复）", text or "(No text response.)").strip()
+            return format_answer(final_text, assessment, locale), full_debug
 
         if ts.is_cancel_requested():
             ts.clear_cancel_request()
@@ -1199,6 +1227,7 @@ def run_agent_turn(
                 payload = json.loads(result)
             except json.JSONDecodeError:
                 payload = {}
+            observations.append({"tool": name, "payload": payload})
             if isinstance(payload, dict):
                 if payload.get("error"):
                     ts.set_agent("tool", f"工具 {name} 返回错误", str(payload.get("error", ""))[:120])

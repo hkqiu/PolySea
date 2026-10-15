@@ -295,7 +295,7 @@ def apply_time_decay(entries: list[MemoryEntry], now: datetime | None = None) ->
         body = e.body
         if new_s < STRENGTH_FORGET:
             continue
-        if new_s < STRENGTH_COMPRESS_AGAIN and layer == "compressed":
+        if new_s < STRENGTH_COMPRESS_AGAIN and layer != "minimal":
             layer = "minimal"
             body = _compress_body(body, target_layer="minimal")
         elif new_s < STRENGTH_COMPRESS_FULL and layer == "full":
@@ -354,6 +354,8 @@ def build_inject_summary(max_chars: int | None = None) -> str:
     scored = []
     for e in entries:
         eff = effective_strength_now(e, now)
+        if eff < STRENGTH_FORGET:
+            continue
         scored.append((eff, e))
     scored.sort(key=lambda x: -x[0])
     lines: list[str] = ["【长期记忆摘要】"]
@@ -432,11 +434,11 @@ def memory_update(entry_id: str, new_body: str) -> dict[str, Any]:
                 id=e.id,
                 created=e.created,
                 last_touched=now,
-                strength=min(1.0, e.strength + 0.08),
+                strength=min(1.0, effective_strength_now(e, now) + 0.08),
                 layer="full",
                 tags=e.tags,
                 body=new_body.strip(),
-                last_decay_applied=e.last_decay_applied,
+                last_decay_applied=now,
             )
         )
     if not found:
@@ -461,6 +463,7 @@ def memory_read(*, mode: str = "summary", query: str | None = None) -> dict[str,
     """mode: summary | full。可选 query 子串过滤（不区分大小写）。"""
     ensure_memory_file()
     header, entries = load_memory_document()
+    all_entries = list(entries)
     q = (query or "").strip().lower()
     if q:
         entries = [
@@ -497,16 +500,16 @@ def memory_read(*, mode: str = "summary", query: str | None = None) -> dict[str,
                     id=e.id,
                     created=e.created,
                     last_touched=now,
-                    strength=min(1.0, e.strength + 0.04),
+                    strength=min(1.0, effective_strength_now(e, now) + 0.04),
                     layer=e.layer,
                     tags=e.tags,
                     body=e.body,
-                    last_decay_applied=e.last_decay_applied,
+                    last_decay_applied=now,
                 )
             )
         # 未出现在结果里的条目保持原样
         id_set = {e.id for e in entries_sorted}
-        rest = [e for e in entries if e.id not in id_set]
+        rest = [e for e in all_entries if e.id not in id_set]
         merged_map = {e.id: e for e in rest}
         for e in touched:
             merged_map[e.id] = e

@@ -1,6 +1,11 @@
 # Preserve the byte-level research release checksums on every checkout platform.
 /.gitattributes -text
-dataset/polyopus/** -text
-reproduction/data/** -text
+dataset/polyopus/** -text whitespace=cr-at-eol
+reproduction/data/** -text whitespace=cr-at-eol
 reproduction/gnn/** -text
 reproduction/current_models/** -text whitespace=cr-at-eol
+backend/app/** -text whitespace=cr-at-eol
+backend/data/evidence/** -text whitespace=cr-at-eol
+tests/** -text whitespace=cr-at-eol
+/README*.md -text whitespace=cr-at-eol
+/REPRODUCIBILITY.md -text whitespace=cr-at-eol
