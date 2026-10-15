@@ -10,17 +10,17 @@
 
 The final table contains task, complete input, original target/prediction strings,
 unit and original source record ordinal. It combines 7,000 Tg, 4,800 crystalline
-band-gap, 1,806 retained AE and 5,372 classification outputs. UTF-8 is used for the
+band-gap, 1,806 AE and 5,372 classification outputs. UTF-8 is used for the
 final table; source train/test CSV bytes are preserved. Original process files and
 augmentation lineage are retained in the authors' local archive.
 
 ## Reported evaluation
 
-| Property | Rows | MAE | RMSE | R² |
+| Property | n | MAE | RMSE | R² |
 |---|---:|---:|---:|---:|
-| Tg (°C), all saved | 7,000 | 24.579579 | 35.744916 | 0.926128 |
-| Crystalline band gap (eV), all saved | 4,800 | 0.701811 | 0.962368 | 0.790170 |
-| AE (eV/atom), retained range analysis | 1,806 | 0.062148 | 0.075725 | 0.979460 |
+| Tg (°C) | 7,000 | 24.579579 | 35.744916 | 0.926128 |
+| Crystalline band gap (eV) | 4,800 | 0.701811 | 0.962368 | 0.790170 |
+| AE (eV/atom) | 1,806 | 0.062148 | 0.075725 | 0.979460 |
 
 AE reporting uses a **post-hoc sensitivity analysis**: retain predictions within
 the inclusive AE training-label range **[-6.82, -5.01] eV/atom**. The rule was set
