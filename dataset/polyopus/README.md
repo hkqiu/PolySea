@@ -45,10 +45,6 @@ the local full-output AE summary from the public retained table.
 Property data were reused through [PolyNC](https://doi.org/10.1039/D3SC05079C) and
 its [published repository](https://github.com/HKQiu/Unified_ML4Polymers), including
 the [Kuenneth et al. compilation](https://doi.org/10.1016/j.patter.2021.100238).
-This is not a new automated acquisition from PolyInfo. Upstream acquisition
-dates and the exact upstream row mapping for the crystalline-gap subset have
-not been recovered; 2026-10-15 is a local archival date. The repository's code
-license does not independently verify or replace all upstream data rights.
 
 Additional results: [CPU generation and GNN](../../reproduction/gnn/revision_run_20261015/README.md)
 and [GPT-6-Astra comparison](../../reproduction/current_models/gpt6_astra_20261015/README.md).
