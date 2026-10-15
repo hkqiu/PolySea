@@ -2,9 +2,9 @@
 
 | File | Records | Purpose |
 |---|---:|---|
-| `train/merged_train.csv` | 233,827 | Original merged training corpus, unchanged bytes |
-| `test/merged_test.csv` | 23,200 | Original TestSet2 instruction inputs, unchanged bytes |
-| `test/benchmark.csv` | 232 | Original TestSet1 comparison inputs, unchanged bytes |
+| `train/merged_train.csv` | 233,827 | Original merged training corpus |
+| `test/merged_test.csv` | 23,200 | Original TestSet2 instruction inputs |
+| `test/benchmark.csv` | 232 | Original TestSet1 comparison inputs |
 | `final_predictions.csv` | 18,978 | One final table for all reported regression and classification outcomes |
 | `metadata.json` | — | Metrics, denominators, reporting rule, source attribution and input hashes |
 
