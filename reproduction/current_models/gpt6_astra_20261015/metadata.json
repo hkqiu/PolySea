@@ -1,0 +1,155 @@
+{
+  "study": "PolySea current-model evaluation",
+  "date": "2026-10-15",
+  "model": {
+    "requested": "gpt-6-astra",
+    "served": "gpt-6-astra",
+    "route": "configured API gateway, Responses API",
+    "identity_note": "Provider model identifiers; model weights were not independently verified."
+  },
+  "scope": {
+    "model_count": 1,
+    "cases": 235,
+    "QA": 3,
+    "property_rows": 232
+  },
+  "parameters": {
+    "max_output_tokens": 8192,
+    "reasoning_effort": "low",
+    "temperature": "provider default (omitted)",
+    "tools": false,
+    "retrieval": false,
+    "cross_case_history": false,
+    "formal_calls_per_case": 1
+  },
+  "source_hashes": [
+    {
+      "file": "SI.docx.txt",
+      "sha256": "a775361f2343c136bbddae483c16ca57fec12d223b9a9e6ba144b9e9c9693150"
+    },
+    {
+      "file": "benchmark.csv",
+      "sha256": "e06fbeb3744cdcee980d6b05b5d1166ee7b47a80cd026db74b64309b9cdb19d1"
+    }
+  ],
+  "prediction_table_sha256": "037c0da905143f61c0b933b7ca3209198b531934e9519466039410f191ea0a96",
+  "coverage": {
+    "total_cases": 235,
+    "task_counts": {
+      "QA": 3,
+      "AE": 60,
+      "Tg": 70,
+      "BG": 48,
+      "class": 54
+    },
+    "QA_visible_nonempty": 3,
+    "property_parse_valid": 232,
+    "property_total": 232
+  },
+  "metrics": {
+    "Tg_unfiltered": {
+      "total": 70,
+      "valid": 70,
+      "coverage": 1.0,
+      "MAE": 20.417142857142856,
+      "RMSE": 28.84507137895732,
+      "R2": 0.9474237281995238
+    },
+    "BG_unfiltered": {
+      "total": 48,
+      "valid": 48,
+      "coverage": 1.0,
+      "MAE": 0.9866124999999999,
+      "RMSE": 1.2043280417242361,
+      "R2": 0.671395244906434
+    },
+    "AE_unfiltered": {
+      "total": 60,
+      "valid": 60,
+      "coverage": 1.0,
+      "MAE": 1.3855,
+      "RMSE": 1.8847780594365307,
+      "R2": -26.826464802952234
+    },
+    "AE_train_range_retained": {
+      "total": 17,
+      "valid": 17,
+      "coverage": 1.0,
+      "MAE": 1.096470588235294,
+      "RMSE": 1.0999090871522064,
+      "R2": -93.06300780199062,
+      "full_AE_denominator": 60,
+      "retained_coverage": 0.2833333333333333,
+      "excluded_parsed_predictions": 43,
+      "parse_failures": 0,
+      "sensitivity_only": true
+    },
+    "class": {
+      "total": 54,
+      "valid": 54,
+      "accuracy": 0.7777777777777778,
+      "macro_F1": 0.7380952380952381,
+      "balanced_accuracy": 0.6944444444444444,
+      "confusion_matrix": {
+        "class 1": {
+          "class 1": 2,
+          "class 2": 2,
+          "class 3": 0,
+          "invalid": 0
+        },
+        "class 2": {
+          "class 1": 0,
+          "class 2": 15,
+          "class 3": 5,
+          "invalid": 0
+        },
+        "class 3": {
+          "class 1": 0,
+          "class 2": 5,
+          "class 3": 25,
+          "invalid": 0
+        }
+      },
+      "per_class": [
+        {
+          "label": "class 1",
+          "support": 4,
+          "recall": 0.5,
+          "f1": 0.6666666666666666
+        },
+        {
+          "label": "class 2",
+          "support": 20,
+          "recall": 0.75,
+          "f1": 0.7142857142857143
+        },
+        {
+          "label": "class 3",
+          "support": 30,
+          "recall": 0.8333333333333334,
+          "f1": 0.8333333333333334
+        }
+      ]
+    }
+  },
+  "units": {
+    "Tg": "degrees Celsius",
+    "BG": "eV",
+    "AE": "eV/atom",
+    "class": "class label",
+    "QA": ""
+  },
+  "AE_sensitivity_filter": {
+    "lower_inclusive": -6.82,
+    "upper_inclusive": -5.01,
+    "unit": "eV/atom",
+    "selection": "Pre-existing training-label range applied to predictions only. Supplementary subset; no clipping, sign correction, imputation, or residual selection."
+  },
+  "system_prompts": {
+    "QA": "You are a polymer science expert. Answer the user question accurately and directly, using your own knowledge. Do not use tools, retrieval, or external sources. Give the final answer with any explanation needed; do not provide hidden chain-of-thought.",
+    "property": "You are a polymer science expert. Predict the requested property from the supplied SMILES using your own knowledge, without tools, retrieval, external sources, or examples. Return only one finite decimal number in the requested unit for a regression task, or exactly class 1, class 2, or class 3 for a classification task. No explanation, units, JSON, or markdown. For heat-resistance classification of polyimides, class 1 means Tg > 400 degrees Celsius; class 2 means 300 <= Tg <= 400 degrees Celsius; class 3 means Tg < 300 degrees Celsius. For atomization energy, use the dataset convention of negative atomization energy in eV per atom."
+  },
+  "input_note": "The prompt column contains the exact user message. Original questions and SMILES are preserved; shared output-format, unit, class-definition and negative-AE-convention instructions distinguish this protocol from historical model prompts.",
+  "parsing_note": "The standalone script re-parses output_text using the frozen full-string numeric/class rules. Parsing coverage is not the historical NHscore.",
+  "scope_history": "Earlier budget calibration remains in the local evidence archive. A second model was discontinued at the author’s request; the final released scope is GPT-6-Astra only."
+}

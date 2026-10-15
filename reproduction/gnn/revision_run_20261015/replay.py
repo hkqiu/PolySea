@@ -35,12 +35,34 @@ def now():
     return datetime.datetime.now(datetime.timezone.utc).isoformat()
 
 def verify_capsule():
-    manifest = read_json(CAPSULE/'sha256_manifest.json')
-    for entry in manifest['files']:
-        path = CAPSULE/entry['path']
+    manifest = read_json(CAPSULE/'metadata.json')
+    for name, entry in manifest['files'].items():
+        path = CAPSULE/name
         if not path.is_file() or path.stat().st_size != entry['bytes'] or sha256(path) != entry['sha256']:
-            raise RuntimeError(f'Capsule integrity check failed: {entry["path"]}')
-    return dict(status='passed', checked_files=len(manifest['files']))
+            raise RuntimeError(f'Capsule integrity check failed: {name}')
+    with (CAPSULE/'final_predictions.csv').open(encoding='utf-8', newline='') as stream:
+        rows = list(csv.DictReader(stream))
+    if len(rows) != 3383 or len({r['record_id'] for r in rows}) != 3383:
+        raise RuntimeError('Final prediction table has incorrect row identities.')
+    observed = {}
+    for split in ['train', 'valid', 'test']:
+        selected = [r for r in rows if r['split'] == split]
+        y = [float(r['target_eV']) for r in selected]
+        p = [float(r['predicted_band_gap_eV']) for r in selected]
+        mean = math.fsum(y)/len(y)
+        sse = math.fsum((a-b)**2 for a,b in zip(y,p))
+        sst = math.fsum((a-mean)**2 for a in y)
+        observed[split] = dict(n_rows=len(y), MAE_eV=math.fsum(abs(a-b) for a,b in zip(y,p))/len(y), RMSE_eV=math.sqrt(sse/len(y)), R2=1-sse/sst)
+        for key,value in observed[split].items():
+            if not math.isclose(value,manifest['metrics'][split][key],rel_tol=1e-12,abs_tol=1e-12):
+                raise RuntimeError('Split metric mismatch: '+split+'/'+key)
+    candidates = [r for r in rows if r['split']=='candidate']
+    if len(candidates)!=3:raise RuntimeError('Expected all three candidates.')
+    for row in candidates:
+        matches=[r for r in rows if r['split']=='train' and r['canonical_smiles']==row['canonical_smiles']]
+        if ';'.join(r['csv_line'] for r in matches)!=row['training_overlap_csv_line']:
+            raise RuntimeError('Candidate overlap mismatch: '+row['record_id'])
+    return dict(status='passed', checked_files=len(manifest['files']), prediction_rows=len(rows), metrics=observed)
 
 def fresh_output(path):
     path = path.resolve()
@@ -68,7 +90,7 @@ def predict(args):
     script = args.gnn_script or CAPSULE.parent/'train_graphconv.py'
     if not script.is_file():
         raise FileNotFoundError('The parent train_graphconv.py is required; supply --gnn-script if the capsule was downloaded alone.')
-    protocol = read_json(CAPSULE/'protocol.json')
+    protocol = read_json(CAPSULE/'metadata.json')['protocol']
     if sha256(script) != protocol['gnn_training_script_sha256']:
         raise RuntimeError('train_graphconv.py differs from the implementation used for this capsule.')
     # Stage only the small checkpoint so a Unicode source checkout also works on Windows.
@@ -76,13 +98,20 @@ def predict(args):
     staged.mkdir()
     shutil.copyfile(CAPSULE/'artifact.json', staged/'artifact.json')
     shutil.copytree(CAPSULE/'checkpoint', staged/'checkpoint')
-    command = [sys.executable, str(script), 'predict', '--csv', str(CAPSULE/'candidates_input.csv'),
+    with (CAPSULE/'final_predictions.csv').open(encoding='utf-8', newline='') as stream:
+        final_rows = list(csv.DictReader(stream))
+    candidates = [row for row in final_rows if row['split'] == 'candidate']
+    with (out/'candidates_input.csv').open('w', encoding='utf-8', newline='') as stream:
+        writer = csv.DictWriter(stream, fieldnames=['candidate_id','SMILES'])
+        writer.writeheader()
+        writer.writerows({'candidate_id':row['record_id'],'SMILES':row['smiles']} for row in candidates)
+    command = [sys.executable, str(script), 'predict', '--csv', str(out/'candidates_input.csv'),
         '--id-column', 'candidate_id', '--model-dir', str(staged), '--out', str(out/'candidate_predictions.csv')]
     started = now()
     subprocess.run(command, env=thread_environment(args.threads), check=True)
     with (out/'candidate_predictions.csv').open(encoding='utf-8', newline='') as f:
         rows = list(csv.DictReader(f))
-    expected = {row['candidate_id']:row['predicted_band_gap_eV'] for row in read_json(CAPSULE/'candidate_results.json')}
+    expected = {row['record_id']:float(row['predicted_band_gap_eV']) for row in candidates}
     observed = {row['source_id']:float(row['predicted_band_gap_eV']) for row in rows}
     if set(observed) != set(expected) or len(rows) != 3:
         raise RuntimeError('Candidate row identities differ from the three retained examples.')
@@ -107,7 +136,7 @@ def generate(args):
     os.environ.update(thread_environment(args.threads))
     os.environ['USE_TF'] = '0'
     os.environ['USE_FLAX'] = '0'
-    manifest = read_json(CAPSULE/'polyopus_model_manifest.json')
+    manifest = read_json(CAPSULE/'metadata.json')['model']
     for entry in manifest['files']:
         path = args.model_dir/entry['name']
         if not path.is_file() or path.stat().st_size != entry['size'] or sha256(path) != entry['sha256']:
@@ -124,7 +153,7 @@ def generate(args):
     model = AutoModelForCausalLM.from_pretrained(args.model_dir, local_files_only=True,
         torch_dtype=torch.float16, low_cpu_mem_usage=True, device_map={'':'cpu'}, attn_implementation='eager')
     model.eval()
-    generation = read_json(CAPSULE/'protocol.json')['generation']
+    generation = read_json(CAPSULE/'metadata.json')['protocol']['generation']
     inputs = tokenizer(generation['prompt'], return_tensors='pt')
     length = inputs['input_ids'].shape[1]
     save_json(out/'input.json', dict(prompt=generation['prompt'], input_ids=inputs['input_ids'][0].tolist(),

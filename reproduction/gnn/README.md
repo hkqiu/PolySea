@@ -31,9 +31,10 @@ For an accessible example, the [TransPolymer public copy](https://media.githubus
 contains 3,380 rows with columns `smiles` and `value`. Its SHA256 is
 `d779e1777e7f25bf367dae2a2bf72659dba26345eb45dbc2cde73cdd461a9a14`.
 The source paper defines Egc as single-chain band gap in eV and Egb as bulk band gap.
-This public copy was used only to check the new script's input preparation, not to
-reproduce the authors' historical GNN training data selection. An archived input
-file can instead be supplied with its actual column names.
+This public copy was used for the [revision experiment](revision_run_20261015/README.md),
+which provides the final checkpoint and one combined prediction table. It does
+not reproduce the authors' historical GNN training data selection. An archived
+input file can instead be supplied with its actual column names.
 
 The required wildcard policy makes preprocessing reviewable. `preserve` passes
 the parsed repeat-unit graph, including `*`, to ConvMol. `hydrogen_cap` replaces

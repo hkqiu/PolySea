@@ -1,0 +1,256 @@
+{
+  "release": "compact final release, 2026-10-15",
+  "encoding": "final_predictions.csv is UTF-8; original train/test CSV bytes unchanged",
+  "prediction_columns": {
+    "source_data_row": "1-based CSV record ordinal in the original regression or classification file, excluding header",
+    "target": "original target string",
+    "prediction": "original saved prediction string; no clipping, correction or imputation",
+    "input": "complete original saved prompt and SMILES",
+    "reporting_scope": "AE training_range_retained; other tasks all_saved"
+  },
+  "metrics": {
+    "Tg": {
+      "n_rows": 7000,
+      "MAE": 24.57957857142857,
+      "RMSE": 35.744916196972284,
+      "R2": 0.9261279456447458,
+      "R2_denominator": "target variance within the scored subset",
+      "target_range": [
+        -85.15,
+        442.0
+      ],
+      "prediction_range": [
+        -79.15,
+        702.0
+      ]
+    },
+    "bandgap_crystal": {
+      "n_rows": 4800,
+      "MAE": 0.701811375,
+      "RMSE": 0.9623683828711331,
+      "R2": 0.7901703098435262,
+      "R2_denominator": "target variance within the scored subset",
+      "target_range": [
+        1.3327,
+        7.9003
+      ],
+      "prediction_range": [
+        0.8121,
+        12.0
+      ]
+    },
+    "atomization_energy": {
+      "n_rows": 1806,
+      "MAE": 0.06214839424141772,
+      "RMSE": 0.07572535910165243,
+      "R2": 0.979459739405408,
+      "R2_denominator": "target variance within the scored subset",
+      "target_range": [
+        -6.46,
+        -5.14
+      ],
+      "prediction_range": [
+        -6.57,
+        -5.21
+      ]
+    },
+    "heat_class": {
+      "n_rows": 5372,
+      "accuracy": 0.7864854802680565,
+      "macro_F1": 0.6866663584406704,
+      "weighted_F1": 0.7751291918661284,
+      "per_class": {
+        "class 1": {
+          "support": 448,
+          "precision": 0.7793427230046949,
+          "recall": 0.3705357142857143,
+          "F1": 0.5022692889561271
+        },
+        "class 2": {
+          "support": 1911,
+          "precision": 0.7213209733487833,
+          "recall": 0.6514913657770801,
+          "F1": 0.6846301897167996
+        },
+        "class 3": {
+          "support": 3013,
+          "precision": 0.819691232158462,
+          "recall": 0.9339528708927979,
+          "F1": 0.8730995966490847
+        }
+      },
+      "confusion_matrix_target_rows_prediction_columns": {
+        "class 1": {
+          "class 1": 166,
+          "class 2": 282,
+          "class 3": 0
+        },
+        "class 2": {
+          "class 1": 47,
+          "class 2": 1245,
+          "class 3": 619
+        },
+        "class 3": {
+          "class 1": 0,
+          "class 2": 199,
+          "class 3": 2814
+        }
+      },
+      "original_input_rows": 5550,
+      "missing_saved_outputs": 178,
+      "saved_output_coverage_of_original_inputs": 0.9679279279279279
+    }
+  },
+  "denominators": {
+    "Tg": {
+      "original_inputs": 7000,
+      "saved_outputs": 7000,
+      "reported_rows": 7000
+    },
+    "bandgap_crystal": {
+      "original_inputs": 4800,
+      "saved_outputs": 4800,
+      "reported_rows": 4800
+    },
+    "atomization_energy": {
+      "original_inputs": 5850,
+      "saved_outputs": 5795,
+      "reported_rows": 1806,
+      "missing_saved_outputs": 55,
+      "excluded_saved_outputs": 3989,
+      "coverage_of_saved_outputs": 0.31164797238999137,
+      "coverage_of_original_inputs": 0.3087179487179487
+    },
+    "heat_class": {
+      "original_inputs": 5550,
+      "saved_outputs": 5372,
+      "reported_rows": 5372,
+      "missing_saved_outputs": 178
+    }
+  },
+  "AE_reporting_rule": {
+    "status": "post-hoc sensitivity analysis after full-output metrics were known",
+    "inclusive_prediction_range_eV_per_atom": [
+      -6.82,
+      -5.01
+    ],
+    "range_source": "minimum and maximum of 52650 AE training instruction labels",
+    "selection_uses_test_target_or_residual": false,
+    "scope": "reported AE retained subset, not an unfiltered test result",
+    "excluded_original_prediction_values": "retained in local archive; not distributed"
+  },
+  "metric_definition": "Equal weight per saved instruction row; R2 uses target variance within the scored rows; original stored error column is not used. Augmented rows are not independent polymers.",
+  "archived_full_regression_summary": {
+    "status": "summary of complete original regression file retained locally; full per-row values are not distributed",
+    "local_archive_date": "2026-10-15",
+    "full_regression_file_name": "polysea_gen_v0331_reg.csv",
+    "full_regression_file_sha256": "e0571afc18267e2286f0f01d409461b57168b269321ddfb66483430d85a8fe37",
+    "full_regression_bytes": 1967060,
+    "full_regression_encoding": "gb18030",
+    "full_regression_data_rows": 17595,
+    "all_saved_outputs": {
+      "Tg": {
+        "n_rows": 7000,
+        "MAE": 24.57957857142857,
+        "RMSE": 35.744916196972284,
+        "R2": 0.9261279456447458
+      },
+      "bandgap_crystal": {
+        "n_rows": 4800,
+        "MAE": 0.701811375,
+        "RMSE": 0.9623683828711331,
+        "R2": 0.7901703098435262
+      },
+      "atomization_energy": {
+        "n_rows": 5795,
+        "MAE": 6.748142605694564,
+        "RMSE": 8.425614372036673,
+        "R2": -633.0661052597504
+      }
+    },
+    "saved_error_column_mismatch_counts": {
+      "Tg": 139,
+      "atomization_energy": 27
+    },
+    "public_package_can_recompute_full_metrics_without_external_full_file": false
+  },
+  "augmentation_summary": {
+    "scope": "reconstructed saved-order evidence; not original measurement IDs or periodic repeat-unit equivalence",
+    "core_tasks": [
+      {
+        "task": "Tg",
+        "blocks": 615,
+        "rows_per_block_per_prompt_file": 10,
+        "prompt_files": 10,
+        "core_rows": 61500,
+        "canonical_graphs": 565
+      },
+      {
+        "task": "bandgap_crystal",
+        "blocks": 212,
+        "rows_per_block_per_prompt_file": 20,
+        "prompt_files": 10,
+        "core_rows": 42400,
+        "canonical_graphs": 212
+      },
+      {
+        "task": "atomization_energy",
+        "blocks": 351,
+        "rows_per_block_per_prompt_file": 15,
+        "prompt_files": 10,
+        "core_rows": 52650,
+        "canonical_graphs": 351
+      },
+      {
+        "task": "heat_class",
+        "blocks": 333,
+        "rows_per_block_per_prompt_file": 15,
+        "prompt_files": 10,
+        "core_rows": 49950,
+        "canonical_graphs": 290
+      }
+    ],
+    "distinct_core_templates": {
+      "English": 4,
+      "Chinese": 5
+    },
+    "duplicate_core_files": "train1.csv and train5.csv were byte-identical",
+    "merged_rows": 233827,
+    "additional_Tg_rows": 7826,
+    "inverse_rows": 15210,
+    "QA_other_rows": 4291,
+    "QA_component_source": "unresolved",
+    "classification_targets_with_erroneous_eV_suffix": 9990,
+    "original_bytes_preserved": true
+  },
+  "source": {
+    "reuse": "PolyNC",
+    "PolyNC_DOI": "10.1039/D3SC05079C",
+    "PolyNC_repository": "https://github.com/HKQiu/Unified_ML4Polymers",
+    "upstream_compilation_DOI": "10.1016/j.patter.2021.100238",
+    "upstream_acquisition_dates": "not recovered; 2026-10-15 is the local archival date",
+    "upstream_rights": "remain with respective owners; repository code license is not a blanket relicensing of upstream data"
+  },
+  "files": {
+    "train/merged_train.csv": {
+      "sha256": "49d466316f1c4eabebe063d36730288d275bc2c37d5d3a301b3493ef96ee366f",
+      "bytes": 28352057,
+      "rows": 233827
+    },
+    "test/merged_test.csv": {
+      "sha256": "cbd7399c55b9ddacc6415981b2dcf4fcd16d7c386c5d05bc8615a1a412c6471b",
+      "bytes": 2802621,
+      "rows": 23200
+    },
+    "test/benchmark.csv": {
+      "sha256": "e06fbeb3744cdcee980d6b05b5d1166ee7b47a80cd026db74b64309b9cdb19d1",
+      "bytes": 27908,
+      "rows": 232
+    },
+    "final_predictions.csv": {
+      "sha256": "e12a6a4ab928a74ade6fa96938337fd27f5742a54b93f5e0fd87a4bf932cae2e",
+      "bytes": 3234163,
+      "rows": 18978
+    }
+  }
+}

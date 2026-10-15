@@ -1,0 +1,234 @@
+{
+  "experiment_id": "polyopus_gnn_20261015",
+  "protocol": {
+    "experiment_id": "polyopus_gnn_20261015",
+    "registration_status": "Protocol fixed before actual training and both formal generation attempts; original registration hashes retained in the authors experiment audit.",
+    "nominal_target_eV": 6.5,
+    "generation": {
+      "prompt": "Generate / design a polymer with band gap of 6.5 eV?",
+      "input_format": "Bare prompt exactly as recovered in design source; tokenizer default BOS; do not apply chat_template.",
+      "nominal_target_eV": 6.5,
+      "seeds": [
+        17,
+        29
+      ],
+      "formal_calls_per_seed": 1,
+      "max_new_tokens": 512,
+      "temperature": 1.2,
+      "top_p": 0.9,
+      "top_k": 100,
+      "do_sample": true,
+      "do_sample_provenance": "Inherited by original design source from recovered model generation_config.json, which explicitly stores do_sample=true.",
+      "stop_string": "<STOP>",
+      "eos_token_id": 100001,
+      "bos_token_id": 100000,
+      "selection_policy": "Retain both formal calls, including invalid, duplicate, failed, or target-missing outputs; do not retry for a better candidate.",
+      "parsing_policy": "Preserve all token IDs, complete decoded text, generated suffix, source get_clean_output result, and a deterministic candidate field. Prefer text after the first PolySea: marker, otherwise use generated suffix; stop at the first <STOP> and strip outer whitespace. Do not search through several alternatives or repair chemical strings. RDKit validity and attachment count are diagnostics, not postselection.",
+      "precision_status": "New CPU generation; not an exact historical CUDA/seed reproduction."
+    },
+    "generation_source": "Recovered PolySea/Darwin design source and merged-model generation_config.json",
+    "gnn": {
+      "source_csv_sha256": "d779e1777e7f25bf367dae2a2bf72659dba26345eb45dbc2cde73cdd461a9a14",
+      "source_doi": "10.1016/j.patter.2021.100238",
+      "smiles_column": "smiles",
+      "target_column": "value",
+      "endpoint": "single-chain band gap",
+      "unit": "eV",
+      "wildcard_policy": "preserve",
+      "seed": 42,
+      "split": "Group random split by canonical original/model graph and optional source ID; no source-ID column supplied; 80/10/10; all training-subset rows used.",
+      "expected_counts_from_existing_prepare_audit": {
+        "train": 2704,
+        "valid": 338,
+        "test": 338
+      },
+      "graph_conv_layers": [
+        64,
+        64
+      ],
+      "dense_layer_size": 128,
+      "dropout": 0.0,
+      "batch_size": 100,
+      "learning_rate": 0.001,
+      "epochs": 10,
+      "target_normalization": "none",
+      "model_selection": "Fixed final 10-epoch checkpoint; no validation or test selection, tuning, early stopping, or training-subset downsampling.",
+      "software": {
+        "python": "3.11.16",
+        "deepchem": "2.8.0",
+        "tensorflow": "2.15.1",
+        "keras": "2.15.0",
+        "numpy": "1.26.4",
+        "rdkit": "2023.9.6"
+      },
+      "evaluation": "MAE, RMSE, R2 on train/valid/test; saved checkpoint reload agreement; all parseable candidates evaluated with the identical reloaded checkpoint. Invalid candidates remain explicit failed evaluations, never replaced.",
+      "interpretation": "New revision reconstruction. Predictions are not DFT, Polymer Genome results, experimental gaps, or independent physical validation. Candidate overlap with GNN dataset will be reported."
+    },
+    "gnn_training_script": "../train_graphconv.py",
+    "source_csv": "https://media.githubusercontent.com/media/ChangwenXu98/TransPolymer/8399d4816ce772b64deba34f4455d91d9a764b2a/data/Egc.csv",
+    "runtime": {
+      "device": "CPU",
+      "maximum_compute_threads": 8,
+      "weight_dtype": "float16",
+      "quantization": "none",
+      "python": "3.11.16",
+      "torch": "2.14.1+cpu",
+      "transformers": "4.49.0",
+      "accelerate": "1.3.0",
+      "safetensors": "0.5.3"
+    },
+    "execution_note": "A first TensorFlow checkpoint-save attempt failed on a Windows non-ASCII path. It was retained in the internal audit. The same fixed protocol was restarted through an ASCII path alias without score-based selection. The released checkpoint is the successful complete run.",
+    "reporting_limits": [
+      "The historical candidate was previously selected; these are not three new prespecified trials.",
+      "Two new CPU seeds are a small descriptive extension, not a robust success-rate estimate.",
+      "The GNN is a fixed reconstruction trained in this revision, not the missing historical model.",
+      "An exact graph-overlap check is not a periodic-polymer equivalence or distribution-shift proof.",
+      "GNN predictions are not new DFT, Polymer Genome, experimental or independent physical validation."
+    ],
+    "gnn_training_script_sha256": "8d340e8e24a0fb971016cae34b5df64101435f50e11be9d1b21bd2f47a058ce1"
+  },
+  "metrics": {
+    "train": {
+      "n_rows": 2704,
+      "MAE_eV": 0.9242286245362343,
+      "RMSE_eV": 1.0929328294383844,
+      "R2": 0.508666828236086
+    },
+    "valid": {
+      "n_rows": 338,
+      "MAE_eV": 0.9675164354811042,
+      "RMSE_eV": 1.178856354863391,
+      "R2": 0.45514695198659416
+    },
+    "test": {
+      "n_rows": 338,
+      "MAE_eV": 0.9269011890352122,
+      "RMSE_eV": 1.1073257133887229,
+      "R2": 0.49071097764032623
+    }
+  },
+  "table_columns": {
+    "csv_line": "Original Egc.csv physical line (header is line 1); empty for candidates",
+    "target_eV": "Observed source-dataset reference label; empty for candidates",
+    "nominal_design_target_eV": "Generation request, not a measured reference value",
+    "training_overlap_csv_line": "Canonical-graph matches in the GNN training partition",
+    "source_id": "candidate identifier or original source ID"
+  },
+  "generation_outputs": [
+    {
+      "seed": 17,
+      "complete_visible_output": "Generate / design a polymer with band gap of 6.5 eV?  \nPolySea:[*]CC([*])C(=O)OCC=C<STOP>",
+      "rdkit_valid": true,
+      "wildcard_count": 2
+    },
+    {
+      "seed": 29,
+      "complete_visible_output": "Generate / design a polymer with band gap of 6.5 eV?  \nPolySea:[*]CC1CCC(COC(=O)CCCCC(=O)O[*])CC1<STOP>",
+      "rdkit_valid": true,
+      "wildcard_count": 2
+    }
+  ],
+  "model": {
+    "repo_id": "hkqiu/PolyOpus",
+    "files": [
+      {
+        "name": "config.json",
+        "size": 728,
+        "sha256": "e6338620ebd0b6eea3916706c43b76cbf650cdc1914958bf379a1fed4cdb08ac"
+      },
+      {
+        "name": "generation_config.json",
+        "size": 181,
+        "sha256": "cdd507fdc836a99924717aa5463b1c986c24abb412d897285c47579b52d5f60f"
+      },
+      {
+        "name": "model-00001-of-00003.safetensors",
+        "size": 4987202112,
+        "sha256": "508f51901b24ae0294dbbe8a42ee93a390a4c085e4c64d0e3064c00bd4d67006",
+        "tensor_count": 94,
+        "parameters": 2493595648,
+        "dtype": "F16"
+      },
+      {
+        "name": "model-00002-of-00003.safetensors",
+        "size": 4980945328,
+        "sha256": "c0e5c42bc87cafb456580fce6c0b7d9a0dd07d825b01bf7fa613a6814b9504bf",
+        "tensor_count": 110,
+        "parameters": 2490466304,
+        "dtype": "F16"
+      },
+      {
+        "name": "model-00003-of-00003.safetensors",
+        "size": 3852615456,
+        "sha256": "299fc6d6d2916437b24786741626824d4bd43b12f6e4ea3f8ab2df7862d782be",
+        "tensor_count": 69,
+        "parameters": 1926303744,
+        "dtype": "F16"
+      },
+      {
+        "name": "model.safetensors.index.json",
+        "size": 22464,
+        "sha256": "6f081faa1b874e9aa70906b198bfb1d857075ee1116c10850067d20baa2bddd5"
+      },
+      {
+        "name": "special_tokens_map.json",
+        "size": 482,
+        "sha256": "acb949a6d246354249847f5e1f0dabe04c258271eab55a6d6fac251d7af41075"
+      },
+      {
+        "name": "tokenizer_config.json",
+        "size": 3759,
+        "sha256": "c908a0bbe613bf685adf87446c661c01cd4e0dbd00811b444da53fddc114a029"
+      },
+      {
+        "name": "tokenizer.json",
+        "size": 7503947,
+        "sha256": "7222d6881e3fac874cd5d95f93b99b3b4b5fb441605637c855878058531fc83c"
+      }
+    ]
+  },
+  "historical_candidate_provenance": {
+    "candidate_id": "historical_polysea",
+    "cohort": "previously reported selected example, not a new sampling trial",
+    "smiles": "O=C(CCCCCCCCC(OCCC(O[*])C)=O)OC[*]",
+    "target_eV": 6.5,
+    "generation_seed": null,
+    "source": "Original figure presentation, slide 11, leftmost PolySea column.",
+    "source_verification": "Exact SMILES text and corresponding PolySea label were checked in the original slide XML; retained experiment audit records the text-shape coordinates.",
+    "exact_text": "O=C(CCCCCCCCC(OCCC(O[*])C)=O)OC[*]"
+  },
+  "files": {
+    "artifact.json": {
+      "bytes": 1535,
+      "sha256": "340f9e14ac46844f4200824677ef4de557a31e43b02288c736e9522e1ef96d25"
+    },
+    "checkpoint/checkpoint": {
+      "bytes": 69,
+      "sha256": "87386f5dab985c00d9a1c575ecec838947e82e72090bf4084e290f410c193e9e"
+    },
+    "checkpoint/ckpt-2.data-00000-of-00001": {
+      "bytes": 2435188,
+      "sha256": "aac65cdaeeb09fb7ad45e1ca89a21eb0463d6bfa9787e440936730bd62b23fe9"
+    },
+    "checkpoint/ckpt-2.index": {
+      "bytes": 19050,
+      "sha256": "da08f492ad46e910b39c90bea0ec9029e404e7e285b358df7a07289802f1044b"
+    },
+    "final_predictions.csv": {
+      "bytes": 532288,
+      "sha256": "a3e1fb394a767814598e2747e4f6630332df457a4c84b98f8bf775cbf64354d4"
+    },
+    "README.md": {
+      "bytes": 4264,
+      "sha256": "16da01edfdc612dc80e386770675ae413083d58f7531989d6e5a2d7ac88b0825"
+    },
+    "replay.py": {
+      "bytes": 13112,
+      "sha256": "93852d32fc4a302ed87255d4a883c515e0e87bd27239ac22c1f6e8649839081e"
+    },
+    "requirements.txt": {
+      "bytes": 160,
+      "sha256": "5aa65738a5018b8563bc9ef6e5f9e43c5c40bf53d6f1f616be554798c378a308"
+    }
+  }
+}

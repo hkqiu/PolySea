@@ -3,3 +3,4 @@
 dataset/polyopus/** -text
 reproduction/data/** -text
 reproduction/gnn/** -text
+reproduction/current_models/** -text whitespace=cr-at-eol

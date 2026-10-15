@@ -1,0 +1,862 @@
+﻿case_id,task,prompt,SMILES,target,unit,parsed_prediction,output_text,status,finish_reason
+QA1,QA,How can we control the molecular weight and branching of polymers during a polymerization reaction using different types of initiators and monomers?,,,,,"Controlling **molecular weight** and **branching** requires matching the initiator and monomer chemistry to the polymerization mechanism. The key distinction is that molecular weight depends largely on **how many chains form and how long they grow**, whereas branching depends on **where additional chains or junctions can form**.
+
+## 1. Using initiators to control molecular weight
+
+### Conventional free-radical polymerization
+For monomers such as styrene, acrylates, and methacrylates, initiators include peroxides, azo compounds, and redox systems.
+
+- **Higher initiator concentration** usually creates more radicals and more growing chains, giving **lower average molecular weight**.
+- **Lower initiator concentration** generally gives fewer, longer chains, but slows polymerization.
+- Initiator decomposition rate matters: at a given temperature, a faster-decomposing initiator produces a greater radical flux and generally shorter chains.
+- Thermal, photochemical, and redox initiation offer different ways to control radical generation through temperature, light intensity, or reagent addition.
+
+Under ideal steady-state conditions, with negligible chain transfer, the average chain length scales approximately as
+\[
+\overline{X}_n \propto \frac{[M]}{\sqrt{[I]}}.
+\]
+This scaling is not universal; chain transfer, diffusion-limited termination, and changes in conversion can alter it.
+
+### Living and controlled chain-growth polymerization
+Living anionic polymerization and suitable controlled radical methods—such as ATRP, RAFT, and NMP—allow more predictable molecular weights because chain growth is distributed among a relatively well-defined population of chains.
+
+A useful target relationship is
+\[
+M_n \approx M_{\text{end groups}}+
+\frac{[M]_0}{[\text{effective chains}]_0}\,p\,M_{\text{monomer}},
+\]
+where \(p\) is monomer conversion and the denominator represents the concentration of species that establish polymer chains.
+
+Thus:
+- **Higher monomer-to-chain-forming-species ratio → higher molecular weight.**
+- **Lower ratio → lower molecular weight.**
+- Rapid, efficient initiation and suppression of irreversible termination or transfer improve agreement with the target and usually narrow dispersity.
+
+For ATRP or living anionic polymerization, the chain count is typically tied to the initiator. In **RAFT**, it is primarily controlled by the **RAFT chain-transfer agent**, not simply by the radical initiator.
+
+## 2. Using initiator functionality to control architecture
+
+An initiator’s **functionality** is the number of sites from which chains can grow.
+
+- **One initiating site:** usually produces a linear chain.
+- **Two sites:** can grow chains in two directions, often still giving an overall linear architecture.
+- **Three or more sites on a common core:** can produce a **star polymer**, with one arm per efficiently initiated site.
+- **Initiating sites attached along a polymer backbone:** can produce **graft or comb polymers**.
+
+Multifunctional initiators are especially useful in living or controlled polymerizations. At fixed monomer loading, more active sites generally mean **shorter arms**. However, the molecular weight of the whole star depends on the number of core molecules, not merely the number of arms.
+
+Importantly, an initiator that generates several separate radicals does **not** automatically create a branched polymer—the growing chains must remain connected to a common core or backbone.
+
+## 3. Using monomer functionality to control branching
+
+| Monomer choice | Typical structural effect |
+|---|---|
+| Monovinyl monomers, such as styrene or methyl methacrylate | Usually linear chains unless branching occurs through transfer or other reactions |
+| Divinyl or multivinyl monomers, such as divinylbenzene or diacrylates | Connect chains, introducing branching and eventually crosslinking |
+| Difunctional step-growth monomers, such as diols and diacids | Predominantly linear polymers |
+| Tri- or higher-functional step-growth monomers, such as triols | Branched polymers; networks form if the gel point is exceeded |
+| Appropriately reactive \(AB_2\)-type monomers | Can form hyperbranched polymers |
+
+Increasing the fraction of multifunctional monomer generally increases branching, but also increases the risk of **gelation**. Above the gel point, an insoluble network forms, and a single molecular weight no longer meaningfully describes the whole material.
+
+A monomer’s functionality must be interpreted in context: **one vinyl group supports chain growth**, whereas a linear step-growth polymer normally requires **two reactive functional groups per monomer**.
+
+## 4. Molecular-weight control in step-growth polymerization
+
+Most step-growth polymerizations are not controlled by an initiator in the chain-growth sense. Instead, molecular weight depends mainly on:
+
+- **Conversion:** very high conversion is needed for high molecular weight.
+- **Functional-group balance:** an excess of one type of group limits chain length.
+- **Monofunctional chain stoppers:** these cap chains and lower molecular weight.
+- **Multifunctional monomers:** these introduce branching and can drive gelation.
+
+For an ideal, stoichiometrically balanced, linear bifunctional system,
+\[
+\overline{X}_n=\frac{1}{1-p}.
+\]
+At 99% functional-group conversion, for example, the number-average degree of polymerization is only about 100.
+
+## 5. Other controls that interact with initiator and monomer choice
+
+- **Chain-transfer agents**, such as suitable thiols in radical polymerization, reduce molecular weight by stopping growth of one chain and potentially starting another.
+- **Chain transfer to polymer** can generate branches. Its importance depends strongly on monomer chemistry and reaction conditions.
+- **Temperature, solvent, concentration, and feed rate** affect initiation, propagation, transfer, and termination differently, so their effects are mechanism-dependent.
+- **Staged addition of branching monomers** can help manage branching and delay gelation, although local crosslinking can still occur.
+
+**In practice:** choose the monomer and initiator *functionality* to establish the desired architecture, then adjust the number of effective growing chains, monomer-to-chain ratio, conversion, and chain-transfer chemistry to reach the target molecular weight. For a soluble branched polymer, controlling conversion and staying below the gel point are just as important as selecting the branching agent.",ok,completed
+QA2,QA,"What is the effect of molecular weight on the physical properties of polymers? Compare and contrast the differences in melting point, glass transition temperature, and viscoelastic behavior for low and high molecular weight polymers. Provide examples of commercially available polymers for each molecular weight range and discuss their practical applications in industry.",,,,,"Increasing molecular weight generally changes a polymer from a mobile, relatively weak material into a tougher, more cohesive material with slower molecular motion and higher melt viscosity. The main reasons are a **lower concentration of chain ends** and, once chains are sufficiently long, **greater chain entanglement**.
+
+However, “low” and “high” molecular weight are relative: the relevant ranges depend on polymer chemistry and its characteristic entanglement molecular weight. Comparisons should ideally use polymers with the same composition, branching, and thermal history.
+
+## 1. Melting point
+
+A true melting point, \(T_m\), applies to **crystalline or semicrystalline polymers**. Fully amorphous polymers soften through their glass transition rather than having a crystalline melting point.
+
+- **Low molecular weight:** Short chains generally have lower melting points because chain ends disrupt crystal packing and contribute a larger fraction of the material. Very short polymers may behave like waxes or crystalline oligomers.
+- **High molecular weight:** Melting point generally increases toward a limiting value. Once chains are sufficiently long, adding more molecular weight has only a modest effect on \(T_m\).
+
+In real semicrystalline materials, **crystal thickness, branching, tacticity, and processing history can affect measured melting point more strongly than molecular weight**. Higher molecular weight also slows crystallization, so it does not necessarily produce greater crystallinity.
+
+**Example:** Polyethylene waxes commonly melt over roughly **80–120 °C**, depending strongly on grade and branching, while linear high-density polyethylene typically melts around **130–135 °C**. Ultra-high-molecular-weight polyethylene (UHMWPE) has a similar melting range to HDPE despite its much greater molecular weight.
+
+## 2. Glass transition temperature
+
+The glass transition temperature, \(T_g\), describes the onset of cooperative segmental motion in amorphous material, including the amorphous regions of semicrystalline polymers.
+
+For many linear polymers, the molecular-weight dependence is approximated by the **Fox–Flory equation**:
+
+\[
+T_g = T_{g,\infty}-\frac{K}{M_n}
+\]
+
+where \(M_n\) is number-average molecular weight, \(T_{g,\infty}\) is the high-molecular-weight limit, and \(K\) is a polymer-dependent constant.
+
+- **Low molecular weight:** More chain ends usually provide greater local mobility and lower \(T_g\). The polymer may therefore be softer or more fluid at a given temperature.
+- **High molecular weight:** Fewer chain ends per unit mass raise \(T_g\), but the effect eventually levels off. Entanglements strongly affect bulk flow without greatly changing local segmental mobility.
+
+**Example:** Low-molecular-weight polystyrene oligomers have substantially lower \(T_g\) values than conventional high-molecular-weight polystyrene, whose \(T_g\) is approximately **100 °C**.
+
+End-group chemistry, plasticizers, and copolymer composition can modify or outweigh this trend.
+
+## 3. Viscoelastic behavior
+
+Molecular weight has a particularly strong influence on melt flow and long-time mechanical response.
+
+| Property | Low molecular weight | High molecular weight |
+|---|---|---|
+| Chain interactions | Few or no effective entanglements | Extensive entanglement |
+| Melt viscosity | Low; easy flow | High; difficult flow |
+| Stress relaxation | Fast | Slow |
+| Melt elasticity and strength | Low | Higher |
+| Creep resistance | Generally poorer | Generally better over practical timescales |
+| Toughness | Often low because chains pull apart readily | Generally higher, eventually approaching a plateau |
+
+For approximately linear polymers of similar chemistry, the zero-shear melt viscosity scales roughly as
+
+\[
+\eta_0 \propto M
+\quad \text{below the entanglement crossover,}
+\]
+
+and approximately as
+
+\[
+\eta_0 \propto M^{3.4}
+\quad \text{well above it.}
+\]
+
+These are approximate relationships; molecular-weight distribution and branching matter. High-molecular-weight melts also show stronger shear thinning and longer relaxation times. **Entanglements are not permanent crosslinks:** an uncrosslinked polymer melt will eventually flow under sustained loading.
+
+## Commercial examples and applications
+
+The following molecular-weight ranges are illustrative; commercial grades and reported averages vary.
+
+| Range | Commercial polymer example | Typical molecular weight | Industrial applications |
+|---|---|---:|---|
+| Low | **Polyethylene wax** | About \(1{,}000–10{,}000\) g/mol | Lubricants and processing aids in plastics; slip and abrasion additives in inks, coatings, and polishes |
+| Low | **Polyethylene glycol, PEG 400 or PEG 600** | About 400 or 600 g/mol | Liquid solvents, humectants, plasticizers, and pharmaceutical or cosmetic formulation ingredients |
+| Low | **Low-molecular-weight polybutene** | Often hundreds to a few thousand g/mol | Viscous components in sealants, adhesives, lubricant formulations, and electrical insulating compounds |
+| High | **Film- and molding-grade HDPE** | Often tens to hundreds of thousands of g/mol | Bottles, containers, films, and pipes; balances toughness, chemical resistance, and melt processability |
+| Very high | **UHMWPE** | Several million g/mol | Wear liners, joint-bearing components, and high-strength fibers for ropes and protective products |
+| High | **Polyethylene oxide (PEO)**—the same repeat-unit chemistry as PEG | Hundreds of thousands to several million g/mol | Thickeners, water-soluble films, binders, and controlled-release pharmaceutical matrices |
+
+The PEG–PEO comparison is especially useful: the same backbone chemistry can give a low-viscosity liquid at low molecular weight and an entangled, strongly thickening material at high molecular weight.
+
+**Practical trade-off:** Low molecular weight favors flow, wetting, and easy processing; high molecular weight favors toughness, melt strength, and resistance to deformation. Industry often uses broad or bimodal molecular-weight distributions to combine processability with mechanical performance.",ok,completed
+QA3,QA,"Amides are actually formed by bringing together an amine-containing molecule and molecule containing what? Pick the best one to answer from the following four options: carboxylic acid, oxidize acid, polymer acid, Fatty ac",,,,,"**Carboxylic acid.** An amine reacts with a carboxylic acid to form an amide bond, typically with the elimination of water.",ok,completed
+TS1_013,AE,"请计算该 SMILES 对应物质的总原子结合能
+SMILES: O=C(*)c1ccc(-c2ccc(O*)cc2)cc1
+Required output unit/labels: eV per atom (negative atomization-energy convention)",O=C(*)c1ccc(-c2ccc(O*)cc2)cc1,-6.44,eV/atom,-5.36,-5.36,ok,completed
+TS1_133,AE,"请估算该分子的解离能大小
+SMILES: c1(*)sc(C(c2sc(N*)cc2)=S)cc1
+Required output unit/labels: eV per atom (negative atomization-energy convention)",c1(*)sc(C(c2sc(N*)cc2)=S)cc1,-6,eV/atom,-4.58,-4.58,ok,completed
+TS1_006,Tg,"基于该 SMILES 结构，预测其玻璃化温度
+SMILES: c1cc(N2C(=O)c3ccc(Oc4ccc5c(c4)C(=O)N(C)C5=O)cc3C2=O)ccc1Oc1ccc(C)cc1
+Required output unit/labels: degrees Celsius",c1cc(N2C(=O)c3ccc(Oc4ccc5c(c4)C(=O)N(C)C5=O)cc3C2=O)ccc1Oc1ccc(C)cc1,272,degrees Celsius,263.0,263.0,ok,completed
+TS1_096,Tg,"Determine the glass transition temperature of this molecular structure
+SMILES: C(C)C(C)(c1c(Cl)cc(OC(=O)O*)cc1)c1ccc(*)cc1Cl
+Required output unit/labels: degrees Celsius",C(C)C(C)(c1c(Cl)cc(OC(=O)O*)cc1)c1ccc(*)cc1Cl,141.85,degrees Celsius,184.0,184.0,ok,completed
+TS1_057,BG,"Can you calculate the bandgap energy for the material described by this SMILES notation
+SMILES: C(C*)(O*)C
+Required output unit/labels: eV",C(C*)(O*)C,6.9903,eV,5.65,5.65,ok,completed
+TS1_200,AE,"How much energy is required for the atomization of this molecular structure
+SMILES: c1(N*)ccc(Oc2ccc(*)cc2)cc1
+Required output unit/labels: eV per atom (negative atomization-energy convention)",c1(N*)ccc(Oc2ccc(*)cc2)cc1,-6.26,eV/atom,-5.18,-5.18,ok,completed
+TS1_097,Tg,"Determine the glass transition temperature of this molecular structure
+SMILES: c1cc2c(cc1-c1cccc(Oc3ccc4c(c3)C(=O)N(C)C4=O)c1)C(=O)N(c1ccc(Oc3ccc(C)cc3)cc1)C2=O
+Required output unit/labels: degrees Celsius",c1cc2c(cc1-c1cccc(Oc3ccc4c(c3)C(=O)N(C)C4=O)c1)C(=O)N(c1ccc(Oc3ccc(C)cc3)cc1)C2=O,215,degrees Celsius,252.0,252.0,ok,completed
+TS1_028,Tg,"请计算以下 SMILES 所对应聚合物的玻璃化转变温度 (Tg)
+SMILES: c1(Oc2ccc(N3C(=O)c4c(*)cccc4C3=O)cc2)ccc(N2C(=O)c3cccc(Oc4ccc(Sc5cc(O*)ccc5)cc4)c3C2=O)cc1
+Required output unit/labels: degrees Celsius",c1(Oc2ccc(N3C(=O)c4c(*)cccc4C3=O)cc2)ccc(N2C(=O)c3cccc(Oc4ccc(Sc5cc(O*)ccc5)cc4)c3C2=O)cc1,234,degrees Celsius,235.0,235.0,ok,completed
+TS1_140,class,"该高分子的耐热性怎么样
+SMILES: c1c(N2C(=O)c3c(cc(*)cc3)C2=O)ccc(OCC(F)(C(F)(F)C(F)(F)C(C(C(C(F)(F)C(F)(C(F)(F)C(F)(F)F)F)(F)F)(F)F)(F)F)F)c1N1C(=O)c2ccc(C(C(F)(F)F)(*)C(F)(F)F)cc2C1=O
+Required output unit/labels: class 1 / class 2 / class 3",c1c(N2C(=O)c3c(cc(*)cc3)C2=O)ccc(OCC(F)(C(F)(F)C(F)(F)C(C(C(C(F)(F)C(F)(C(F)(F)C(F)(F)F)F)(F)F)(F)F)(F)F)F)c1N1C(=O)c2ccc(C(C(F)(F)F)(*)C(F)(F)F)cc2C1=O,class 3,class label,class 3,class 3,ok,completed
+TS1_213,Tg,"该分子结构的玻璃化转变温度是多少
+SMILES: c1cc2c(cc1-c1cccc(Oc3ccc4c(c3)C(=O)N(C)C4=O)c1)C(=O)N(c1ccc(Oc3ccc(C)cc3)cc1)C2=O
+Required output unit/labels: degrees Celsius",c1cc2c(cc1-c1cccc(Oc3ccc4c(c3)C(=O)N(C)C4=O)c1)C(=O)N(c1ccc(Oc3ccc(C)cc3)cc1)C2=O,215,degrees Celsius,266.0,266.0,ok,completed
+TS1_036,AE,"该分子结构的原子化能是多少
+SMILES: c1cc(Cc2ccc(O*)cc2)ccc1*
+Required output unit/labels: eV per atom (negative atomization-energy convention)",c1cc(Cc2ccc(O*)cc2)ccc1*,-6.18,eV/atom,-5.23,-5.23,ok,completed
+TS1_116,class,"Estimate the temperature endurance class for the given molecular structure
+SMILES: C(F)(F)(C(C(F)(F)F)(c1ccc(Oc2ccc(N3C(=O)c4c(cc(C(C(F)(F)F)(C(F)(F)F)*)cc4)C3=O)cc2)cc1)c1ccc(Oc2ccc(N3C(=O)c4c(ccc(*)c4)C3=O)cc2)cc1)F
+Required output unit/labels: class 1 / class 2 / class 3",C(F)(F)(C(C(F)(F)F)(c1ccc(Oc2ccc(N3C(=O)c4c(cc(C(C(F)(F)F)(C(F)(F)F)*)cc4)C3=O)cc2)cc1)c1ccc(Oc2ccc(N3C(=O)c4c(ccc(*)c4)C3=O)cc2)cc1)F,class 3,class label,class 3,class 3,ok,completed
+TS1_020,class,"基于 SMILES 结构，预测该材料的耐热性能
+SMILES: *c1ccc2c(c1)C(=O)N(c1cc(Cl)c(-c3c(Cl)cc(N4C(=O)c5c(cc(C(*)(C(F)(F)F)C(F)(F)F)cc5)C4=O)cc3)cc1)C2=O
+Required output unit/labels: class 1 / class 2 / class 3",*c1ccc2c(c1)C(=O)N(c1cc(Cl)c(-c3c(Cl)cc(N4C(=O)c5c(cc(C(*)(C(F)(F)F)C(F)(F)F)cc5)C4=O)cc3)cc1)C2=O,class 2,class label,class 2,class 2,ok,completed
+TS1_222,AE,"基于此分子结构，预测其原子化能值
+SMILES: *CCCN*
+Required output unit/labels: eV per atom (negative atomization-energy convention)",*CCCN*,-5.18,eV/atom,-3.92,-3.92,ok,completed
+TS1_187,Tg,"Estimate the Tg value for the given polymer structure in SMILES notation
+SMILES: C(C(CC(C)C)*)*
+Required output unit/labels: degrees Celsius",C(C(CC(C)C)*)*,28.85,degrees Celsius,29.0,29.0,ok,completed
+TS1_160,class,"What is the thermal stability classification of this material based on its SMILES
+SMILES: c1c(-c2ccc3c(c2)C(=O)N(c2ccc(OCC(F)(C(F)(F)C(F)(F)F)F)c(*)c2)C3=O)cc2c(c1)C(=O)N(*)C2=O
+Required output unit/labels: class 1 / class 2 / class 3",c1c(-c2ccc3c(c2)C(=O)N(c2ccc(OCC(F)(C(F)(F)C(F)(F)F)F)c(*)c2)C3=O)cc2c(c1)C(=O)N(*)C2=O,class 2,class label,class 3,class 3,ok,completed
+TS1_077,Tg,"Predict the Tg of the following SMILES
+SMILES: c1(C(*)=O)cc2c(cc1)C(=O)N(c1cc(N3C(=O)c4c(ccc(*)c4)C3=O)ccc1)C2=O
+Required output unit/labels: degrees Celsius",c1(C(*)=O)cc2c(cc1)C(=O)N(c1cc(N3C(=O)c4c(ccc(*)c4)C3=O)ccc1)C2=O,300,degrees Celsius,331.0,331.0,ok,completed
+TS1_153,AE,"Estimate the atomization energy of the compound represented by this SMILES string
+SMILES: *c1sc(C(=S)OC(*)=S)cc1
+Required output unit/labels: eV per atom (negative atomization-energy convention)",*c1sc(C(=S)OC(*)=S)cc1,-5.95,eV/atom,-4.21,-4.21,ok,completed
+TS1_134,AE,"请估算该分子的解离能大小
+SMILES: *NC(NC(=O)*)=O
+Required output unit/labels: eV per atom (negative atomization-energy convention)",*NC(NC(=O)*)=O,-6.46,eV/atom,-4.82,-4.82,ok,completed
+TS1_196,BG,"Predict the electronic bandgap for the crystal structure corresponding to this SMILES
+SMILES: CC(C(*)=O)S*
+Required output unit/labels: eV",CC(C(*)=O)S*,3.8079,eV,3.64,3.64,ok,completed
+TS1_066,class,"Determine the thermal resistance class of this polymer
+SMILES: O(C(C)(F)F)c1c(-c2ccc(*)cc2OC(C)(F)F)ccc(N2C(=O)c3cc4c(cc3C2=O)Oc2c(cc3c(c2)C(=O)N(*)C3=O)C4(C(F)(F)F)C(F)(F)F)c1
+Required output unit/labels: class 1 / class 2 / class 3",O(C(C)(F)F)c1c(-c2ccc(*)cc2OC(C)(F)F)ccc(N2C(=O)c3cc4c(cc3C2=O)Oc2c(cc3c(c2)C(=O)N(*)C3=O)C4(C(F)(F)F)C(F)(F)F)c1,class 2,class label,class 2,class 2,ok,completed
+TS1_029,Tg,"请计算以下 SMILES 所对应聚合物的玻璃化转变温度 (Tg)
+SMILES: c1ccc(N2C(=O)c3cc4c(cc3C2=O)CN(*)C4=O)c(Oc2ccc(*)cc2)c1
+Required output unit/labels: degrees Celsius",c1ccc(N2C(=O)c3cc4c(cc3C2=O)CN(*)C4=O)c(Oc2ccc(*)cc2)c1,386,degrees Celsius,278.0,278.0,ok,completed
+TS1_054,Tg,"Provide the predicted Tg for the polymer described by this SMILES string
+SMILES: O(c1ccc(Oc2cc3c(cc2)C(=O)N(c2ccc(Oc4c(-c5c6ccccc6ccc5Oc5c(C(F)(F)F)cc(N6C(=O)c7cc(*)ccc7C6=O)cc5)c5c(cccc5)cc4)c(C(F)(F)F)c2)C3=O)cc1)*
+Required output unit/labels: degrees Celsius",O(c1ccc(Oc2cc3c(cc2)C(=O)N(c2ccc(Oc4c(-c5c6ccccc6ccc5Oc5c(C(F)(F)F)cc(N6C(=O)c7cc(*)ccc7C6=O)cc5)c5c(cccc5)cc4)c(C(F)(F)F)c2)C3=O)cc1)*,256,degrees Celsius,273.0,273.0,ok,completed
+TS1_197,BG,"Predict the electronic bandgap for the crystal structure corresponding to this SMILES
+SMILES: C1(C=C*)CC(CCC)(C#N)C(*)C1
+Required output unit/labels: eV",C1(C=C*)CC(CCC)(C#N)C(*)C1,5.8705,eV,4.78,4.78,ok,completed
+TS1_217,BG,"请计算该材料的预期能带宽度
+SMILES: C(ON*)(=S)O*
+Required output unit/labels: eV",C(ON*)(=S)O*,3.9632,eV,3.72,3.72,ok,completed
+TS1_214,Tg,"该分子结构的玻璃化转变温度是多少
+SMILES: c1(N2C(=O)c3c(cc(*)cc3)C2=O)ccc(Oc2ccc(C(c3ccc(Oc4ccc(N5C(=O)c6cc(C(*)(C(F)(F)F)C(F)(F)F)ccc6C5=O)cc4)cc3)(C)C)cc2)cc1
+Required output unit/labels: degrees Celsius",c1(N2C(=O)c3c(cc(*)cc3)C2=O)ccc(Oc2ccc(C(c3ccc(Oc4ccc(N5C(=O)c6cc(C(*)(C(F)(F)F)C(F)(F)F)ccc6C5=O)cc4)cc3)(C)C)cc2)cc1,249,degrees Celsius,253.0,253.0,ok,completed
+TS1_041,AE,"该分子结构的原子化能是多少
+SMILES: c1(*)ccc(C(=S)c2ccc(O*)s2)cc1
+Required output unit/labels: eV per atom (negative atomization-energy convention)",c1(*)ccc(C(=S)c2ccc(O*)s2)cc1,-6.18,eV/atom,-4.65,-4.65,ok,completed
+TS1_031,Tg,"请计算以下 SMILES 所对应聚合物的玻璃化转变温度 (Tg)
+SMILES: *c1cccc2c1C(=O)N(c1ccc(Oc3ccc(Oc4ccc(N5C(=O)c6cccc(*)c6C5=O)cc4)cc3)cc1)C2=O
+Required output unit/labels: degrees Celsius",*c1cccc2c1C(=O)N(c1ccc(Oc3ccc(Oc4ccc(N5C(=O)c6cccc(*)c6C5=O)cc4)cc3)cc1)C2=O,293,degrees Celsius,263.0,263.0,ok,completed
+TS1_059,BG,"Can you calculate the bandgap energy for the material described by this SMILES notation
+SMILES: C(CCCCC*)(S*)=O
+Required output unit/labels: eV",C(CCCCC*)(S*)=O,5.0001,eV,4.37,4.37,ok,completed
+TS1_179,AE,"预测以下 SMILES 对应化合物的原子化能
+SMILES: C(*)(C(CC*)=O)=S
+Required output unit/labels: eV per atom (negative atomization-energy convention)",C(*)(C(CC*)=O)=S,-5.61,eV/atom,-4.43,-4.43,ok,completed
+TS1_071,Tg,"Predict the Tg of the following SMILES
+SMILES: C(C(CC(C)C)*)*
+Required output unit/labels: degrees Celsius",C(C(CC(C)C)*)*,28.85,degrees Celsius,25.0,25.0,ok,completed
+TS1_092,class,"Predict the heat resistance class of the following SMILES
+SMILES: c1cc(Oc2cc3c(cc2)C(=O)N(c2cc(N4C(=O)c5cc(*)ccc5C4=O)ccc2)C3=O)ccc1O*
+Required output unit/labels: class 1 / class 2 / class 3",c1cc(Oc2cc3c(cc2)C(=O)N(c2cc(N4C(=O)c5cc(*)ccc5C4=O)ccc2)C3=O)ccc1O*,class 3,class label,class 3,class 3,ok,completed
+TS1_149,BG,"What is the estimated bandgap energy of this crystal based on its SMILES structure
+SMILES: *CCC1C2C3CC(C2C(*)C1)CC3CC
+Required output unit/labels: eV",*CCC1C2C3CC(C2C(*)C1)CC3CC,7.528,eV,6.52,6.52,ok,completed
+TS1_088,AE,"Predict the atomization energy of the following SMILES
+SMILES: *NC(C*)=O
+Required output unit/labels: eV per atom (negative atomization-energy convention)",*NC(C*)=O,-5.91,eV/atom,-4.43,-4.43,ok,completed
+TS1_014,AE,"请计算该 SMILES 对应物质的总原子结合能
+SMILES: c1(C(=S)c2ccc(*)cc2)ccc(N*)s1
+Required output unit/labels: eV per atom (negative atomization-energy convention)",c1(C(=S)c2ccc(*)cc2)ccc(N*)s1,-6.15,eV/atom,-4.86,-4.86,ok,completed
+TS1_017,AE,"请计算该 SMILES 对应物质的总原子结合能
+SMILES: c1(*)sc(C(c2sc(N*)cc2)=S)cc1
+Required output unit/labels: eV per atom (negative atomization-energy convention)",c1(*)sc(C(c2sc(N*)cc2)=S)cc1,-6,eV/atom,-4.61,-4.61,ok,completed
+TS1_232,class,"该高分子的耐热等级是多少
+SMILES: C(F)(F)(C(C(F)(F)F)(c1ccc(Oc2ccc(N3C(=O)c4c(cc(C(C(F)(F)F)(C(F)(F)F)*)cc4)C3=O)cc2)cc1)c1ccc(Oc2ccc(N3C(=O)c4c(ccc(*)c4)C3=O)cc2)cc1)F
+Required output unit/labels: class 1 / class 2 / class 3",C(F)(F)(C(C(F)(F)F)(c1ccc(Oc2ccc(N3C(=O)c4c(cc(C(C(F)(F)F)(C(F)(F)F)*)cc4)C3=O)cc2)cc1)c1ccc(Oc2ccc(N3C(=O)c4c(ccc(*)c4)C3=O)cc2)cc1)F,class 3,class label,class 3,class 3,ok,completed
+TS1_202,AE,"How much energy is required for the atomization of this molecular structure
+SMILES: c1c(OC(O*)=S)ccc(*)c1
+Required output unit/labels: eV per atom (negative atomization-energy convention)",c1c(OC(O*)=S)ccc(*)c1,-6.18,eV/atom,-4.93,-4.93,ok,completed
+TS1_067,class,"Determine the thermal resistance class of this polymer
+SMILES: c1c2c(ccc1*)C(=O)N(c1ccc(Oc3ccc(N4C(=O)c5cc(C(=O)*)ccc5C4=O)cc3)cc1)C2=O
+Required output unit/labels: class 1 / class 2 / class 3",c1c2c(ccc1*)C(=O)N(c1ccc(Oc3ccc(N4C(=O)c5cc(C(=O)*)ccc5C4=O)cc3)cc1)C2=O,class 2,class label,class 3,class 3,ok,completed
+TS1_218,BG,"请计算该材料的预期能带宽度
+SMILES: c1c(*)c2cccccc-2c1-c1c(C)cc(-c2sc(*)c(C)c2)s1
+Required output unit/labels: eV",c1c(*)c2cccccc-2c1-c1c(C)cc(-c2sc(*)c(C)c2)s1,1.3327,eV,1.62,1.62,ok,completed
+TS1_105,BG,"Determine the bandgap energy of the material represented by this SMILES string
+SMILES: C1(*)(F)OC(C(Cl)(F)F)(C(F)(F)F)OC1(*)F
+Required output unit/labels: eV",C1(*)(F)OC(C(Cl)(F)F)(C(F)(F)F)OC1(*)F,7.8208,eV,5.78,5.78,ok,completed
+TS1_034,BG,"该分子晶体的电子带隙是多少
+SMILES: c1cc(*)sc1-c1sc(-c2nc(*)ccc2)cc1
+Required output unit/labels: eV",c1cc(*)sc1-c1sc(-c2nc(*)ccc2)cc1,2.0464,eV,2.03,2.03,ok,completed
+TS1_082,BG,"Predict the bandgap crystal of the following SMILES
+SMILES: *CCOCCOCCOC(=O)CCCCCCC(O*)=O
+Required output unit/labels: eV",*CCOCCOCCOC(=O)CCCCCCC(O*)=O,6.184,eV,4.87,4.87,ok,completed
+TS1_224,AE,"基于此分子结构，预测其原子化能值
+SMILES: c1(NC(=S)*)ccc(C*)s1
+Required output unit/labels: eV per atom (negative atomization-energy convention)",c1(NC(=S)*)ccc(C*)s1,-5.77,eV/atom,-4.46,-4.46,ok,completed
+TS1_123,Tg,"请提供该 SMILES 聚合物的 Tg 预测值
+SMILES: c12c(cc(C(=O)*)cc1)C(=O)N(c1c(C(=O)c3ccccc3N3C(=O)c4c(ccc(*)c4)C3=O)cccc1)C2=O
+Required output unit/labels: degrees Celsius",c12c(cc(C(=O)*)cc1)C(=O)N(c1c(C(=O)c3ccccc3N3C(=O)c4c(ccc(*)c4)C3=O)cccc1)C2=O,289,degrees Celsius,326.0,326.0,ok,completed
+TS1_155,AE,"Estimate the atomization energy of the compound represented by this SMILES string
+SMILES: C(C*)(*)C
+Required output unit/labels: eV per atom (negative atomization-energy convention)",C(C*)(*)C,-5.14,eV/atom,-4.13,-4.13,ok,completed
+TS1_156,AE,"Estimate the atomization energy of the compound represented by this SMILES string
+SMILES: *c1ccc(CCC*)cc1
+Required output unit/labels: eV per atom (negative atomization-energy convention)",*c1ccc(CCC*)cc1,-5.78,eV/atom,-4.75,-4.75,ok,completed
+TS1_044,class,"请计算该分子结构的热稳定等级
+SMILES: c1c(-c2ccc3c(c2)C(=O)N(c2ccc(OCC(F)(C(F)(F)C(F)(F)F)F)c(*)c2)C3=O)cc2c(c1)C(=O)N(*)C2=O
+Required output unit/labels: class 1 / class 2 / class 3",c1c(-c2ccc3c(c2)C(=O)N(c2ccc(OCC(F)(C(F)(F)C(F)(F)F)F)c(*)c2)C3=O)cc2c(c1)C(=O)N(*)C2=O,class 2,class label,class 2,class 2,ok,completed
+TS1_002,Tg,"基于该 SMILES 结构，预测其玻璃化温度
+SMILES: c1(C(F)(F)*)ccc(C(*)(F)F)cc1
+Required output unit/labels: degrees Celsius",c1(C(F)(F)*)ccc(C(*)(F)F)cc1,89.85,degrees Celsius,60.0,60.0,ok,completed
+TS1_027,Tg,"请计算以下 SMILES 所对应聚合物的玻璃化转变温度 (Tg)
+SMILES: C(C*)(*)SC
+Required output unit/labels: degrees Celsius",C(C*)(*)SC,-1.15,degrees Celsius,-25.0,-25.0,ok,completed
+TS1_121,Tg,"请提供该 SMILES 聚合物的 Tg 预测值
+SMILES: c1c2c(cc3c(=O)n(-c4ccc(-c5c(C)cc(*)cc5)c(C)c4)c(=O)c13)c(=O)n(*)c2=O
+Required output unit/labels: degrees Celsius",c1c2c(cc3c(=O)n(-c4ccc(-c5c(C)cc(*)cc5)c(C)c4)c(=O)c13)c(=O)n(*)c2=O,374,degrees Celsius,382.0,382.0,ok,completed
+TS1_075,Tg,"Predict the Tg of the following SMILES
+SMILES: c1c(C(=O)*)ccc2c1C(=O)N(c1ccc(Cc3cc(N4C(=O)c5cc(*)ccc5C4=O)ccc3)cc1)C2=O
+Required output unit/labels: degrees Celsius",c1c(C(=O)*)ccc2c1C(=O)N(c1ccc(Cc3cc(N4C(=O)c5cc(*)ccc5C4=O)ccc3)cc1)C2=O,292,degrees Celsius,302.0,302.0,ok,completed
+TS1_148,BG,"What is the estimated bandgap energy of this crystal based on its SMILES structure
+SMILES: C1N(C(*)C*)C(=O)CC1
+Required output unit/labels: eV",C1N(C(*)C*)C(=O)CC1,5.5902,eV,4.86,4.86,ok,completed
+TS1_175,BG,"预测以下 SMILES 对应晶体的带隙大小
+SMILES: C(CCCCC*)(S*)=O
+Required output unit/labels: eV",C(CCCCC*)(S*)=O,5.0001,eV,4.18,4.18,ok,completed
+TS1_085,AE,"Predict the atomization energy of the following SMILES
+SMILES: C(OCC*)(=O)CCCCCCC(=O)O*
+Required output unit/labels: eV per atom (negative atomization-energy convention)",C(OCC*)(=O)CCCCCCC(=O)O*,-5.5,eV/atom,-4.32,-4.32,ok,completed
+TS1_100,Tg,"Determine the glass transition temperature of this molecular structure
+SMILES: C1(=O)N(c2cccc(N3C(=O)c4c(c(Oc5ccc(S(=O)(c6cccc(O*)c6)=O)cc5)ccc4)C3=O)c2)C(=O)c2c1cccc2*
+Required output unit/labels: degrees Celsius",C1(=O)N(c2cccc(N3C(=O)c4c(c(Oc5ccc(S(=O)(c6cccc(O*)c6)=O)cc5)ccc4)C3=O)c2)C(=O)c2c1cccc2*,266,degrees Celsius,258.0,258.0,ok,completed
+TS1_058,BG,"Can you calculate the bandgap energy for the material described by this SMILES notation
+SMILES: c1(C=C*)ccc(*)n1CCCCCC
+Required output unit/labels: eV",c1(C=C*)ccc(*)n1CCCCCC,1.3683,eV,2.03,2.03,ok,completed
+TS1_136,class,"该高分子的耐热性怎么样
+SMILES: *c1ccc2c(c1)C(=O)N(c1cc(Cl)c(-c3c(Cl)cc(N4C(=O)c5c(cc(C(*)(C(F)(F)F)C(F)(F)F)cc5)C4=O)cc3)cc1)C2=O
+Required output unit/labels: class 1 / class 2 / class 3",*c1ccc2c(c1)C(=O)N(c1cc(Cl)c(-c3c(Cl)cc(N4C(=O)c5c(cc(C(*)(C(F)(F)F)C(F)(F)F)cc5)C4=O)cc3)cc1)C2=O,class 2,class label,class 2,class 2,ok,completed
+TS1_037,AE,"该分子结构的原子化能是多少
+SMILES: *c1sc(C(=S)OC(*)=S)cc1
+Required output unit/labels: eV per atom (negative atomization-energy convention)",*c1sc(C(=S)OC(*)=S)cc1,-5.95,eV/atom,-4.65,-4.65,ok,completed
+TS1_118,Tg,"请提供该 SMILES 聚合物的 Tg 预测值
+SMILES: c1(C(F)(F)*)ccc(C(*)(F)F)cc1
+Required output unit/labels: degrees Celsius",c1(C(F)(F)*)ccc(C(*)(F)F)cc1,89.85,degrees Celsius,108.0,108.0,ok,completed
+TS1_130,AE,"请估算该分子的解离能大小
+SMILES: c1(C(=S)c2ccc(*)cc2)ccc(N*)s1
+Required output unit/labels: eV per atom (negative atomization-energy convention)",c1(C(=S)c2ccc(*)cc2)ccc(N*)s1,-6.15,eV/atom,-5.05,-5.05,ok,completed
+TS1_161,class,"What is the thermal stability classification of this material based on its SMILES
+SMILES: c1cc(Oc2ccc(Oc3ccc(-n4c(=O)c5cc6c(c(=O)n(*)c6=O)cc5c4=O)cc3)cc2)ccc1*
+Required output unit/labels: class 1 / class 2 / class 3",c1cc(Oc2ccc(Oc3ccc(-n4c(=O)c5cc6c(c(=O)n(*)c6=O)cc5c4=O)cc3)cc2)ccc1*,class 3,class label,class 3,class 3,ok,completed
+TS1_221,BG,"请计算该材料的预期能带宽度
+SMILES: C1(*)(F)OC(C(Cl)(F)F)(C(F)(F)F)OC1(*)F
+Required output unit/labels: eV",C1(*)(F)OC(C(Cl)(F)F)(C(F)(F)F)OC1(*)F,7.8208,eV,5.72,5.72,ok,completed
+TS1_087,AE,"Predict the atomization energy of the following SMILES
+SMILES: c1cc(-c2ccc(CC(c3ccc(C(=S)CO*)s3)=S)cc2)ccc1*
+Required output unit/labels: eV per atom (negative atomization-energy convention)",c1cc(-c2ccc(CC(c3ccc(C(=S)CO*)s3)=S)cc2)ccc1*,-6.04,eV/atom,-4.89,-4.89,ok,completed
+TS1_056,BG,"Can you calculate the bandgap energy for the material described by this SMILES notation
+SMILES: C(CC*)CCCOC(NCCSCCCCCSCCNC(=O)O*)=O
+Required output unit/labels: eV",C(CC*)CCCOC(NCCSCCCCCSCCNC(=O)O*)=O,5.1327,eV,4.72,4.72,ok,completed
+TS1_068,class,"Determine the thermal resistance class of this polymer
+SMILES: c1ccc(Cc2c(N3C(=O)c4c(ccc(C(*)=O)c4)C3=O)cccc2)c(N2C(=O)c3c(ccc(*)c3)C2=O)c1
+Required output unit/labels: class 1 / class 2 / class 3",c1ccc(Cc2c(N3C(=O)c4c(ccc(C(*)=O)c4)C3=O)cccc2)c(N2C(=O)c3c(ccc(*)c3)C2=O)c1,class 3,class label,class 2,class 2,ok,completed
+TS1_111,AE,"Predict the binding energy for breaking this molecule into individual atoms
+SMILES: FC(C(F)(ON*)F)(*)F
+Required output unit/labels: eV per atom (negative atomization-energy convention)",FC(C(F)(ON*)F)(*)F,-5.15,eV/atom,-3.72,-3.72,ok,completed
+TS1_083,AE,"Predict the atomization energy of the following SMILES
+SMILES: c1(-c2ccc(C(N*)=O)cc2)ccc(*)cc1
+Required output unit/labels: eV per atom (negative atomization-energy convention)",c1(-c2ccc(C(N*)=O)cc2)ccc(*)cc1,-6.4,eV/atom,-5.18,-5.18,ok,completed
+TS1_022,class,"基于 SMILES 结构，预测该材料的耐热性能
+SMILES: c1cc(Oc2c(F)c(F)c(-c3c(F)c(F)c(Oc4ccc(N5C(=O)c6ccc(*)cc6C5=O)cc4)c(F)c3F)c(F)c2F)ccc1N1C(=O)c2c(cc(C(C(F)(F)F)(*)C(F)(F)F)cc2)C1=O
+Required output unit/labels: class 1 / class 2 / class 3",c1cc(Oc2c(F)c(F)c(-c3c(F)c(F)c(Oc4ccc(N5C(=O)c6ccc(*)cc6C5=O)cc4)c(F)c3F)c(F)c2F)ccc1N1C(=O)c2c(cc(C(C(F)(F)F)(*)C(F)(F)F)cc2)C1=O,class 3,class label,class 3,class 3,ok,completed
+TS1_094,Tg,"Determine the glass transition temperature of this molecular structure
+SMILES: c1cc(C*)c(C#N)cc1C*
+Required output unit/labels: degrees Celsius",c1cc(C*)c(C#N)cc1C*,89.85,degrees Celsius,94.0,94.0,ok,completed
+TS1_173,BG,"预测以下 SMILES 对应晶体的带隙大小
+SMILES: C(C*)(O*)C
+Required output unit/labels: eV",C(C*)(O*)C,6.9903,eV,4.85,4.85,ok,completed
+TS1_021,class,"基于 SMILES 结构，预测该材料的耐热性能
+SMILES: c12c(cc(C(*)=O)cc1)C(=O)N(c1cc(N3C(=O)c4cc(*)ccc4C3=O)ccc1)C2=O
+Required output unit/labels: class 1 / class 2 / class 3",c12c(cc(C(*)=O)cc1)C(=O)N(c1cc(N3C(=O)c4cc(*)ccc4C3=O)ccc1)C2=O,class 2,class label,class 2,class 2,ok,completed
+TS1_129,AE,"请估算该分子的解离能大小
+SMILES: O=C(*)c1ccc(-c2ccc(O*)cc2)cc1
+Required output unit/labels: eV per atom (negative atomization-energy convention)",O=C(*)c1ccc(-c2ccc(O*)cc2)cc1,-6.44,eV/atom,-5.23,-5.23,ok,completed
+TS1_107,AE,"Predict the binding energy for breaking this molecule into individual atoms
+SMILES: c1cc(C*)ccc1Nc1sc(*)cc1
+Required output unit/labels: eV per atom (negative atomization-energy convention)",c1cc(C*)ccc1Nc1sc(*)cc1,-6.04,eV/atom,-4.86,-4.86,ok,completed
+TS1_171,BG,"预测以下 SMILES 对应晶体的带隙大小
+SMILES: C(OCC(F)(F)F)(=O)OC(C*)*
+Required output unit/labels: eV",C(OCC(F)(F)F)(=O)OC(C*)*,7.9003,eV,5.62,5.62,ok,completed
+TS1_080,BG,"Predict the bandgap crystal of the following SMILES
+SMILES: CC(C(*)=O)S*
+Required output unit/labels: eV",CC(C(*)=O)S*,3.8079,eV,3.67,3.67,ok,completed
+TS1_093,class,"Predict the heat resistance class of the following SMILES
+SMILES: C1(=O)N(c2ccc(OCC(F)(C(F)(F)C(F)(C(F)(F)C(F)(C(F)(C(F)(F)F)F)F)F)F)c(N3C(=O)c4c(cc(C(*)(C(F)(F)F)C(F)(F)F)cc4)C3=O)c2)C(=O)c2c1ccc(*)c2
+Required output unit/labels: class 1 / class 2 / class 3",C1(=O)N(c2ccc(OCC(F)(C(F)(F)C(F)(C(F)(F)C(F)(C(F)(C(F)(F)F)F)F)F)F)c(N3C(=O)c4c(cc(C(*)(C(F)(F)F)C(F)(F)F)cc4)C3=O)c2)C(=O)c2c1ccc(*)c2,class 3,class label,class 3,class 3,ok,completed
+TS1_183,class,"预测以下 SMILES 对应材料的耐热等级
+SMILES: c1c2c(ccc1*)C(=O)N(c1ccc(Oc3ccc(N4C(=O)c5cc(C(=O)*)ccc5C4=O)cc3)cc1)C2=O
+Required output unit/labels: class 1 / class 2 / class 3",c1c2c(ccc1*)C(=O)N(c1ccc(Oc3ccc(N4C(=O)c5cc(C(=O)*)ccc5C4=O)cc3)cc1)C2=O,class 2,class label,class 3,class 3,ok,completed
+TS1_152,AE,"Estimate the atomization energy of the compound represented by this SMILES string
+SMILES: c1cc(Cc2ccc(O*)cc2)ccc1*
+Required output unit/labels: eV per atom (negative atomization-energy convention)",c1cc(Cc2ccc(O*)cc2)ccc1*,-6.18,eV/atom,-5.13,-5.13,ok,completed
+TS1_188,Tg,"Estimate the Tg value for the given polymer structure in SMILES notation
+SMILES: ClC(*)C*
+Required output unit/labels: degrees Celsius",ClC(*)C*,74.85,degrees Celsius,81.0,81.0,ok,completed
+TS1_112,class,"Estimate the temperature endurance class for the given molecular structure
+SMILES: C1(=O)N(c2c(C)cc(N3C(=O)c4c(ccc(*)c4)C3=O)c(C)c2)C(=O)c2cc(C(C(F)(F)F)(C(F)(F)F)*)ccc21
+Required output unit/labels: class 1 / class 2 / class 3",C1(=O)N(c2c(C)cc(N3C(=O)c4c(ccc(*)c4)C3=O)c(C)c2)C(=O)c2cc(C(C(F)(F)F)(C(F)(F)F)*)ccc21,class 2,class label,class 2,class 2,ok,completed
+TS1_229,class,"该高分子的耐热等级是多少
+SMILES: c1(N2C(=O)c3cccc(*)c3C2=O)ccc(N2C(=O)c3c(cccc3S*)C2=O)cc1
+Required output unit/labels: class 1 / class 2 / class 3",c1(N2C(=O)c3cccc(*)c3C2=O)ccc(N2C(=O)c3c(cccc3S*)C2=O)cc1,class 2,class label,class 2,class 2,ok,completed
+TS1_089,class,"Predict the heat resistance class of the following SMILES
+SMILES: c1(N2C(=O)c3c(ccc(*)c3)C2=O)cc(C(F)(F)F)c(N2C(=O)c3c(ccc(C(*)(C(F)(F)F)C(F)(F)F)c3)C2=O)cc1C(F)(F)F
+Required output unit/labels: class 1 / class 2 / class 3",c1(N2C(=O)c3c(ccc(*)c3)C2=O)cc(C(F)(F)F)c(N2C(=O)c3c(ccc(C(*)(C(F)(F)F)C(F)(F)F)c3)C2=O)cc1C(F)(F)F,class 2,class label,class 2,class 2,ok,completed
+TS1_193,Tg,"Estimate the Tg value for the given polymer structure in SMILES notation
+SMILES: c1(C(*)=O)cc2c(cc1)C(=O)N(c1cc(N3C(=O)c4c(ccc(*)c4)C3=O)ccc1)C2=O
+Required output unit/labels: degrees Celsius",c1(C(*)=O)cc2c(cc1)C(=O)N(c1cc(N3C(=O)c4c(ccc(*)c4)C3=O)ccc1)C2=O,300,degrees Celsius,335.0,335.0,ok,completed
+TS1_141,Tg,"What is the glass transition temperature (Tg) of this polymer represented by SMILES
+SMILES: C(*)C(*)(C(=O)OCCCCCCCC)C
+Required output unit/labels: degrees Celsius",C(*)C(*)(C(=O)OCCCCCCCC)C,-20.15,degrees Celsius,-20.0,-20.0,ok,completed
+TS1_126,BG,"请提供该化合物晶体的带隙预测值
+SMILES: *C(S*)=S
+Required output unit/labels: eV",*C(S*)=S,1.7109,eV,2.35,2.35,ok,completed
+TS1_040,AE,"该分子结构的原子化能是多少
+SMILES: *c1ccc(CCC*)cc1
+Required output unit/labels: eV per atom (negative atomization-energy convention)",*c1ccc(CCC*)cc1,-5.78,eV/atom,-4.81,-4.81,ok,completed
+TS1_033,BG,"该分子晶体的电子带隙是多少
+SMILES: *CCC1C2C3CC(C2C(*)C1)CC3CC
+Required output unit/labels: eV",*CCC1C2C3CC(C2C(*)C1)CC3CC,7.528,eV,5.83,5.83,ok,completed
+TS1_125,BG,"请提供该化合物晶体的带隙预测值
+SMILES: N#CC(C#N)(C(C#N)C(C#N)(C(C#N)C(C#N)(C#N)C(C(C*)(C#N)C#N)C#N)C#N)*
+Required output unit/labels: eV",N#CC(C#N)(C(C#N)C(C#N)(C(C#N)C(C#N)(C#N)C(C(C*)(C#N)C#N)C#N)C#N)*,5.9056,eV,4.82,4.82,ok,completed
+TS1_201,AE,"How much energy is required for the atomization of this molecular structure
+SMILES: C(OCC*)(=O)CCCCCCC(=O)O*
+Required output unit/labels: eV per atom (negative atomization-energy convention)",C(OCC*)(=O)CCCCCCC(=O)O*,-5.5,eV/atom,-4.31,-4.31,ok,completed
+TS1_164,Tg,"预测以下 SMILES 表示的玻璃化转变温度 (Tg)
+SMILES: CCCCC(CC)COC(C*)*
+Required output unit/labels: degrees Celsius",CCCCC(CC)COC(C*)*,-66.15,degrees Celsius,-76.0,-76.0,ok,completed
+TS1_086,AE,"Predict the atomization energy of the following SMILES
+SMILES: c1c(OC(O*)=S)ccc(*)c1
+Required output unit/labels: eV per atom (negative atomization-energy convention)",c1c(OC(O*)=S)ccc(*)c1,-6.18,eV/atom,-5.03,-5.03,ok,completed
+TS1_038,AE,"该分子结构的原子化能是多少
+SMILES: c1cc(OC*)sc1O*
+Required output unit/labels: eV per atom (negative atomization-energy convention)",c1cc(OC*)sc1O*,-5.78,eV/atom,-4.76,-4.76,ok,completed
+TS1_081,BG,"Predict the bandgap crystal of the following SMILES
+SMILES: C1(C=C*)CC(CCC)(C#N)C(*)C1
+Required output unit/labels: eV",C1(C=C*)CC(CCC)(C#N)C(*)C1,5.8705,eV,4.63,4.63,ok,completed
+TS1_019,class,"基于 SMILES 结构，预测该材料的耐热性能
+SMILES: FC(c1c(-c2c(C(F)(F)F)cc(-n3c(=O)c4cc5c(c(=O)n(*)c5=O)cc4c3=O)cc2)ccc(*)c1)(F)F
+Required output unit/labels: class 1 / class 2 / class 3",FC(c1c(-c2c(C(F)(F)F)cc(-n3c(=O)c4cc5c(c(=O)n(*)c5=O)cc4c3=O)cc2)ccc(*)c1)(F)F,class 1,class label,class 1,class 1,ok,completed
+TS1_208,class,"Predict the heat resistance category for the polymer described by this SMILES notation
+SMILES: c1cc(Oc2cc3c(cc2)C(=O)N(c2cc(N4C(=O)c5cc(*)ccc5C4=O)ccc2)C3=O)ccc1O*
+Required output unit/labels: class 1 / class 2 / class 3",c1cc(Oc2cc3c(cc2)C(=O)N(c2cc(N4C(=O)c5cc(*)ccc5C4=O)ccc2)C3=O)ccc1O*,class 3,class label,class 3,class 3,ok,completed
+TS1_127,BG,"请提供该化合物晶体的带隙预测值
+SMILES: C1CC(*)CC(S*)C1
+Required output unit/labels: eV",C1CC(*)CC(S*)C1,5.2199,eV,4.82,4.82,ok,completed
+TS1_042,class,"请计算该分子结构的热稳定等级
+SMILES: c1(-n2c(=O)c3c(c2=O)cc2c(=O)n(C)c(=O)c2c3)ccc(Oc2ccc(C)cc2)cc1
+Required output unit/labels: class 1 / class 2 / class 3",c1(-n2c(=O)c3c(c2=O)cc2c(=O)n(C)c(=O)c2c3)ccc(Oc2ccc(C)cc2)cc1,class 1,class label,class 2,class 2,ok,completed
+TS1_151,BG,"What is the estimated bandgap energy of this crystal based on its SMILES structure
+SMILES: C(*)(O*)CCl
+Required output unit/labels: eV",C(*)(O*)CCl,7.1982,eV,5.36,5.36,ok,completed
+TS1_039,AE,"该分子结构的原子化能是多少
+SMILES: C(C*)(*)C
+Required output unit/labels: eV per atom (negative atomization-energy convention)",C(C*)(*)C,-5.14,eV/atom,-4.09,-4.09,ok,completed
+TS1_023,class,"基于 SMILES 结构，预测该材料的耐热性能
+SMILES: c1(Oc2ccc(O*)cc2)cc2c(cc1)C(=O)N(c1ccc(Oc3ccc(N4C(=O)c5c(cc(*)cc5)C4=O)cc3)cc1)C2=O
+Required output unit/labels: class 1 / class 2 / class 3",c1(Oc2ccc(O*)cc2)cc2c(cc1)C(=O)N(c1ccc(Oc3ccc(N4C(=O)c5c(cc(*)cc5)C4=O)cc3)cc1)C2=O,class 3,class label,class 3,class 3,ok,completed
+TS1_065,AE,"What is the expected atomization energy for this chemical structure
+SMILES: *c1ccc(C(c2ccc(C*)cc2)=O)cc1
+Required output unit/labels: eV per atom (negative atomization-energy convention)",*c1ccc(C(c2ccc(C*)cc2)=O)cc1,-6.29,eV/atom,-5.16,-5.16,ok,completed
+TS1_073,Tg,"Predict the Tg of the following SMILES
+SMILES: c1(-c2nc3c(ccc(C(c4cc5c(ncc(*)n5)cc4)=O)c3)nc2)ccc(*)cc1
+Required output unit/labels: degrees Celsius",c1(-c2nc3c(ccc(C(c4cc5c(ncc(*)n5)cc4)=O)c3)nc2)ccc(*)cc1,317.85,degrees Celsius,354.0,354.0,ok,completed
+TS1_024,class,"基于 SMILES 结构，预测该材料的耐热性能
+SMILES: c1c(N2C(=O)c3c(cc(*)cc3)C2=O)ccc(OCC(F)(C(F)(F)C(F)(F)C(C(C(C(F)(F)C(F)(C(F)(F)C(F)(F)F)F)(F)F)(F)F)(F)F)F)c1N1C(=O)c2ccc(C(C(F)(F)F)(*)C(F)(F)F)cc2C1=O
+Required output unit/labels: class 1 / class 2 / class 3",c1c(N2C(=O)c3c(cc(*)cc3)C2=O)ccc(OCC(F)(C(F)(F)C(F)(F)C(C(C(C(F)(F)C(F)(C(F)(F)C(F)(F)F)F)(F)F)(F)F)(F)F)F)c1N1C(=O)c2ccc(C(C(F)(F)F)(*)C(F)(F)F)cc2C1=O,class 3,class label,class 3,class 3,ok,completed
+TS1_145,Tg,"What is the glass transition temperature (Tg) of this polymer represented by SMILES
+SMILES: c1ccc(N2C(=O)c3cc4c(cc3C2=O)CN(*)C4=O)c(Oc2ccc(*)cc2)c1
+Required output unit/labels: degrees Celsius",c1ccc(N2C(=O)c3cc4c(cc3C2=O)CN(*)C4=O)c(Oc2ccc(*)cc2)c1,386,degrees Celsius,302.0,302.0,ok,completed
+TS1_178,AE,"预测以下 SMILES 对应化合物的原子化能
+SMILES: *Oc1ccc(CC*)cc1
+Required output unit/labels: eV per atom (negative atomization-energy convention)",*Oc1ccc(CC*)cc1,-5.89,eV/atom,-4.87,-4.87,ok,completed
+TS1_095,Tg,"Determine the glass transition temperature of this molecular structure
+SMILES: c1cc(C(C)(C)C)cc(C(*)C*)c1C
+Required output unit/labels: degrees Celsius",c1cc(C(C)(C)C)cc(C(*)C*)c1C,86.85,degrees Celsius,158.0,158.0,ok,completed
+TS1_110,AE,"Predict the binding energy for breaking this molecule into individual atoms
+SMILES: *c1ccc(Nc2ccc(-c3ccc(C(c4sc(-c5ccc(N*)s5)cc4)=S)s3)s2)cc1
+Required output unit/labels: eV per atom (negative atomization-energy convention)",*c1ccc(Nc2ccc(-c3ccc(C(c4sc(-c5ccc(N*)s5)cc4)=S)s3)s2)cc1,-6.12,eV/atom,4.98,4.98,ok,completed
+TS1_074,Tg,"Predict the Tg of the following SMILES
+SMILES: c1(N2C(=O)c3c(cc(*)cc3)C2=O)cc(Oc2ccc(Oc3ccc(N4C(=O)c5c(ccc(O*)c5)C4=O)cc3)cc2)ccc1
+Required output unit/labels: degrees Celsius",c1(N2C(=O)c3c(cc(*)cc3)C2=O)cc(Oc2ccc(Oc3ccc(N4C(=O)c5c(ccc(O*)c5)C4=O)cc3)cc2)ccc1,245,degrees Celsius,236.0,236.0,ok,completed
+TS1_189,Tg,"Estimate the Tg value for the given polymer structure in SMILES notation
+SMILES: c1(-c2nc3c(ccc(C(c4cc5c(ncc(*)n5)cc4)=O)c3)nc2)ccc(*)cc1
+Required output unit/labels: degrees Celsius",c1(-c2nc3c(ccc(C(c4cc5c(ncc(*)n5)cc4)=O)c3)nc2)ccc(*)cc1,317.85,degrees Celsius,347.0,347.0,ok,completed
+TS1_181,AE,"预测以下 SMILES 对应化合物的原子化能
+SMILES: *c1ccc(C(c2ccc(C*)cc2)=O)cc1
+Required output unit/labels: eV per atom (negative atomization-energy convention)",*c1ccc(C(c2ccc(C*)cc2)=O)cc1,-6.29,eV/atom,-5.16,-5.16,ok,completed
+TS1_190,Tg,"Estimate the Tg value for the given polymer structure in SMILES notation
+SMILES: c1(N2C(=O)c3c(cc(*)cc3)C2=O)cc(Oc2ccc(Oc3ccc(N4C(=O)c5c(ccc(O*)c5)C4=O)cc3)cc2)ccc1
+Required output unit/labels: degrees Celsius",c1(N2C(=O)c3c(cc(*)cc3)C2=O)cc(Oc2ccc(Oc3ccc(N4C(=O)c5c(ccc(O*)c5)C4=O)cc3)cc2)ccc1,245,degrees Celsius,234.0,234.0,ok,completed
+TS1_084,AE,"Predict the atomization energy of the following SMILES
+SMILES: c1(N*)ccc(Oc2ccc(*)cc2)cc1
+Required output unit/labels: eV per atom (negative atomization-energy convention)",c1(N*)ccc(Oc2ccc(*)cc2)cc1,-6.26,eV/atom,-5.18,-5.18,ok,completed
+TS1_045,class,"请计算该分子结构的热稳定等级
+SMILES: c1cc(Oc2ccc(Oc3ccc(-n4c(=O)c5cc6c(c(=O)n(*)c6=O)cc5c4=O)cc3)cc2)ccc1*
+Required output unit/labels: class 1 / class 2 / class 3",c1cc(Oc2ccc(Oc3ccc(-n4c(=O)c5cc6c(c(=O)n(*)c6=O)cc5c4=O)cc3)cc2)ccc1*,class 3,class label,class 3,class 3,ok,completed
+TS1_104,BG,"Determine the bandgap energy of the material represented by this SMILES string
+SMILES: *CC(C#N)*
+Required output unit/labels: eV",*CC(C#N)*,7.4435,eV,5.12,5.12,ok,completed
+TS1_191,Tg,"Estimate the Tg value for the given polymer structure in SMILES notation
+SMILES: c1c(C(=O)*)ccc2c1C(=O)N(c1ccc(Cc3cc(N4C(=O)c5cc(*)ccc5C4=O)ccc3)cc1)C2=O
+Required output unit/labels: degrees Celsius",c1c(C(=O)*)ccc2c1C(=O)N(c1ccc(Cc3cc(N4C(=O)c5cc(*)ccc5C4=O)ccc3)cc1)C2=O,292,degrees Celsius,295.0,295.0,ok,completed
+TS1_172,BG,"预测以下 SMILES 对应晶体的带隙大小
+SMILES: C(CC*)CCCOC(NCCSCCCCCSCCNC(=O)O*)=O
+Required output unit/labels: eV",C(CC*)CCCOC(NCCSCCCCCSCCNC(=O)O*)=O,5.1327,eV,4.62,4.62,ok,completed
+TS1_052,Tg,"Provide the predicted Tg for the polymer described by this SMILES string
+SMILES: c12ccc(*)cc1C(=O)N(c1c(CC)cc(Cc3cc(CC)c(N4C(=O)c5c(ccc(C(=O)*)c5)C4=O)c(CC)c3Cl)c(Cl)c1CC)C2=O
+Required output unit/labels: degrees Celsius",c12ccc(*)cc1C(=O)N(c1c(CC)cc(Cc3cc(CC)c(N4C(=O)c5c(ccc(C(=O)*)c5)C4=O)c(CC)c3Cl)c(Cl)c1CC)C2=O,300,degrees Celsius,293.0,293.0,ok,completed
+TS1_186,class,"预测以下 SMILES 对应材料的耐热等级
+SMILES: c1ccc(C)c(N2C(=O)c3c(ccc(Oc4ccc(C(C)(c5ccc(Oc6cc7c(cc6)C(=O)N(C)C7=O)cc5)C)cc4)c3)C2=O)c1
+Required output unit/labels: class 1 / class 2 / class 3",c1ccc(C)c(N2C(=O)c3c(ccc(Oc4ccc(C(C)(c5ccc(Oc6cc7c(cc6)C(=O)N(C)C7=O)cc5)C)cc4)c3)C2=O)c1,class 3,class label,class 3,class 3,ok,completed
+TS1_025,Tg,"请计算以下 SMILES 所对应聚合物的玻璃化转变温度 (Tg)
+SMILES: C(*)C(*)(C(=O)OCCCCCCCC)C
+Required output unit/labels: degrees Celsius",C(*)C(*)(C(=O)OCCCCCCCC)C,-20.15,degrees Celsius,-20.0,-20.0,ok,completed
+TS1_146,Tg,"What is the glass transition temperature (Tg) of this polymer represented by SMILES
+SMILES: O=C1c2ccc(*)cc2C(=O)N1c1ccc(Oc2ccc(N3C(=O)c4c(cc(O*)cc4)C3=O)cc2)cc1
+Required output unit/labels: degrees Celsius",O=C1c2ccc(*)cc2C(=O)N1c1ccc(Oc2ccc(N3C(=O)c4c(cc(O*)cc4)C3=O)cc2)cc1,242,degrees Celsius,273.0,273.0,ok,completed
+TS1_206,class,"Predict the heat resistance category for the polymer described by this SMILES notation
+SMILES: c1(N2C(=O)c3cc(*)ccc3C2=O)cc(N2C(=O)c3c(ccc(*)c3)C2=O)cc(C(F)(F)F)c1
+Required output unit/labels: class 1 / class 2 / class 3",c1(N2C(=O)c3cc(*)ccc3C2=O)cc(N2C(=O)c3c(ccc(*)c3)C2=O)cc(C(F)(F)F)c1,class 2,class label,class 2,class 2,ok,completed
+TS1_072,Tg,"Predict the Tg of the following SMILES
+SMILES: ClC(*)C*
+Required output unit/labels: degrees Celsius",ClC(*)C*,74.85,degrees Celsius,81.0,81.0,ok,completed
+TS1_195,BG,"Predict the electronic bandgap for the crystal structure corresponding to this SMILES
+SMILES: *C(C#N)(C*)C(=O)OCC
+Required output unit/labels: eV",*C(C#N)(C*)C(=O)OCC,6.1989,eV,4.92,4.92,ok,completed
+TS1_103,BG,"Determine the bandgap energy of the material represented by this SMILES string
+SMILES: C(COC(=O)CCCCC(=O)O*)(C)(C)C*
+Required output unit/labels: eV",C(COC(=O)CCCCC(=O)O*)(C)(C)C*,6.5878,eV,5.82,5.82,ok,completed
+TS1_231,class,"该高分子的耐热等级是多少
+SMILES: c1c2c(ccc1C(*)=O)C(=O)N(c1cc(Oc3ccccc3N3C(=O)c4cc(*)ccc4C3=O)ccc1)C2=O
+Required output unit/labels: class 1 / class 2 / class 3",c1c2c(ccc1C(*)=O)C(=O)N(c1cc(Oc3ccccc3N3C(=O)c4cc(*)ccc4C3=O)ccc1)C2=O,class 3,class label,class 3,class 3,ok,completed
+TS1_119,Tg,"请提供该 SMILES 聚合物的 Tg 预测值
+SMILES: C(CCCCOCC(O*)C*)C
+Required output unit/labels: degrees Celsius",C(CCCCOCC(O*)C*)C,-85.15,degrees Celsius,-73.0,-73.0,ok,completed
+TS1_032,BG,"该分子晶体的电子带隙是多少
+SMILES: C1N(C(*)C*)C(=O)CC1
+Required output unit/labels: eV",C1N(C(*)C*)C(=O)CC1,5.5902,eV,4.72,4.72,ok,completed
+TS1_184,class,"预测以下 SMILES 对应材料的耐热等级
+SMILES: c1ccc(Cc2c(N3C(=O)c4c(ccc(C(*)=O)c4)C3=O)cccc2)c(N2C(=O)c3c(ccc(*)c3)C2=O)c1
+Required output unit/labels: class 1 / class 2 / class 3",c1ccc(Cc2c(N3C(=O)c4c(ccc(C(*)=O)c4)C3=O)cccc2)c(N2C(=O)c3c(ccc(*)c3)C2=O)c1,class 3,class label,class 3,class 3,ok,completed
+TS1_182,class,"预测以下 SMILES 对应材料的耐热等级
+SMILES: O(C(C)(F)F)c1c(-c2ccc(*)cc2OC(C)(F)F)ccc(N2C(=O)c3cc4c(cc3C2=O)Oc2c(cc3c(c2)C(=O)N(*)C3=O)C4(C(F)(F)F)C(F)(F)F)c1
+Required output unit/labels: class 1 / class 2 / class 3",O(C(C)(F)F)c1c(-c2ccc(*)cc2OC(C)(F)F)ccc(N2C(=O)c3cc4c(cc3C2=O)Oc2c(cc3c(c2)C(=O)N(*)C3=O)C4(C(F)(F)F)C(F)(F)F)c1,class 2,class label,class 2,class 2,ok,completed
+TS1_108,AE,"Predict the binding energy for breaking this molecule into individual atoms
+SMILES: c1(NC(=S)*)ccc(C*)s1
+Required output unit/labels: eV per atom (negative atomization-energy convention)",c1(NC(=S)*)ccc(C*)s1,-5.77,eV/atom,-4.46,-4.46,ok,completed
+TS1_163,class,"What is the thermal stability classification of this material based on its SMILES
+SMILES: c1cc(Oc2ccc(N3C(=O)c4cc(*)ccc4C3=O)cc2)ccc1N1C(=O)c2c(ccc(C(*)O[Si](C)(C)C)c2)C1=O
+Required output unit/labels: class 1 / class 2 / class 3",c1cc(Oc2ccc(N3C(=O)c4cc(*)ccc4C3=O)cc2)ccc1N1C(=O)c2c(ccc(C(*)O[Si](C)(C)C)c2)C1=O,class 3,class label,class 3,class 3,ok,completed
+TS1_139,class,"该高分子的耐热性怎么样
+SMILES: c1(Oc2ccc(O*)cc2)cc2c(cc1)C(=O)N(c1ccc(Oc3ccc(N4C(=O)c5c(cc(*)cc5)C4=O)cc3)cc1)C2=O
+Required output unit/labels: class 1 / class 2 / class 3",c1(Oc2ccc(O*)cc2)cc2c(cc1)C(=O)N(c1ccc(Oc3ccc(N4C(=O)c5c(cc(*)cc5)C4=O)cc3)cc1)C2=O,class 3,class label,class 3,class 3,ok,completed
+TS1_069,class,"Determine the thermal resistance class of this polymer
+SMILES: C1(=O)N(c2cc(C(F)(F)F)cc(N3C(=O)c4cc(Cc5cc(C(=O)*)ccc5)ccc4C3=O)c2)C(=O)c2cc(*)ccc21
+Required output unit/labels: class 1 / class 2 / class 3",C1(=O)N(c2cc(C(F)(F)F)cc(N3C(=O)c4cc(Cc5cc(C(=O)*)ccc5)ccc4C3=O)c2)C(=O)c2cc(*)ccc21,class 3,class label,class 2,class 2,ok,completed
+TS1_192,Tg,"Estimate the Tg value for the given polymer structure in SMILES notation
+SMILES: O=C1c2c(O*)cccc2C(=O)N1c1ccc(Oc2ccc(Oc3ccc(N4C(=O)c5c(c(*)ccc5)C4=O)cc3)cc2)cc1
+Required output unit/labels: degrees Celsius",O=C1c2c(O*)cccc2C(=O)N1c1ccc(Oc2ccc(Oc3ccc(N4C(=O)c5c(c(*)ccc5)C4=O)cc3)cc2)cc1,263,degrees Celsius,247.0,247.0,ok,completed
+TS1_131,AE,"请估算该分子的解离能大小
+SMILES: S=C(C(N*)=O)O*
+Required output unit/labels: eV per atom (negative atomization-energy convention)",S=C(C(N*)=O)O*,-5.88,eV/atom,-4.43,-4.43,ok,completed
+TS1_114,class,"Estimate the temperature endurance class for the given molecular structure
+SMILES: c1c(N2C(=O)c3cc(C(*)=O)ccc3C2=O)ccc(Cc2cc(N3C(=O)c4c(cc(*)cc4)C3=O)ccc2)c1
+Required output unit/labels: class 1 / class 2 / class 3",c1c(N2C(=O)c3cc(C(*)=O)ccc3C2=O)ccc(Cc2cc(N3C(=O)c4c(cc(*)cc4)C3=O)ccc2)c1,class 3,class label,class 3,class 3,ok,completed
+TS1_167,Tg,"预测以下 SMILES 表示的玻璃化转变温度 (Tg)
+SMILES: *Oc1cc(Oc2ccc(Oc3ccc4c(c3)C(=O)N(c3ccc(Oc5cccc(Oc6ccc(N7C(=O)c8c(ccc(*)c8)C7=O)cc6)c5)cc3)C4=O)cc2)ccc1
+Required output unit/labels: degrees Celsius",*Oc1cc(Oc2ccc(Oc3ccc4c(c3)C(=O)N(c3ccc(Oc5cccc(Oc6ccc(N7C(=O)c8c(ccc(*)c8)C7=O)cc6)c5)cc3)C4=O)cc2)ccc1,184,degrees Celsius,218.0,218.0,ok,completed
+TS1_063,AE,"What is the expected atomization energy for this chemical structure
+SMILES: C(*)(C(CC*)=O)=S
+Required output unit/labels: eV per atom (negative atomization-energy convention)",C(*)(C(CC*)=O)=S,-5.61,eV/atom,-4.54,-4.54,ok,completed
+TS1_180,AE,"预测以下 SMILES 对应化合物的原子化能
+SMILES: c1c(-c2ccc(C(=O)*)cc2)ccc(C(=S)*)c1
+Required output unit/labels: eV per atom (negative atomization-energy convention)",c1c(-c2ccc(C(=O)*)cc2)ccc(C(=S)*)c1,-6.37,eV/atom,-5.24,-5.24,ok,completed
+TS1_078,BG,"Predict the bandgap crystal of the following SMILES
+SMILES: O=C(N1CCC(*)CC1)SSCCCCSSC(N1CCC(CCC*)CC1)=O
+Required output unit/labels: eV",O=C(N1CCC(*)CC1)SSCCCCSSC(N1CCC(CCC*)CC1)=O,4.297,eV,3.74,3.74,ok,completed
+TS1_225,AE,"基于此分子结构，预测其原子化能值
+SMILES: C(c1ccc(C(=S)c2ccc(*)s2)s1)(*)=O
+Required output unit/labels: eV per atom (negative atomization-energy convention)",C(c1ccc(C(=S)c2ccc(*)s2)s1)(*)=O,-6.19,eV/atom,-4.56,-4.56,ok,completed
+TS1_226,AE,"基于此分子结构，预测其原子化能值
+SMILES: *c1ccc(Nc2ccc(-c3ccc(C(c4sc(-c5ccc(N*)s5)cc4)=S)s3)s2)cc1
+Required output unit/labels: eV per atom (negative atomization-energy convention)",*c1ccc(Nc2ccc(-c3ccc(C(c4sc(-c5ccc(N*)s5)cc4)=S)s3)s2)cc1,-6.12,eV/atom,-4.93,-4.93,ok,completed
+TS1_076,Tg,"Predict the Tg of the following SMILES
+SMILES: O=C1c2c(O*)cccc2C(=O)N1c1ccc(Oc2ccc(Oc3ccc(N4C(=O)c5c(c(*)ccc5)C4=O)cc3)cc2)cc1
+Required output unit/labels: degrees Celsius",O=C1c2c(O*)cccc2C(=O)N1c1ccc(Oc2ccc(Oc3ccc(N4C(=O)c5c(c(*)ccc5)C4=O)cc3)cc2)cc1,263,degrees Celsius,238.0,238.0,ok,completed
+TS1_228,class,"该高分子的耐热等级是多少
+SMILES: C1(=O)N(c2c(C)cc(N3C(=O)c4c(ccc(*)c4)C3=O)c(C)c2)C(=O)c2cc(C(C(F)(F)F)(C(F)(F)F)*)ccc21
+Required output unit/labels: class 1 / class 2 / class 3",C1(=O)N(c2c(C)cc(N3C(=O)c4c(ccc(*)c4)C3=O)c(C)c2)C(=O)c2cc(C(C(F)(F)F)(C(F)(F)F)*)ccc21,class 2,class label,class 2,class 2,ok,completed
+TS1_165,Tg,"预测以下 SMILES 表示的玻璃化转变温度 (Tg)
+SMILES: C(CCN1C(=O)c2c(cc(*)cc2)C1=O)CCCN1C(=O)c2cc(Oc3ccc(Oc4ccc(O*)cc4)cc3)ccc2C1=O
+Required output unit/labels: degrees Celsius",C(CCN1C(=O)c2c(cc(*)cc2)C1=O)CCCN1C(=O)c2cc(Oc3ccc(Oc4ccc(O*)cc4)cc3)ccc2C1=O,127.85,degrees Celsius,146.0,146.0,ok,completed
+TS1_117,Tg,"请提供该 SMILES 聚合物的 Tg 预测值
+SMILES: *CC(C)(*)C#N
+Required output unit/labels: degrees Celsius",*CC(C)(*)C#N,119.85,degrees Celsius,120.0,120.0,ok,completed
+TS1_106,AE,"Predict the binding energy for breaking this molecule into individual atoms
+SMILES: *CCCN*
+Required output unit/labels: eV per atom (negative atomization-energy convention)",*CCCN*,-5.18,eV/atom,-4.02,-4.02,ok,completed
+TS1_062,AE,"What is the expected atomization energy for this chemical structure
+SMILES: *Oc1ccc(CC*)cc1
+Required output unit/labels: eV per atom (negative atomization-energy convention)",*Oc1ccc(CC*)cc1,-5.89,eV/atom,-4.83,-4.83,ok,completed
+TS1_091,class,"Predict the heat resistance class of the following SMILES
+SMILES: C(F)(F)(F)C(c1cc2c(cc1)C(=O)N(c1ccc(-c3c(-c4ccc(C)cc4)cc(N4C(=O)c5c(cc(*)cc5)C4=O)cc3)c(-c3ccc(C)cc3)c1)C2=O)(C(F)(F)F)*
+Required output unit/labels: class 1 / class 2 / class 3",C(F)(F)(F)C(c1cc2c(cc1)C(=O)N(c1ccc(-c3c(-c4ccc(C)cc4)cc(N4C(=O)c5c(cc(*)cc5)C4=O)cc3)c(-c3ccc(C)cc3)c1)C2=O)(C(F)(F)F)*,class 3,class label,class 2,class 2,ok,completed
+TS1_132,AE,"请估算该分子的解离能大小
+SMILES: O=C(C(=S)NC*)*
+Required output unit/labels: eV per atom (negative atomization-energy convention)",O=C(C(=S)NC*)*,-5.79,eV/atom,-4.48,-4.48,ok,completed
+TS1_099,Tg,"Determine the glass transition temperature of this molecular structure
+SMILES: c1c(*)c2c(cc1)C(=O)N(c1cc(S(=O)(=O)c3cccc(N4C(=O)c5c(O*)cccc5C4=O)c3)ccc1)C2=O
+Required output unit/labels: degrees Celsius",c1c(*)c2c(cc1)C(=O)N(c1cc(S(=O)(=O)c3cccc(N4C(=O)c5c(O*)cccc5C4=O)c3)ccc1)C2=O,241,degrees Celsius,263.0,263.0,ok,completed
+TS1_154,AE,"Estimate the atomization energy of the compound represented by this SMILES string
+SMILES: c1cc(OC*)sc1O*
+Required output unit/labels: eV per atom (negative atomization-energy convention)",c1cc(OC*)sc1O*,-5.78,eV/atom,-4.56,-4.56,ok,completed
+TS1_009,BG,"请估算以下 SMILES 所描述材料的能带间隙 (Bandgap)
+SMILES: N#CC(C#N)(C(C#N)C(C#N)(C(C#N)C(C#N)(C#N)C(C(C*)(C#N)C#N)C#N)C#N)*
+Required output unit/labels: eV",N#CC(C#N)(C(C#N)C(C#N)(C(C#N)C(C#N)(C#N)C(C(C*)(C#N)C#N)C#N)C#N)*,5.9056,eV,4.82,4.82,ok,completed
+TS1_079,BG,"Predict the bandgap crystal of the following SMILES
+SMILES: *C(C#N)(C*)C(=O)OCC
+Required output unit/labels: eV",*C(C#N)(C*)C(=O)OCC,6.1989,eV,4.85,4.85,ok,completed
+TS1_026,Tg,"请计算以下 SMILES 所对应聚合物的玻璃化转变温度 (Tg)
+SMILES: O=S(=O)(c1ccc(O*)cc1)c1ccc(Oc2ccc(C(C)(c3ccc(*)cc3)C)cc2)cc1
+Required output unit/labels: degrees Celsius",O=S(=O)(c1ccc(O*)cc1)c1ccc(Oc2ccc(C(C)(c3ccc(*)cc3)C)cc2)cc1,184.85,degrees Celsius,187.0,187.0,ok,completed
+TS1_158,class,"What is the thermal stability classification of this material based on its SMILES
+SMILES: c1(-n2c(=O)c3c(c2=O)cc2c(=O)n(C)c(=O)c2c3)ccc(Oc2ccc(C)cc2)cc1
+Required output unit/labels: class 1 / class 2 / class 3",c1(-n2c(=O)c3c(c2=O)cc2c(=O)n(C)c(=O)c2c3)ccc(Oc2ccc(C)cc2)cc1,class 1,class label,class 2,class 2,ok,completed
+TS1_035,BG,"该分子晶体的电子带隙是多少
+SMILES: C(*)(O*)CCl
+Required output unit/labels: eV",C(*)(O*)CCl,7.1982,eV,4.86,4.86,ok,completed
+TS1_098,Tg,"Determine the glass transition temperature of this molecular structure
+SMILES: c1(N2C(=O)c3c(cc(*)cc3)C2=O)ccc(Oc2ccc(C(c3ccc(Oc4ccc(N5C(=O)c6cc(C(*)(C(F)(F)F)C(F)(F)F)ccc6C5=O)cc4)cc3)(C)C)cc2)cc1
+Required output unit/labels: degrees Celsius",c1(N2C(=O)c3c(cc(*)cc3)C2=O)ccc(Oc2ccc(C(c3ccc(Oc4ccc(N5C(=O)c6cc(C(*)(C(F)(F)F)C(F)(F)F)ccc6C5=O)cc4)cc3)(C)C)cc2)cc1,249,degrees Celsius,249.0,249.0,ok,completed
+TS1_064,AE,"What is the expected atomization energy for this chemical structure
+SMILES: c1c(-c2ccc(C(=O)*)cc2)ccc(C(=S)*)c1
+Required output unit/labels: eV per atom (negative atomization-energy convention)",c1c(-c2ccc(C(=O)*)cc2)ccc(C(=S)*)c1,-6.37,eV/atom,-5.13,-5.13,ok,completed
+TS1_194,BG,"Predict the electronic bandgap for the crystal structure corresponding to this SMILES
+SMILES: O=C(N1CCC(*)CC1)SSCCCCSSC(N1CCC(CCC*)CC1)=O
+Required output unit/labels: eV",O=C(N1CCC(*)CC1)SSCCCCSSC(N1CCC(CCC*)CC1)=O,4.297,eV,3.74,3.74,ok,completed
+TS1_150,BG,"What is the estimated bandgap energy of this crystal based on its SMILES structure
+SMILES: c1cc(*)sc1-c1sc(-c2nc(*)ccc2)cc1
+Required output unit/labels: eV",c1cc(*)sc1-c1sc(-c2nc(*)ccc2)cc1,2.0464,eV,2.12,2.12,ok,completed
+TS1_048,Tg,"Provide the predicted Tg for the polymer described by this SMILES string
+SMILES: CCCCC(CC)COC(C*)*
+Required output unit/labels: degrees Celsius",CCCCC(CC)COC(C*)*,-66.15,degrees Celsius,-73.0,-73.0,ok,completed
+TS1_144,Tg,"What is the glass transition temperature (Tg) of this polymer represented by SMILES
+SMILES: c1(Oc2ccc(N3C(=O)c4c(*)cccc4C3=O)cc2)ccc(N2C(=O)c3cccc(Oc4ccc(Sc5cc(O*)ccc5)cc4)c3C2=O)cc1
+Required output unit/labels: degrees Celsius",c1(Oc2ccc(N3C(=O)c4c(*)cccc4C3=O)cc2)ccc(N2C(=O)c3cccc(Oc4ccc(Sc5cc(O*)ccc5)cc4)c3C2=O)cc1,234,degrees Celsius,239.0,239.0,ok,completed
+TS1_120,Tg,"请提供该 SMILES 聚合物的 Tg 预测值
+SMILES: c12ccc(-c3cc4nc(*)cnc4cc3)cc1nc(-c1ccc(*)cc1)cn2
+Required output unit/labels: degrees Celsius",c12ccc(-c3cc4nc(*)cnc4cc3)cc1nc(-c1ccc(*)cc1)cn2,375.85,degrees Celsius,392.0,392.0,ok,completed
+TS1_005,Tg,"基于该 SMILES 结构，预测其玻璃化温度
+SMILES: c1c2c(cc3c(=O)n(-c4ccc(-c5c(C)cc(*)cc5)c(C)c4)c(=O)c13)c(=O)n(*)c2=O
+Required output unit/labels: degrees Celsius",c1c2c(cc3c(=O)n(-c4ccc(-c5c(C)cc(*)cc5)c(C)c4)c(=O)c13)c(=O)n(*)c2=O,374,degrees Celsius,389.0,389.0,ok,completed
+TS1_122,Tg,"请提供该 SMILES 聚合物的 Tg 预测值
+SMILES: c1cc(N2C(=O)c3ccc(Oc4ccc5c(c4)C(=O)N(C)C5=O)cc3C2=O)ccc1Oc1ccc(C)cc1
+Required output unit/labels: degrees Celsius",c1cc(N2C(=O)c3ccc(Oc4ccc5c(c4)C(=O)N(C)C5=O)cc3C2=O)ccc1Oc1ccc(C)cc1,272,degrees Celsius,268.0,268.0,ok,completed
+TS1_053,Tg,"Provide the predicted Tg for the polymer described by this SMILES string
+SMILES: c1(C(F)(F)F)cc(N2C(=O)c3ccc(*)cc3C2=O)ccc1-c1c(C(F)(F)F)cc(N2C(=O)c3c(ccc(S(=O)(*)=O)c3)C2=O)cc1
+Required output unit/labels: degrees Celsius",c1(C(F)(F)F)cc(N2C(=O)c3ccc(*)cc3C2=O)ccc1-c1c(C(F)(F)F)cc(N2C(=O)c3c(ccc(S(=O)(*)=O)c3)C2=O)cc1,320,degrees Celsius,351.0,351.0,ok,completed
+TS1_143,Tg,"What is the glass transition temperature (Tg) of this polymer represented by SMILES
+SMILES: C(C*)(*)SC
+Required output unit/labels: degrees Celsius",C(C*)(*)SC,-1.15,degrees Celsius,-25.0,-25.0,ok,completed
+TS1_185,class,"预测以下 SMILES 对应材料的耐热等级
+SMILES: C1(=O)N(c2cc(C(F)(F)F)cc(N3C(=O)c4cc(Cc5cc(C(=O)*)ccc5)ccc4C3=O)c2)C(=O)c2cc(*)ccc21
+Required output unit/labels: class 1 / class 2 / class 3",C1(=O)N(c2cc(C(F)(F)F)cc(N3C(=O)c4cc(Cc5cc(C(=O)*)ccc5)ccc4C3=O)c2)C(=O)c2cc(*)ccc21,class 3,class label,class 2,class 2,ok,completed
+TS1_010,BG,"请估算以下 SMILES 所描述材料的能带间隙 (Bandgap)
+SMILES: *C(S*)=S
+Required output unit/labels: eV",*C(S*)=S,1.7109,eV,2.18,2.18,ok,completed
+TS1_137,class,"该高分子的耐热性怎么样
+SMILES: c12c(cc(C(*)=O)cc1)C(=O)N(c1cc(N3C(=O)c4cc(*)ccc4C3=O)ccc1)C2=O
+Required output unit/labels: class 1 / class 2 / class 3",c12c(cc(C(*)=O)cc1)C(=O)N(c1cc(N3C(=O)c4cc(*)ccc4C3=O)ccc1)C2=O,class 2,class label,class 2,class 2,ok,completed
+TS1_049,Tg,"Provide the predicted Tg for the polymer described by this SMILES string
+SMILES: C(CCN1C(=O)c2c(cc(*)cc2)C1=O)CCCN1C(=O)c2cc(Oc3ccc(Oc4ccc(O*)cc4)cc3)ccc2C1=O
+Required output unit/labels: degrees Celsius",C(CCN1C(=O)c2c(cc(*)cc2)C1=O)CCCN1C(=O)c2cc(Oc3ccc(Oc4ccc(O*)cc4)cc3)ccc2C1=O,127.85,degrees Celsius,143.0,143.0,ok,completed
+TS1_198,BG,"Predict the electronic bandgap for the crystal structure corresponding to this SMILES
+SMILES: *CCOCCOCCOC(=O)CCCCCCC(O*)=O
+Required output unit/labels: eV",*CCOCCOCCOC(=O)CCCCCCC(O*)=O,6.184,eV,4.83,4.83,ok,completed
+TS1_030,Tg,"请计算以下 SMILES 所对应聚合物的玻璃化转变温度 (Tg)
+SMILES: O=C1c2ccc(*)cc2C(=O)N1c1ccc(Oc2ccc(N3C(=O)c4c(cc(O*)cc4)C3=O)cc2)cc1
+Required output unit/labels: degrees Celsius",O=C1c2ccc(*)cc2C(=O)N1c1ccc(Oc2ccc(N3C(=O)c4c(cc(O*)cc4)C3=O)cc2)cc1,242,degrees Celsius,274.0,274.0,ok,completed
+TS1_205,class,"Predict the heat resistance category for the polymer described by this SMILES notation
+SMILES: c1(N2C(=O)c3c(ccc(*)c3)C2=O)cc(C(F)(F)F)c(N2C(=O)c3c(ccc(C(*)(C(F)(F)F)C(F)(F)F)c3)C2=O)cc1C(F)(F)F
+Required output unit/labels: class 1 / class 2 / class 3",c1(N2C(=O)c3c(ccc(*)c3)C2=O)cc(C(F)(F)F)c(N2C(=O)c3c(ccc(C(*)(C(F)(F)F)C(F)(F)F)c3)C2=O)cc1C(F)(F)F,class 2,class label,class 2,class 2,ok,completed
+TS1_207,class,"Predict the heat resistance category for the polymer described by this SMILES notation
+SMILES: C(F)(F)(F)C(c1cc2c(cc1)C(=O)N(c1ccc(-c3c(-c4ccc(C)cc4)cc(N4C(=O)c5c(cc(*)cc5)C4=O)cc3)c(-c3ccc(C)cc3)c1)C2=O)(C(F)(F)F)*
+Required output unit/labels: class 1 / class 2 / class 3",C(F)(F)(F)C(c1cc2c(cc1)C(=O)N(c1ccc(-c3c(-c4ccc(C)cc4)cc(N4C(=O)c5c(cc(*)cc5)C4=O)cc3)c(-c3ccc(C)cc3)c1)C2=O)(C(F)(F)F)*,class 3,class label,class 2,class 2,ok,completed
+TS1_115,class,"Estimate the temperature endurance class for the given molecular structure
+SMILES: c1c2c(ccc1C(*)=O)C(=O)N(c1cc(Oc3ccccc3N3C(=O)c4cc(*)ccc4C3=O)ccc1)C2=O
+Required output unit/labels: class 1 / class 2 / class 3",c1c2c(ccc1C(*)=O)C(=O)N(c1cc(Oc3ccccc3N3C(=O)c4cc(*)ccc4C3=O)ccc1)C2=O,class 3,class label,class 3,class 3,ok,completed
+TS1_170,Tg,"预测以下 SMILES 表示的玻璃化转变温度 (Tg)
+SMILES: O(c1ccc(Oc2cc3c(cc2)C(=O)N(c2ccc(Oc4c(-c5c6ccccc6ccc5Oc5c(C(F)(F)F)cc(N6C(=O)c7cc(*)ccc7C6=O)cc5)c5c(cccc5)cc4)c(C(F)(F)F)c2)C3=O)cc1)*
+Required output unit/labels: degrees Celsius",O(c1ccc(Oc2cc3c(cc2)C(=O)N(c2ccc(Oc4c(-c5c6ccccc6ccc5Oc5c(C(F)(F)F)cc(N6C(=O)c7cc(*)ccc7C6=O)cc5)c5c(cccc5)cc4)c(C(F)(F)F)c2)C3=O)cc1)*,256,degrees Celsius,273.0,273.0,ok,completed
+TS1_223,AE,"基于此分子结构，预测其原子化能值
+SMILES: c1cc(C*)ccc1Nc1sc(*)cc1
+Required output unit/labels: eV per atom (negative atomization-energy convention)",c1cc(C*)ccc1Nc1sc(*)cc1,-6.04,eV/atom,-4.68,-4.68,ok,completed
+TS1_166,Tg,"预测以下 SMILES 表示的玻璃化转变温度 (Tg)
+SMILES: CC(C(OCC)=O)(*)C*
+Required output unit/labels: degrees Celsius",CC(C(OCC)=O)(*)C*,50.85,degrees Celsius,65.0,65.0,ok,completed
+TS1_004,Tg,"基于该 SMILES 结构，预测其玻璃化温度
+SMILES: c12ccc(-c3cc4nc(*)cnc4cc3)cc1nc(-c1ccc(*)cc1)cn2
+Required output unit/labels: degrees Celsius",c12ccc(-c3cc4nc(*)cnc4cc3)cc1nc(-c1ccc(*)cc1)cn2,375.85,degrees Celsius,374.0,374.0,ok,completed
+TS1_043,class,"请计算该分子结构的热稳定等级
+SMILES: c1(N2C(=O)c3cc(Oc4ccc5c(c4)C(=O)N(C)C5=O)ccc3C2=O)ccc(C)cc1
+Required output unit/labels: class 1 / class 2 / class 3",c1(N2C(=O)c3cc(Oc4ccc5c(c4)C(=O)N(C)C5=O)ccc3C2=O)ccc(C)cc1,class 2,class label,class 3,class 3,ok,completed
+TS1_219,BG,"请计算该材料的预期能带宽度
+SMILES: C(COC(=O)CCCCC(=O)O*)(C)(C)C*
+Required output unit/labels: eV",C(COC(=O)CCCCC(=O)O*)(C)(C)C*,6.5878,eV,5.62,5.62,ok,completed
+TS1_230,class,"该高分子的耐热等级是多少
+SMILES: c1c(N2C(=O)c3cc(C(*)=O)ccc3C2=O)ccc(Cc2cc(N3C(=O)c4c(cc(*)cc4)C3=O)ccc2)c1
+Required output unit/labels: class 1 / class 2 / class 3",c1c(N2C(=O)c3cc(C(*)=O)ccc3C2=O)ccc(Cc2cc(N3C(=O)c4c(cc(*)cc4)C3=O)ccc2)c1,class 3,class label,class 3,class 3,ok,completed
+TS1_138,class,"该高分子的耐热性怎么样
+SMILES: c1cc(Oc2c(F)c(F)c(-c3c(F)c(F)c(Oc4ccc(N5C(=O)c6ccc(*)cc6C5=O)cc4)c(F)c3F)c(F)c2F)ccc1N1C(=O)c2c(cc(C(C(F)(F)F)(*)C(F)(F)F)cc2)C1=O
+Required output unit/labels: class 1 / class 2 / class 3",c1cc(Oc2c(F)c(F)c(-c3c(F)c(F)c(Oc4ccc(N5C(=O)c6ccc(*)cc6C5=O)cc4)c(F)c3F)c(F)c2F)ccc1N1C(=O)c2c(cc(C(C(F)(F)F)(*)C(F)(F)F)cc2)C1=O,class 3,class label,class 3,class 3,ok,completed
+TS1_001,Tg,"基于该 SMILES 结构，预测其玻璃化温度
+SMILES: *CC(C)(*)C#N
+Required output unit/labels: degrees Celsius",*CC(C)(*)C#N,119.85,degrees Celsius,123.0,123.0,ok,completed
+TS1_215,Tg,"该分子结构的玻璃化转变温度是多少
+SMILES: c1c(*)c2c(cc1)C(=O)N(c1cc(S(=O)(=O)c3cccc(N4C(=O)c5c(O*)cccc5C4=O)c3)ccc1)C2=O
+Required output unit/labels: degrees Celsius",c1c(*)c2c(cc1)C(=O)N(c1cc(S(=O)(=O)c3cccc(N4C(=O)c5c(O*)cccc5C4=O)c3)ccc1)C2=O,241,degrees Celsius,273.0,273.0,ok,completed
+TS1_012,BG,"请估算以下 SMILES 所描述材料的能带间隙 (Bandgap)
+SMILES: n1c(*)sc(*)c1
+Required output unit/labels: eV",n1c(*)sc(*)c1,1.7987,eV,2.12,2.12,ok,completed
+TS1_007,Tg,"基于该 SMILES 结构，预测其玻璃化温度
+SMILES: c12c(cc(C(=O)*)cc1)C(=O)N(c1c(C(=O)c3ccccc3N3C(=O)c4c(ccc(*)c4)C3=O)cccc1)C2=O
+Required output unit/labels: degrees Celsius",c12c(cc(C(=O)*)cc1)C(=O)N(c1c(C(=O)c3ccccc3N3C(=O)c4c(ccc(*)c4)C3=O)cccc1)C2=O,289,degrees Celsius,327.0,327.0,ok,completed
+TS1_046,class,"请计算该分子结构的热稳定等级
+SMILES: c1cc(N2C(=O)c3c(cc(O*)cc3)C2=O)ccc1Oc1ccc(Oc2ccc(N3C(=O)c4c(*)cccc4C3=O)cc2)cc1
+Required output unit/labels: class 1 / class 2 / class 3",c1cc(N2C(=O)c3c(cc(O*)cc3)C2=O)ccc1Oc1ccc(Oc2ccc(N3C(=O)c4c(*)cccc4C3=O)cc2)cc1,class 3,class label,class 3,class 3,ok,completed
+TS1_227,AE,"基于此分子结构，预测其原子化能值
+SMILES: FC(C(F)(ON*)F)(*)F
+Required output unit/labels: eV per atom (negative atomization-energy convention)",FC(C(F)(ON*)F)(*)F,-5.15,eV/atom,-4.15,-4.15,ok,completed
+TS1_159,class,"What is the thermal stability classification of this material based on its SMILES
+SMILES: c1(N2C(=O)c3cc(Oc4ccc5c(c4)C(=O)N(C)C5=O)ccc3C2=O)ccc(C)cc1
+Required output unit/labels: class 1 / class 2 / class 3",c1(N2C(=O)c3cc(Oc4ccc5c(c4)C(=O)N(C)C5=O)ccc3C2=O)ccc(C)cc1,class 2,class label,class 3,class 3,ok,completed
+TS1_199,AE,"How much energy is required for the atomization of this molecular structure
+SMILES: c1(-c2ccc(C(N*)=O)cc2)ccc(*)cc1
+Required output unit/labels: eV per atom (negative atomization-energy convention)",c1(-c2ccc(C(N*)=O)cc2)ccc(*)cc1,-6.4,eV/atom,-5.43,-5.43,ok,completed
+TS1_061,AE,"What is the expected atomization energy for this chemical structure
+SMILES: c1c(Oc2ccc(O*)s2)ccc(*)c1
+Required output unit/labels: eV per atom (negative atomization-energy convention)",c1c(Oc2ccc(O*)s2)ccc(*)c1,-6.18,eV/atom,-5.05,-5.05,ok,completed
+TS1_174,BG,"预测以下 SMILES 对应晶体的带隙大小
+SMILES: c1(C=C*)ccc(*)n1CCCCCC
+Required output unit/labels: eV",c1(C=C*)ccc(*)n1CCCCCC,1.3683,eV,1.48,1.48,ok,completed
+TS1_090,class,"Predict the heat resistance class of the following SMILES
+SMILES: c1(N2C(=O)c3cc(*)ccc3C2=O)cc(N2C(=O)c3c(ccc(*)c3)C2=O)cc(C(F)(F)F)c1
+Required output unit/labels: class 1 / class 2 / class 3",c1(N2C(=O)c3cc(*)ccc3C2=O)cc(N2C(=O)c3c(ccc(*)c3)C2=O)cc(C(F)(F)F)c1,class 2,class label,class 2,class 2,ok,completed
+TS1_018,AE,"请计算该 SMILES 对应物质的总原子结合能
+SMILES: *NC(NC(=O)*)=O
+Required output unit/labels: eV per atom (negative atomization-energy convention)",*NC(NC(=O)*)=O,-6.46,eV/atom,-4.78,-4.78,ok,completed
+TS1_070,class,"Determine the thermal resistance class of this polymer
+SMILES: c1ccc(C)c(N2C(=O)c3c(ccc(Oc4ccc(C(C)(c5ccc(Oc6cc7c(cc6)C(=O)N(C)C7=O)cc5)C)cc4)c3)C2=O)c1
+Required output unit/labels: class 1 / class 2 / class 3",c1ccc(C)c(N2C(=O)c3c(ccc(Oc4ccc(C(C)(c5ccc(Oc6cc7c(cc6)C(=O)N(C)C7=O)cc5)C)cc4)c3)C2=O)c1,class 3,class label,class 3,class 3,ok,completed
+TS1_169,Tg,"预测以下 SMILES 表示的玻璃化转变温度 (Tg)
+SMILES: c1(C(F)(F)F)cc(N2C(=O)c3ccc(*)cc3C2=O)ccc1-c1c(C(F)(F)F)cc(N2C(=O)c3c(ccc(S(=O)(*)=O)c3)C2=O)cc1
+Required output unit/labels: degrees Celsius",c1(C(F)(F)F)cc(N2C(=O)c3ccc(*)cc3C2=O)ccc1-c1c(C(F)(F)F)cc(N2C(=O)c3c(ccc(S(=O)(*)=O)c3)C2=O)cc1,320,degrees Celsius,338.5,338.5,ok,completed
+TS1_016,AE,"请计算该 SMILES 对应物质的总原子结合能
+SMILES: O=C(C(=S)NC*)*
+Required output unit/labels: eV per atom (negative atomization-energy convention)",O=C(C(=S)NC*)*,-5.79,eV/atom,-4.53,-4.53,ok,completed
+TS1_047,class,"请计算该分子结构的热稳定等级
+SMILES: c1cc(Oc2ccc(N3C(=O)c4cc(*)ccc4C3=O)cc2)ccc1N1C(=O)c2c(ccc(C(*)O[Si](C)(C)C)c2)C1=O
+Required output unit/labels: class 1 / class 2 / class 3",c1cc(Oc2ccc(N3C(=O)c4cc(*)ccc4C3=O)cc2)ccc1N1C(=O)c2c(ccc(C(*)O[Si](C)(C)C)c2)C1=O,class 3,class label,class 3,class 3,ok,completed
+TS1_142,Tg,"What is the glass transition temperature (Tg) of this polymer represented by SMILES
+SMILES: O=S(=O)(c1ccc(O*)cc1)c1ccc(Oc2ccc(C(C)(c3ccc(*)cc3)C)cc2)cc1
+Required output unit/labels: degrees Celsius",O=S(=O)(c1ccc(O*)cc1)c1ccc(Oc2ccc(C(C)(c3ccc(*)cc3)C)cc2)cc1,184.85,degrees Celsius,186.0,186.0,ok,completed
+TS1_209,class,"Predict the heat resistance category for the polymer described by this SMILES notation
+SMILES: C1(=O)N(c2ccc(OCC(F)(C(F)(F)C(F)(C(F)(F)C(F)(C(F)(C(F)(F)F)F)F)F)F)c(N3C(=O)c4c(cc(C(*)(C(F)(F)F)C(F)(F)F)cc4)C3=O)c2)C(=O)c2c1ccc(*)c2
+Required output unit/labels: class 1 / class 2 / class 3",C1(=O)N(c2ccc(OCC(F)(C(F)(F)C(F)(C(F)(F)C(F)(C(F)(C(F)(F)F)F)F)F)F)c(N3C(=O)c4c(cc(C(*)(C(F)(F)F)C(F)(F)F)cc4)C3=O)c2)C(=O)c2c1ccc(*)c2,class 3,class label,class 3,class 3,ok,completed
+TS1_015,AE,"请计算该 SMILES 对应物质的总原子结合能
+SMILES: S=C(C(N*)=O)O*
+Required output unit/labels: eV per atom (negative atomization-energy convention)",S=C(C(N*)=O)O*,-5.88,eV/atom,-4.65,-4.65,ok,completed
+TS1_176,AE,"预测以下 SMILES 对应化合物的原子化能
+SMILES: c1c(C(=S)c2ccc(C(=S)C(=O)Nc3ccc(-c4ccc(*)s4)cc3)s2)sc(*)c1
+Required output unit/labels: eV per atom (negative atomization-energy convention)",c1c(C(=S)c2ccc(C(=S)C(=O)Nc3ccc(-c4ccc(*)s4)cc3)s2)sc(*)c1,-6.19,eV/atom,-5.12,-5.12,ok,completed
+TS1_128,BG,"请提供该化合物晶体的带隙预测值
+SMILES: n1c(*)sc(*)c1
+Required output unit/labels: eV",n1c(*)sc(*)c1,1.7987,eV,2.12,2.12,ok,completed
+TS1_203,AE,"How much energy is required for the atomization of this molecular structure
+SMILES: c1cc(-c2ccc(CC(c3ccc(C(=S)CO*)s3)=S)cc2)ccc1*
+Required output unit/labels: eV per atom (negative atomization-energy convention)",c1cc(-c2ccc(CC(c3ccc(C(=S)CO*)s3)=S)cc2)ccc1*,-6.04,eV/atom,-5.12,-5.12,ok,completed
+TS1_060,AE,"What is the expected atomization energy for this chemical structure
+SMILES: c1c(C(=S)c2ccc(C(=S)C(=O)Nc3ccc(-c4ccc(*)s4)cc3)s2)sc(*)c1
+Required output unit/labels: eV per atom (negative atomization-energy convention)",c1c(C(=S)c2ccc(C(=S)C(=O)Nc3ccc(-c4ccc(*)s4)cc3)s2)sc(*)c1,-6.19,eV/atom,-4.92,-4.92,ok,completed
+TS1_101,BG,"Determine the bandgap energy of the material represented by this SMILES string
+SMILES: C(ON*)(=S)O*
+Required output unit/labels: eV",C(ON*)(=S)O*,3.9632,eV,3.74,3.74,ok,completed
+TS1_220,BG,"请计算该材料的预期能带宽度
+SMILES: *CC(C#N)*
+Required output unit/labels: eV",*CC(C#N)*,7.4435,eV,5.2,5.2,ok,completed
+TS1_216,Tg,"该分子结构的玻璃化转变温度是多少
+SMILES: C1(=O)N(c2cccc(N3C(=O)c4c(c(Oc5ccc(S(=O)(c6cccc(O*)c6)=O)cc5)ccc4)C3=O)c2)C(=O)c2c1cccc2*
+Required output unit/labels: degrees Celsius",C1(=O)N(c2cccc(N3C(=O)c4c(c(Oc5ccc(S(=O)(c6cccc(O*)c6)=O)cc5)ccc4)C3=O)c2)C(=O)c2c1cccc2*,266,degrees Celsius,268.0,268.0,ok,completed
+TS1_162,class,"What is the thermal stability classification of this material based on its SMILES
+SMILES: c1cc(N2C(=O)c3c(cc(O*)cc3)C2=O)ccc1Oc1ccc(Oc2ccc(N3C(=O)c4c(*)cccc4C3=O)cc2)cc1
+Required output unit/labels: class 1 / class 2 / class 3",c1cc(N2C(=O)c3c(cc(O*)cc3)C2=O)ccc1Oc1ccc(Oc2ccc(N3C(=O)c4c(*)cccc4C3=O)cc2)cc1,class 3,class label,class 3,class 3,ok,completed
+TS1_204,AE,"How much energy is required for the atomization of this molecular structure
+SMILES: *NC(C*)=O
+Required output unit/labels: eV per atom (negative atomization-energy convention)",*NC(C*)=O,-5.91,eV/atom,-4.58,-4.58,ok,completed
+TS1_177,AE,"预测以下 SMILES 对应化合物的原子化能
+SMILES: c1c(Oc2ccc(O*)s2)ccc(*)c1
+Required output unit/labels: eV per atom (negative atomization-energy convention)",c1c(Oc2ccc(O*)s2)ccc(*)c1,-6.18,eV/atom,-4.87,-4.87,ok,completed
+TS1_168,Tg,"预测以下 SMILES 表示的玻璃化转变温度 (Tg)
+SMILES: c12ccc(*)cc1C(=O)N(c1c(CC)cc(Cc3cc(CC)c(N4C(=O)c5c(ccc(C(=O)*)c5)C4=O)c(CC)c3Cl)c(Cl)c1CC)C2=O
+Required output unit/labels: degrees Celsius",c12ccc(*)cc1C(=O)N(c1c(CC)cc(Cc3cc(CC)c(N4C(=O)c5c(ccc(C(=O)*)c5)C4=O)c(CC)c3Cl)c(Cl)c1CC)C2=O,300,degrees Celsius,312.0,312.0,ok,completed
+TS1_147,Tg,"What is the glass transition temperature (Tg) of this polymer represented by SMILES
+SMILES: *c1cccc2c1C(=O)N(c1ccc(Oc3ccc(Oc4ccc(N5C(=O)c6cccc(*)c6C5=O)cc4)cc3)cc1)C2=O
+Required output unit/labels: degrees Celsius",*c1cccc2c1C(=O)N(c1ccc(Oc3ccc(Oc4ccc(N5C(=O)c6cccc(*)c6C5=O)cc4)cc3)cc1)C2=O,293,degrees Celsius,282.0,282.0,ok,completed
+TS1_102,BG,"Determine the bandgap energy of the material represented by this SMILES string
+SMILES: c1c(*)c2cccccc-2c1-c1c(C)cc(-c2sc(*)c(C)c2)s1
+Required output unit/labels: eV",c1c(*)c2cccccc-2c1-c1c(C)cc(-c2sc(*)c(C)c2)s1,1.3327,eV,1.62,1.62,ok,completed
+TS1_109,AE,"Predict the binding energy for breaking this molecule into individual atoms
+SMILES: C(c1ccc(C(=S)c2ccc(*)s2)s1)(*)=O
+Required output unit/labels: eV per atom (negative atomization-energy convention)",C(c1ccc(C(=S)c2ccc(*)s2)s1)(*)=O,-6.19,eV/atom,-4.96,-4.96,ok,completed
+TS1_212,Tg,"该分子结构的玻璃化转变温度是多少
+SMILES: C(C)C(C)(c1c(Cl)cc(OC(=O)O*)cc1)c1ccc(*)cc1Cl
+Required output unit/labels: degrees Celsius",C(C)C(C)(c1c(Cl)cc(OC(=O)O*)cc1)c1ccc(*)cc1Cl,141.85,degrees Celsius,174.0,174.0,ok,completed
+TS1_135,class,"该高分子的耐热性怎么样
+SMILES: FC(c1c(-c2c(C(F)(F)F)cc(-n3c(=O)c4cc5c(c(=O)n(*)c5=O)cc4c3=O)cc2)ccc(*)c1)(F)F
+Required output unit/labels: class 1 / class 2 / class 3",FC(c1c(-c2c(C(F)(F)F)cc(-n3c(=O)c4cc5c(c(=O)n(*)c5=O)cc4c3=O)cc2)ccc(*)c1)(F)F,class 1,class label,class 1,class 1,ok,completed
+TS1_050,Tg,"Provide the predicted Tg for the polymer described by this SMILES string
+SMILES: CC(C(OCC)=O)(*)C*
+Required output unit/labels: degrees Celsius",CC(C(OCC)=O)(*)C*,50.85,degrees Celsius,65.0,65.0,ok,completed
+TS1_157,AE,"Estimate the atomization energy of the compound represented by this SMILES string
+SMILES: c1(*)ccc(C(=S)c2ccc(O*)s2)cc1
+Required output unit/labels: eV per atom (negative atomization-energy convention)",c1(*)ccc(C(=S)c2ccc(O*)s2)cc1,-6.18,eV/atom,-4.88,-4.88,ok,completed
+TS1_008,BG,"请估算以下 SMILES 所描述材料的能带间隙 (Bandgap)
+SMILES: C(#N)C(CC(C#N)(C(C#N)C(*)(C#N)C#N)C#N)(C#N)CC(C#N)(C#N)C*
+Required output unit/labels: eV",C(#N)C(CC(C#N)(C(C#N)C(*)(C#N)C#N)C#N)(C#N)CC(C#N)(C#N)C*,6.4504,eV,5.14,5.14,ok,completed
+TS1_011,BG,"请估算以下 SMILES 所描述材料的能带间隙 (Bandgap)
+SMILES: C1CC(*)CC(S*)C1
+Required output unit/labels: eV",C1CC(*)CC(S*)C1,5.2199,eV,4.86,4.86,ok,completed
+TS1_211,Tg,"该分子结构的玻璃化转变温度是多少
+SMILES: c1cc(C(C)(C)C)cc(C(*)C*)c1C
+Required output unit/labels: degrees Celsius",c1cc(C(C)(C)C)cc(C(*)C*)c1C,86.85,degrees Celsius,157.0,157.0,ok,completed
+TS1_210,Tg,"该分子结构的玻璃化转变温度是多少
+SMILES: c1cc(C*)c(C#N)cc1C*
+Required output unit/labels: degrees Celsius",c1cc(C*)c(C#N)cc1C*,89.85,degrees Celsius,112.0,112.0,ok,completed
+TS1_003,Tg,"基于该 SMILES 结构，预测其玻璃化温度
+SMILES: C(CCCCOCC(O*)C*)C
+Required output unit/labels: degrees Celsius",C(CCCCOCC(O*)C*)C,-85.15,degrees Celsius,-76.0,-76.0,ok,completed
+TS1_124,BG,"请提供该化合物晶体的带隙预测值
+SMILES: C(#N)C(CC(C#N)(C(C#N)C(*)(C#N)C#N)C#N)(C#N)CC(C#N)(C#N)C*
+Required output unit/labels: eV",C(#N)C(CC(C#N)(C(C#N)C(*)(C#N)C#N)C#N)(C#N)CC(C#N)(C#N)C*,6.4504,eV,4.86,4.86,ok,completed
+TS1_113,class,"Estimate the temperature endurance class for the given molecular structure
+SMILES: c1(N2C(=O)c3cccc(*)c3C2=O)ccc(N2C(=O)c3c(cccc3S*)C2=O)cc1
+Required output unit/labels: class 1 / class 2 / class 3",c1(N2C(=O)c3cccc(*)c3C2=O)ccc(N2C(=O)c3c(cccc3S*)C2=O)cc1,class 2,class label,class 2,class 2,ok,completed
+TS1_051,Tg,"Provide the predicted Tg for the polymer described by this SMILES string
+SMILES: *Oc1cc(Oc2ccc(Oc3ccc4c(c3)C(=O)N(c3ccc(Oc5cccc(Oc6ccc(N7C(=O)c8c(ccc(*)c8)C7=O)cc6)c5)cc3)C4=O)cc2)ccc1
+Required output unit/labels: degrees Celsius",*Oc1cc(Oc2ccc(Oc3ccc4c(c3)C(=O)N(c3ccc(Oc5cccc(Oc6ccc(N7C(=O)c8c(ccc(*)c8)C7=O)cc6)c5)cc3)C4=O)cc2)ccc1,184,degrees Celsius,224.0,224.0,ok,completed
+TS1_055,BG,"Can you calculate the bandgap energy for the material described by this SMILES notation
+SMILES: C(OCC(F)(F)F)(=O)OC(C*)*
+Required output unit/labels: eV",C(OCC(F)(F)F)(=O)OC(C*)*,7.9003,eV,6.14,6.14,ok,completed
