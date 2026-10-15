@@ -1,0 +1,4 @@
+csv_line,source_id,smiles,canonical_smiles,model_smiles,predicted_band_gap_eV
+2,historical_polysea,O=C(CCCCCCCCC(OCCC(O[*])C)=O)OC[*],*COC(=O)CCCCCCCCC(=O)OCCC(C)O*,*COC(=O)CCCCCCCCC(=O)OCCC(C)O*,5.759317398071289
+3,new_seed_17,[*]CC([*])C(=O)OCC=C,*CC(*)C(=O)OCC=C,*CC(*)C(=O)OCC=C,5.372900009155273
+4,new_seed_29,[*]CC1CCC(COC(=O)CCCCC(=O)O[*])CC1,*CC1CCC(COC(=O)CCCCC(=O)O*)CC1,*CC1CCC(COC(=O)CCCCC(=O)O*)CC1,5.990445137023926

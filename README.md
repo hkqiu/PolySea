@@ -336,3 +336,7 @@ Apache License 2.0 (third-party dependencies and the PolyTAO pretrained model re
 ### Research training and evaluation data
 
 The [PolyOpus research-data release](dataset/polyopus/README.md) contains the archived merged training corpus, held-out inputs, reported prediction records, augmentation traceability and reproducible evaluation scripts. The data documentation states the AE reporting filter and its coverage.
+
+### Additional CPU generation and GNN assessment
+
+The [revision experiment capsule](reproduction/gnn/revision_run_20261015/README.md) includes two additional PolyOpus samples, the trained GraphConv checkpoint, all split predictions and replay scripts. It reports the GNN test error and training-structure overlap for the new candidates.

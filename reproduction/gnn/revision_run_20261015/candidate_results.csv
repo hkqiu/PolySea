@@ -1,0 +1,4 @@
+candidate_id,cohort,seed,smiles,target_eV,formal_generation_status,canonical_smiles,rdkit_valid,gnn_status,predicted_band_gap_eV,absolute_target_deviation_eV,predicted_at_least_target,exact_graph_overlap_count,overlap_splits,duplicate_candidate_ids
+historical_polysea,historical,,O=C(CCCCCCCCC(OCCC(O[*])C)=O)OC[*],6.5,historical,*COC(=O)CCCCCCCCC(=O)OCCC(C)O*,True,predicted,5.759317398071289,0.7406826019287109,False,0,,
+new_seed_17,new,17,[*]CC([*])C(=O)OCC=C,6.5,completed,*CC(*)C(=O)OCC=C,True,predicted,5.372900009155273,1.1270999908447266,False,1,train,
+new_seed_29,new,29,[*]CC1CCC(COC(=O)CCCCC(=O)O[*])CC1,6.5,completed,*CC1CCC(COC(=O)CCCCC(=O)O*)CC1,True,predicted,5.990445137023926,0.5095548629760742,False,1,train,

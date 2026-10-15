@@ -1,0 +1,100 @@
+{
+  "completed_utc": "2026-10-15T08:17:35.284332+00:00",
+  "formal_new_generation_attempts": 2,
+  "valid_new_generations": 2,
+  "historical_candidates": 1,
+  "total_candidates": 3,
+  "gnn_evaluated": 3,
+  "gnn_metrics": {
+    "train": {
+      "n_rows": 2704,
+      "MAE_eV": 0.9242286245362343,
+      "RMSE_eV": 1.0929328294383844,
+      "R2": 0.508666828236086
+    },
+    "valid": {
+      "n_rows": 338,
+      "MAE_eV": 0.9675164354811042,
+      "RMSE_eV": 1.178856354863391,
+      "R2": 0.45514695198659416
+    },
+    "test": {
+      "n_rows": 338,
+      "MAE_eV": 0.9269011890352122,
+      "RMSE_eV": 1.1073257133887229,
+      "R2": 0.49071097764032623
+    }
+  },
+  "gnn_reload_verified": true,
+  "candidates": [
+    {
+      "candidate_id": "historical_polysea",
+      "cohort": "historical",
+      "seed": null,
+      "smiles": "O=C(CCCCCCCCC(OCCC(O[*])C)=O)OC[*]",
+      "target_eV": 6.5,
+      "formal_generation_status": "historical",
+      "canonical_smiles": "*COC(=O)CCCCCCCCC(=O)OCCC(C)O*",
+      "rdkit_valid": true,
+      "gnn_status": "predicted",
+      "predicted_band_gap_eV": 5.759317398071289,
+      "absolute_target_deviation_eV": 0.7406826019287109,
+      "predicted_at_least_target": false,
+      "exact_graph_matches_in_gnn_data": [],
+      "duplicates_of_other_candidates": []
+    },
+    {
+      "candidate_id": "new_seed_17",
+      "cohort": "new",
+      "seed": 17,
+      "smiles": "[*]CC([*])C(=O)OCC=C",
+      "target_eV": 6.5,
+      "formal_generation_status": "completed",
+      "canonical_smiles": "*CC(*)C(=O)OCC=C",
+      "rdkit_valid": true,
+      "gnn_status": "predicted",
+      "predicted_band_gap_eV": 5.372900009155273,
+      "absolute_target_deviation_eV": 1.1270999908447266,
+      "predicted_at_least_target": false,
+      "exact_graph_matches_in_gnn_data": [
+        {
+          "csv_line": 108,
+          "split": "train",
+          "target_eV": 6.066,
+          "smiles": "*CC(*)C(=O)OCC=C"
+        }
+      ],
+      "duplicates_of_other_candidates": []
+    },
+    {
+      "candidate_id": "new_seed_29",
+      "cohort": "new",
+      "seed": 29,
+      "smiles": "[*]CC1CCC(COC(=O)CCCCC(=O)O[*])CC1",
+      "target_eV": 6.5,
+      "formal_generation_status": "completed",
+      "canonical_smiles": "*CC1CCC(COC(=O)CCCCC(=O)O*)CC1",
+      "rdkit_valid": true,
+      "gnn_status": "predicted",
+      "predicted_band_gap_eV": 5.990445137023926,
+      "absolute_target_deviation_eV": 0.5095548629760742,
+      "predicted_at_least_target": false,
+      "exact_graph_matches_in_gnn_data": [
+        {
+          "csv_line": 578,
+          "split": "train",
+          "target_eV": 6.7775,
+          "smiles": "*CC1CCC(COC(=O)CCCCC(=O)O*)CC1"
+        }
+      ],
+      "duplicates_of_other_candidates": []
+    }
+  ],
+  "limitations": [
+    "The historical candidate was previously selected; these are not three new prespecified trials.",
+    "Two new CPU seeds are a small descriptive extension, not a robust success-rate estimate.",
+    "The GNN is a fixed reconstruction trained in this revision, not the missing historical model.",
+    "An exact graph-overlap check is not a periodic-polymer equivalence or distribution-shift proof.",
+    "GNN predictions are not new DFT, Polymer Genome, experimental or independent physical validation."
+  ]
+}

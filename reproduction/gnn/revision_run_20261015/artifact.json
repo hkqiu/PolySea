@@ -1,0 +1,51 @@
+{
+  "status": "trained",
+  "source_doi": "10.1016/j.patter.2021.100238",
+  "target": "single_chain_band_gap",
+  "target_unit": "eV",
+  "source_csv": "https://media.githubusercontent.com/media/ChangwenXu98/TransPolymer/8399d4816ce772b64deba34f4455d91d9a764b2a/data/Egc.csv",
+  "csv_sha256": "d779e1777e7f25bf367dae2a2bf72659dba26345eb45dbc2cde73cdd461a9a14",
+  "target_column": "value",
+  "smiles_column": "smiles",
+  "wildcard_policy": "preserve",
+  "seed": 42,
+  "model_config": {
+    "graph_conv_layers": [
+      64,
+      64
+    ],
+    "dense_layer_size": 128,
+    "dropout": 0.0,
+    "batch_size": 100,
+    "learning_rate": 0.001,
+    "batch_normalize": true,
+    "uncertainty": false,
+    "n_tasks": 1,
+    "mode": "regression",
+    "number_atom_features": 75
+  },
+  "epochs": 10,
+  "target_normalization": "none",
+  "split_rule": "group_random",
+  "fractions": [
+    0.8,
+    0.1,
+    0.09999999999999995
+  ],
+  "identity_scope": "canonical molecular/model graph and optional source ID; no periodic equivalence proof",
+  "implementation_status": "revision reconstruction; not historical checkpoint reproduction",
+  "counts": {
+    "train": 2704,
+    "valid": 338,
+    "test": 338
+  },
+  "training_loss": 0.3118053197860718,
+  "reload_verified": true,
+  "versions": {
+    "deepchem": "2.8.0",
+    "tensorflow": "2.15.1",
+    "numpy": "1.26.4",
+    "rdkit": "2023.9.6"
+  },
+  "source_csv_identifier": "TransPolymer commit 8399d4816ce772b64deba34f4455d91d9a764b2a, data/Egc.csv"
+}

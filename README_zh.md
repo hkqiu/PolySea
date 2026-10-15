@@ -336,3 +336,7 @@ Apache License 2.0（第三方依赖和 PolyTAO 预训练模型仍需分别遵�
 ### 研究训练数据与评估资产
 
 [PolyOpus研究数据](dataset/polyopus/README.md)包含原始合并训练集、测试输入、报告预测记录、增强记录映射和可复算脚本；数据说明列出了AE筛选规则及实际覆盖数。
+
+### 补充CPU生成与GNN评估
+
+[修订实验胶囊](reproduction/gnn/revision_run_20261015/README.md)包含两次新增PolyOpus采样、新训练的GraphConv权重、全部分区预测及复现脚本，并列出GNN测试误差和新候选的训练结构重合情况。

@@ -1,0 +1,35 @@
+{
+  "status": "passed",
+  "started_utc": "2026-10-15T09:00:54.532505+00:00",
+  "ended_utc": "2026-10-15T09:01:16.827500+00:00",
+  "capsule_integrity": {
+    "status": "passed",
+    "checked_files": 28
+  },
+  "candidate_predictions_eV": {
+    "historical_polysea": 5.759317398071289,
+    "new_seed_17": 5.372900009155273,
+    "new_seed_29": 5.990445137023926
+  },
+  "expected_predictions_eV": {
+    "historical_polysea": 5.759317398071289,
+    "new_seed_17": 5.372900009155273,
+    "new_seed_29": 5.990445137023926
+  },
+  "absolute_differences_eV": {
+    "historical_polysea": 0.0,
+    "new_seed_17": 0.0,
+    "new_seed_29": 0.0
+  },
+  "maximum_absolute_difference_eV": 0.0,
+  "relative_tolerance": 1e-05,
+  "absolute_tolerance_eV": 1e-06,
+  "checkpoint_files": {
+    "checkpoint": "a520f4e3326d23207d4eb74929becafe7cdbd66f602924cee84015022748121e",
+    "ckpt-1.data-00000-of-00001": "a6b43246b3cae50c02c4036ae3a6ae89be331428d4cda8e3a6ba98e2c3e3ace9",
+    "ckpt-1.index": "39f92e2fc6622a4b68afd0b941b2d2e5821e91d219008916b5239a3c2eaa17f9",
+    "ckpt-2.data-00000-of-00001": "aac65cdaeeb09fb7ad45e1ca89a21eb0463d6bfa9787e440936730bd62b23fe9",
+    "ckpt-2.index": "da08f492ad46e910b39c90bea0ec9029e404e7e285b358df7a07289802f1044b"
+  },
+  "note": "One reload of the released checkpoint; no retraining, resampling, or physical calculation."
+}

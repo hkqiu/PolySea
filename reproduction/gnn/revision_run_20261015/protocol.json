@@ -1,0 +1,87 @@
+{
+  "experiment_id": "polyopus_gnn_20261015",
+  "registration_status": "Protocol fixed before actual training and both formal generation attempts; original registration hashes retained in the authors experiment audit.",
+  "nominal_target_eV": 6.5,
+  "generation": {
+    "prompt": "Generate / design a polymer with band gap of 6.5 eV?",
+    "input_format": "Bare prompt exactly as recovered in design source; tokenizer default BOS; do not apply chat_template.",
+    "nominal_target_eV": 6.5,
+    "seeds": [
+      17,
+      29
+    ],
+    "formal_calls_per_seed": 1,
+    "max_new_tokens": 512,
+    "temperature": 1.2,
+    "top_p": 0.9,
+    "top_k": 100,
+    "do_sample": true,
+    "do_sample_provenance": "Inherited by original design source from recovered model generation_config.json, which explicitly stores do_sample=true.",
+    "stop_string": "<STOP>",
+    "eos_token_id": 100001,
+    "bos_token_id": 100000,
+    "selection_policy": "Retain both formal calls, including invalid, duplicate, failed, or target-missing outputs; do not retry for a better candidate.",
+    "parsing_policy": "Preserve all token IDs, complete decoded text, generated suffix, source get_clean_output result, and a deterministic candidate field. Prefer text after the first PolySea: marker, otherwise use generated suffix; stop at the first <STOP> and strip outer whitespace. Do not search through several alternatives or repair chemical strings. RDKit validity and attachment count are diagnostics, not postselection.",
+    "precision_status": "New CPU generation; not an exact historical CUDA/seed reproduction."
+  },
+  "generation_source": "Recovered PolySea/Darwin design source and merged-model generation_config.json",
+  "gnn": {
+    "source_csv_sha256": "d779e1777e7f25bf367dae2a2bf72659dba26345eb45dbc2cde73cdd461a9a14",
+    "source_doi": "10.1016/j.patter.2021.100238",
+    "smiles_column": "smiles",
+    "target_column": "value",
+    "endpoint": "single-chain band gap",
+    "unit": "eV",
+    "wildcard_policy": "preserve",
+    "seed": 42,
+    "split": "Group random split by canonical original/model graph and optional source ID; no source-ID column supplied; 80/10/10; all training-subset rows used.",
+    "expected_counts_from_existing_prepare_audit": {
+      "train": 2704,
+      "valid": 338,
+      "test": 338
+    },
+    "graph_conv_layers": [
+      64,
+      64
+    ],
+    "dense_layer_size": 128,
+    "dropout": 0.0,
+    "batch_size": 100,
+    "learning_rate": 0.001,
+    "epochs": 10,
+    "target_normalization": "none",
+    "model_selection": "Fixed final 10-epoch checkpoint; no validation or test selection, tuning, early stopping, or training-subset downsampling.",
+    "software": {
+      "python": "3.11.16",
+      "deepchem": "2.8.0",
+      "tensorflow": "2.15.1",
+      "keras": "2.15.0",
+      "numpy": "1.26.4",
+      "rdkit": "2023.9.6"
+    },
+    "evaluation": "MAE, RMSE, R2 on train/valid/test; saved checkpoint reload agreement; all parseable candidates evaluated with the identical reloaded checkpoint. Invalid candidates remain explicit failed evaluations, never replaced.",
+    "interpretation": "New revision reconstruction. Predictions are not DFT, Polymer Genome results, experimental gaps, or independent physical validation. Candidate overlap with GNN dataset will be reported."
+  },
+  "gnn_training_script": "../train_graphconv.py",
+  "source_csv": "https://media.githubusercontent.com/media/ChangwenXu98/TransPolymer/8399d4816ce772b64deba34f4455d91d9a764b2a/data/Egc.csv",
+  "runtime": {
+    "device": "CPU",
+    "maximum_compute_threads": 8,
+    "weight_dtype": "float16",
+    "quantization": "none",
+    "python": "3.11.16",
+    "torch": "2.14.1+cpu",
+    "transformers": "4.49.0",
+    "accelerate": "1.3.0",
+    "safetensors": "0.5.3"
+  },
+  "execution_note": "A first TensorFlow checkpoint-save attempt failed on a Windows non-ASCII path. It was retained in the internal audit. The same fixed protocol was restarted through an ASCII path alias without score-based selection. The released checkpoint is the successful complete run.",
+  "reporting_limits": [
+    "The historical candidate was previously selected; these are not three new prespecified trials.",
+    "Two new CPU seeds are a small descriptive extension, not a robust success-rate estimate.",
+    "The GNN is a fixed reconstruction trained in this revision, not the missing historical model.",
+    "An exact graph-overlap check is not a periodic-polymer equivalence or distribution-shift proof.",
+    "GNN predictions are not new DFT, Polymer Genome, experimental or independent physical validation."
+  ],
+  "gnn_training_script_sha256": "8d340e8e24a0fb971016cae34b5df64101435f50e11be9d1b21bd2f47a058ce1"
+}
