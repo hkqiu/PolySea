@@ -56,7 +56,7 @@ The official PolyNC repository publishes its accompanying data and code with
 [Apache License 2.0](https://github.com/hkqiu/Unified_ML4Polymers/blob/1833503fc06a77e9a098a7b40daabd279632ba14/LICENSE). A copy is retained as
 [PolyNC_LICENSE.txt](PolyNC_LICENSE.txt). This release attributes the reused
 processed PolyNC materials and describes the instruction augmentation and corpus
-composition above. Redistribution under that license requires the license copy,
+composition in `metadata.json`. Redistribution under that license requires the license copy,
 applicable attribution notices and notices of modifications. The released PolySea
 training CSV preserves the supplied archive bytes; the derived prompt/SMILES
 expansion is documented rather than represented as original measurements.
