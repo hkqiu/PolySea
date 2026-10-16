@@ -160,9 +160,9 @@ The Agent relies on OpenAI-compatible Chat Completions tools/function calling fo
 
 ### PolyOpus (optional)
 
-PolyOpus is a polymer-specialized LLM built by supervised fine-tuning (SFT) of [`DeepSeek-LLM-7B-Chat`](https://huggingface.co/deepseek-ai/deepseek-llm-7b-chat) on polymer data. Weights are planned to be released on the author's Hugging Face page, [huggingface.co/hkqiu](https://huggingface.co/hkqiu) (not yet published); this repository does not include or distribute the model weights.
+PolyOpus is a polymer-specialized LLM built by supervised fine-tuning (SFT) of [`DeepSeek-LLM-7B-Chat`](https://huggingface.co/deepseek-ai/deepseek-llm-7b-chat) on polymer data. The complete merged weights are available at [hkqiu/PolyOpus](https://huggingface.co/hkqiu/PolyOpus/tree/2b01aae91c3ac81e4f06d9384b18e0aad045d775); this repository does not include or distribute the model weights.
 
-**Local deployment.** Because PolyOpus keeps the same architecture, tokenizer, and chat template as `DeepSeek-LLM-7B-Chat`, it can be self-hosted with any OpenAI-compatible serving stack that already supports that base model — for example [vLLM](https://github.com/vllm-project/vllm) or [Text Generation Inference (TGI)](https://github.com/huggingface/text-generation-inference). Once the PolyOpus weights are published, a typical local setup looks like:
+**Local deployment.** Because PolyOpus keeps the same architecture, tokenizer, and chat template as `DeepSeek-LLM-7B-Chat`, it can be self-hosted with any OpenAI-compatible serving stack that already supports that base model — for example [vLLM](https://github.com/vllm-project/vllm) or [Text Generation Inference (TGI)](https://github.com/huggingface/text-generation-inference). A typical local setup looks like:
 
 ```bash
 # Example: serve with vLLM's OpenAI-compatible API server
