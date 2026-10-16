@@ -19,7 +19,3 @@ Recompute every metric from the single table with Python's standard library:
 ```console
 python recompute_metrics.py predictions.csv --check metadata.json
 ```
-
-The script re-parses each visible output, checks the stored prediction, retains the complete task denominators, and verifies the recomputed values against the metadata. Parsing coverage is not the historical NHscore. The added prompt instructions mean historical scores are not claimed to be identical-prompt reruns. Model names are provider identifiers, not independently verified model weights.
-
-Earlier budget calibration and the author-cancelled second-model branch remain in the local archive. They are excluded from this final prediction table. Detailed process logs and per-request files are retained locally rather than included in this release.
