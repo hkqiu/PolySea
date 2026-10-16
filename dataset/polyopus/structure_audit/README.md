@@ -1,8 +1,8 @@
 # Existing split and duplicate audit
 
-This analysis audits the original PolyOpus training/test files and rescores archived
-predictions. It performs no new model training or inference and does not alter the
-original split. One table contains the 149 final representative predictions.
+Structural overlap and fixed-representative metrics for the original PolyOpus
+training/test split, using saved predictions. `final_predictions.csv` contains
+149 representative predictions.
 
 | Endpoint | Training structures | Test structures | Same-task overlap | Test structures after removing overlap |
 |---|---:|---:|---:|---:|
@@ -11,23 +11,18 @@ original split. One table contains the 149 final representative predictions.
 | Atomization energy | 351 | 39 | 0 | 39 |
 | Heat-resistance class | 287 | 37 | 10 | 27 |
 
-These counts use the declared structural identifiers. `canonicalize_psmiles`
-normalizes eligible two-attachment strings; other encodings retain separately
-labelled RDKit isomeric molecular-graph identifiers. One invalid Tg training row
-is retained in the source-row count but has no structural identifier. The package
-does not fully reduce all branched or ring repeat multiplication; these are
-operational normalized-structure counts, not a universal proof of polymer identity.
-Every same-task overlap pair was independently checked; non-identical monomer
-graphs were checked by agreement of cyclic oligomers at two sizes.
+`canonicalize_psmiles` normalizes eligible two-attachment strings; other encodings
+use separately labelled RDKit isomeric molecular-graph identifiers. One invalid
+Tg training row has no identifier. These counts use the stated normalization,
+which does not fully reduce branched or ring repeat multiplication. All same-task
+overlap pairs were checked independently; non-identical monomer graphs were
+checked by agreement of cyclic oligomers at two sizes.
 
-For each endpoint and stated reporting population, the representative is the first
-saved source-row prediction for each structural identifier. Neither target error
-nor prediction quality chooses the representative. Original test labels are
-constant within each identifier. This is a single-representative sensitivity
-analysis, not an average-prediction ensemble and not a replacement for row-level
-metrics. Reported AE representatives come from the previously documented AE rule:
-18 structures among its 1,806 prediction records. Source split counts above still
-describe the 39 structures in the original AE test input.
+For each endpoint and reporting population, the representative is the first saved
+source-row prediction for each identifier, selected independently of prediction
+error. Test labels are constant within an identifier. AE uses 18 structures from
+the [1,806-row reporting subset](../README.md#reported-evaluation); the source
+split counts above cover all 39 AE test structures.
 
 | Endpoint | Representatives | MAE | RMSE | R² |
 |---|---:|---:|---:|---:|
@@ -35,13 +30,13 @@ describe the 39 structures in the original AE test input.
 | Crystalline gap (eV) | 24 | 1.93760 | 2.52011 | -0.43888 |
 | AE (eV/atom) | 18 | 0.06444 | 0.07638 | 0.97141 |
 
-Classification: 23/37 correct (62.16%), macro-F1 0.36144. After excluding same-task
-training overlaps, Tg has n=25 and MAE 50.216 °C; classification has n=27 and
-18 correct (66.67%). Gap and AE reporting representatives do not change under this
-same-task exclusion. The final table also flags matches to all structured training
-fields, including other property tasks and inverse-design targets. Such matches
-indicate structure exposure, not necessarily exposure to the same target label.
-Natural-language QA contents and earlier base-model pretraining are not audited.
+Classification: 23/37 correct (62.16%), macro-F1 0.36144. Excluding same-task
+training overlaps gives Tg n=25, MAE 50.216 °C, and classification n=27,
+18 correct (66.67%); gap and AE representatives are unchanged.
+The table also flags matches across structured training fields, including other
+property tasks and inverse-design targets. These indicate structure exposure;
+same-target exposure is reported separately. Natural-language QA and base-model
+pretraining are outside this structural audit.
 
 ## Reproduce
 
@@ -53,14 +48,12 @@ pip install git+https://github.com/Ramprasad-Group/canonicalize_psmiles.git@729d
 python reproduction/data/audit_structure_split.py --output-dir structure_check
 ```
 
-The canonicalizer is an external dependency with its own GTRC license; it is not
-vendored or relicensed by this repository. This academic analysis follows that
-package's documented scope. The script verifies its normalized source hash.
-`--canonicalizer-dir` can instead point to a checkout of that exact revision.
+The external canonicalizer is governed by its GTRC license. The script verifies
+its normalized source hash; `--canonicalizer-dir` accepts a checkout of that
+revision.
 
-The script rebuilds normalized identities, overlap flags and the final prediction
-table from the public training/test and reporting CSVs. Generated caches and
-registry files go into the requested local output folder, not this release.
-`summary.json` records the conventions, denominators, full-precision metrics and
-the local full-AE aggregate separately. The excluded original AE per-row outputs
-remain in our local archive.
+The script rebuilds identities, overlap flags and representative predictions from
+the public CSVs. Results and caches are written to the requested output directory.
+`summary.json` records conventions, denominators, full-precision metrics and a
+separate full-AE aggregate from the original archive; excluded AE per-row outputs
+are not part of the public table.

@@ -333,50 +333,35 @@ If you use PolyTAO pretrained weights, please cite:
 
 Apache License 2.0 (third-party dependencies and the PolyTAO pretrained model remain subject to their respective licenses and terms).
 
-### Research training and evaluation data
+## Research data and models
 
-The [PolyOpus research-data release](dataset/polyopus/README.md) contains the archived merged training corpus, held-out inputs, one final prediction table and a metric recomputation script. The data documentation states the AE reporting filter and its coverage.
+- [PolyOpus data and evaluation](dataset/polyopus/README.md): training/test inputs, final predictions, AE reporting rule and metric recomputation.
+- [Structure audit](dataset/polyopus/structure_audit/README.md): training/test overlap and fixed-representative metrics.
+- [CPU generation and GraphConv assessment](reproduction/gnn/revision_run_20261015/README.md): two PolyOpus samples, a trained checkpoint, split/candidate predictions and replay scripts.
+- [GPT-6-Astra comparison](reproduction/current_models/gpt6_astra_20261015/README.md): all 232 property cases and three original QA questions.
 
-### Additional CPU generation and GNN assessment
+## Capability routing, memory and context
 
-The [revision experiment capsule](reproduction/gnn/revision_run_20261015/README.md) includes two additional PolyOpus samples, the trained GraphConv checkpoint, one final prediction table covering all splits and candidates, and replay scripts. It reports the GNN test error and training-structure overlap for the new candidates.
+Numerical requests are checked against the requested property and successful tool
+results. Unsupported specialist requests are blocked; general-model estimates
+receive a high-uncertainty notice, and matching model results are labelled
+uncertainty unquantified.
 
-### Current-model comparison
+Expired memories are excluded from session injection. Filtered reads preserve
+unmatched entries; reinforcement follows elapsed decay. Scientific conflicts can
+be resolved through explicit memory updates.
 
-The [GPT-6-Astra comparison](reproduction/current_models/gpt6_astra_20261015/README.md) contains the complete 232 property cases and three original QA questions in one final prediction table, with metadata and a recomputation script.
+`POLYSEA_FAB_ENABLED=0` disables persistent context injection and memory/skill tools.
+`POLYSEA_LEC_ENABLED=0` disables local evidence and DeepXiv context/tools.
+Both default to enabled. `POLYSEA_LEC_CORPUS` selects a local JSONL evidence file;
+the default is the seven-record example in `backend/data/evidence`.
 
-
-## Revision features and reproducibility
-
-The published backend now includes the capability policy, memory corrections and
-shared FAB/LEC context path used in the revision. A numerical request is checked
-against the requested property and successful tool results. Unsupported specialist
-requests are blocked; an unvalidated general-model estimate receives a server-added
-high-uncertainty notice. A matching model result is labelled uncertainty unquantified.
-These rules do not provide a calibrated error bar or certify structural extrapolation.
-
-Expired memories are excluded from session injection. A filtered memory read keeps
-unmatched entries, and reinforcement is applied after elapsed decay. Conflicting
-scientific claims still require review or an explicit memory update.
-
-`POLYSEA_FAB_ENABLED=0` disables both persistent context injection and memory/skill
-tools. `POLYSEA_LEC_ENABLED=0` disables local evidence and DeepXiv context/tools.
-Both default to enabled. `POLYSEA_LEC_CORPUS` optionally selects a local JSONL
-evidence file; otherwise the backend uses the seven-record example corpus under
-`backend/data/evidence`. It is separate from the 208-segment corpus used for the
-reported 96-answer study. Retrieved text is presented as source evidence.
-
-With backend dependencies installed, run the local software checks from the root:
+After installing backend dependencies, run the 17 local checks for routing,
+notices, context/tool switches and memory behavior:
 
 ```bash
 python -m unittest discover -s tests -v
 ```
 
-These 17 tests exercise capability routing, mandatory notices, context/tool
-switches and memory behavior without external model calls. They are distinct from
-the scientific FAB/LEC answer experiment. The standalone trained GNN is under
-`reproduction/gnn`; it does not activate the separate online `deepchem_gnn` path.
-See [reproducibility notes](REPRODUCIBILITY.md) for the public assets and boundaries.
-
-
-[Structural overlap and duplicate audit](dataset/polyopus/structure_audit/README.md) and [PolyNC source license](dataset/polyopus/PolyNC_LICENSE.txt).
+See [research assets and reproducibility](REPRODUCIBILITY.md) for the software checks
+and FAB/LEC study protocol.

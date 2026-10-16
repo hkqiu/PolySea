@@ -1,15 +1,14 @@
 # PolyOpus generation and GNN assessment
 
-This revision experiment generated two PolyOpus candidates at a nominal 6.5 eV
-target using original FP16 CPU weights, one call each for seeds 17 and 29. The
-historical selected candidate and both new outputs were assessed with one newly
-trained GraphConv model. No generated candidate was retried or repaired.
+PolyOpus generated two candidates at a nominal 6.5 eV target using FP16 CPU weights,
+one call each for seeds 17 and 29. The historical PolySea candidate and both outputs
+were assessed with a GraphConv model trained for this experiment. Each generation
+was used as returned, without retries or repairs.
 
-The compact release has one `final_predictions.csv` containing every train,
-validation, test and candidate prediction; one final checkpoint (`ckpt-2`);
-`artifact.json` for model loading; `metadata.json` for protocol, visible generation
-text, software, model hashes, metrics and source information; and replay code.
-Process logs, earlier checkpoints and redundant prediction tables are local only.
+`final_predictions.csv` contains every train, validation, test and candidate
+prediction. The release also includes the final checkpoint (`ckpt-2`),
+`artifact.json` for model loading, `metadata.json` with the protocol, generation
+text, software, model hashes, metrics and sources, and replay code.
 
 | Partition | Rows | MAE (eV) | RMSE (eV) | R² |
 |---|---:|---:|---:|---:|
@@ -23,11 +22,9 @@ Process logs, earlier checkpoints and redundant prediction tables are local only
 | seed 17 | 5.372900 | 1.127100 | Source line 108; label 6.066 eV |
 | seed 29 | 5.990445 | 0.509555 | Source line 578; label 6.7775 eV |
 
-Both new candidates match canonical graphs in the GNN training partition. Their
-assessments are not independent of those training structures. Existing source
-labels are not new DFT values. No new DFT or Polymer Genome calculation was made;
-this experiment does not resolve DFT functional sensitivity. Two new calls and
-one historically selected example do not establish a reliable success rate.
+Both new candidates match canonical graphs in the GNN training partition;
+their reference labels are existing single-chain data. These three case assessments
+do not estimate a generation success rate.
 
 ## Reproduce
 
@@ -40,17 +37,13 @@ python reproduction/gnn/revision_run_20261015/replay.py verify
 python reproduction/gnn/revision_run_20261015/replay.py predict --output-dir gnn_replay_new
 ```
 
-`verify` needs only the standard library: it checks hashes and recomputes every
-split metric from the single final table. `predict` reloads the final checkpoint
-once and compares all three candidate values (rtol 1e-5, atol 1e-6 eV). On Windows,
-use an ASCII output path for TensorFlow 2.15 checkpoint I/O. Outputs must be new or
-empty and outside the release folder. No retraining occurs in prediction mode.
+`verify` uses the standard library to check hashes and recompute all split metrics.
+`predict` reloads the checkpoint and compares the three candidate values
+(rtol 1e-5, atol 1e-6 eV). Use a new or empty output directory outside the release;
+on Windows, use an ASCII path for TensorFlow 2.15 checkpoint I/O.
 
-The GNN used [TransPolymer Egc.csv at commit 8399d48](https://media.githubusercontent.com/media/ChangwenXu98/TransPolymer/8399d4816ce772b64deba34f4455d91d9a764b2a/data/Egc.csv),
-SHA-256 `d779e1777e7f25bf367dae2a2bf72659dba26345eb45dbc2cde73cdd461a9a14`.
-This is **single-chain band gap**, from [Kuenneth et al.](https://doi.org/10.1016/j.patter.2021.100238),
-distinct from the crystalline-gap endpoint in the PolyOpus evaluation corpus.
-The final table includes all reference values and exact split assignments.
+The model used the 3,380-row [TransPolymer Egc.csv](../README.md#data-and-model)
+single-chain dataset. The final table includes its reference values and exact splits.
 
 ```bash
 python reproduction/gnn/train_graphconv.py train --csv Egc.csv --smiles-column smiles --target-column value --wildcard-policy preserve --seed 42 --epochs 10 --batch-size 100 --out gnn_train_new
@@ -59,11 +52,9 @@ python reproduction/gnn/train_graphconv.py train --csv Egc.csv --smiles-column s
 The fixed protocol used grouped 80/10/10 splits (seed 42), layers 64/64, dense 128,
 batch 100, learning rate 0.001, ten epochs, preserved wildcard atoms, and no target
 normalization. The final model was not selected using validation/test scores.
-Canonical graph identity does not prove periodic-polymer equivalence. This is a
-new revision checkpoint; missing historical GNN artifacts were not recovered.
 
-With a local merged [PolyOpus](https://huggingface.co/hkqiu/PolyOpus) model matching
-the hashes in metadata, a separate generation replay can be run:
+With local merged [PolyOpus](https://huggingface.co/hkqiu/PolyOpus) weights matching
+the hashes in metadata, replay generation with:
 
 ```bash
 python reproduction/gnn/revision_run_20261015/replay.py generate --model-dir MODEL_DIRECTORY --output-dir polyopus_generation_new
@@ -72,5 +63,4 @@ python reproduction/gnn/revision_run_20261015/replay.py generate --model-dir MOD
 The bare prompt is `Generate / design a polymer with band gap of 6.5 eV?`, without
 a chat template. Settings: CPU FP16, no quantization, seeds 17/29, maximum 512 new
 tokens, temperature 1.2, top-p 0.9, top-k 100, sampling enabled, stop `<STOP>`.
-Software/hardware differences may change sampled text; new outputs are separate
-replay evidence and do not replace the released final observations.
+Sampled text may vary with software and hardware.

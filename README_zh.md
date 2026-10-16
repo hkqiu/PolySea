@@ -333,40 +333,31 @@ python run.py
 
 Apache License 2.0（第三方依赖和 PolyTAO 预训练模型仍需分别遵守其许可证和使用条款）。
 
-### 研究训练数据与评估资产
+## 研究数据与模型
 
-[PolyOpus研究数据](dataset/polyopus/README.md)包含原始合并训练集、测试输入、报告预测记录、增强记录映射和可复算脚本；数据说明列出了AE筛选规则及实际覆盖数。
+- [PolyOpus数据与评估](dataset/polyopus/README.md)：训练/测试输入、最终预测、AE筛选规则和指标复算。
+- [结构审计](dataset/polyopus/structure_audit/README.md)：训练/测试结构重合与固定代表记录指标。
+- [CPU生成与GraphConv评估](reproduction/gnn/revision_run_20261015/README.md)：两次PolyOpus采样、新训练的权重、全部分区及候选预测与复现脚本。
+- [GPT-6-Astra对照](reproduction/current_models/gpt6_astra_20261015/README.md)：232条性质案例和3个原始QA问题。
 
-### 补充CPU生成与GNN评估
+## 能力路由、记忆与上下文
 
-[修订实验胶囊](reproduction/gnn/revision_run_20261015/README.md)包含两次新增PolyOpus采样、新训练的GraphConv权重、全部分区预测及复现脚本，并列出GNN测试误差和新候选的训练结构重合情况。
+数值请求会核对目标性质及成功的工具结果。不支持的专用模型请求会被阻止；
+通用模型估计附加高不确定性提示，匹配模型的结果标记为不确定性未量化。
 
+过期记忆不注入会话，带条件的读取保留未命中记录，增强记忆前应用时间衰减。
+科学内容冲突可通过显式更新记忆处理。
 
-## 修订功能与复现
+`POLYSEA_FAB_ENABLED=0`关闭持久上下文注入和memory/skill工具；
+`POLYSEA_LEC_ENABLED=0`关闭本地证据与DeepXiv上下文/工具。二者默认启用。
+`POLYSEA_LEC_CORPUS`可指定本地JSONL证据文件，默认使用
+`backend/data/evidence`中的7条示例记录。
 
-本次公开了性质能力门控、记忆修复和FAB/LEC共用上下文路径。数值请求会核对
-目标性质及实际成功的工具结果；不支持的专用模型请求会被阻止，通用LLM的
-未验证估计会附加服务端生成的高不确定性提示。成功匹配的模型输出标记为
-不确定性未量化；这些规则不提供校准误差区间，也不保证结构外推有效。
-
-过期记忆不再注入会话，带条件的读取不会删除未命中记录，增强记忆前会先应用
-经过时间的衰减。科学内容冲突仍需审核或显式更新，不能把记忆强度当成事实置信度。
-
-`POLYSEA_FAB_ENABLED=0`同时关闭持久上下文注入和memory/skill工具；
-`POLYSEA_LEC_ENABLED=0`同时关闭本地证据与DeepXiv上下文/工具。二者默认启用。
-可用`POLYSEA_LEC_CORPUS`指定本地JSONL证据文件；默认使用
-`backend/data/evidence`中的7条示例记录，与96条回答实验所用208段语料不同。
-
-安装后端依赖后，在仓库根目录运行：
+安装后端依赖后，在仓库根目录运行17项软件检查，覆盖路由、提示、
+上下文/工具开关及记忆行为：
 
 ```bash
 python -m unittest discover -s tests -v
 ```
 
-17项软件检查覆盖门控、强制提示、上下文/工具开关及记忆行为，不调用外部模型。
-这些检查与科学回答消融实验分开。已训练的独立GNN位于`reproduction/gnn`，
-并不等于在线`deepchem_gnn`训练分支已经实现。最终训练/测试数据及预测表在
-`dataset/polyopus`；更多说明见[复现记录](REPRODUCIBILITY.md)。
-
-
-[结构重合与去重指标](dataset/polyopus/structure_audit/README.md)及[PolyNC来源许可](dataset/polyopus/PolyNC_LICENSE.txt)。
+软件检查及FAB/LEC实验协议见[研究资产与复现说明](REPRODUCIBILITY.md)。

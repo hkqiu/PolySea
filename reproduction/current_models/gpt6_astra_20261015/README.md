@@ -1,8 +1,13 @@
 # GPT-6-Astra: final predictions
 
-This release contains one prediction table with all **235 formal cases**: the three original SI questions and all 232 TestSet1 property rows. The 235 calls completed successfully; all 232 property outputs were parseable. Parameters were fixed at 8192 output tokens and low reasoning, with no tools, retrieval, or cross-case history.
+`predictions.csv` contains all **235 cases**: the three original SI questions and
+232 TestSet1 property rows. All calls completed and all property outputs were
+parseable. Settings: 8192 output tokens, low reasoning, no tools, retrieval or
+cross-case history.
 
-`predictions.csv` preserves the exact user prompt, SMILES, target, parsed prediction, and unedited visible answer. QA answers are included in the same table. `metadata.json` gives the source hashes, shared system prompts, units, coverage, and final metrics.
+The table preserves exact prompts, SMILES, targets, parsed predictions and unedited
+visible answers, including QA. `metadata.json` contains settings,
+source hashes, shared system prompts, units, coverage and final metrics.
 
 | Task | n | MAE | RMSE | R² |
 |---|---:|---:|---:|---:|
@@ -10,9 +15,10 @@ This release contains one prediction table with all **235 formal cases**: the th
 | Crystalline band gap (eV) | 48 | 0.986613 | 1.204328 | 0.671395 |
 | Atomization energy (eV/atom) | 60 | 1.385500 | 1.884778 | −26.826465 |
 
-Heat-resistance classification: **42/54 correct (77.78%)**, macro-F1 **0.738095**, balanced accuracy **69.44%**. These classes derive from polyimide Tg, not decomposition temperature.
+Tg-derived polyimide heat-resistance classification: **42/54 correct (77.78%)**,
+macro-F1 **0.738095**, balanced accuracy **69.44%**.
 
-Recompute every metric from the single table with Python's standard library:
+Recompute every metric with Python's standard library:
 
 ```console
 python recompute_metrics.py predictions.csv --check metadata.json

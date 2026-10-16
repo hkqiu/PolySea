@@ -219,8 +219,8 @@
       "sha256": "a3e1fb394a767814598e2747e4f6630332df457a4c84b98f8bf775cbf64354d4"
     },
     "README.md": {
-      "bytes": 4264,
-      "sha256": "16da01edfdc612dc80e386770675ae413083d58f7531989d6e5a2d7ac88b0825"
+      "bytes": 3242,
+      "sha256": "c86c00b7c12b74dee7294d3fe0fb6c2e50ca6c859ef5f20800d22eed1cd177b9"
     },
     "replay.py": {
       "bytes": 13112,
