@@ -12,8 +12,6 @@ This release contains one prediction table with all **235 formal cases**: the th
 
 Heat-resistance classification: **42/54 correct (77.78%)**, macro-F1 **0.738095**, balanced accuracy **69.44%**. These classes derive from polyimide Tg, not decomposition temperature.
 
-The supplementary AE prediction-range filter [−6.82, −5.01] eV/atom retains **17/60 (28.33%)**: MAE 1.096471, RMSE 1.099909, R² −93.063008. This subset does not replace the unfiltered result; its R² uses its own target variance. The training-label range is not a universal physical bound.
-
 Recompute every metric from the single table with Python's standard library:
 
 ```console
