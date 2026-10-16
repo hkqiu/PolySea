@@ -31,6 +31,7 @@ PolySea runs locally and covers polymer property prediction, PolyTAO fine-tuning
 - [Quick start](#quick-start)
 - [Configuration](#configuration)
 - [Data and path constraints](#data-and-path-constraints)
+- [Research data and models](#research-data-and-models)
 - [Agent tools and capabilities](#agent-tools-and-capabilities)
 - [HTTP API](#http-api)
 - [Production deployment](#production-deployment)
@@ -335,10 +336,54 @@ Apache License 2.0 (third-party dependencies and the PolyTAO pretrained model re
 
 ## Research data and models
 
-- [PolyOpus data and evaluation](dataset/polyopus/README.md): training/test inputs, final predictions, AE reporting rule and metric recomputation.
-- [Structure audit](dataset/polyopus/structure_audit/README.md): training/test overlap and fixed-representative metrics.
-- [GraphConv convergence study](reproduction/gnn/convergence_20261016/README.md): validation-selected epoch-259 checkpoint, test MAE 0.35806 eV and R² 0.89890, training and replay scripts. The [ten-epoch baseline and CPU generation](reproduction/gnn/revision_run_20261015/README.md) remain available.
-- [GPT-6-Astra comparison](reproduction/current_models/gpt6_astra_20261015/README.md): all 232 property cases and three original QA questions.
+We provide the training scripts, input data and released model at the paths below. All paths are relative to the repository root.
+
+| Purpose | Direct repository path |
+|---|---|
+| GNN training script | [reproduction/gnn/convergence_20261016/train_convergence.py](reproduction/gnn/convergence_20261016/train_convergence.py) |
+| GNN checkpoint inference | [reproduction/gnn/convergence_20261016/predict_selected.py](reproduction/gnn/convergence_20261016/predict_selected.py) |
+| GNN input CSV and fixed split | [reproduction/gnn/convergence_20261016/data/split_manifest.csv](reproduction/gnn/convergence_20261016/data/split_manifest.csv) |
+| GNN selected checkpoint | [reproduction/gnn/convergence_20261016/selected_model/checkpoint/](reproduction/gnn/convergence_20261016/selected_model/checkpoint/) |
+| GNN configuration and target scaling | [reproduction/gnn/convergence_20261016/selected_model/artifact.json](reproduction/gnn/convergence_20261016/selected_model/artifact.json) |
+| GNN example prediction inputs | [reproduction/gnn/convergence_20261016/candidates_input.csv](reproduction/gnn/convergence_20261016/candidates_input.csv) |
+| PolyOpus training data: 233,827 rows | [dataset/polyopus/train/merged_train.csv](dataset/polyopus/train/merged_train.csv) |
+| PolyOpus TestSet2: 23,200 rows | [dataset/polyopus/test/merged_test.csv](dataset/polyopus/test/merged_test.csv) |
+| PolyOpus TestSet1: 232 rows | [dataset/polyopus/test/benchmark.csv](dataset/polyopus/test/benchmark.csv) |
+| Online-learning Tg example | [dataset/polymer_Tg.csv](dataset/polymer_Tg.csv) |
+
+The GNN CSV includes `model_smiles`, `target_eV` and `split`; it contains the fixed 2,704/338/338 train/validation/test records. We selected the standardized model at epoch 259 by validation RMSE; test MAE is 0.35806 eV and R² is 0.89890.
+
+### Run GNN training or replay
+
+Use Python 3.11. Starting from the repository root:
+
+```bash
+cd reproduction/gnn/convergence_20261016
+python -m pip install -r requirements.txt
+python train_convergence.py --variant standardized_from_scratch --split-manifest data/split_manifest.csv --out runs/standardized_replay
+python predict_selected.py --model-dir selected_model --csv candidates_input.csv --out candidate_predictions_new.csv
+```
+
+Training reads the fixed split CSV and writes a new run directory. Inference loads the released checkpoint and its saved target scaling. The [GNN guide](reproduction/gnn/convergence_20261016/README.md) explains the remaining options; the [ten-epoch baseline and CPU generation](reproduction/gnn/revision_run_20261015/README.md) remain available.
+
+### Use the online-learning example and PolyOpus data
+
+Install the application dependencies and start it from the repository root:
+
+```bash
+python -m pip install -r backend/requirements.txt
+npm install
+npm --prefix frontend install
+npm run dev
+```
+
+In the property-training interface, upload [dataset/polymer_Tg.csv](dataset/polymer_Tg.csv), using `Smiles` as the structure column and `Tg` as the target. The PolyOpus training and test CSVs are linked directly in the table above. To verify their release hashes and saved evaluation results from the repository root:
+
+```bash
+python reproduction/data/evaluate_saved_predictions.py
+```
+
+Further details: [PolyOpus data and evaluation](dataset/polyopus/README.md), [structure audit](dataset/polyopus/structure_audit/README.md), and [GPT-6-Astra comparison](reproduction/current_models/gpt6_astra_20261015/README.md).
 
 ## Capability routing, memory and context
 

@@ -2,10 +2,23 @@
 
 We extended GraphConv training on the unchanged 2,704/338/338 train/validation/test split and selected the training-label-standardized checkpoint at epoch 259 by validation RMSE. Test MAE is 0.35806 eV and R² is 0.89890.
 
-The [convergence study](convergence_20261016/README.md) provides the new checkpoint, learning curves, all split predictions and candidate results. From `reproduction/gnn/convergence_20261016`, run:
+The [convergence study](convergence_20261016/README.md) provides the new checkpoint, learning curves, all split predictions and candidate results.
+
+| File or directory | Purpose |
+|---|---|
+| [convergence_20261016/train_convergence.py](convergence_20261016/train_convergence.py) | Train using the fixed split and validation-selected checkpoint |
+| [convergence_20261016/predict_selected.py](convergence_20261016/predict_selected.py) | Reload the selected model and predict candidate band gaps |
+| [convergence_20261016/data/split_manifest.csv](convergence_20261016/data/split_manifest.csv) | Input structures, eV labels and fixed train/validation/test assignments |
+| [convergence_20261016/selected_model/checkpoint/](convergence_20261016/selected_model/checkpoint/) | Released TensorFlow checkpoint |
+| [convergence_20261016/selected_model/artifact.json](convergence_20261016/selected_model/artifact.json) | Model configuration and training-label inverse transform |
+| [convergence_20261016/candidates_input.csv](convergence_20261016/candidates_input.csv) | Three candidate inputs for replay |
+
+The CSV's `split` column selects 2,704 training, 338 validation and 338 test records; `target_eV` stores the single-chain band gap. Starting from the repository root with Python 3.11:
 
 ```bash
-python train_convergence.py --variant standardized_from_scratch --out runs/standardized_replay
+cd reproduction/gnn/convergence_20261016
+python -m pip install -r requirements.txt
+python train_convergence.py --variant standardized_from_scratch --split-manifest data/split_manifest.csv --out runs/standardized_replay
 python predict_selected.py --model-dir selected_model --csv candidates_input.csv --out candidate_predictions_new.csv
 ```
 
