@@ -1,0 +1,7 @@
+{
+  "train_max_abs_difference_eV": 0.0,
+  "valid_max_abs_difference_eV": 0.0,
+  "test_max_abs_difference_eV": 0.0,
+  "candidates_max_abs_difference_eV": 0.0,
+  "verified": true
+}

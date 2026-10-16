@@ -1,8 +1,15 @@
 # Polymer single-chain band-gap GraphConv model
 
-Training and inference for a DeepChem GraphConv single-chain band-gap model.
-The released checkpoint and candidate predictions are in
-[revision_run_20261015](revision_run_20261015/README.md).
+We extended GraphConv training on the unchanged 2,704/338/338 train/validation/test split and selected the training-label-standardized checkpoint at epoch 259 by validation RMSE. Test MAE is 0.35806 eV and R² is 0.89890.
+
+The [convergence study](convergence_20261016/README.md) provides the new checkpoint, learning curves, all split predictions and candidate results. From `reproduction/gnn/convergence_20261016`, run:
+
+```bash
+python train_convergence.py --variant standardized_from_scratch --out runs/standardized_replay
+python predict_selected.py --model-dir selected_model --csv candidates_input.csv --out candidate_predictions_new.csv
+```
+
+The original ten-epoch checkpoint and CPU-generated candidates remain in [revision_run_20261015](revision_run_20261015/README.md). The sections below document that baseline training script.
 
 ## Data and model
 

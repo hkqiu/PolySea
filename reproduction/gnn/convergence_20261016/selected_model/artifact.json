@@ -1,0 +1,37 @@
+{
+  "status": "trained",
+  "target": "single_chain_band_gap",
+  "target_unit": "eV",
+  "source_doi": "10.1016/j.patter.2021.100238",
+  "seed": 42,
+  "wildcard_policy": "preserve",
+  "model_config": {
+    "graph_conv_layers": [
+      64,
+      64
+    ],
+    "dense_layer_size": 128,
+    "dropout": 0.0,
+    "batch_size": 100,
+    "learning_rate": 0.001,
+    "batch_normalize": true,
+    "uncertainty": false,
+    "n_tasks": 1,
+    "mode": "regression",
+    "number_atom_features": 75
+  },
+  "target_scaling": {
+    "mean_eV": 4.545666420118343,
+    "std_eV": 1.5592129332106395
+  },
+  "selected_variant": "standardized_from_scratch",
+  "selected_epoch": 259,
+  "split_sha256": "605372db12f9816d2d38d4fe08a760b213b5814dd102a9a1edd0e416808bdfee",
+  "reload_verified": true,
+  "versions": {
+    "deepchem": "2.8.0",
+    "tensorflow": "2.15.1",
+    "numpy": "1.26.4",
+    "rdkit": "2023.9.6"
+  }
+}

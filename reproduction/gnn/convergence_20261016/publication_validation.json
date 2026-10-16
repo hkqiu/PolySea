@@ -1,0 +1,19 @@
+{
+  "result": "PASS",
+  "candidate_replay_from_different_working_directory": true,
+  "candidate_max_abs_difference_eV": 0.0,
+  "portable_training_CLI_smoke_epochs": 1,
+  "smoke_initial_epoch_matches_formal_training_R2": true,
+  "initial_epoch_R2_difference": 0.0,
+  "smoke_not_used_for_model_selection": true,
+  "checkpoint_reload_on_all_splits_and_candidates": {
+    "train_max_abs_difference_eV": 0.0,
+    "valid_max_abs_difference_eV": 0.0,
+    "test_max_abs_difference_eV": 0.0,
+    "candidates_max_abs_difference_eV": 0.0,
+    "verified": true
+  },
+  "scientific_result_frozen": "standardized_from_scratch; selected epoch259; test R2 0.8989049914528506",
+  "package_local_path_scan": "PASS",
+  "private_execution_logs_included": false
+}

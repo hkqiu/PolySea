@@ -1,0 +1,9 @@
+deepchem==2.8.0
+tensorflow==2.15.1
+tensorflow-intel==2.15.1; platform_system == "Windows"
+keras==2.15.0
+numpy==1.26.4
+rdkit==2023.9.6
+scikit-learn==1.9.1
+pandas==3.0.6
+scipy==1.17.1

@@ -1,0 +1,27 @@
+{
+  "result": "PASS",
+  "records": [
+    {
+      "variant": "baseline_10epoch",
+      "epoch": 10,
+      "saved_Adam_iterations": 280,
+      "expected": 280,
+      "matches": true
+    },
+    {
+      "variant": "continued_unscaled",
+      "epoch": 295,
+      "saved_Adam_iterations": 8260,
+      "expected": 8260,
+      "matches": true
+    },
+    {
+      "variant": "standardized_from_scratch",
+      "epoch": 259,
+      "saved_Adam_iterations": 7252,
+      "expected": 7252,
+      "matches": true
+    }
+  ],
+  "note": "DeepChem 2.8.0 does not serialize its separate _global_step used for logging. Adam iterations and slots are checkpointed; the continuation preserves the 280 existing optimizer updates."
+}

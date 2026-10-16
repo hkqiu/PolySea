@@ -337,7 +337,7 @@ Apache License 2.0 (third-party dependencies and the PolyTAO pretrained model re
 
 - [PolyOpus data and evaluation](dataset/polyopus/README.md): training/test inputs, final predictions, AE reporting rule and metric recomputation.
 - [Structure audit](dataset/polyopus/structure_audit/README.md): training/test overlap and fixed-representative metrics.
-- [CPU generation and GraphConv assessment](reproduction/gnn/revision_run_20261015/README.md): two PolyOpus samples, a trained checkpoint, split/candidate predictions and replay scripts.
+- [GraphConv convergence study](reproduction/gnn/convergence_20261016/README.md): validation-selected epoch-259 checkpoint, test MAE 0.35806 eV and R² 0.89890, training and replay scripts. The [ten-epoch baseline and CPU generation](reproduction/gnn/revision_run_20261015/README.md) remain available.
 - [GPT-6-Astra comparison](reproduction/current_models/gpt6_astra_20261015/README.md): all 232 property cases and three original QA questions.
 
 ## Capability routing, memory and context

@@ -1,0 +1,10 @@
+{
+  "result": "PASS",
+  "independent_process": true,
+  "max_abs_difference_eV": 0.0,
+  "differences_eV": {
+    "historical_polysea": 0.0,
+    "new_seed_17": 0.0,
+    "new_seed_29": 0.0
+  }
+}

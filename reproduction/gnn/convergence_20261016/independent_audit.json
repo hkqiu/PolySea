@@ -1,0 +1,42 @@
+{
+  "train": {
+    "recomputed": {
+      "n_rows": 2704,
+      "MAE_eV": 0.10835594257828751,
+      "RMSE_eV": 0.1370833117353718,
+      "R2": 0.9922703768883426
+    },
+    "agrees": true
+  },
+  "valid": {
+    "recomputed": {
+      "n_rows": 338,
+      "MAE_eV": 0.3558979290753427,
+      "RMSE_eV": 0.5125923774375009,
+      "R2": 0.8969846614509052
+    },
+    "agrees": true
+  },
+  "test": {
+    "recomputed": {
+      "n_rows": 338,
+      "MAE_eV": 0.35805851080967827,
+      "RMSE_eV": 0.49335335275365977,
+      "R2": 0.8989049914528506
+    },
+    "agrees": true
+  },
+  "unchanged_split_and_labels": true,
+  "selection_is_validation_minimum": true,
+  "selection_file_precedes_test_output": true,
+  "learning_curve_selection_matches": true,
+  "exact_graph_group_disjointness": true,
+  "reload_verification": {
+    "train_max_abs_difference_eV": 0.0,
+    "valid_max_abs_difference_eV": 0.0,
+    "test_max_abs_difference_eV": 0.0,
+    "candidates_max_abs_difference_eV": 0.0,
+    "verified": true
+  },
+  "result": "PASS"
+}

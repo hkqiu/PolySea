@@ -1,0 +1,29 @@
+{
+  "epochs": 10,
+  "model_config": {
+    "graph_conv_layers": [
+      64,
+      64
+    ],
+    "dense_layer_size": 128,
+    "dropout": 0.0,
+    "batch_size": 100,
+    "learning_rate": 0.001,
+    "batch_normalize": true,
+    "uncertainty": false,
+    "n_tasks": 1,
+    "mode": "regression",
+    "number_atom_features": 75
+  },
+  "counts": {
+    "train": 2704,
+    "valid": 338,
+    "test": 338
+  },
+  "target_normalization": "none",
+  "csv_sha256": "d779e1777e7f25bf367dae2a2bf72659dba26345eb45dbc2cde73cdd461a9a14",
+  "target_unit": "eV",
+  "source_doi": "10.1016/j.patter.2021.100238",
+  "wildcard_policy": "preserve",
+  "seed": 42
+}

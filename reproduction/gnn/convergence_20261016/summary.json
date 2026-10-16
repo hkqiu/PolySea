@@ -1,0 +1,209 @@
+{
+  "completed_utc": "2026-10-16T07:34:22.888401+00:00",
+  "elapsed_s": 432.76443980001204,
+  "baseline_10epoch_metrics": {
+    "train": {
+      "n_rows": 2704,
+      "MAE_eV": 0.9242286245362343,
+      "RMSE_eV": 1.0929328294383844,
+      "R2": 0.508666828236086
+    },
+    "valid": {
+      "n_rows": 338,
+      "MAE_eV": 0.9675164354811042,
+      "RMSE_eV": 1.178856354863391,
+      "R2": 0.45514695198659416
+    },
+    "test": {
+      "n_rows": 338,
+      "MAE_eV": 0.9269011890352122,
+      "RMSE_eV": 1.1073257133887229,
+      "R2": 0.49071097764032623
+    }
+  },
+  "selection": {
+    "locked_utc": "2026-10-16T07:34:19.090402+00:00",
+    "criterion": "minimum validation RMSE_eV",
+    "test_used_for_selection": false,
+    "variants": [
+      {
+        "variant": "continued_unscaled",
+        "best_epoch": 295,
+        "last_epoch": 300,
+        "best_validation_RMSE_eV": 0.5158850120952475,
+        "target_scaling": {
+          "mean_eV": 0.0,
+          "std_eV": 1.0
+        },
+        "stop_reason": "maximum_epoch",
+        "elapsed_s": 317.03341419999197,
+        "model_config": {
+          "graph_conv_layers": [
+            64,
+            64
+          ],
+          "dense_layer_size": 128,
+          "dropout": 0.0,
+          "batch_size": 100,
+          "learning_rate": 0.001,
+          "batch_normalize": true,
+          "uncertainty": false,
+          "n_tasks": 1,
+          "mode": "regression",
+          "number_atom_features": 75
+        },
+        "checkpoint": null
+      },
+      {
+        "variant": "standardized_from_scratch",
+        "best_epoch": 259,
+        "last_epoch": 300,
+        "best_validation_RMSE_eV": 0.5125923774375006,
+        "target_scaling": {
+          "mean_eV": 4.545666420118343,
+          "std_eV": 1.5592129332106395
+        },
+        "stop_reason": "maximum_epoch",
+        "elapsed_s": 327.05643129999225,
+        "model_config": {
+          "graph_conv_layers": [
+            64,
+            64
+          ],
+          "dense_layer_size": 128,
+          "dropout": 0.0,
+          "batch_size": 100,
+          "learning_rate": 0.001,
+          "batch_normalize": true,
+          "uncertainty": false,
+          "n_tasks": 1,
+          "mode": "regression",
+          "number_atom_features": 75
+        },
+        "checkpoint": "selected_model/checkpoint"
+      }
+    ],
+    "selected": {
+      "variant": "standardized_from_scratch",
+      "best_epoch": 259,
+      "last_epoch": 300,
+      "best_validation_RMSE_eV": 0.5125923774375006,
+      "target_scaling": {
+        "mean_eV": 4.545666420118343,
+        "std_eV": 1.5592129332106395
+      },
+      "stop_reason": "maximum_epoch",
+      "elapsed_s": 327.05643129999225,
+      "model_config": {
+        "graph_conv_layers": [
+          64,
+          64
+        ],
+        "dense_layer_size": 128,
+        "dropout": 0.0,
+        "batch_size": 100,
+        "learning_rate": 0.001,
+        "batch_normalize": true,
+        "uncertainty": false,
+        "n_tasks": 1,
+        "mode": "regression",
+        "number_atom_features": 75
+      },
+      "checkpoint": "selected_model/checkpoint"
+    }
+  },
+  "final_metrics": {
+    "train": {
+      "n_rows": 2704,
+      "MAE_eV": 0.10835594257828758,
+      "RMSE_eV": 0.137083311735372,
+      "R2": 0.9922703768883426
+    },
+    "valid": {
+      "n_rows": 338,
+      "MAE_eV": 0.35589792907534246,
+      "RMSE_eV": 0.5125923774375006,
+      "R2": 0.8969846614509054
+    },
+    "test": {
+      "n_rows": 338,
+      "MAE_eV": 0.35805851080967827,
+      "RMSE_eV": 0.49335335275365977,
+      "R2": 0.8989049914528506
+    }
+  },
+  "candidates": [
+    {
+      "candidate_id": "historical_polysea",
+      "cohort": "historical",
+      "seed": null,
+      "smiles": "O=C(CCCCCCCCC(OCCC(O[*])C)=O)OC[*]",
+      "target_eV": 6.5,
+      "formal_generation_status": "historical",
+      "canonical_smiles": "*COC(=O)CCCCCCCCC(=O)OCCC(C)O*",
+      "rdkit_valid": true,
+      "gnn_status": "predicted",
+      "predicted_band_gap_eV": 6.536165714263916,
+      "absolute_target_deviation_eV": 0.036165714263916016,
+      "predicted_at_least_target": true,
+      "exact_graph_matches_in_gnn_data": [],
+      "duplicates_of_other_candidates": [],
+      "baseline_10epoch_prediction_eV": 5.759317398071289
+    },
+    {
+      "candidate_id": "new_seed_17",
+      "cohort": "new",
+      "seed": 17,
+      "smiles": "[*]CC([*])C(=O)OCC=C",
+      "target_eV": 6.5,
+      "formal_generation_status": "completed",
+      "canonical_smiles": "*CC(*)C(=O)OCC=C",
+      "rdkit_valid": true,
+      "gnn_status": "predicted",
+      "predicted_band_gap_eV": 5.931427001953125,
+      "absolute_target_deviation_eV": 0.568572998046875,
+      "predicted_at_least_target": false,
+      "exact_graph_matches_in_gnn_data": [
+        {
+          "csv_line": 108,
+          "split": "train",
+          "target_eV": 6.066,
+          "smiles": "*CC(*)C(=O)OCC=C"
+        }
+      ],
+      "duplicates_of_other_candidates": [],
+      "baseline_10epoch_prediction_eV": 5.372900009155273
+    },
+    {
+      "candidate_id": "new_seed_29",
+      "cohort": "new",
+      "seed": 29,
+      "smiles": "[*]CC1CCC(COC(=O)CCCCC(=O)O[*])CC1",
+      "target_eV": 6.5,
+      "formal_generation_status": "completed",
+      "canonical_smiles": "*CC1CCC(COC(=O)CCCCC(=O)O*)CC1",
+      "rdkit_valid": true,
+      "gnn_status": "predicted",
+      "predicted_band_gap_eV": 6.767993927001953,
+      "absolute_target_deviation_eV": 0.2679939270019531,
+      "predicted_at_least_target": true,
+      "exact_graph_matches_in_gnn_data": [
+        {
+          "csv_line": 578,
+          "split": "train",
+          "target_eV": 6.7775,
+          "smiles": "*CC1CCC(COC(=O)CCCCC(=O)O*)CC1"
+        }
+      ],
+      "duplicates_of_other_candidates": [],
+      "baseline_10epoch_prediction_eV": 5.990445137023926
+    }
+  ],
+  "reload_verification": {
+    "train_max_abs_difference_eV": 0.0,
+    "valid_max_abs_difference_eV": 0.0,
+    "test_max_abs_difference_eV": 0.0,
+    "candidates_max_abs_difference_eV": 0.0,
+    "verified": true
+  }
+}

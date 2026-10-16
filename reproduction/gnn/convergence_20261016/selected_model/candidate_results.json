@@ -1,0 +1,67 @@
+[
+  {
+    "candidate_id": "historical_polysea",
+    "cohort": "historical",
+    "seed": null,
+    "smiles": "O=C(CCCCCCCCC(OCCC(O[*])C)=O)OC[*]",
+    "target_eV": 6.5,
+    "formal_generation_status": "historical",
+    "canonical_smiles": "*COC(=O)CCCCCCCCC(=O)OCCC(C)O*",
+    "rdkit_valid": true,
+    "gnn_status": "predicted",
+    "predicted_band_gap_eV": 6.536165714263916,
+    "absolute_target_deviation_eV": 0.036165714263916016,
+    "predicted_at_least_target": true,
+    "exact_graph_matches_in_gnn_data": [],
+    "duplicates_of_other_candidates": [],
+    "baseline_10epoch_prediction_eV": 5.759317398071289
+  },
+  {
+    "candidate_id": "new_seed_17",
+    "cohort": "new",
+    "seed": 17,
+    "smiles": "[*]CC([*])C(=O)OCC=C",
+    "target_eV": 6.5,
+    "formal_generation_status": "completed",
+    "canonical_smiles": "*CC(*)C(=O)OCC=C",
+    "rdkit_valid": true,
+    "gnn_status": "predicted",
+    "predicted_band_gap_eV": 5.931427001953125,
+    "absolute_target_deviation_eV": 0.568572998046875,
+    "predicted_at_least_target": false,
+    "exact_graph_matches_in_gnn_data": [
+      {
+        "csv_line": 108,
+        "split": "train",
+        "target_eV": 6.066,
+        "smiles": "*CC(*)C(=O)OCC=C"
+      }
+    ],
+    "duplicates_of_other_candidates": [],
+    "baseline_10epoch_prediction_eV": 5.372900009155273
+  },
+  {
+    "candidate_id": "new_seed_29",
+    "cohort": "new",
+    "seed": 29,
+    "smiles": "[*]CC1CCC(COC(=O)CCCCC(=O)O[*])CC1",
+    "target_eV": 6.5,
+    "formal_generation_status": "completed",
+    "canonical_smiles": "*CC1CCC(COC(=O)CCCCC(=O)O*)CC1",
+    "rdkit_valid": true,
+    "gnn_status": "predicted",
+    "predicted_band_gap_eV": 6.767993927001953,
+    "absolute_target_deviation_eV": 0.2679939270019531,
+    "predicted_at_least_target": true,
+    "exact_graph_matches_in_gnn_data": [
+      {
+        "csv_line": 578,
+        "split": "train",
+        "target_eV": 6.7775,
+        "smiles": "*CC1CCC(COC(=O)CCCCC(=O)O*)CC1"
+      }
+    ],
+    "duplicates_of_other_candidates": [],
+    "baseline_10epoch_prediction_eV": 5.990445137023926
+  }
+]
