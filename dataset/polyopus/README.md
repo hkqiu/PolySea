@@ -12,7 +12,7 @@ The final table contains task, complete input, original target/prediction string
 unit and original source record ordinal. It combines 7,000 Tg, 4,800 crystalline
 band-gap, 1,806 AE and 5,372 classification outputs. UTF-8 is used for the
 final table; source train/test CSV bytes are preserved. Original process files and
-augmentation lineage are retained in the authors' local archive.
+augmentation lineage are retained in our local archive.
 
 ## Reported evaluation
 

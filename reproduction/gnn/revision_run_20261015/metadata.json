@@ -2,7 +2,7 @@
   "experiment_id": "polyopus_gnn_20261015",
   "protocol": {
     "experiment_id": "polyopus_gnn_20261015",
-    "registration_status": "Protocol fixed before actual training and both formal generation attempts; original registration hashes retained in the authors experiment audit.",
+    "registration_status": "Protocol fixed before actual training and both formal generation attempts; original registration hashes retained in our experiment audit.",
     "nominal_target_eV": 6.5,
     "generation": {
       "prompt": "Generate / design a polymer with band gap of 6.5 eV?",

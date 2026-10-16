@@ -1,16 +1,16 @@
 # Polymer single-chain band-gap GraphConv model
 
-The authors confirmed that the original validator used DeepChem `GraphConvModel`,
-single-chain band-gap labels, and default training parameters. This script was
-written during revision. It has not recovered the historical weights, exact split,
-DeepChem version, or attachment-point preprocessing, and is not a reproduction of
-the three published candidate predictions.
+Our original validator used DeepChem `GraphConvModel`, single-chain band-gap labels,
+and default training parameters. We wrote this script during revision. We have not
+recovered the historical weights, exact split, DeepChem version, or attachment-point
+preprocessing, so this script does not reproduce the three published candidate
+predictions.
 
 The data source is Kuenneth et al., *Polymer informatics with multi-task learning*,
 Patterns **2**, 100238 (2021), DOI [10.1016/j.patter.2021.100238](https://doi.org/10.1016/j.patter.2021.100238).
 The paper distinguishes single-chain and crystal band gaps. Obtain the permitted
 single-chain data from the paper's linked [Khazana archive](https://khazana.gatech.edu/)
-or the author's retained source file. The script does not substitute PolyOpus
+or a retained source file. The script does not substitute PolyOpus
 crystal-band-gap labels or generated-polymer labels. CSV column selection is
 explicit, and the input checksum is saved with every run.
 
@@ -33,14 +33,15 @@ contains 3,380 rows with columns `smiles` and `value`. Its SHA256 is
 The source paper defines Egc as single-chain band gap in eV and Egb as bulk band gap.
 This public copy was used for the [revision experiment](revision_run_20261015/README.md),
 which provides the final checkpoint and one combined prediction table. It does
-not reproduce the authors' historical GNN training data selection. An archived
+not reproduce our historical GNN training data selection. An archived
 input file can instead be supplied with its actual column names.
 
 The required wildcard policy makes preprocessing reviewable. `preserve` passes
 the parsed repeat-unit graph, including `*`, to ConvMol. `hydrogen_cap` replaces
 only degree-one, single-bonded attachment markers by hydrogen. Neither constructs
 a periodic crystal or establishes equivalence under moving the repeat-unit boundary.
-Do not attribute either choice to the original experiment until it is confirmed.
+The original attachment-point preprocessing remains unverified; neither choice is
+asserted to reproduce it.
 
 When no split column is provided, the **new script** uses a seeded 80/10/10 split
 over groups, tying equivalent molecular graphs, equivalent model inputs after

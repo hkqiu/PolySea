@@ -151,5 +151,5 @@
   },
   "input_note": "The prompt column contains the exact user message. Original questions and SMILES are preserved; shared output-format, unit, class-definition and negative-AE-convention instructions distinguish this protocol from historical model prompts.",
   "parsing_note": "The standalone script re-parses output_text using the frozen full-string numeric/class rules. Parsing coverage is not the historical NHscore.",
-  "scope_history": "Earlier budget calibration remains in the local evidence archive. A second model was discontinued at the author’s request; the final released scope is GPT-6-Astra only."
+  "scope_history": "Earlier budget calibration remains in our local evidence archive. We discontinued evaluation of a second model; the final released scope is GPT-6-Astra only."
 }

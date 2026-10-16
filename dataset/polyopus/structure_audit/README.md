@@ -63,4 +63,4 @@ table from the public training/test and reporting CSVs. Generated caches and
 registry files go into the requested local output folder, not this release.
 `summary.json` records the conventions, denominators, full-precision metrics and
 the local full-AE aggregate separately. The excluded original AE per-row outputs
-remain in the authors' local archive.
+remain in our local archive.
