@@ -340,6 +340,8 @@ We provide the training scripts, input data and released model at the paths belo
 
 | Purpose | Direct repository path |
 |---|---|
+| FAB/LEC actual inputs, outputs and scoring | [reproduction/fab_lec/README.md](reproduction/fab_lec/README.md) |
+| FAB/LEC C1 four-setting example | [reproduction/fab_lec/cases/C1.md](reproduction/fab_lec/cases/C1.md) |
 | GNN training script | [reproduction/gnn/convergence_20261016/train_convergence.py](reproduction/gnn/convergence_20261016/train_convergence.py) |
 | GNN checkpoint inference | [reproduction/gnn/convergence_20261016/predict_selected.py](reproduction/gnn/convergence_20261016/predict_selected.py) |
 | GNN input CSV and fixed split | [reproduction/gnn/convergence_20261016/data/split_manifest.csv](reproduction/gnn/convergence_20261016/data/split_manifest.csv) |

@@ -1,0 +1,1458 @@
+[
+  {
+    "id": "PNC_000_0",
+    "title": "PolyNC a natural and chemical language model for the prediction of unified polymer properties",
+    "source_url": "https://doi.org/10.1039/D3SC05079C",
+    "locator": "Article text; segment 0.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "PNC_000_1",
+    "title": "PolyNC a natural and chemical language model for the prediction of unified polymer properties",
+    "source_url": "https://doi.org/10.1039/D3SC05079C",
+    "locator": "Article text; segment 0.1",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "PNC_001_0",
+    "title": "PolyNC a natural and chemical language model for the prediction of unified polymer properties",
+    "source_url": "https://doi.org/10.1039/D3SC05079C",
+    "locator": "Article text; segment 1.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "PNC_002_0",
+    "title": "PolyNC a natural and chemical language model for the prediction of unified polymer properties",
+    "source_url": "https://doi.org/10.1039/D3SC05079C",
+    "locator": "Introduction; segment 2.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "PNC_002_1",
+    "title": "PolyNC a natural and chemical language model for the prediction of unified polymer properties",
+    "source_url": "https://doi.org/10.1039/D3SC05079C",
+    "locator": "Introduction; segment 2.1",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "PNC_003_0",
+    "title": "PolyNC a natural and chemical language model for the prediction of unified polymer properties",
+    "source_url": "https://doi.org/10.1039/D3SC05079C",
+    "locator": "Introduction; segment 3.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "PNC_003_1",
+    "title": "PolyNC a natural and chemical language model for the prediction of unified polymer properties",
+    "source_url": "https://doi.org/10.1039/D3SC05079C",
+    "locator": "Introduction; segment 3.1",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "PNC_004_0",
+    "title": "PolyNC a natural and chemical language model for the prediction of unified polymer properties",
+    "source_url": "https://doi.org/10.1039/D3SC05079C",
+    "locator": "Introduction; segment 4.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "PNC_004_1",
+    "title": "PolyNC a natural and chemical language model for the prediction of unified polymer properties",
+    "source_url": "https://doi.org/10.1039/D3SC05079C",
+    "locator": "Introduction; segment 4.1",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "PNC_005_0",
+    "title": "PolyNC a natural and chemical language model for the prediction of unified polymer properties",
+    "source_url": "https://doi.org/10.1039/D3SC05079C",
+    "locator": "Introduction; segment 5.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "PNC_005_1",
+    "title": "PolyNC a natural and chemical language model for the prediction of unified polymer properties",
+    "source_url": "https://doi.org/10.1039/D3SC05079C",
+    "locator": "Introduction; segment 5.1",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "PNC_006_0",
+    "title": "PolyNC a natural and chemical language model for the prediction of unified polymer properties",
+    "source_url": "https://doi.org/10.1039/D3SC05079C",
+    "locator": "efinition of polymer-specific tasks; segment 6.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "PNC_007_0",
+    "title": "PolyNC a natural and chemical language model for the prediction of unified polymer properties",
+    "source_url": "https://doi.org/10.1039/D3SC05079C",
+    "locator": "efinition of polymer-specific tasks; segment 7.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "PNC_008_0",
+    "title": "PolyNC a natural and chemical language model for the prediction of unified polymer properties",
+    "source_url": "https://doi.org/10.1039/D3SC05079C",
+    "locator": "efinition of polymer-specific tasks; segment 8.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "PNC_009_0",
+    "title": "PolyNC a natural and chemical language model for the prediction of unified polymer properties",
+    "source_url": "https://doi.org/10.1039/D3SC05079C",
+    "locator": "efinition of polymer-specific tasks; segment 9.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "PNC_010_0",
+    "title": "PolyNC a natural and chemical language model for the prediction of unified polymer properties",
+    "source_url": "https://doi.org/10.1039/D3SC05079C",
+    "locator": "efinition of polymer-specific tasks; segment 10.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "PNC_011_0",
+    "title": "PolyNC a natural and chemical language model for the prediction of unified polymer properties",
+    "source_url": "https://doi.org/10.1039/D3SC05079C",
+    "locator": "efinition of polymer-specific tasks; segment 11.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "PNC_012_0",
+    "title": "PolyNC a natural and chemical language model for the prediction of unified polymer properties",
+    "source_url": "https://doi.org/10.1039/D3SC05079C",
+    "locator": "Experimental settings; segment 12.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "PNC_012_1",
+    "title": "PolyNC a natural and chemical language model for the prediction of unified polymer properties",
+    "source_url": "https://doi.org/10.1039/D3SC05079C",
+    "locator": "Experimental settings; segment 12.1",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "PNC_013_0",
+    "title": "PolyNC a natural and chemical language model for the prediction of unified polymer properties",
+    "source_url": "https://doi.org/10.1039/D3SC05079C",
+    "locator": "Experimental settings; segment 13.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "PNC_013_1",
+    "title": "PolyNC a natural and chemical language model for the prediction of unified polymer properties",
+    "source_url": "https://doi.org/10.1039/D3SC05079C",
+    "locator": "Experimental settings; segment 13.1",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "PNC_014_0",
+    "title": "PolyNC a natural and chemical language model for the prediction of unified polymer properties",
+    "source_url": "https://doi.org/10.1039/D3SC05079C",
+    "locator": "Single-property prediction and multi-property prediction; segment 14.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "PNC_015_0",
+    "title": "PolyNC a natural and chemical language model for the prediction of unified polymer properties",
+    "source_url": "https://doi.org/10.1039/D3SC05079C",
+    "locator": "Single-property prediction and multi-property prediction; segment 15.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "PNC_016_0",
+    "title": "PolyNC a natural and chemical language model for the prediction of unified polymer properties",
+    "source_url": "https://doi.org/10.1039/D3SC05079C",
+    "locator": "Single-property prediction and multi-property prediction; segment 16.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "PNC_017_0",
+    "title": "PolyNC a natural and chemical language model for the prediction of unified polymer properties",
+    "source_url": "https://doi.org/10.1039/D3SC05079C",
+    "locator": "Single-property prediction and multi-property prediction; segment 17.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "PNC_018_0",
+    "title": "PolyNC a natural and chemical language model for the prediction of unified polymer properties",
+    "source_url": "https://doi.org/10.1039/D3SC05079C",
+    "locator": "Single-property prediction and multi-property prediction; segment 18.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "PNC_019_0",
+    "title": "PolyNC a natural and chemical language model for the prediction of unified polymer properties",
+    "source_url": "https://doi.org/10.1039/D3SC05079C",
+    "locator": "Multiclass classification; segment 19.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "PNC_020_0",
+    "title": "PolyNC a natural and chemical language model for the prediction of unified polymer properties",
+    "source_url": "https://doi.org/10.1039/D3SC05079C",
+    "locator": "Multiclass classification; segment 20.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "PNC_021_0",
+    "title": "PolyNC a natural and chemical language model for the prediction of unified polymer properties",
+    "source_url": "https://doi.org/10.1039/D3SC05079C",
+    "locator": "Multiclass classification; segment 21.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "PNC_021_1",
+    "title": "PolyNC a natural and chemical language model for the prediction of unified polymer properties",
+    "source_url": "https://doi.org/10.1039/D3SC05079C",
+    "locator": "Multiclass classification; segment 21.1",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "PNC_022_0",
+    "title": "PolyNC a natural and chemical language model for the prediction of unified polymer properties",
+    "source_url": "https://doi.org/10.1039/D3SC05079C",
+    "locator": "Attention analysis; segment 22.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "PNC_022_1",
+    "title": "PolyNC a natural and chemical language model for the prediction of unified polymer properties",
+    "source_url": "https://doi.org/10.1039/D3SC05079C",
+    "locator": "Attention analysis; segment 22.1",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "PNC_023_0",
+    "title": "PolyNC a natural and chemical language model for the prediction of unified polymer properties",
+    "source_url": "https://doi.org/10.1039/D3SC05079C",
+    "locator": "Attention analysis; segment 23.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "PNC_023_1",
+    "title": "PolyNC a natural and chemical language model for the prediction of unified polymer properties",
+    "source_url": "https://doi.org/10.1039/D3SC05079C",
+    "locator": "Attention analysis; segment 23.1",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "PNC_024_0",
+    "title": "PolyNC a natural and chemical language model for the prediction of unified polymer properties",
+    "source_url": "https://doi.org/10.1039/D3SC05079C",
+    "locator": "Ablation studies; segment 24.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "PNC_024_1",
+    "title": "PolyNC a natural and chemical language model for the prediction of unified polymer properties",
+    "source_url": "https://doi.org/10.1039/D3SC05079C",
+    "locator": "Ablation studies; segment 24.1",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "PNC_025_0",
+    "title": "PolyNC a natural and chemical language model for the prediction of unified polymer properties",
+    "source_url": "https://doi.org/10.1039/D3SC05079C",
+    "locator": "Ablation studies; segment 25.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "PNC_026_0",
+    "title": "PolyNC a natural and chemical language model for the prediction of unified polymer properties",
+    "source_url": "https://doi.org/10.1039/D3SC05079C",
+    "locator": "Conclusion; segment 26.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "PNC_026_1",
+    "title": "PolyNC a natural and chemical language model for the prediction of unified polymer properties",
+    "source_url": "https://doi.org/10.1039/D3SC05079C",
+    "locator": "Conclusion; segment 26.1",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "PNC_027_0",
+    "title": "PolyNC a natural and chemical language model for the prediction of unified polymer properties",
+    "source_url": "https://doi.org/10.1039/D3SC05079C",
+    "locator": "Discussion; segment 27.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "PNC_028_0",
+    "title": "PolyNC a natural and chemical language model for the prediction of unified polymer properties",
+    "source_url": "https://doi.org/10.1039/D3SC05079C",
+    "locator": "Discussion; segment 28.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "PNC_029_0",
+    "title": "PolyNC a natural and chemical language model for the prediction of unified polymer properties",
+    "source_url": "https://doi.org/10.1039/D3SC05079C",
+    "locator": "Model; segment 29.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "PNC_030_0",
+    "title": "PolyNC a natural and chemical language model for the prediction of unified polymer properties",
+    "source_url": "https://doi.org/10.1039/D3SC05079C",
+    "locator": "Polymeric prompt engineering (PPE); segment 30.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "PNC_031_0",
+    "title": "PolyNC a natural and chemical language model for the prediction of unified polymer properties",
+    "source_url": "https://doi.org/10.1039/D3SC05079C",
+    "locator": "Data augmentation; segment 31.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "PNC_032_0",
+    "title": "PolyNC a natural and chemical language model for the prediction of unified polymer properties",
+    "source_url": "https://doi.org/10.1039/D3SC05079C",
+    "locator": "SMILES tokenization; segment 32.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "PNC_033_0",
+    "title": "PolyNC a natural and chemical language model for the prediction of unified polymer properties",
+    "source_url": "https://doi.org/10.1039/D3SC05079C",
+    "locator": "Data availability; segment 33.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "PNC_034_0",
+    "title": "PolyNC a natural and chemical language model for the prediction of unified polymer properties",
+    "source_url": "https://doi.org/10.1039/D3SC05079C",
+    "locator": "Author contributions; segment 34.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "PNC_035_0",
+    "title": "PolyNC a natural and chemical language model for the prediction of unified polymer properties",
+    "source_url": "https://doi.org/10.1039/D3SC05079C",
+    "locator": "Table; segment 35.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "MT_000_0",
+    "title": "Polymer informatics with multi-task learning",
+    "source_url": "https://doi.org/10.1016/j.patter.2021.100238",
+    "locator": "Article text; segment 0.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "MT_001_0",
+    "title": "Polymer informatics with multi-task learning",
+    "source_url": "https://doi.org/10.1016/j.patter.2021.100238",
+    "locator": "Article text; segment 1.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "MT_002_0",
+    "title": "Polymer informatics with multi-task learning",
+    "source_url": "https://doi.org/10.1016/j.patter.2021.100238",
+    "locator": "Article text; segment 2.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "MT_003_0",
+    "title": "Polymer informatics with multi-task learning",
+    "source_url": "https://doi.org/10.1016/j.patter.2021.100238",
+    "locator": "Article text; segment 3.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "MT_004_0",
+    "title": "Polymer informatics with multi-task learning",
+    "source_url": "https://doi.org/10.1016/j.patter.2021.100238",
+    "locator": "Article text; segment 4.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "MT_005_0",
+    "title": "Polymer informatics with multi-task learning",
+    "source_url": "https://doi.org/10.1016/j.patter.2021.100238",
+    "locator": "Article text; segment 5.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "MT_006_0",
+    "title": "Polymer informatics with multi-task learning",
+    "source_url": "https://doi.org/10.1016/j.patter.2021.100238",
+    "locator": "Introduction; segment 6.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "MT_007_0",
+    "title": "Polymer informatics with multi-task learning",
+    "source_url": "https://doi.org/10.1016/j.patter.2021.100238",
+    "locator": "Introduction; segment 7.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "MT_008_0",
+    "title": "Polymer informatics with multi-task learning",
+    "source_url": "https://doi.org/10.1016/j.patter.2021.100238",
+    "locator": "Introduction; segment 8.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "MT_008_1",
+    "title": "Polymer informatics with multi-task learning",
+    "source_url": "https://doi.org/10.1016/j.patter.2021.100238",
+    "locator": "Introduction; segment 8.1",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "MT_009_0",
+    "title": "Polymer informatics with multi-task learning",
+    "source_url": "https://doi.org/10.1016/j.patter.2021.100238",
+    "locator": "Introduction; segment 9.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "MT_010_0",
+    "title": "Polymer informatics with multi-task learning",
+    "source_url": "https://doi.org/10.1016/j.patter.2021.100238",
+    "locator": "Introduction; segment 10.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "MT_011_0",
+    "title": "Polymer informatics with multi-task learning",
+    "source_url": "https://doi.org/10.1016/j.patter.2021.100238",
+    "locator": "Introduction; segment 11.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "MT_011_1",
+    "title": "Polymer informatics with multi-task learning",
+    "source_url": "https://doi.org/10.1016/j.patter.2021.100238",
+    "locator": "Introduction; segment 11.1",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "MT_011_2",
+    "title": "Polymer informatics with multi-task learning",
+    "source_url": "https://doi.org/10.1016/j.patter.2021.100238",
+    "locator": "Introduction; segment 11.2",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "MT_012_0",
+    "title": "Polymer informatics with multi-task learning",
+    "source_url": "https://doi.org/10.1016/j.patter.2021.100238",
+    "locator": "Correlations in data; segment 12.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "MT_012_1",
+    "title": "Polymer informatics with multi-task learning",
+    "source_url": "https://doi.org/10.1016/j.patter.2021.100238",
+    "locator": "Correlations in data; segment 12.1",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "MT_013_0",
+    "title": "Polymer informatics with multi-task learning",
+    "source_url": "https://doi.org/10.1016/j.patter.2021.100238",
+    "locator": "Correlations in data; segment 13.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "MT_014_0",
+    "title": "Polymer informatics with multi-task learning",
+    "source_url": "https://doi.org/10.1016/j.patter.2021.100238",
+    "locator": "Single- and multi-task models; segment 14.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "MT_014_1",
+    "title": "Polymer informatics with multi-task learning",
+    "source_url": "https://doi.org/10.1016/j.patter.2021.100238",
+    "locator": "Single- and multi-task models; segment 14.1",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "MT_015_0",
+    "title": "Polymer informatics with multi-task learning",
+    "source_url": "https://doi.org/10.1016/j.patter.2021.100238",
+    "locator": "Single- and multi-task models; segment 15.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "MT_016_0",
+    "title": "Polymer informatics with multi-task learning",
+    "source_url": "https://doi.org/10.1016/j.patter.2021.100238",
+    "locator": "Single- and multi-task models; segment 16.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "MT_017_0",
+    "title": "Polymer informatics with multi-task learning",
+    "source_url": "https://doi.org/10.1016/j.patter.2021.100238",
+    "locator": "Single- and multi-task models; segment 17.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "MT_018_0",
+    "title": "Polymer informatics with multi-task learning",
+    "source_url": "https://doi.org/10.1016/j.patter.2021.100238",
+    "locator": "Single- and multi-task models; segment 18.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "MT_018_1",
+    "title": "Polymer informatics with multi-task learning",
+    "source_url": "https://doi.org/10.1016/j.patter.2021.100238",
+    "locator": "Single- and multi-task models; segment 18.1",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "MT_019_0",
+    "title": "Polymer informatics with multi-task learning",
+    "source_url": "https://doi.org/10.1016/j.patter.2021.100238",
+    "locator": "Single- and multi-task models; segment 19.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "MT_020_0",
+    "title": "Polymer informatics with multi-task learning",
+    "source_url": "https://doi.org/10.1016/j.patter.2021.100238",
+    "locator": "Single- and multi-task models; segment 20.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "MT_021_0",
+    "title": "Polymer informatics with multi-task learning",
+    "source_url": "https://doi.org/10.1016/j.patter.2021.100238",
+    "locator": "Deriving chemical guidelines; segment 21.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "MT_022_0",
+    "title": "Polymer informatics with multi-task learning",
+    "source_url": "https://doi.org/10.1016/j.patter.2021.100238",
+    "locator": "Deriving chemical guidelines; segment 22.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "MT_022_1",
+    "title": "Polymer informatics with multi-task learning",
+    "source_url": "https://doi.org/10.1016/j.patter.2021.100238",
+    "locator": "Deriving chemical guidelines; segment 22.1",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "MT_023_0",
+    "title": "Polymer informatics with multi-task learning",
+    "source_url": "https://doi.org/10.1016/j.patter.2021.100238",
+    "locator": "Deriving chemical guidelines; segment 23.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "MT_024_0",
+    "title": "Polymer informatics with multi-task learning",
+    "source_url": "https://doi.org/10.1016/j.patter.2021.100238",
+    "locator": "Deriving chemical guidelines; segment 24.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "MT_025_0",
+    "title": "Polymer informatics with multi-task learning",
+    "source_url": "https://doi.org/10.1016/j.patter.2021.100238",
+    "locator": "Deriving chemical guidelines; segment 25.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "MT_026_0",
+    "title": "Polymer informatics with multi-task learning",
+    "source_url": "https://doi.org/10.1016/j.patter.2021.100238",
+    "locator": "Discussion; segment 26.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "MT_027_0",
+    "title": "Polymer informatics with multi-task learning",
+    "source_url": "https://doi.org/10.1016/j.patter.2021.100238",
+    "locator": "Discussion; segment 27.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "MT_028_0",
+    "title": "Polymer informatics with multi-task learning",
+    "source_url": "https://doi.org/10.1016/j.patter.2021.100238",
+    "locator": "Lead contact; segment 28.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "MT_029_0",
+    "title": "Polymer informatics with multi-task learning",
+    "source_url": "https://doi.org/10.1016/j.patter.2021.100238",
+    "locator": "Data and code availability; segment 29.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "MT_030_0",
+    "title": "Polymer informatics with multi-task learning",
+    "source_url": "https://doi.org/10.1016/j.patter.2021.100238",
+    "locator": "Data and preparation; segment 30.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "MT_031_0",
+    "title": "Polymer informatics with multi-task learning",
+    "source_url": "https://doi.org/10.1016/j.patter.2021.100238",
+    "locator": "Data and preparation; segment 31.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "MT_032_0",
+    "title": "Polymer informatics with multi-task learning",
+    "source_url": "https://doi.org/10.1016/j.patter.2021.100238",
+    "locator": "Fingerprinting; segment 32.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "MT_033_0",
+    "title": "Polymer informatics with multi-task learning",
+    "source_url": "https://doi.org/10.1016/j.patter.2021.100238",
+    "locator": "Fingerprinting; segment 33.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "MT_033_1",
+    "title": "Polymer informatics with multi-task learning",
+    "source_url": "https://doi.org/10.1016/j.patter.2021.100238",
+    "locator": "Fingerprinting; segment 33.1",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "MT_034_0",
+    "title": "Polymer informatics with multi-task learning",
+    "source_url": "https://doi.org/10.1016/j.patter.2021.100238",
+    "locator": "Machine learning models; segment 34.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "MT_035_0",
+    "title": "Polymer informatics with multi-task learning",
+    "source_url": "https://doi.org/10.1016/j.patter.2021.100238",
+    "locator": "Single-task learning with Gaussian process regression (GP-ST); segment 35.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "MT_036_0",
+    "title": "Polymer informatics with multi-task learning",
+    "source_url": "https://doi.org/10.1016/j.patter.2021.100238",
+    "locator": "Learning with neural networks (NN-ST, NN-MT1, NN-MT2); segment 36.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "MT_037_0",
+    "title": "Polymer informatics with multi-task learning",
+    "source_url": "https://doi.org/10.1016/j.patter.2021.100238",
+    "locator": "Learning with neural networks (NN-ST, NN-MT1, NN-MT2); segment 37.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "MT_038_0",
+    "title": "Polymer informatics with multi-task learning",
+    "source_url": "https://doi.org/10.1016/j.patter.2021.100238",
+    "locator": "SHAP; segment 38.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "MT_039_0",
+    "title": "Polymer informatics with multi-task learning",
+    "source_url": "https://doi.org/10.1016/j.patter.2021.100238",
+    "locator": "Table 1; segment 39.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "MT_039_1",
+    "title": "Polymer informatics with multi-task learning",
+    "source_url": "https://doi.org/10.1016/j.patter.2021.100238",
+    "locator": "Table 1; segment 39.1",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "MT_040_0",
+    "title": "Polymer informatics with multi-task learning",
+    "source_url": "https://doi.org/10.1016/j.patter.2021.100238",
+    "locator": "Table 2; segment 40.0",
+    "kind": "automatic paragraph/table extraction"
+  },
+  {
+    "id": "TAO_000_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 0; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_000_1",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 0; segment 1",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_001_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 1; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_002_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 2; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_003_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 3; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_004_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 4; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_004_1",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 4; segment 1",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_005_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 5; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_005_1",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 5; segment 1",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_006_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 6; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_007_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 7; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_008_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 8; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_009_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 9; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_011_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 11; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_012_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 12; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_013_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 13; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_013_1",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 13; segment 1",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_014_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 14; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_015_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 15; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_016_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 16; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_016_1",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 16; segment 1",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_017_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 17; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_018_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 18; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_019_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 19; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_020_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 20; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_021_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 21; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_022_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 22; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_023_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 23; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_024_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 24; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_025_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 25; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_026_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 26; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_027_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 27; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_027_1",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 27; segment 1",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_028_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 28; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_028_1",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 28; segment 1",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_029_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 29; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_030_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 30; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_031_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 31; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_031_1",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 31; segment 1",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_032_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 32; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_033_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 33; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_034_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 34; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_035_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 35; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_036_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 36; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_037_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 37; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_038_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 38; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_039_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 39; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_041_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 41; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_043_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 43; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_045_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 45; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_047_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 47; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_049_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 49; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_051_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 51; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_053_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 53; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_055_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 55; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_057_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 57; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_059_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 59; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_061_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 61; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_063_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 63; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_065_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 65; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_067_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 67; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_069_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 69; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_071_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 71; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_073_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 73; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_075_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 75; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_077_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 77; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_079_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 79; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_081_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 81; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_083_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 83; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_085_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 85; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_087_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 87; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_089_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 89; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_090_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 90; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_092_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 92; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_094_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 94; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_096_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 96; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_098_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 98; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_100_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 100; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_102_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 102; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_104_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 104; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_106_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 106; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_108_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 108; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_110_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 110; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_112_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 112; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_114_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 114; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_116_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 116; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_118_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 118; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_120_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 120; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_122_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 122; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_123_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 123; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_125_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 125; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_127_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 127; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_129_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 129; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_131_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 131; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_133_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 133; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_135_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 135; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_136_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 136; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_137_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 137; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_138_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 138; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_139_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 139; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_141_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 141; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_143_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 143; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_146_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 146; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_147_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 147; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_149_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 149; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_153_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 153; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_156_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 156; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_157_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 157; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_159_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 159; segment 0",
+    "kind": "automatic paragraph extraction"
+  },
+  {
+    "id": "TAO_166_0",
+    "title": "On-demand reverse design of polymers with PolyTAO",
+    "source_url": "https://doi.org/10.1038/s41524-024-01466-5",
+    "locator": "Article paragraph 166; segment 0",
+    "kind": "automatic paragraph extraction"
+  }
+]

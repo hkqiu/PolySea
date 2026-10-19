@@ -1,0 +1,110 @@
+[
+  {
+    "profile_id": "screen",
+    "request_body": {
+      "model": "/preset-models",
+      "system": "You maintain concise, faithful persistent user memory.",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Extract only the explicit user instructions below into one persistent-memory string of at most 160 characters. Preserve numbers, identifiers, units, and exclusions. Return JSON {\"memory\":\"...\"}. Do not add assumptions.\n\nPlease remember: I only want halogen-free polymer candidates. Exclude any repeat unit containing fluorine, chlorine, bromine, or iodine."
+        }
+      ],
+      "max_tokens": 4096,
+      "temperature": 0.2,
+      "thinking": {
+        "type": "disabled"
+      }
+    },
+    "model": "/preset-models",
+    "answer": "{\"memory\":\"Only want halogen-free polymer candidates; exclude any repeat unit containing fluorine, chlorine, bromine, or iodine.\"}",
+    "finish_reason": "end_turn",
+    "usage": {
+      "input_tokens": 111,
+      "output_tokens": 213
+    },
+    "elapsed_s": 1.8797353999689221,
+    "success": true
+  },
+  {
+    "profile_id": "split",
+    "request_body": {
+      "model": "/preset-models",
+      "system": "You maintain concise, faithful persistent user memory.",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Extract only the explicit user instructions below into one persistent-memory string of at most 160 characters. Preserve numbers, identifiers, units, and exclusions. Return JSON {\"memory\":\"...\"}. Do not add assumptions.\n\nPlease remember: batch H17 is reserved for testing. Every augmented copy of a parent polymer from H17 must also stay out of training."
+        }
+      ],
+      "max_tokens": 4096,
+      "temperature": 0.2,
+      "thinking": {
+        "type": "disabled"
+      }
+    },
+    "model": "/preset-models",
+    "answer": "{\"memory\":\"Batch H17 reserved for testing; every augmented copy of a parent polymer from H17 must stay out of training.\"}",
+    "finish_reason": "end_turn",
+    "usage": {
+      "input_tokens": 112,
+      "output_tokens": 385
+    },
+    "elapsed_s": 3.302825400023721,
+    "success": true
+  },
+  {
+    "profile_id": "target",
+    "request_body": {
+      "model": "/preset-models",
+      "system": "You maintain concise, faithful persistent user memory.",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Extract only the explicit user instructions below into one persistent-memory string of at most 160 characters. Preserve numbers, identifiers, units, and exclusions. Return JSON {\"memory\":\"...\"}. Do not add assumptions.\n\nPlease remember: our design objective minimizes absolute band-gap deviation from 6.5 eV. It is a nominal target, not merely a minimum-gap threshold."
+        }
+      ],
+      "max_tokens": 4096,
+      "temperature": 0.2,
+      "thinking": {
+        "type": "disabled"
+      }
+    },
+    "model": "/preset-models",
+    "answer": "{\"memory\":\"Design objective minimizes absolute band-gap deviation from 6.5 eV; 6.5 eV is nominal target, not merely minimum-gap threshold.\"}",
+    "finish_reason": "end_turn",
+    "usage": {
+      "input_tokens": 117,
+      "output_tokens": 175
+    },
+    "elapsed_s": 1.573214900039602,
+    "success": true
+  },
+  {
+    "profile_id": "units",
+    "request_body": {
+      "model": "/preset-models",
+      "system": "You maintain concise, faithful persistent user memory.",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Extract only the explicit user instructions below into one persistent-memory string of at most 160 characters. Preserve numbers, identifiers, units, and exclusions. Return JSON {\"memory\":\"...\"}. Do not add assumptions.\n\nPlease remember: in my project, report all temperatures in Kelvin with two decimal places, even when I supply Celsius values."
+        }
+      ],
+      "max_tokens": 4096,
+      "temperature": 0.2,
+      "thinking": {
+        "type": "disabled"
+      }
+    },
+    "model": "/preset-models",
+    "answer": "{\"memory\":\"In my project, report all temperatures in Kelvin with two decimal places, even when I supply Celsius values.\"}",
+    "finish_reason": "end_turn",
+    "usage": {
+      "input_tokens": 108,
+      "output_tokens": 138
+    },
+    "elapsed_s": 1.2438515999820083,
+    "success": true
+  }
+]

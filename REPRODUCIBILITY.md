@@ -20,7 +20,7 @@ python -m unittest discover -s tests -v
 Tests cover routing, notices, context/tool switches and memory behavior using
 temporary memory and mocked responses. The backend includes a seven-record local
 evidence example. The reported FAB/LEC answer study used a fixed 208-segment corpus,
-preassembled context, four memory-extraction calls and 96 formal answers.
+preassembled context, four memory-extraction calls and 96 formal answers. The [complete study release](reproduction/fab_lec/README.md) provides the actual inputs, all visible outputs, per-run scores and a scoring replay script. The [C1 comparison](reproduction/fab_lec/cases/C1.md) shows a concrete four-setting example; [all 12 cases](reproduction/fab_lec/README.md#case-index) are available for inspection.
 
 Dataset and model pages provide their replay commands, methods, source attribution
 and licenses.
