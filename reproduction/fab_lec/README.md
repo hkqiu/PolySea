@@ -1,7 +1,5 @@
 # Controlled FAB and LEC examples
 
-This release contains the exact inputs and visible outputs for the 12-task FAB/LEC component study reported in the PolySea reviewer response and Supplementary Note 3. Each task was run under four component settings with two repetitions: 96 answer calls in total, preceded by four memory-extraction calls.
-
 Start with [case C1](cases/C1.md), which combines a saved Kelvin reporting convention with the PolyNC polyimide classification task. Every case page includes both repetitions, the actual system/user inputs, visible answers, stop reasons and primary/secondary scores. Expand the input sections to inspect the injected memory and literature. No answer has been regenerated or rewritten for this release.
 
 ## Files
